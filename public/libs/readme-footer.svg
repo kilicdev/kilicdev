@@ -1,0 +1,47 @@
+<svg width="1280" height="220" viewBox="0 0 1280 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">bucksh0t README footer</title>
+  <desc id="desc">A clean terminal-inspired footer banner matching the bucksh0t README hero.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="18" x2="1140" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#15040A" />
+      <stop offset="0.58" stop-color="#090205" />
+      <stop offset="1" stop-color="#12040A" />
+    </linearGradient>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(228 34) rotate(24) scale(420 180)">
+      <stop stop-color="#FF6476" stop-opacity="0.24" />
+      <stop offset="1" stop-color="#FF6476" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1088 190) rotate(180) scale(420 220)">
+      <stop stop-color="#7B1222" stop-opacity="0.56" />
+      <stop offset="1" stop-color="#7B1222" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="stroke" x1="46" y1="28" x2="1232" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7382" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#FF4D5A" stop-opacity="0.12" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#FF4D5A" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="220" rx="28" fill="#060204"/>
+  <rect width="1280" height="220" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="220" rx="28" fill="url(#glowLeft)"/>
+  <rect width="1280" height="220" rx="28" fill="url(#glowRight)"/>
+  <rect width="1280" height="220" rx="28" fill="url(#grid)"/>
+
+  <rect x="28" y="26" width="1224" height="168" rx="24" fill="#100209" stroke="url(#stroke)"/>
+  <rect x="28" y="26" width="1224" height="46" rx="24" fill="#17050C"/>
+  <path d="M28 54C28 38.536 40.536 26 56 26H1224C1239.46 26 1252 38.536 1252 54V72H28V54Z" fill="url(#bg)" fill-opacity="0.3"/>
+
+  <circle cx="62" cy="49" r="6" fill="#FF7B88"/>
+  <circle cx="84" cy="49" r="6" fill="#FF5565"/>
+  <circle cx="106" cy="49" r="6" fill="#FF3045"/>
+
+  <text x="136" y="54" fill="#FFC2CB" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="0.16em">root@bucksh0t-dev:~/closing</text>
+  <text x="1168" y="54" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="end">READY</text>
+
+  <text x="72" y="102" fill="#FF97A4" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="0.08em">$ finalize --ship-premium</text>
+  <text x="72" y="138" fill="#FFF1F3" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="31" font-weight="700">Message me and let's create new products right away!</text>
+  <text x="72" y="164" fill="#FFD4DB" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="16">Thank you For Reading.</text>
+</svg>

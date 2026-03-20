@@ -1,0 +1,63 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">bucksh0t profile banner</title>
+  <desc id="desc">Terminal-inspired banner for Kilic Sarsilmaz, software architect and senior full stack engineer.</desc>
+  <defs>
+    <linearGradient id="page" x1="142" y1="32" x2="1138" y2="404" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#15040A" />
+      <stop offset="0.55" stop-color="#090205" />
+      <stop offset="1" stop-color="#12040A" />
+    </linearGradient>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(224 88) rotate(34.7688) scale(432.997 243.897)">
+      <stop stop-color="#FF6476" stop-opacity="0.32" />
+      <stop offset="1" stop-color="#FF6476" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1078 326) rotate(180) scale(420 260)">
+      <stop stop-color="#7B1222" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#7B1222" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="panelStroke" x1="64" y1="48" x2="1216" y2="372" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7382" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#FF4D5A" stop-opacity="0.12" />
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#FF4D5A" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="420" rx="32" fill="#060204"/>
+  <rect width="1280" height="420" rx="32" fill="url(#page)"/>
+  <rect width="1280" height="420" rx="32" fill="url(#glowLeft)"/>
+  <rect width="1280" height="420" rx="32" fill="url(#glowRight)"/>
+  <rect width="1280" height="420" rx="32" fill="url(#grid)"/>
+
+  <rect x="36" y="36" width="1208" height="348" rx="26" fill="#100209" stroke="url(#panelStroke)"/>
+  <rect x="36" y="36" width="1208" height="58" rx="26" fill="#17050C"/>
+  <path d="M36 68C36 50.3269 50.3269 36 68 36H1212C1229.67 36 1244 50.3269 1244 68V94H36V68Z" fill="url(#page)" fill-opacity="0.28"/>
+
+  <circle cx="78" cy="65" r="7" fill="#FF7B88"/>
+  <circle cx="104" cy="65" r="7" fill="#FF5565"/>
+  <circle cx="130" cy="65" r="7" fill="#FF3045"/>
+
+  <text x="170" y="70" fill="#FFC2CB" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="0.18em">root@bucksh0t-dev:~</text>
+  <text x="1110" y="70" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" text-anchor="end">ENCRYPTED</text>
+
+  <text x="88" y="126" fill="#FF97A4" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="0.08em">$ whoami</text>
+  <text x="88" y="175" fill="#FFF1F3" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="50" font-weight="700">Kılıç Sarsılmaz</text>
+  <text x="88" y="212" fill="#FFD7DD" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="22">Software Architect | Senior Full Stack Engineer</text>
+  <text x="88" y="272" fill="#FFB9C3" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="16">Architecture / Web / Mobile / Product Systems / Performance</text>
+
+  <rect x="84" y="326" width="142" height="34" rx="17" fill="#1A050C" stroke="#FF6575" stroke-opacity="0.3"/>
+  <text x="155" y="348" fill="#FFD9DE" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" text-anchor="middle">bucksh0t.dev</text>
+
+  <rect x="742" y="116" width="422" height="68" rx="18" fill="#14040A" stroke="#FF6171" stroke-opacity="0.24"/>
+  <text x="770" y="143" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14">focus</text>
+  <text x="770" y="168" fill="#FFF0F2" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="19">Web Development</text>
+
+  <rect x="742" y="198" width="422" height="68" rx="18" fill="#14040A" stroke="#FF6171" stroke-opacity="0.24"/>
+  <text x="770" y="225" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14">availability</text>
+  <text x="770" y="250" fill="#FFF0F2" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="19">Freelance</text>
+
+  <rect x="742" y="280" width="422" height="68" rx="18" fill="#14040A" stroke="#FF6171" stroke-opacity="0.24"/>
+  <text x="770" y="307" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14">signal</text>
+  <text x="770" y="332" fill="#FFF0F2" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="19">Fast</text>
+</svg>
