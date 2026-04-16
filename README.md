@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/libs/readme-hero.svg" alt="bucksh0t terminal profile banner" width="100%" />
+  <img src="./public/libs/readme-hero.svg" alt="kilic terminal profile banner" width="100%" />
 </p>
 
 <h1 align="center" style="border-bottom: none;">Kılıç Sarsılmaz</h1>
@@ -59,5 +59,5 @@
 </p>
 
 <p align="center">
-  <img src="./public/libs/readme-footer.svg" alt="bucksh0t footer" width="100%" />
+  <img src="./public/libs/readme-footer.svg" alt="kilic footer" width="100%" />
 </p>
