@@ -1,5 +1,5 @@
 <svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">bucksh0t profile banner</title>
+  <title id="title">kilic profile banner</title>
   <desc id="desc">Terminal-inspired banner for Kilic Sarsilmaz, software architect and senior full stack engineer.</desc>
   <defs>
     <linearGradient id="page" x1="142" y1="32" x2="1138" y2="404" gradientUnits="userSpaceOnUse">
@@ -38,7 +38,7 @@
   <circle cx="104" cy="65" r="7" fill="#FF5565"/>
   <circle cx="130" cy="65" r="7" fill="#FF3045"/>
 
-  <text x="170" y="70" fill="#FFC2CB" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="0.18em">root@bucksh0t-dev:~</text>
+  <text x="170" y="70" fill="#FFC2CB" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="0.18em">root@kilic-dev:~</text>
   <text x="1110" y="70" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" text-anchor="end">ENCRYPTED</text>
 
   <text x="88" y="126" fill="#FF97A4" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="0.08em">$ whoami</text>
@@ -47,7 +47,7 @@
   <text x="88" y="272" fill="#FFB9C3" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="16">Architecture / Web / Mobile / Product Systems / Performance</text>
 
   <rect x="84" y="326" width="142" height="34" rx="17" fill="#1A050C" stroke="#FF6575" stroke-opacity="0.3"/>
-  <text x="155" y="348" fill="#FFD9DE" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" text-anchor="middle">bucksh0t.dev</text>
+  <text x="155" y="348" fill="#FFD9DE" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" text-anchor="middle">kilic.dev</text>
 
   <rect x="742" y="116" width="422" height="68" rx="18" fill="#14040A" stroke="#FF6171" stroke-opacity="0.24"/>
   <text x="770" y="143" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14">focus</text>
