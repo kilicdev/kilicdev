@@ -1,5 +1,5 @@
 <svg width="1280" height="220" viewBox="0 0 1280 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">bucksh0t README footer</title>
+  <title id="title">kilic README footer</title>
   <desc id="desc">A clean terminal-inspired footer banner matching the bucksh0t README hero.</desc>
   <defs>
     <linearGradient id="bg" x1="120" y1="18" x2="1140" y2="202" gradientUnits="userSpaceOnUse">
@@ -38,7 +38,7 @@
   <circle cx="84" cy="49" r="6" fill="#FF5565"/>
   <circle cx="106" cy="49" r="6" fill="#FF3045"/>
 
-  <text x="136" y="54" fill="#FFC2CB" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="0.16em">root@bucksh0t-dev:~/closing</text>
+  <text x="136" y="54" fill="#FFC2CB" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="0.16em">root@kilic-dev:~/closing</text>
   <text x="1168" y="54" fill="#FF98A5" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="end">READY</text>
 
   <text x="72" y="102" fill="#FF97A4" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="0.08em">$ finalize --ship-premium</text>
