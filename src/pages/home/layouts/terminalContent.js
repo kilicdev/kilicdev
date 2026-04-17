@@ -9,21 +9,21 @@ const buildTerminalEntries = ({ yearsInIndustry }) => ([
         name: "kilicdev",
         role: "software architect",
         shell: "zsh",
-        availability: "freelance.part-time",
+        availability: "freelance / part-time",
         uptime: "100%",
         tags: ["Online"],
     },
     {
         command: "whoami",
         type: "text",
-        output: `KILIC SARSILMAZ — Software Architect, Senior Full Stack Engineer. ${yearsInIndustry} yıldır sektördeyim. ${yearsInIndustry - 5} yıldır freelance çalışıyorum.`,
+        output: `KILIC SARSILMAZ — Software Architect, Senior Full Stack Engineer. I've been in the industry for ${yearsInIndustry} years. I've been freelancing for ${yearsInIndustry - 5} years.`,
     },
     {
         command: "cat signal.txt",
         aliases: ["signal"],
         type: "text",
         output:
-            "Sakin, premium ve hızlı ürünler kurarım. Node.js/Express, React/Next.js, microservice mimarileri, API tasarımı, mobil uygulamaları odağım.",
+            "I build calm, premium, fast products. Focus: Node.js/Express, React/Next.js, microservice architectures, API design, and mobile apps.",
     },
     {
         command: "ls focus",
@@ -42,19 +42,19 @@ const buildTerminalEntries = ({ yearsInIndustry }) => ([
         aliases: ["services"],
         type: "text",
         output:
-            "Freelance, Part-Time ve ortaklık tekliflerine açığım. Gelir odaklı, net kapsamlı işlerde hızlı hareket ederim.",
+            "Open to freelance, part-time, and partnership offers. I move fast on revenue-focused projects with a clear scope.",
     },
     {
         command: "open stack",
         aliases: ["stack"],
         type: "text",
-        output: "Nodejs, PHP, MySQL, MongoDB, C#, C++, Python, Java, Tailwind, Sql",
+        output: "Node.js, PHP, MySQL, MongoDB, C#, C++, Python, Java, Tailwind, SQL",
     },
     {
         command: "cat manifesto.txt",
         aliases: ["manifesto"],
         type: "text",
-        output: "Görünüm sakin, sistemler sağlam olmalı. Detayları yüksek tutup, hızlı çalışırım. Premium hissi hız ve sağlamlıkla kurarım, Çözüm odaklı çalışırım.",
+        output: "The look stays calm; the systems stay solid. High detail, fast execution. Premium feel comes from speed and robustness. Always solution-first.",
     },
     {
         command: "links",
