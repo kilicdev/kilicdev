@@ -8,10 +8,10 @@ const HeaderLayout = () => {
         <span>cat profile.sys</span>
       </div>
       <div className="header-brand">
-        <img alt="logo" src="/libs/bucksh0t.png" className="brand-avatar" />
+        <img alt="logo" src="/libs/kilic.png" className="brand-avatar" />
         <div>
           <div className="brand-title-line">
-            <span className="brand-title">bucksh0t</span>
+            <span className="brand-title">kilic</span>
             <span className="brand-badge">root</span>
           </div>
           <div className="brand-subtitle">software architect</div>

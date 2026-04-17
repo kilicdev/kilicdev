@@ -109,7 +109,7 @@ const TerminalInput = ({ onSubmit, suggestions = [] }) => {
     return (
         <div className="terminal-input-row" onClick={focusInput}>
             <div className="terminal-input-prefix" aria-hidden="true">
-                <span className="terminal-user terminal-user-desktop">root@bucksh0t-dev</span>
+                <span className="terminal-user terminal-user-desktop">root@kilic-dev</span>
                 <span className="terminal-user terminal-user-mobile">root@node</span>
                 <span className="terminal-path">~</span>
                 <span className="terminal-prompt">$</span>

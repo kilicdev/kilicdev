@@ -16,7 +16,7 @@ const HomePage = () => {
                                 <span></span>
                                 <span></span>
                             </div>
-                            <div className="terminal-title" data-title="root@bucksh0t-dev:~">root@bucksh0t-dev:~</div>
+                            <div className="terminal-title" data-title="root@kilic-dev:~">root@kilic-dev:~</div>
                             <div className="terminal-status">ENCRYPTED</div>
                         </div>
                         <div className="terminal-body">

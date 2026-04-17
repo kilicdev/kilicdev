@@ -4,7 +4,7 @@ import { Toaster } from "react-hot-toast";
 import HomePage from './pages/home/index.js';
 import './utils/tailwind.css';
 
-const root = ReactDOM.createRoot(document.getElementById("bucksh0t"));
+const root = ReactDOM.createRoot(document.getElementById("kilic"));
 root.render(
     <>
       <Toaster toastOptions={{

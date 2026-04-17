@@ -25,7 +25,7 @@ const TerminalSection = ({ entry }) => {
     return (
         <article className={articleClassName}>
             <div className="terminal-section-title">
-                <span className="terminal-context">root@bucksh0t-dev</span>
+                <span className="terminal-context">root@kilic-dev</span>
                 <span className="terminal-context-path">~</span>
                 <span className="terminal-prompt">$</span>
                 <span className="terminal-command">{command}</span>
