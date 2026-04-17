@@ -6,7 +6,7 @@ const buildTerminalEntries = ({ yearsInIndustry }) => ([
         avatar: "/libs/kilic.png",
         avatarAlt: "kilic profile image",
         previewPath: "/dev/identity/kilic.png",
-        name: "kilic",
+        name: "kilicdev",
         role: "software architect",
         shell: "zsh",
         availability: "freelance.part-time",
