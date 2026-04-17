@@ -32,10 +32,10 @@ const buildTerminalEntries = ({ yearsInIndustry }) => ([
         items: ["next.js/", "react native/", "express/", "java/"],
     },
     {
-        command: "ls projects",
+        command: "ls my-projects",
         aliases: ["projects"],
         type: "list",
-        items: ["inelity.com/", "truith.com/", "waveme.app/", "cashra/"],
+        items: ["inelity.com/", "waveme.app/", "cashra/", "hackmety/"],
     },
     {
         command: "cat services.txt",
