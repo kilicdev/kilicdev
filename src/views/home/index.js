@@ -111,7 +111,6 @@ const HomePage = () => {
       <Toaster position="top-right" />
       <BackgroundCanvas />
 
-      {/* Floating Glass Top Navbar */}
       <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-[#080811]/80 border-b border-white/10 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
           <a
@@ -188,11 +187,8 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Main Content Area */}
       <main className="relative z-10 max-w-7xl mx-auto px-3 sm:px-6 pt-5 sm:pt-8 pb-16 sm:pb-24 space-y-10 sm:space-y-16 max-w-full overflow-hidden">
-        {/* HERO SECTION */}
         <section id="hero" className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch pt-2 sm:pt-4">
-          {/* Left Column: Architect Spotlight & Terminal */}
           <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-between space-y-5 sm:space-y-6 min-w-0 max-w-full">
             <div className="space-y-3 sm:space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-[10px] sm:text-xs font-mono tracking-wide max-w-full">
@@ -210,7 +206,6 @@ const HomePage = () => {
               </p>
             </div>
 
-            {/* Terminal Emulator */}
             <div className="glass-card rounded-2xl border border-white/10 overflow-hidden shadow-2xl min-w-0 max-w-full">
               <div className="flex items-center justify-between px-3 sm:px-4 py-2.5 bg-[#0d0e1b] border-b border-white/10 gap-2">
                 <div className="flex items-center gap-2">
@@ -310,7 +305,6 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Right Column: Holographic Profile Card */}
           <div className="lg:col-span-5 xl:col-span-4 flex flex-col min-w-0 max-w-full">
             <div className="glass-card p-4 sm:p-6 rounded-3xl border border-white/10 flex flex-col items-center text-center relative overflow-hidden h-full justify-between space-y-4 sm:space-y-5 shadow-2xl min-w-0 max-w-full">
               <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-cyan-500/20 via-purple-500/10 to-transparent pointer-events-none" />
@@ -345,7 +339,6 @@ const HomePage = () => {
                 </p>
               </div>
 
-              {/* Profile Card Micro-Stats Grid with Repos & Public Repos */}
               <div className="w-full grid grid-cols-4 gap-1.5 sm:gap-2 py-2.5 sm:py-3 border-y border-slate-800/80 font-mono text-center">
                 <div className="p-1.5 sm:p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
                   <span className="text-[8px] sm:text-[9px] text-slate-400 block uppercase">Commits</span>
@@ -396,7 +389,6 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* SYNCING / LOADING STATE SKELETON */}
         {loadState === "syncing" && !profile ? (
           <section className="glass-card p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-cyan-500/20 space-y-4 animate-pulse">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
@@ -429,7 +421,6 @@ const HomePage = () => {
             </button>
           </section>
         ) : (
-          /* ACTIVITY STREAM PANEL */
           <section id="commits" className="space-y-6">
             <div className="glass-card p-3.5 sm:p-6 rounded-2xl sm:rounded-3xl border border-white/10 space-y-4 sm:space-y-6 max-w-full overflow-hidden">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
@@ -441,8 +432,6 @@ const HomePage = () => {
                     GitHub Activity Stream
                   </h2>
                 </div>
-
-                {/* Tab Switcher: Hidden on mobile (fixed commits view), Desktop shows full tabs */}
                 <div className="hidden sm:flex items-center p-1 rounded-xl bg-slate-900/90 border border-slate-800 font-mono text-xs">
                   <button
                     onClick={() => setActiveTab("commits")}
@@ -477,9 +466,6 @@ const HomePage = () => {
                 </div>
               </div>
 
-              {/* LISTING CONTENT: Standardized Layout for Commits, Repositories, and Organizations */}
-
-              {/* COMMITS (Default & Static Mobile View) */}
               {(activeTab === "commits" || window.innerWidth < 640) && (
                 <div className="space-y-3 pt-2">
                   {profile.commits?.length === 0 ? (
@@ -540,7 +526,6 @@ const HomePage = () => {
                 </div>
               )}
 
-              {/* REPOSITORIES (Desktop Tab View - Standardized to match Commits layout) */}
               {activeTab === "repos" && (
                 <div className="hidden sm:block space-y-3 pt-2">
                   {profile.repositories?.map((repo) => (
@@ -593,7 +578,6 @@ const HomePage = () => {
                 </div>
               )}
 
-              {/* ORGANIZATIONS (Desktop Tab View - Standardized to match Commits layout) */}
               {activeTab === "orgs" && (
                 <div className="hidden sm:block space-y-3 pt-2">
                   {profile.organizations?.map((org) => (
@@ -639,10 +623,8 @@ const HomePage = () => {
           </section>
         )}
 
-        {/* TECH STACK MATRIX SECTION */}
         <TechStack />
 
-        {/* README VISUAL TELEMETRY SECTION */}
         <section id="readme" className="glass-card p-4 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/10 space-y-5 sm:space-y-6 max-w-full overflow-hidden">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-800 pb-4 sm:pb-5">
             <div>
@@ -707,7 +689,6 @@ const HomePage = () => {
         </section>
       </main>
 
-      {/* FOOTER - Back-to-top button completely removed */}
       <footer className="relative z-10 border-t border-white/10 bg-[#080811]/90 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-slate-400 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
@@ -723,7 +704,6 @@ const HomePage = () => {
         </div>
       </footer>
 
-      {/* MODALS */}
       <CommandPalette
         isOpen={isCommandPaletteOpen}
         onClose={() => setIsCommandPaletteOpen(false)}

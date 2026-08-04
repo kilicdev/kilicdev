@@ -35,7 +35,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -55,7 +54,6 @@ body {
   background: rgba(56, 189, 248, 0.4);
 }
 
-/* Glassmorphism utilities */
 .glass-card {
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
@@ -92,7 +90,6 @@ body {
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
-/* Gradient Text Utilities */
 .text-gradient-cyan {
   background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
   -webkit-background-clip: text;
@@ -117,7 +114,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Keyframe animations */
 @keyframes floatSlow {
   0%, 100% {
     transform: translateY(0px) rotate(0deg);

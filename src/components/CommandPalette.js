@@ -112,8 +112,6 @@ const CommandPalette = ({ isOpen, onClose, username = "kilicdev" }) => {
         e.preventDefault();
         if (isOpen) {
           onClose();
-        } else {
-          // Open triggered by parent
         }
       }
 
@@ -148,7 +146,6 @@ const CommandPalette = ({ isOpen, onClose, username = "kilicdev" }) => {
         className="w-full max-w-2xl bg-[#0d0f1c] border border-cyan-500/30 rounded-2xl shadow-[0_0_50px_rgba(6,182,212,0.15)] overflow-hidden flex flex-col cursor-default"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Search Header */}
         <div className="flex items-center px-3.5 sm:px-4 py-3 sm:py-3.5 border-b border-slate-800/80 gap-2 sm:gap-3">
           <FiSearch className="w-4 sm:w-5 h-4 sm:h-5 text-cyan-400" />
           <input
@@ -167,7 +164,6 @@ const CommandPalette = ({ isOpen, onClose, username = "kilicdev" }) => {
           </button>
         </div>
 
-        {/* Command List */}
         <div className="max-h-80 sm:max-h-96 overflow-y-auto p-2 space-y-1 custom-scrollbar">
           {filteredCommands.length === 0 ? (
             <div className="p-8 text-center text-slate-500 text-xs sm:text-sm font-mono flex flex-col items-center gap-2">
@@ -220,7 +216,6 @@ const CommandPalette = ({ isOpen, onClose, username = "kilicdev" }) => {
           )}
         </div>
 
-        {/* Footer */}
         <div className="px-4 py-2.5 bg-slate-950/80 border-t border-slate-800/60 flex items-center justify-between text-[10px] sm:text-[11px] font-mono text-slate-400">
           <div className="flex items-center gap-3">
             <span>

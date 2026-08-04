@@ -21,7 +21,6 @@ const BackgroundCanvas = () => {
 
     window.addEventListener("resize", handleResize);
 
-    // Particle nodes for subtle cyber mesh
     const particles = Array.from({ length: 35 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -35,7 +34,6 @@ const BackgroundCanvas = () => {
     const render = () => {
       ctx.clearRect(0, 0, width, height);
 
-      // Draw subtle connections
       for (let i = 0; i < particles.length; i++) {
         const p1 = particles[i];
         p1.x += p1.vx;
@@ -80,12 +78,10 @@ const BackgroundCanvas = () => {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-      {/* Glow Orbs */}
       <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px]" />
       <div className="absolute top-1/3 -right-32 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[140px]" />
       <div className="absolute -bottom-32 left-1/3 w-[550px] h-[550px] bg-emerald-500/10 rounded-full blur-[130px]" />
 
-      {/* Cyber Grid Overlay */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{

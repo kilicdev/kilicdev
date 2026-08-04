@@ -50,8 +50,6 @@ const buildProfileData = (profile) => ({
     commits: profile.commits.items.slice(0, config.commitLimit).map(serializeCommit),
 });
 
-// ── HTTP helpers ────────────────────────────────────────────────────────────
-
 class GitHubApiError extends Error {
     constructor(status, endpoint, message, headers) { super("GitHub API " + status + " for " + endpoint + ": " + message); this.name = "GitHubApiError"; this.status = status; this.endpoint = endpoint; this.apiMessage = message; this.headers = headers; }
 }
@@ -82,8 +80,6 @@ const publicRequest = async (endpoint) => {
         throw error;
     }
 };
-
-// ── GraphQL viewer query ────────────────────────────────────────────────────
 
 const fetchGraphQLViewer = async () => {
     if (!ACCESS_TOKEN) return null;
@@ -135,10 +131,8 @@ const fetchGraphQLViewer = async () => {
     return null;
 };
 
-// ── Data fetchers ───────────────────────────────────────────────────────────
-
 const fetchCommitsFromRepos = async (username, repos = []) => {
-    if (!PRIVATE_DATA_ENABLED) return []; // Skip per-repo REST calls when unauthenticated to prevent hitting 60 req/h rate limits
+    if (!PRIVATE_DATA_ENABLED) return [];
     const map = new Map();
     const sorted = [...repos].sort((a, b) => {
         const ta = new Date(a.updated_at || a.pushedAt || 0).getTime();
@@ -242,7 +236,6 @@ const collectProfile = async (username) => {
     const orgs = await getOrganizations(username, repos).catch(() => []);
     const commits = await getRecentCommits(username, repos, viewer).catch(() => ({ total: 0, publicTotal: 0, privateTotal: 0, items: [] }));
 
-    // Sort repositories for UI display: Include personal repos & org repos sorted strictly by latest activity date
     const displayRepos = repos.filter(r => r && !r.fork).sort((a, b) => {
         const ta = new Date(a.updated_at || a.pushed_at || 0).getTime();
         const tb = new Date(b.updated_at || b.pushed_at || 0).getTime();
@@ -261,8 +254,6 @@ const collectProfile = async (username) => {
         organizations: orgs, organizationCount: orgs.length, commits, refreshedAt: new Date().toISOString(),
     };
 };
-
-// ── SVG rendering ───────────────────────────────────────────────────────────
 
 const text = (x, y, value, options = {}) => {
     const { fill = COLORS.text, size = 14, weight = 400, anchor = "start", letterSpacing = 0, family = "JetBrains Mono, SFMono-Regular, Menlo, monospace", clipPath = null } = options;
