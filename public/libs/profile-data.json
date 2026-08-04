@@ -7,10 +7,10 @@
   "totalRepos": 58,
   "publicRepos": 29,
   "organizationCount": 9,
-  "commitCount": 386,
-  "publicCommitCount": 64,
+  "commitCount": 387,
+  "publicCommitCount": 65,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-04T08:09:57.181Z",
+  "refreshedAt": "2026-08-04T08:25:24.811Z",
   "repositories": [
     {
       "name": "kilicdev",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-04T07:49:16Z",
-      "pushedAt": "2026-08-04T08:09:30Z",
+      "updatedAt": "2026-08-04T08:11:56Z",
+      "pushedAt": "2026-08-04T08:24:53Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -127,6 +127,14 @@
   ],
   "commits": [
     {
+      "sha": "3c3d9fad6b088eea92525dee9e4b47293b067585",
+      "shortSha": "3c3d9fa",
+      "message": "Add syncing state to home status UI......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/3c3d9fad6b088eea92525dee9e4b47293b067585",
+      "date": "2026-08-04T08:24:36Z"
+    },
+    {
       "sha": "3a215e9b1c4ad8b87ab3cd298788648231b28f2b",
       "shortSha": "3a215e9",
       "message": "Migrate site to Next.js static export......",
@@ -157,14 +165,6 @@
       "repository": "smsmint/test",
       "url": "https://github.com/smsmint/test/commit/f486e5422a603e99e446f77c4d8dbc2c41c059ac",
       "date": "2026-08-04T06:09:35Z"
-    },
-    {
-      "sha": "3d2188bc1c7f94372d9f7106ad2cf490149d4471",
-      "shortSha": "3d2188b",
-      "message": "Use GraphQL viewer data for profile sync......",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/3d2188bc1c7f94372d9f7106ad2cf490149d4471",
-      "date": "2026-08-04T06:07:14Z"
     }
   ]
 }
