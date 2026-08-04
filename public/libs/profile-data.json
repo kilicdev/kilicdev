@@ -1,33 +1,170 @@
 {
   "username": "kilicdev",
-  "name": "kilicdev",
+  "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 0,
-  "following": 0,
-  "publicRepos": 0,
-  "organizationCount": 2,
-  "commitCount": 183,
-  "publicCommitCount": 0,
-  "privateCommitCount": 0,
-  "refreshedAt": "2026-08-04T06:05:31.351Z",
-  "repositories": [],
-  "organizations": [
+  "followers": 955,
+  "following": 239,
+  "totalRepos": 58,
+  "publicRepos": 29,
+  "organizationCount": 9,
+  "commitCount": 383,
+  "publicCommitCount": 61,
+  "privateCommitCount": 322,
+  "refreshedAt": "2026-08-04T07:29:57.271Z",
+  "repositories": [
     {
-      "login": "itiraf-me",
-      "name": "itiraf-me",
-      "avatarUrl": "https://github.com/itiraf-me.png",
-      "url": "https://github.com/itiraf-me",
-      "lastUpdatedAt": null,
-      "latestRepository": null
+      "name": "test",
+      "fullName": "smsmint/test",
+      "description": "test for readme generator",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-04T06:10:22Z",
+      "pushedAt": "2026-08-04T06:09:36Z",
+      "url": "https://github.com/smsmint/test"
     },
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-04T06:08:02Z",
+      "pushedAt": "2026-08-04T06:07:55Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
+    {
+      "name": "web",
+      "fullName": "smsmint/web",
+      "description": "SmsMint web infrastructure",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-01T21:22:34Z",
+      "pushedAt": "2026-08-01T21:22:30Z",
+      "url": "https://github.com/smsmint/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "smsmint/backend",
+      "description": "SmsMint backend API infrastructure",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-01T21:14:08Z",
+      "pushedAt": "2026-08-01T21:14:03Z",
+      "url": "https://github.com/smsmint/backend"
+    },
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "description": "Web frontend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-01T19:28:55Z",
+      "pushedAt": "2026-08-01T19:28:52Z",
+      "url": "https://github.com/dramalar/web"
+    }
+  ],
+  "organizations": [
     {
       "login": "smsmint",
       "name": "smsmint",
-      "avatarUrl": "https://github.com/smsmint.png",
-      "url": "https://github.com/smsmint",
-      "lastUpdatedAt": null,
-      "latestRepository": null
+      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
+      "url": "https://api.github.com/orgs/smsmint",
+      "lastUpdatedAt": "2026-08-04T06:10:22Z",
+      "latestRepository": "test"
+    },
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-08-01T19:28:55Z",
+      "latestRepository": "web"
+    },
+    {
+      "login": "itiraf-me",
+      "name": "itiraf-me",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/299862939?v=4",
+      "url": "https://api.github.com/orgs/itiraf-me",
+      "lastUpdatedAt": "2026-07-29T22:58:18Z",
+      "latestRepository": "backend"
+    },
+    {
+      "login": "duct-tr",
+      "name": "duct-tr",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/283725190?v=4",
+      "url": "https://api.github.com/orgs/duct-tr",
+      "lastUpdatedAt": "2026-07-10T15:53:30Z",
+      "latestRepository": "backend"
+    },
+    {
+      "login": "inelity",
+      "name": "inelity",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/269519114?v=4",
+      "url": "https://api.github.com/orgs/inelity",
+      "lastUpdatedAt": "2026-07-10T15:53:25Z",
+      "latestRepository": "backend"
     }
   ],
-  "commits": []
+  "commits": [
+    {
+      "sha": "f486e5422a603e99e446f77c4d8dbc2c41c059ac",
+      "shortSha": "f486e54",
+      "message": "Initial commit......",
+      "repository": "smsmint/test",
+      "url": "https://github.com/smsmint/test/commit/f486e5422a603e99e446f77c4d8dbc2c41c059ac",
+      "date": "2026-08-04T06:09:35Z"
+    },
+    {
+      "sha": "3d2188bc1c7f94372d9f7106ad2cf490149d4471",
+      "shortSha": "3d2188b",
+      "message": "Use GraphQL viewer data for profile sync......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/3d2188bc1c7f94372d9f7106ad2cf490149d4471",
+      "date": "2026-08-04T06:07:14Z"
+    },
+    {
+      "sha": "b4cc0b57eb9d1927f774343053d813a7bbacd749",
+      "shortSha": "b4cc0b5",
+      "message": "Improve commit stats and token fallback logic......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/b4cc0b57eb9d1927f774343053d813a7bbacd749",
+      "date": "2026-08-04T06:00:08Z"
+    },
+    {
+      "sha": "4b2492a05b236f9e5e26b01af50b50e6c4e27f93",
+      "shortSha": "4b2492a",
+      "message": "Improve profile data fetch for orgs and commits......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/4b2492a05b236f9e5e26b01af50b50e6c4e27f93",
+      "date": "2026-08-04T05:47:21Z"
+    },
+    {
+      "sha": "26d993190ce1ec2bcf4262eb11a1f82297bbb0c7",
+      "shortSha": "26d9931",
+      "message": "Add private profile token support and visuals......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/26d993190ce1ec2bcf4262eb11a1f82297bbb0c7",
+      "date": "2026-08-04T05:38:00Z"
+    }
+  ]
 }

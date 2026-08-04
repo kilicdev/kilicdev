@@ -1,125 +1,28 @@
 const fs = require("node:fs");
 const path = require("node:path");
-
 const config = require("./config");
 
 const GITHUB_API = "https://api.github.com";
-const PERSONAL_TOKEN = (
-    process.env.GITHUB_PROFILE_TOKEN ||
-    process.env.PROFILE_TOKEN ||
-    process.env.GITHUB_PAT ||
-    process.env.GH_PAT ||
-    process.env.PAT ||
-    ""
-).trim();
-
+const cliToken = process.argv.slice(2).find(arg => arg && !arg.endsWith(".js") && !arg.startsWith("-")) || "";
+const PERSONAL_TOKEN = (cliToken || process.env.GITHUB_PROFILE_TOKEN || process.env.PROFILE_TOKEN || process.env.GITHUB_PAT || process.env.GH_PAT || process.env.PAT || "").trim();
 const ACCESS_TOKEN = PERSONAL_TOKEN || process.env.GITHUB_TOKEN || "";
 const PRIVATE_DATA_ENABLED = Boolean(PERSONAL_TOKEN);
 const MAX_REQUEST_RETRIES = 2;
 
 console.log("Generator initialized:");
 console.log("- PRIVATE_DATA_ENABLED:", PRIVATE_DATA_ENABLED);
-console.log("- Token Source:", PERSONAL_TOKEN ? "PERSONAL_TOKEN (Profile Secret)" : "GITHUB_TOKEN (Default Actions Secret)");
+console.log("- Token Status:", PERSONAL_TOKEN ? `AUTHENTICATED (${PERSONAL_TOKEN.slice(0, 4)}...${PERSONAL_TOKEN.slice(-4)})` : "UNAUTHENTICATED (Public Only)");
 
-const COLORS = {
-    background: "#08060b",
-    panel: "#110b14",
-    panelAlt: "#160d1a",
-    line: "#3a1d3f",
-    text: "#fff4f6",
-    muted: "#b58c9d",
-    coral: "#ff687b",
-    pink: "#ff9dad",
-    purple: "#b57aff",
-    green: "#8ce3b0",
-};
+const COLORS = { background: "#08060b", panel: "#110b14", panelAlt: "#160d1a", line: "#3a1d3f", text: "#fff4f6", muted: "#b58c9d", coral: "#ff687b", pink: "#ff9dad", purple: "#b57aff", green: "#8ce3b0" };
 
-const escapeXml = (value = "") => String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
-
-const shorten = (value = "", limit = 36) => {
-    const text = String(value).replace(/\s+/g, " ").trim();
-    return text.length > limit ? text.slice(0, limit - 1) + "…" : text;
-};
-
-const formatCount = (value) => {
-    const count = Number(value) || 0;
-    if (count >= 1000000) return (count / 1000000).toFixed(1) + "M";
-    if (count >= 1000) return (count / 1000).toFixed(1) + "K";
-    return String(count);
-};
-
-const formatRelativeTime = (dateValue, now = Date.now()) => {
-    if (dateValue == null || dateValue === "") return "—";
-
-    const timestamp = new Date(dateValue).getTime();
-    if (Number.isNaN(timestamp)) return "—";
-
-    const elapsed = Math.max(0, now - timestamp);
-    const minutes = Math.floor(elapsed / 60000);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
-
-    if (minutes < 1) return "just now";
-    if (hours < 1) return minutes + "m ago";
-    if (days < 1) return hours + "h ago";
-    if (days < 30) return days + "d ago";
-    return new Intl.DateTimeFormat("en", { month: "short", day: "numeric" }).format(new Date(dateValue));
-};
-
-const languageColor = (language) => ({
-    JavaScript: "#f7df1e",
-    TypeScript: "#3178c6",
-    Python: "#8bc34a",
-    Java: "#f89820",
-    PHP: "#777bb4",
-    Swift: "#ff8a65",
-    Kotlin: "#a97bff",
-    HTML: "#e44d26",
-    CSS: "#563d7c",
-}[language] || COLORS.pink);
-
-const languageLabel = (language) => ({
-    JavaScript: "JS",
-    TypeScript: "TS",
-    Python: "PY",
-    Java: "JAVA",
-    PHP: "PHP",
-    Swift: "SWIFT",
-    Kotlin: "KT",
-    HTML: "HTML",
-    CSS: "CSS",
-}[language] || shorten(language, 5));
-
-const cleanUrl = (value) => typeof value === "string" && /^https?:\/\//.test(value) ? value : null;
-
-const serializeRepository = (repository = {}) => ({
-    name: repository.name || "unknown",
-    fullName: repository.full_name || repository.fullName || repository.name || "unknown",
-    description: repository.description || "",
-    language: repository.language || repository.primaryLanguage?.name || "",
-    stars: repository.stargazers_count || repository.stargazerCount || 0,
-    forks: repository.forks_count || repository.forkCount || 0,
-    watchers: repository.watchers_count || repository.watcherCount || 0,
-    openIssues: repository.open_issues_count || 0,
-    private: repository.private === true || repository.isPrivate === true,
-    updatedAt: repository.updated_at || repository.updatedAt || repository.pushed_at || repository.pushedAt || null,
-    pushedAt: repository.pushed_at || repository.pushedAt || null,
-    url: cleanUrl(repository.html_url || repository.url),
-});
-
-const serializeOrganization = (organization = {}) => ({
-    login: organization.login || organization.name || "unknown",
-    name: organization.name || organization.login || "unknown",
-    avatarUrl: cleanUrl(organization.avatar_url || organization.avatarUrl) || ("https://github.com/" + (organization.login || "github") + ".png"),
-    url: cleanUrl(organization.html_url || organization.url) || ("https://github.com/" + (organization.login || "")),
-    lastUpdatedAt: organization.lastUpdatedAt || null,
-    latestRepository: organization.latestRepository || null,
-});
+const escapeXml = (v = "") => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+const shorten = (v = "", limit = 36) => { const t = String(v).replace(/\s+/g, " ").trim(); return t.length > limit ? t.slice(0, limit - 1) + "…" : t; };
+const formatCount = (v) => { const c = Number(v) || 0; if (c >= 1e6) return (c / 1e6).toFixed(1) + "M"; if (c >= 1e3) return (c / 1e3).toFixed(1) + "K"; return String(c); };
+const formatRelativeTime = (d, now = Date.now()) => { if (d == null || d === "") return "—"; const ts = new Date(d).getTime(); if (Number.isNaN(ts)) return "—"; const e = Math.max(0, now - ts); const m = Math.floor(e / 6e4); const h = Math.floor(m / 60); const dy = Math.floor(h / 24); if (m < 1) return "just now"; if (h < 1) return m + "m ago"; if (dy < 1) return h + "h ago"; if (dy < 30) return dy + "d ago"; return new Intl.DateTimeFormat("en", { month: "short", day: "numeric" }).format(new Date(d)); };
+const languageColor = (l) => ({ JavaScript: "#f7df1e", TypeScript: "#3178c6", Python: "#8bc34a", Java: "#f89820", PHP: "#777bb4", Swift: "#ff8a65", Kotlin: "#a97bff", HTML: "#e44d26", CSS: "#563d7c" }[l] || COLORS.pink);
+const languageLabel = (l) => ({ JavaScript: "JS", TypeScript: "TS", Python: "PY", Java: "JAVA", PHP: "PHP", Swift: "SWIFT", Kotlin: "KT", HTML: "HTML", CSS: "CSS" }[l] || shorten(l, 5));
+const cleanUrl = (v) => typeof v === "string" && /^https?:\/\//.test(v) ? v : null;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const sanitizeCommitMessage = (value = "", limit = 50) => {
     const text = String(value || "").split("\n")[0].trim();
@@ -128,661 +31,257 @@ const sanitizeCommitMessage = (value = "", limit = 50) => {
     return truncated + "...";
 };
 
-const serializeCommit = (commit = {}) => ({
-    sha: commit.sha || "",
-    shortSha: commit.sha ? commit.sha.slice(0, 7) : "",
-    message: sanitizeCommitMessage(commit.message, 50),
-    repository: commit.repository || "unknown/repository",
-    url: cleanUrl(commit.url),
-    date: commit.date || null,
-});
+const serializeRepository = (r = {}) => ({ name: r.name || "unknown", fullName: r.full_name || r.fullName || r.name || "unknown", description: r.description || "", language: r.language || r.primaryLanguage?.name || "", stars: r.stargazers_count || r.stargazerCount || 0, forks: r.forks_count || r.forkCount || 0, watchers: r.watchers_count || 0, openIssues: r.open_issues_count || 0, private: r.private === true || r.isPrivate === true, updatedAt: r.updated_at || r.updatedAt || r.pushed_at || r.pushedAt || null, pushedAt: r.pushed_at || r.pushedAt || null, url: cleanUrl(r.html_url || r.url) });
+const serializeOrganization = (o = {}) => ({ login: o.login || o.name || "unknown", name: o.name || o.login || "unknown", avatarUrl: cleanUrl(o.avatar_url || o.avatarUrl) || ("https://github.com/" + (o.login || "github") + ".png"), url: cleanUrl(o.html_url || o.url) || ("https://github.com/" + (o.login || "")), lastUpdatedAt: o.lastUpdatedAt || null, latestRepository: o.latestRepository || null });
+const serializeCommit = (c = {}) => ({ sha: c.sha || "", shortSha: c.sha ? c.sha.slice(0, 7) : "", message: sanitizeCommitMessage(c.message, 50), repository: c.repository || "unknown/repository", url: cleanUrl(c.url), date: c.date || null });
 
 const buildProfileData = (profile) => ({
-    username: profile.username,
-    name: profile.name,
-    bio: profile.bio,
-    followers: profile.followers,
-    following: profile.following,
+    username: profile.username, name: profile.name, bio: profile.bio,
+    followers: profile.followers, following: profile.following,
+    totalRepos: profile.totalRepos || profile.repositories.length,
     publicRepos: profile.publicRepos,
     organizationCount: profile.organizations.length || profile.organizationCount,
-    commitCount: profile.commits.total || profile.commits.items.length || 183,
+    commitCount: profile.commits.total || profile.commits.items.length,
     publicCommitCount: profile.commits.publicTotal || 0,
     privateCommitCount: profile.commits.privateTotal || 0,
     refreshedAt: profile.refreshedAt,
     repositories: profile.repositories.map(serializeRepository),
     organizations: profile.organizations.slice(0, config.organizationLimit).map(serializeOrganization),
-    commits: profile.commits.items.map(serializeCommit),
+    commits: profile.commits.items.slice(0, config.commitLimit).map(serializeCommit),
 });
 
-const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+// ── HTTP helpers ────────────────────────────────────────────────────────────
 
 class GitHubApiError extends Error {
-    constructor(status, endpoint, message, headers) {
-        super("GitHub API " + status + " for " + endpoint + ": " + message);
-        this.name = "GitHubApiError";
-        this.status = status;
-        this.endpoint = endpoint;
-        this.apiMessage = message;
-        this.headers = headers;
-    }
+    constructor(status, endpoint, message, headers) { super("GitHub API " + status + " for " + endpoint + ": " + message); this.name = "GitHubApiError"; this.status = status; this.endpoint = endpoint; this.apiMessage = message; this.headers = headers; }
 }
-
-const isRateLimitError = (status, message, headers) => status === 429 || (
-    status === 403 && (
-        headers.get("x-ratelimit-remaining") === "0" ||
-        /rate limit|secondary rate|abuse detection|too many requests/i.test(message)
-    )
-);
-
-const isRateLimitedApiError = (error) => error && isRateLimitError(
-    error.status,
-    error.apiMessage || error.message || "",
-    error.headers || new Headers()
-);
-
-const retryDelay = (response, attempt) => {
-    const retryAfter = Number(response.headers.get("retry-after"));
-    if (Number.isFinite(retryAfter) && retryAfter > 0) return retryAfter * 1000;
-
-    const remaining = response.headers.get("x-ratelimit-remaining");
-    const resetAt = Number(response.headers.get("x-ratelimit-reset"));
-    if (remaining === "0" && Number.isFinite(resetAt)) {
-        return Math.max(0, resetAt * 1000 - Date.now());
-    }
-
-    return Math.max(60000, 1000 * 2 ** attempt);
-};
+const isRateLimitError = (s, m, h) => s === 429 || (s === 403 && (h.get("x-ratelimit-remaining") === "0" || /rate limit|secondary rate|abuse detection|too many requests/i.test(m)));
+const isRateLimitedApiError = (e) => e && isRateLimitError(e.status, e.apiMessage || e.message || "", e.headers || new Headers());
 
 const request = async (endpoint, options = {}) => {
-    const { authenticated = true, accept } = options;
-    const headers = {
-        Accept: accept || "application/vnd.github.cloak-preview+json, application/vnd.github+json",
-        "User-Agent": "kilicdev-readme-generator",
-        "X-GitHub-Api-Version": "2022-11-28",
-    };
-
+    const { authenticated = true } = options;
+    const headers = { Accept: "application/vnd.github+json", "User-Agent": "kilicdev-readme-generator", "X-GitHub-Api-Version": "2022-11-28" };
     if (ACCESS_TOKEN && authenticated) headers.Authorization = "Bearer " + ACCESS_TOKEN;
-
-    for (let attempt = 0; attempt <= MAX_REQUEST_RETRIES; attempt += 1) {
-        const response = await fetch(GITHUB_API + endpoint, { headers });
-        const body = await response.text();
-        let payload = {};
-        try {
-            payload = body ? JSON.parse(body) : {};
-        } catch {
-            payload = { message: body || response.statusText };
-        }
-
-        if (response.ok) return payload;
-
-        const message = payload.message || response.statusText || "Unknown error";
-        if (!isRateLimitError(response.status, message, response.headers) || attempt === MAX_REQUEST_RETRIES) {
-            throw new GitHubApiError(response.status, endpoint, message, response.headers);
-        }
-
-        const delay = retryDelay(response, attempt);
-        if (delay > 60000) {
-            throw new GitHubApiError(response.status, endpoint, message + "; retry after " + Math.ceil(delay / 1000) + "s", response.headers);
-        }
-        console.warn("GitHub API rate limit on " + endpoint + "; retrying in " + Math.ceil(delay / 1000) + "s");
-        await sleep(delay);
+    for (let attempt = 0; attempt <= MAX_REQUEST_RETRIES; attempt++) {
+        const res = await fetch(GITHUB_API + endpoint, { headers });
+        const body = await res.text();
+        let payload = {}; try { payload = body ? JSON.parse(body) : {}; } catch { payload = { message: body || res.statusText }; }
+        if (res.ok) return payload;
+        const msg = payload.message || res.statusText || "Unknown error";
+        if (!isRateLimitError(res.status, msg, res.headers) || attempt === MAX_REQUEST_RETRIES) throw new GitHubApiError(res.status, endpoint, msg, res.headers);
+        const ra = Number(res.headers.get("retry-after")); const delay = (Number.isFinite(ra) && ra > 0) ? ra * 1000 : Math.max(60000, 1000 * 2 ** attempt);
+        if (delay > 60000) throw new GitHubApiError(res.status, endpoint, msg, res.headers);
+        console.warn("Rate limit on " + endpoint + "; retry in " + Math.ceil(delay / 1000) + "s"); await sleep(delay);
     }
-
-    throw new Error("GitHub API request failed unexpectedly for " + endpoint);
+    throw new Error("Request failed for " + endpoint);
 };
 
 const publicRequest = async (endpoint) => {
-    try {
-        return await request(endpoint);
-    } catch (error) {
-        const canUseAnonymousFallback = error.status === 401 ||
-            (error.status === 403 && isRateLimitedApiError(error) === false);
-        if (canUseAnonymousFallback) return request(endpoint, { authenticated: false });
+    try { return await request(endpoint); } catch (error) {
+        if (error.status === 401 || (error.status === 403 && !isRateLimitedApiError(error))) return request(endpoint, { authenticated: false });
         throw error;
     }
 };
 
-// Official GitHub GraphQL API viewer query (fetches private repos & private commits with PAT)
+// ── GraphQL viewer query ────────────────────────────────────────────────────
+
 const fetchGraphQLViewer = async () => {
     if (!ACCESS_TOKEN) return null;
-    const query = `
-      query {
+    const oneYearAgo = new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString();
+    const query = `query($from: DateTime!) {
         viewer {
-          login
-          name
-          bio
-          avatarUrl
-          followers { totalCount }
-          following { totalCount }
-          contributionsCollection {
-            totalCommitContributions
-            restrictedContributionsCount
-            commitContributionsByRepository(maxRepositories: 100) {
-              repository {
-                name
-                nameWithOwner
-                isPrivate
-                description
-                url
-                updatedAt
-                pushedAt
-                primaryLanguage { name }
-                stargazerCount
-                forkCount
-              }
-            }
-          }
-          repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER], orderBy: {field: UPDATED_AT, direction: DESC}) {
-            totalCount
-            nodes {
-              name
-              nameWithOwner
-              isPrivate
-              description
-              url
-              updatedAt
-              pushedAt
-              primaryLanguage { name }
-              stargazerCount
-              forkCount
-              defaultBranchRef {
-                target {
-                  ... on Commit {
-                    history(first: 15) {
-                      nodes {
-                        oid
-                        messageHeadline
-                        message
-                        committedDate
-                        url
-                      }
-                    }
-                  }
+            login name bio
+            followers { totalCount }
+            following { totalCount }
+            contributionsCollection(from: $from) { totalCommitContributions restrictedContributionsCount }
+            repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER], orderBy: {field: UPDATED_AT, direction: DESC}) {
+                nodes {
+                    name nameWithOwner isPrivate isFork description url updatedAt pushedAt
+                    primaryLanguage { name } stargazerCount forkCount
+                    owner { __typename login avatarUrl }
                 }
-              }
             }
-          }
+            organizations(first: 50) {
+                nodes { login name avatarUrl }
+            }
         }
-      }
-    `;
-
+        privateSearch: search(query: "is:private", type: REPOSITORY, first: 100) {
+            nodes {
+                ... on Repository {
+                    name nameWithOwner isPrivate isFork description url updatedAt pushedAt
+                    primaryLanguage { name } stargazerCount forkCount
+                    owner { __typename login avatarUrl }
+                }
+            }
+        }
+    }`;
     try {
-        const res = await fetch("https://api.github.com/graphql", {
-            method: "POST",
-            headers: {
-                Authorization: "Bearer " + ACCESS_TOKEN,
-                "Content-Type": "application/json",
-                "User-Agent": "kilicdev-readme-generator",
-            },
-            body: JSON.stringify({ query }),
-        });
+        const res = await fetch("https://api.github.com/graphql", { method: "POST", headers: { Authorization: "Bearer " + ACCESS_TOKEN, "Content-Type": "application/json", "User-Agent": "kilicdev-readme-generator" }, body: JSON.stringify({ query, variables: { from: oneYearAgo } }) });
         const json = await res.json();
-        if (json.data && json.data.viewer) return json.data.viewer;
-        if (json.errors) console.warn("GraphQL errors:", JSON.stringify(json.errors));
-    } catch (err) {
-        console.warn("GraphQL query failed: " + err.message);
-    }
+        if (json.data?.viewer) {
+            const v = json.data.viewer;
+            const repoNodes = v.repositories?.nodes || [];
+            const privNodes = (json.data?.privateSearch?.nodes || []).filter(Boolean);
+            const nodeMap = new Map();
+            for (const n of [...repoNodes, ...privNodes]) {
+                if (n?.nameWithOwner) nodeMap.set(n.nameWithOwner.toLowerCase(), n);
+            }
+            v._allNodes = [...nodeMap.values()];
+            console.log(`[GraphQL] Repos found: ${v._allNodes.length} (${v._allNodes.filter(r => r.isPrivate).length} private)`);
+            return v;
+        }
+        if (json.errors) console.warn("[GraphQL] Errors:", JSON.stringify(json.errors));
+    } catch (err) { console.warn("[GraphQL] " + err.message); }
     return null;
 };
 
-const getRecentCommitsFromEvents = async (username) => {
-    const endpoint = PRIVATE_DATA_ENABLED ? "/user/events?per_page=100" : "/users/" + encodeURIComponent(username) + "/events/public?per_page=100";
-    let events = [];
-    try {
-        events = await request(endpoint);
-    } catch {
-        events = await publicRequest("/users/" + encodeURIComponent(username) + "/events/public?per_page=100").catch(() => []);
-    }
-    const commits = [];
+// ── Data fetchers ───────────────────────────────────────────────────────────
 
-    if (Array.isArray(events)) {
-        for (const event of events) {
-            if (event.type !== "PushEvent" || !event.payload?.commits) continue;
+const fetchCommitsFromRepos = async (username, repos = []) => {
+    if (!PRIVATE_DATA_ENABLED) return []; // Skip per-repo REST calls when unauthenticated to prevent hitting 60 req/h rate limits
+    const map = new Map();
+    const sorted = [...repos].sort((a, b) => {
+        const ta = new Date(a.updated_at || a.pushedAt || 0).getTime();
+        const tb = new Date(b.updated_at || b.pushedAt || 0).getTime();
+        return tb - ta;
+    }).slice(0, 20);
 
-            for (const commit of [...event.payload.commits].reverse()) {
-                commits.push({
-                    sha: commit.sha,
-                    message: sanitizeCommitMessage(commit.message, 50),
-                    repository: event.repo?.name || "unknown/repository",
-                    url: "https://github.com/" + event.repo?.name + "/commit/" + commit.sha,
-                    date: event.created_at,
-                });
-            }
-        }
-    }
-
-    return commits;
-};
-
-const commitFromSearchItem = (item) => ({
-    sha: item.sha,
-    message: sanitizeCommitMessage(item.commit?.message, 50),
-    repository: item.repository?.full_name || "unknown/repository",
-    url: item.html_url,
-    date: item.commit?.author?.date || item.commit?.committer?.date,
-});
-
-const getRecentCommitsFromRepos = async (username, repositories = []) => {
-    const commitMap = new Map();
-    const topRepos = repositories.slice(0, 15);
-
-    await Promise.all(topRepos.map(async (repo) => {
-        const repoFullName = repo.full_name || repo.fullName || repo.name;
-        if (!repoFullName) return;
+    await Promise.all(sorted.map(async (repo) => {
+        const fn = repo.full_name || repo.nameWithOwner || "";
+        if (!fn || !fn.includes("/")) return;
         try {
-            const repoCommits = await request("/repos/" + repoFullName + "/commits?author=" + encodeURIComponent(username) + "&per_page=10");
-            if (Array.isArray(repoCommits)) {
-                for (const item of repoCommits) {
-                    if (item && item.sha && !commitMap.has(item.sha)) {
-                        commitMap.set(item.sha, {
-                            sha: item.sha,
-                            message: sanitizeCommitMessage(item.commit?.message, 50),
-                            repository: repoFullName,
-                            url: item.html_url || ("https://github.com/" + repoFullName + "/commit/" + item.sha),
-                            date: item.commit?.author?.date || item.commit?.committer?.date,
-                        });
-                    }
+            let commits = await request("/repos/" + fn + "/commits?author=" + encodeURIComponent(username) + "&per_page=10").catch(() => []);
+            if (!Array.isArray(commits) || commits.length === 0) {
+                commits = await request("/repos/" + fn + "/commits?per_page=10").catch(() => []);
+            }
+            if (Array.isArray(commits)) {
+                for (const c of commits) {
+                    if (c?.sha && !map.has(c.sha)) map.set(c.sha, { sha: c.sha, message: sanitizeCommitMessage(c.commit?.message, 50), repository: fn, url: c.html_url || ("https://github.com/" + fn + "/commit/" + c.sha), date: c.commit?.author?.date || c.commit?.committer?.date });
                 }
             }
-        } catch (err) {
-            console.warn("Direct repo commit fetch skipped for " + repoFullName + ": " + err.message);
-        }
+        } catch {}
     }));
-
-    return [...commitMap.values()];
+    return [...map.values()];
 };
 
-const getRecentCommits = async (username, repositories = [], viewerData = null) => {
-    const uniqueCommits = new Map();
-    let publicCommitsCount = 0;
-    let privateCommitsCount = 0;
+const getRecentCommits = async (username, repos = [], viewer = null) => {
+    const unique = new Map();
+    let pubCount = 0, privCount = 0;
+    if (viewer?.contributionsCollection) { pubCount = Number(viewer.contributionsCollection.totalCommitContributions) || 0; privCount = Number(viewer.contributionsCollection.restrictedContributionsCount) || 0; }
 
-    // 1. If GraphQL viewer data is available:
-    if (viewerData?.contributionsCollection) {
-        const contribs = viewerData.contributionsCollection;
-        publicCommitsCount = Number(contribs.totalCommitContributions) || 0;
-        privateCommitsCount = Number(contribs.restrictedContributionsCount) || 0;
-    }
+    try { const rc = await fetchCommitsFromRepos(username, repos); for (const c of rc) if (c.sha) unique.set(c.sha, c); } catch {}
+    try { const q = new URLSearchParams({ q: "author:" + username, sort: "author-date", order: "desc", per_page: "50" }); const sr = await request("/search/commits?" + q).catch(() => null); if (sr?.items) for (const i of sr.items) { const c = { sha: i.sha, message: sanitizeCommitMessage(i.commit?.message, 50), repository: i.repository?.full_name || "unknown/repository", url: i.html_url, date: i.commit?.author?.date || i.commit?.committer?.date }; if (c.sha && !unique.has(c.sha)) unique.set(c.sha, c); } } catch {}
 
-    // Extract commits from GraphQL repositories
-    if (viewerData?.repositories?.nodes) {
-        for (const repoNode of viewerData.repositories.nodes) {
-            const repoFullName = repoNode.nameWithOwner || repoNode.name;
-            const historyNodes = repoNode.defaultBranchRef?.target?.history?.nodes || [];
-            for (const c of historyNodes) {
-                if (c && c.oid && !uniqueCommits.has(c.oid)) {
-                    uniqueCommits.set(c.oid, {
-                        sha: c.oid,
-                        message: sanitizeCommitMessage(c.messageHeadline || c.message, 50),
-                        repository: repoFullName,
-                        url: c.url || ("https://github.com/" + repoFullName + "/commit/" + c.oid),
-                        date: c.committedDate,
-                    });
-                }
-            }
-        }
-    }
+    const items = [...unique.values()].sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime()).slice(0, config.commitLimit);
+    const total = Math.max(pubCount + privCount, unique.size);
+    return { total, publicTotal: pubCount, privateTotal: privCount, items };
+};
 
-    // 2. Fetch direct commits from top repositories (includes private repos via REST)
-    try {
-        const repoCommits = await getRecentCommitsFromRepos(username, repositories);
-        for (const commit of repoCommits) {
-            if (commit.sha && !uniqueCommits.has(commit.sha)) {
-                uniqueCommits.set(commit.sha, commit);
-            }
-        }
-    } catch (err) {
-        console.warn("Repo commits fetch warning: " + err.message);
-    }
-
-    // 3. Search API for commits with cloak-preview header
-    let searchTotal = 0;
-    try {
-        const query = new URLSearchParams({
-            q: "author:" + username,
-            sort: "author-date",
-            order: "desc",
-            per_page: "50",
+const getRepositories = async (username, viewer = null) => {
+    const map = new Map();
+    const addNode = (n) => {
+        if (!n?.nameWithOwner) return;
+        const k = n.nameWithOwner.toLowerCase();
+        const isOrg = n.owner?.__typename === "Organization";
+        map.set(k, {
+            name: n.name,
+            full_name: n.nameWithOwner,
+            nameWithOwner: n.nameWithOwner,
+            description: n.description || "",
+            language: n.primaryLanguage?.name || "",
+            stargazers_count: n.stargazerCount || 0,
+            forks_count: n.forkCount || 0,
+            private: n.isPrivate === true,
+            fork: n.isFork === true,
+            updated_at: n.updatedAt || n.pushedAt || null,
+            pushed_at: n.pushedAt || null,
+            html_url: n.url,
+            owner: n.owner ? { login: n.owner.login, avatar_url: n.owner.avatarUrl, type: isOrg ? "Organization" : "User" } : null
         });
-        let searchResults;
-        try {
-            searchResults = await request("/search/commits?" + query, {
-                accept: "application/vnd.github.cloak-preview+json, application/vnd.github+json",
-            });
-        } catch {
-            searchResults = await publicRequest("/search/commits?" + query).catch(() => ({ total_count: 0, items: [] }));
-        }
-
-        if (searchResults) {
-            searchTotal = Number(searchResults.total_count) || 0;
-            if (Array.isArray(searchResults.items)) {
-                for (const item of searchResults.items) {
-                    const commit = commitFromSearchItem(item);
-                    if (commit.sha && !uniqueCommits.has(commit.sha)) {
-                        uniqueCommits.set(commit.sha, commit);
-                    }
-                }
-            }
-        }
-    } catch (err) {
-        console.warn("Commit search API warning: " + err.message);
-    }
-
-    // 4. Fallback to events
-    try {
-        const eventCommits = await getRecentCommitsFromEvents(username).catch(() => []);
-        for (const commit of eventCommits) {
-            if (commit.sha && !uniqueCommits.has(commit.sha)) {
-                uniqueCommits.set(commit.sha, commit);
-            }
-        }
-    } catch (err) {
-        console.warn("Events fetch warning: " + err.message);
-    }
-
-    const items = [...uniqueCommits.values()]
-        .sort((left, right) => new Date(right.date || 0).getTime() - new Date(left.date || 0).getTime())
-        .slice(0, config.commitLimit);
-
-    // Sum: Public Commits + Private Commits
-    const sumContributions = publicCommitsCount + privateCommitsCount;
-    const calculatedTotal = Math.max(sumContributions, searchTotal, uniqueCommits.size, 183);
-
-    console.log(`- Public Commits Count: ${publicCommitsCount}`);
-    console.log(`- Private Commits Count: ${privateCommitsCount}`);
-    console.log(`- Total Commit Index (Public + Private Sum): ${calculatedTotal}`);
-
-    return {
-        total: calculatedTotal,
-        publicTotal: publicCommitsCount,
-        privateTotal: privateCommitsCount,
-        items: items,
     };
-};
 
-const getRepositories = async (username, viewerData = null) => {
-    const repoMap = new Map();
-
-    // 1. GraphQL viewer repositories (includes private repos!)
-    if (viewerData?.repositories?.nodes) {
-        for (const repoNode of viewerData.repositories.nodes) {
-            if (repoNode && repoNode.name) {
-                repoMap.set(repoNode.name.toLowerCase(), {
-                    name: repoNode.name,
-                    full_name: repoNode.nameWithOwner || (username + "/" + repoNode.name),
-                    description: repoNode.description || "",
-                    language: repoNode.primaryLanguage?.name || "",
-                    stargazers_count: repoNode.stargazerCount || 0,
-                    forks_count: repoNode.forkCount || 0,
-                    private: repoNode.isPrivate === true,
-                    updated_at: repoNode.updatedAt || repoNode.pushedAt || null,
-                    pushed_at: repoNode.pushedAt || null,
-                    html_url: repoNode.url,
-                });
-            }
-        }
-    }
-
-    // 2. REST API /user/repos or /users/{username}/repos
-    const publicEndpoint = "/users/" + encodeURIComponent(username) + "/repos?type=owner&sort=updated&direction=desc&per_page=100";
-    const endpoint = PRIVATE_DATA_ENABLED
-        ? "/user/repos?visibility=all&affiliation=owner,collaborator,organization_member&sort=updated&direction=desc&per_page=100"
-        : publicEndpoint;
-
-    try {
-        const repos = await request(endpoint);
-        if (Array.isArray(repos)) {
-            for (const repo of repos) {
-                if (repo && repo.name && !repoMap.has(repo.name.toLowerCase())) {
-                    repoMap.set(repo.name.toLowerCase(), repo);
-                }
-            }
-        }
-    } catch (error) {
-        console.warn("Repository list warning: " + error.message);
-        const publicRepos = await publicRequest(publicEndpoint).catch(() => []);
-        if (Array.isArray(publicRepos)) {
-            for (const repo of publicRepos) {
-                if (repo && repo.name && !repoMap.has(repo.name.toLowerCase())) {
-                    repoMap.set(repo.name.toLowerCase(), repo);
-                }
-            }
-        }
-    }
-
-    return [...repoMap.values()];
-};
-
-const getOrganizations = async (username, repositories = []) => {
-    const orgMap = new Map();
+    if (viewer?._allNodes) for (const n of viewer._allNodes) addNode(n);
 
     if (PRIVATE_DATA_ENABLED) {
         try {
-            const userOrgs = await request("/user/orgs?per_page=100");
-            if (Array.isArray(userOrgs)) {
-                for (const org of userOrgs) {
-                    if (org && org.login) orgMap.set(org.login.toLowerCase(), org);
-                }
-            }
-        } catch (err) {
-            console.warn("Authenticated /user/orgs failed: " + err.message);
-        }
-    }
-
-    try {
-        const publicOrgs = await publicRequest("/users/" + encodeURIComponent(username) + "/orgs?per_page=100");
-        if (Array.isArray(publicOrgs)) {
-            for (const org of publicOrgs) {
-                if (org && org.login && !orgMap.has(org.login.toLowerCase())) {
-                    orgMap.set(org.login.toLowerCase(), org);
-                }
-            }
-        }
-    } catch (err) {
-        console.warn("Public /users/" + username + "/orgs failed: " + err.message);
-    }
-
-    for (const repo of repositories) {
-        if (repo && repo.owner && repo.owner.type === "Organization" && repo.owner.login) {
-            const login = repo.owner.login;
-            if (!orgMap.has(login.toLowerCase())) {
-                orgMap.set(login.toLowerCase(), {
-                    login: login,
-                    avatar_url: repo.owner.avatar_url || ("https://github.com/" + login + ".png"),
-                    html_url: "https://github.com/" + login,
-                });
-            }
-        }
-    }
-
-    const defaultKnownOrgs = ["smsmint", "itiraf-me"];
-    for (const knownOrg of defaultKnownOrgs) {
-        if (!orgMap.has(knownOrg.toLowerCase())) {
-            orgMap.set(knownOrg.toLowerCase(), {
-                login: knownOrg,
-                avatar_url: "https://github.com/" + knownOrg + ".png",
-                html_url: "https://github.com/" + knownOrg,
-            });
-        }
-    }
-
-    const organizations = [...orgMap.values()];
-
-    const enriched = await Promise.all(organizations.map(async (organization) => {
-        const login = organization.login || organization.name || "";
-        try {
-            let repos;
+            const rs = await request("/user/repos?visibility=all&affiliation=owner,collaborator,organization_member&sort=updated&direction=desc&per_page=100");
+            if (Array.isArray(rs)) for (const r of rs) { const k = (r.full_name || "").toLowerCase(); if (r && k && !map.has(k)) map.set(k, r); }
+        } catch {}
+        const orgLogins = new Set();
+        for (const r of map.values()) if (r.owner?.type === "Organization" && r.owner?.login) orgLogins.add(r.owner.login);
+        try { const os = await request("/user/orgs?per_page=100"); if (Array.isArray(os)) for (const o of os) if (o?.login) orgLogins.add(o.login); } catch {}
+        for (const orgLogin of orgLogins) {
             try {
-                repos = await request("/orgs/" + encodeURIComponent(login) + "/repos?type=all&sort=updated&direction=desc&per_page=1");
-            } catch {
-                repos = await publicRequest("/orgs/" + encodeURIComponent(login) + "/repos?type=public&sort=updated&direction=desc&per_page=1").catch(() => []);
-            }
-            const latestRepository = Array.isArray(repos) ? repos[0] : null;
-            return {
-                ...organization,
-                lastUpdatedAt: latestRepository?.updated_at || latestRepository?.pushed_at || null,
-                latestRepository: latestRepository?.name || null,
-            };
-        } catch {
-            return { ...organization, lastUpdatedAt: null, latestRepository: null };
+                const orgRepos = await request("/orgs/" + encodeURIComponent(orgLogin) + "/repos?type=all&sort=updated&direction=desc&per_page=100");
+                if (Array.isArray(orgRepos)) for (const r of orgRepos) { const k = (r.full_name || "").toLowerCase(); if (r && k && !map.has(k)) map.set(k, r); }
+            } catch {}
         }
-    }));
+    } else {
+        try { const pr = await publicRequest("/users/" + encodeURIComponent(username) + "/repos?type=owner&sort=updated&direction=desc&per_page=100"); if (Array.isArray(pr)) for (const r of pr) { const k = (r.full_name || "").toLowerCase(); if (r && k && !map.has(k)) map.set(k, r); } } catch {}
+    }
 
-    return enriched.sort((left, right) => {
-        const leftTime = left.lastUpdatedAt ? new Date(left.lastUpdatedAt).getTime() : 0;
-        const rightTime = right.lastUpdatedAt ? new Date(right.lastUpdatedAt).getTime() : 0;
-        return rightTime - leftTime || (left.login || "").localeCompare(right.login || "");
-    });
+    const all = [...map.values()];
+    const privates = all.filter(r => r.private).map(r => r.full_name || r.nameWithOwner);
+    console.log(`[Repos] Total Repos: ${all.length} (${all.filter(r => !r.private).length} public, ${privates.length} private)`);
+    return all;
+};
+
+const getOrganizations = async (username, repos = []) => {
+    const map = new Map();
+    if (PRIVATE_DATA_ENABLED) { try { const os = await request("/user/orgs?per_page=100"); if (Array.isArray(os)) for (const o of os) if (o?.login) map.set(o.login.toLowerCase(), o); } catch {} }
+    try { const os = await publicRequest("/users/" + encodeURIComponent(username) + "/orgs?per_page=100"); if (Array.isArray(os)) for (const o of os) if (o?.login && !map.has(o.login.toLowerCase())) map.set(o.login.toLowerCase(), o); } catch {}
+    for (const r of repos) { const ol = r?.owner?.login; if (ol && r?.owner?.type === "Organization" && !map.has(ol.toLowerCase())) map.set(ol.toLowerCase(), { login: ol, avatar_url: r.owner.avatar_url || ("https://github.com/" + ol + ".png"), html_url: "https://github.com/" + ol }); }
+    const enriched = await Promise.all([...map.values()].map(async (org) => { const l = org.login || ""; try { const rs = await request("/orgs/" + encodeURIComponent(l) + "/repos?type=all&sort=updated&direction=desc&per_page=1").catch(() => publicRequest("/orgs/" + encodeURIComponent(l) + "/repos?type=public&sort=updated&direction=desc&per_page=1").catch(() => [])); const lt = Array.isArray(rs) ? rs[0] : null; return { ...org, lastUpdatedAt: lt?.updated_at || lt?.pushed_at || null, latestRepository: lt?.name || null }; } catch { return { ...org, lastUpdatedAt: null, latestRepository: null }; } }));
+    return enriched.sort((a, b) => (b.lastUpdatedAt ? new Date(b.lastUpdatedAt).getTime() : 0) - (a.lastUpdatedAt ? new Date(a.lastUpdatedAt).getTime() : 0));
 };
 
 const collectProfile = async (username) => {
-    // Execute GraphQL viewer query first (fetches private repos & private commits with PAT)
-    const viewerData = await fetchGraphQLViewer().catch(() => null);
-
+    const viewer = await fetchGraphQLViewer().catch(() => null);
     const userProfile = await publicRequest("/users/" + encodeURIComponent(username)).catch(() => ({}));
-    const repositories = await getRepositories(username, viewerData).catch((err) => {
-        console.warn("getRepositories failed: " + err.message);
-        return [];
-    });
-    const organizations = await getOrganizations(username, repositories).catch((err) => {
-        console.warn("getOrganizations failed: " + err.message);
-        return [];
-    });
-    const commits = await getRecentCommits(username, repositories, viewerData).catch((err) => {
-        console.warn("getRecentCommits failed: " + err.message);
-        return { total: 183, publicTotal: 0, privateTotal: 0, items: [] };
-    });
+    const repos = await getRepositories(username, viewer).catch(() => []);
+    const orgs = await getOrganizations(username, repos).catch(() => []);
+    const commits = await getRecentCommits(username, repos, viewer).catch(() => ({ total: 0, publicTotal: 0, privateTotal: 0, items: [] }));
 
-    console.log(`- Repositories fetched: ${repositories.length}`);
-    console.log(`- Organizations fetched: ${organizations.length}`);
-    console.log(`- Total Commit Index (Public + Private Sum): ${commits.total}`);
-    console.log(`- Commit items fetched: ${commits.items.length}`);
+    // Sort repositories for UI display: Include personal repos & org repos sorted strictly by latest activity date
+    const displayRepos = repos.filter(r => r && !r.fork).sort((a, b) => {
+        const ta = new Date(a.updated_at || a.pushed_at || 0).getTime();
+        const tb = new Date(b.updated_at || b.pushed_at || 0).getTime();
+        return tb - ta;
+    }).slice(0, config.repositoryLimit);
 
+    console.log(`\n=== SUMMARY === Repos:${repos.length} Orgs:${orgs.length} Commits:${commits.total} (pub=${commits.publicTotal}, priv=${commits.privateTotal})`);
     return {
-        username,
-        name: viewerData?.name || userProfile.name || username,
-        bio: viewerData?.bio || userProfile.bio || "Software Architect & Senior Full Stack Engineer",
-        followers: viewerData?.followers?.totalCount || userProfile.followers || 0,
-        following: viewerData?.following?.totalCount || userProfile.following || 0,
-        publicRepos: userProfile.public_repos ?? repositories.filter((repository) => repository.private !== true).length,
-        repositories: repositories
-            .filter((repository) => repository && repository.fork !== true)
-            .sort((left, right) => {
-                const leftUpdated = new Date(left.updated_at || left.pushed_at || 0).getTime() || 0;
-                const rightUpdated = new Date(right.updated_at || right.pushed_at || 0).getTime() || 0;
-                return rightUpdated - leftUpdated;
-            })
-            .slice(0, config.repositoryLimit),
-        organizations,
-        organizationCount: organizations.length,
-        commits,
-        refreshedAt: new Date().toISOString(),
+        username, name: viewer?.name || userProfile.name || username,
+        bio: viewer?.bio || userProfile.bio || "Software Architect & Senior Full Stack Engineer",
+        followers: viewer?.followers?.totalCount || userProfile.followers || 0,
+        following: viewer?.following?.totalCount || userProfile.following || 0,
+        totalRepos: repos.length,
+        publicRepos: userProfile.public_repos ?? repos.filter(r => !r.private).length,
+        repositories: displayRepos,
+        organizations: orgs, organizationCount: orgs.length, commits, refreshedAt: new Date().toISOString(),
     };
 };
 
+// ── SVG rendering ───────────────────────────────────────────────────────────
+
 const text = (x, y, value, options = {}) => {
-    const {
-        fill = COLORS.text,
-        size = 14,
-        weight = 400,
-        anchor = "start",
-        letterSpacing = 0,
-        family = "JetBrains Mono, SFMono-Regular, Menlo, monospace",
-        clipPath = null,
-    } = options;
-
-    return "<text x=\"" + x + "\" y=\"" + y + "\" fill=\"" + fill + "\" font-family=\"" + family +
-        "\" font-size=\"" + size + "px\" font-weight=\"" + weight + "\" text-anchor=\"" + anchor +
-        "\" letter-spacing=\"" + letterSpacing + "em\"" +
-        (clipPath ? " clip-path=\"url(#" + clipPath + ")\"" : "") + ">" + escapeXml(value) + "</text>";
+    const { fill = COLORS.text, size = 14, weight = 400, anchor = "start", letterSpacing = 0, family = "JetBrains Mono, SFMono-Regular, Menlo, monospace", clipPath = null } = options;
+    return "<text x=\"" + x + "\" y=\"" + y + "\" fill=\"" + fill + "\" font-family=\"" + family + "\" font-size=\"" + size + "px\" font-weight=\"" + weight + "\" text-anchor=\"" + anchor + "\" letter-spacing=\"" + letterSpacing + "em\"" + (clipPath ? " clip-path=\"url(#" + clipPath + ")\"" : "") + ">" + escapeXml(value) + "</text>";
 };
+const panel = (x, y, w, h, title) => "<rect x=\"" + x + "\" y=\"" + y + "\" width=\"" + w + "\" height=\"" + h + "\" rx=\"20\" fill=\"" + COLORS.panel + "\" stroke=\"" + COLORS.line + "\"/>" + text(x + 24, y + 34, title, { fill: COLORS.pink, size: 12, weight: 700, letterSpacing: 0.12 });
+const renderMetric = (x, label, value, accent) => ["<rect x=\"" + x + "\" y=\"216\" width=\"272\" height=\"84\" rx=\"16\" fill=\"" + COLORS.panelAlt + "\" stroke=\"" + COLORS.line + "\"/>", "<rect x=\"" + x + "\" y=\"216\" width=\"4\" height=\"84\" rx=\"2\" fill=\"" + accent + "\"/>", text(x + 22, 243, label, { fill: COLORS.muted, size: 11, weight: 700, letterSpacing: 0.1 }), text(x + 22, 282, value, { fill: COLORS.text, size: 29, weight: 700 })].join("");
+const numberBadge = (cx, bl, i, accent) => "<circle cx=\"" + cx + "\" cy=\"" + (bl - 4) + "\" r=\"10\" fill=\"#28152d\" stroke=\"" + accent + "\" stroke-opacity=\"0.7\"/>" + text(cx, bl, String(i + 1).padStart(2, "0"), { fill: accent, size: 9, weight: 700, anchor: "middle" });
 
-const panel = (x, y, width, height, title) => [
-    "<rect x=\"" + x + "\" y=\"" + y + "\" width=\"" + width + "\" height=\"" + height + "\" rx=\"20\" fill=\"" + COLORS.panel + "\" stroke=\"" + COLORS.line + "\"/>",
-    text(x + 24, y + 34, title, { fill: COLORS.pink, size: 12, weight: 700, letterSpacing: 0.12 }),
-].join("");
+const renderRepositories = (repositories, now) => Array.from({ length: config.repositoryLimit }, (_, i) => repositories[i] || null).map((r, i) => { const y = 620 + i * 24; const nm = r?.full_name || r?.nameWithOwner || r?.name || "—"; const lg = r?.language || ""; const up = r?.updated_at ? formatRelativeTime(r.updated_at, now) : "—"; const rf = i % 2 ? "#130b17" : "#100a13"; return ["<rect x=\"850\" y=\"" + (y - 16) + "\" width=\"334\" height=\"20\" rx=\"7\" fill=\"" + rf + "\"/>", numberBadge(854, y, i, COLORS.purple), text(878, y, shorten(nm, 26), { fill: r ? COLORS.text : COLORS.muted, size: 10, weight: 700, clipPath: "repoNameClip" }), lg ? "<circle cx=\"1084\" cy=\"" + (y - 1) + "\" r=\"3\" fill=\"" + languageColor(lg) + "\"/>" : "", text(1094, y, lg ? languageLabel(lg) : "—", { fill: COLORS.muted, size: 9, clipPath: "repoLanguageClip" }), text(1182, y, up, { fill: r ? COLORS.pink : COLORS.muted, size: 9, anchor: "end", clipPath: "repoDateClip" })].join(""); }).join("");
 
-const renderMetric = (x, label, value, accent) => [
-    "<rect x=\"" + x + "\" y=\"216\" width=\"272\" height=\"84\" rx=\"16\" fill=\"" + COLORS.panelAlt + "\" stroke=\"" + COLORS.line + "\"/>",
-    "<rect x=\"" + x + "\" y=\"216\" width=\"4\" height=\"84\" rx=\"2\" fill=\"" + accent + "\"/>",
-    text(x + 22, 243, label, { fill: COLORS.muted, size: 11, weight: 700, letterSpacing: 0.1 }),
-    text(x + 22, 282, value, { fill: COLORS.text, size: 29, weight: 700 }),
-].join("");
+const renderOrganizations = (organizations, now) => Array.from({ length: config.organizationLimit }, (_, i) => organizations[i] || null).map((o, i) => { const y = 405 + i * 24; const nm = o?.login || o?.name || "—"; const up = o?.lastUpdatedAt ? formatRelativeTime(o.lastUpdatedAt, now) : "—"; return [numberBadge(854, y, i, COLORS.purple), text(878, y, shorten(nm, 20), { fill: o ? COLORS.text : COLORS.muted, size: 12, weight: 700, clipPath: "organizationNameClip" }), text(1182, y, up, { fill: COLORS.muted, size: 9, weight: 700, anchor: "end", clipPath: "organizationDateClip" })].join(""); }).join("");
 
-const numberBadge = (cx, baseline, index, accent) => [
-    "<circle cx=\"" + cx + "\" cy=\"" + (baseline - 4) + "\" r=\"10\" fill=\"#28152d\" stroke=\"" + accent + "\" stroke-opacity=\"0.7\"/>",
-    text(cx, baseline, String(index + 1).padStart(2, "0"), { fill: accent, size: 9, weight: 700, anchor: "middle" }),
-].join("");
-
-const renderRepositories = (repositories, now) => {
-    const rows = Array.from({ length: config.repositoryLimit }, (_, index) => repositories[index] || null);
-
-    return rows.map((repository, index) => {
-        const y = 620 + index * 24;
-        const name = repository?.name || "—";
-        const language = repository?.language || "";
-        const updated = repository?.updated_at ? formatRelativeTime(repository.updated_at, now) : "—";
-        const rowFill = index % 2 ? "#130b17" : "#100a13";
-        const valueFill = repository ? COLORS.text : COLORS.muted;
-        const dateFill = repository ? COLORS.pink : COLORS.muted;
-
-        return [
-            "<rect x=\"850\" y=\"" + (y - 16) + "\" width=\"334\" height=\"20\" rx=\"7\" fill=\"" + rowFill + "\"/>",
-            numberBadge(854, y, index, COLORS.purple),
-            text(878, y, shorten(name, 18), { fill: valueFill, size: 10, weight: 700, clipPath: "repoNameClip" }),
-            language ? "<circle cx=\"1084\" cy=\"" + (y - 1) + "\" r=\"3\" fill=\"" + languageColor(language) + "\"/>" : "",
-            text(1094, y, language ? languageLabel(language) : "—", { fill: repository ? COLORS.muted : COLORS.muted, size: 9, clipPath: "repoLanguageClip" }),
-            text(1182, y, updated, { fill: dateFill, size: 9, anchor: "end", clipPath: "repoDateClip" }),
-        ].join("");
-    }).join("");
-};
-
-const renderOrganizations = (organizations, now) => {
-    const rows = Array.from({ length: config.organizationLimit }, (_, index) => organizations[index] || null);
-
-    return rows.map((organization, index) => {
-        const y = 405 + index * 24;
-        const name = organization?.login || organization?.name || "—";
-        const updated = organization?.lastUpdatedAt ? formatRelativeTime(organization.lastUpdatedAt, now) : "—";
-
-        return [
-            numberBadge(854, y, index, COLORS.purple),
-            text(878, y, shorten(name, 20), { fill: organization ? COLORS.text : COLORS.muted, size: 12, weight: 700, clipPath: "organizationNameClip" }),
-            text(1182, y, updated, { fill: organization ? COLORS.muted : COLORS.muted, size: 9, weight: 700, anchor: "end", clipPath: "organizationDateClip" }),
-        ].join("");
-    }).join("");
-};
-
-const renderCommits = (commits, now) => {
-    const rows = Array.from({ length: config.commitLimit }, (_, index) => commits[index] || null);
-
-    return rows.map((commit, index) => {
-        const y = 420 + index * 60;
-        const repository = commit?.repository ? commit.repository.split("/").pop() : "—";
-        const message = commit?.message ? sanitizeCommitMessage(commit.message, 50) : "NO COMMIT DATA";
-        const updated = commit?.date ? formatRelativeTime(commit.date, now) : "—";
-        const rowFill = index % 2 ? "#130b17" : "#100a13";
-
-        return [
-            "<rect x=\"96\" y=\"" + (y - 25) + "\" width=\"680\" height=\"46\" rx=\"11\" fill=\"" + rowFill + "\"/>",
-            text(114, y + 2, "↳", { fill: COLORS.green, size: 15, weight: 700 }),
-            text(138, y + 2, message, { fill: commit ? COLORS.text : COLORS.muted, size: 11, weight: 700, clipPath: "commitMessageClip" }),
-            text(560, y + 2, shorten(repository, 18), { fill: commit ? COLORS.muted : COLORS.muted, size: 10, clipPath: "commitRepoClip" }),
-            text(776, y + 2, updated, { fill: commit ? COLORS.pink : COLORS.muted, size: 10, anchor: "end" }),
-        ].join("");
-    }).join("");
-};
+const renderCommits = (commits, now) => Array.from({ length: config.commitLimit }, (_, i) => commits[i] || null).map((c, i) => { const y = 420 + i * 60; const repo = c?.repository || "—"; const msg = c?.message ? sanitizeCommitMessage(c.message, 50) : "NO COMMIT DATA"; const up = c?.date ? formatRelativeTime(c.date, now) : "—"; const rf = i % 2 ? "#130b17" : "#100a13"; return ["<rect x=\"96\" y=\"" + (y - 25) + "\" width=\"680\" height=\"46\" rx=\"11\" fill=\"" + rf + "\"/>", text(114, y + 2, "↳", { fill: COLORS.green, size: 15, weight: 700 }), text(138, y + 2, msg, { fill: c ? COLORS.text : COLORS.muted, size: 11, weight: 700, clipPath: "commitMessageClip" }), text(560, y + 2, shorten(repo, 22), { fill: COLORS.muted, size: 10, clipPath: "commitRepoClip" }), text(776, y + 2, up, { fill: c ? COLORS.pink : COLORS.muted, size: 10, anchor: "end" })].join(""); }).join("");
 
 const buildSvg = (profile) => {
     const now = Date.now();
-    const refreshed = new Intl.DateTimeFormat("en", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        timeZone: "UTC",
-    }).format(new Date(profile.refreshedAt));
-    const totalCommits = profile.commits.total || profile.commits.items.length || 183;
-
+    const refreshed = new Intl.DateTimeFormat("en", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(profile.refreshedAt));
+    const totalCommits = profile.commits.total || profile.commits.items.length;
     return [
         "<svg width=\"1280\" height=\"860\" viewBox=\"0 0 1280 860\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"title desc\">",
         "  <title id=\"title\">" + escapeXml(profile.name) + " GitHub activity dashboard</title>",
@@ -821,7 +320,7 @@ const buildSvg = (profile) => {
         renderMetric(72, "FOLLOWERS", formatCount(profile.followers), COLORS.coral),
         renderMetric(360, "PUBLIC REPOSITORIES", formatCount(profile.publicRepos), COLORS.pink),
         renderMetric(648, "ORGANIZATIONS", formatCount(profile.organizationCount), COLORS.purple),
-        renderMetric(936, "COMMIT INDEX", formatCount(totalCommits), COLORS.green),
+        renderMetric(936, "COMMITS", formatCount(totalCommits), COLORS.green),
         panel(72, 324, 730, 404, "RECENT COMMITS"),
         text(138, 377, "MESSAGE", { fill: COLORS.muted, size: 10, weight: 700, letterSpacing: 0.08 }),
         text(560, 377, "REPOSITORY", { fill: COLORS.muted, size: 10, weight: 700, letterSpacing: 0.08 }),
@@ -853,11 +352,5 @@ const main = async () => {
     console.log("Generated " + config.dataFile + " for @" + profile.username);
 };
 
-if (require.main === module) {
-    main().catch((error) => {
-        console.error(error);
-        process.exitCode = 1;
-    });
-}
-
+if (require.main === module) { main().catch((e) => { console.error(e); process.exitCode = 1; }); }
 module.exports = { buildProfileData, buildSvg, collectProfile, formatRelativeTime };
