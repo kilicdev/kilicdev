@@ -125,7 +125,9 @@ const HomePage = () => {
                 alt="Kılıç Sarsılmaz"
                 className="w-8 sm:w-10 h-8 sm:h-10 rounded-full object-cover border-2 border-cyan-500/40 group-hover:border-cyan-400 transition-all duration-300 group-hover:scale-105"
               />
-              <span className={`absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full border-2 border-[#080811] ${loadState === "online" ? "bg-emerald-500 animate-pulse" : "bg-rose-500"}`} />
+              <span className={`absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full border-2 border-[#080811] ${
+                loadState === "online" ? "bg-emerald-500 animate-pulse" : loadState === "syncing" ? "bg-cyan-400 animate-pulse" : "bg-rose-500"
+              }`} />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
@@ -174,11 +176,13 @@ const HomePage = () => {
               className={`hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-mono uppercase tracking-wider transition-all ${
                 loadState === "online"
                   ? "bg-emerald-950/40 border-emerald-500/30 text-emerald-300"
+                  : loadState === "syncing"
+                  ? "bg-cyan-950/40 border-cyan-500/30 text-cyan-300"
                   : "bg-rose-950/40 border-rose-500/30 text-rose-300"
               }`}
             >
               <span className="w-2 h-2 rounded-full bg-current animate-ping" />
-              <span>{loadState === "online" ? "Live Sync" : "Unavailable"}</span>
+              <span>{loadState === "online" ? "Live Sync" : loadState === "syncing" ? "Syncing..." : "Unavailable"}</span>
             </a>
           </div>
         </div>
@@ -254,8 +258,8 @@ const HomePage = () => {
                 {terminalTab === "system" && (
                   <>
                     <div className="text-cyan-400 font-semibold">$ systemctl status kilicdev-telemetry</div>
-                    <div className={loadState === "online" ? "text-emerald-400" : "text-rose-400"}>
-                      ● kilicdev-telemetry.service - {loadState === "online" ? "Active (running)" : "Offline (Data Unavailable)"}
+                    <div className={loadState === "online" ? "text-emerald-400" : loadState === "syncing" ? "text-cyan-400" : "text-rose-400"}>
+                      ● kilicdev-telemetry.service - {loadState === "online" ? "Active (running)" : loadState === "syncing" ? "Syncing (fetching)" : "Offline (Data Unavailable)"}
                     </div>
                     <div className="text-slate-400">
                       Refreshed At: {formatRefresh(profile?.refreshedAt)}
@@ -320,10 +324,16 @@ const HomePage = () => {
                   />
                 </div>
                 <span className={`absolute bottom-1 right-1 px-2 py-0.5 rounded-full border text-[10px] font-mono uppercase tracking-wider flex items-center gap-1 shadow-lg ${
-                  loadState === "online" ? "bg-emerald-950 border-emerald-500/50 text-emerald-400" : "bg-rose-950 border-rose-500/50 text-rose-400"
+                  loadState === "online"
+                    ? "bg-emerald-950 border-emerald-500/50 text-emerald-400"
+                    : loadState === "syncing"
+                    ? "bg-cyan-950 border-cyan-500/50 text-cyan-300"
+                    : "bg-rose-950 border-rose-500/50 text-rose-400"
                 }`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${loadState === "online" ? "bg-emerald-400 animate-ping" : "bg-rose-400"}`} />
-                  {loadState === "online" ? "ONLINE" : "OFFLINE"}
+                  <span className={`w-1.5 h-1.5 rounded-full ${
+                    loadState === "online" ? "bg-emerald-400 animate-ping" : loadState === "syncing" ? "bg-cyan-400 animate-ping" : "bg-rose-400"
+                  }`} />
+                  {loadState === "online" ? "ONLINE" : loadState === "syncing" ? "SYNCING" : "OFFLINE"}
                 </span>
               </div>
 
@@ -386,8 +396,23 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* OFFLINE / UNAVAILABLE STATE IF PROFILE FAILS */}
-        {loadState === "offline" || !profile ? (
+        {/* SYNCING / LOADING STATE SKELETON */}
+        {loadState === "syncing" && !profile ? (
+          <section className="glass-card p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-cyan-500/20 space-y-4 animate-pulse">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+              <div className="space-y-2">
+                <div className="h-3 w-40 bg-cyan-950/80 rounded-full border border-cyan-500/30" />
+                <div className="h-7 w-64 bg-slate-800/80 rounded-lg" />
+              </div>
+              <div className="h-9 w-64 bg-slate-900 rounded-xl border border-slate-800 hidden sm:block" />
+            </div>
+            <div className="space-y-3 pt-2">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="h-16 bg-slate-900/60 rounded-xl border border-slate-800/80" />
+              ))}
+            </div>
+          </section>
+        ) : loadState === "offline" && !profile ? (
           <section className="glass-card p-8 sm:p-12 rounded-3xl border border-rose-500/30 bg-rose-950/20 text-center space-y-4">
             <div className="w-16 h-16 rounded-full bg-rose-950 border border-rose-500/50 flex items-center justify-center mx-auto text-rose-400">
               <FiAlertTriangle className="w-8 h-8" />
