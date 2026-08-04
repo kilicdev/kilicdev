@@ -1,33 +1,169 @@
 {
   "username": "kilicdev",
-  "name": "kilicdev",
+  "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 0,
-  "following": 0,
-  "publicRepos": 0,
-  "organizationCount": 2,
-  "commitCount": 183,
-  "publicCommitCount": 0,
-  "privateCommitCount": 0,
-  "refreshedAt": "2026-08-04T06:05:31.351Z",
-  "repositories": [],
-  "organizations": [
+  "followers": 955,
+  "following": 239,
+  "publicRepos": 29,
+  "organizationCount": 9,
+  "commitCount": 382,
+  "publicCommitCount": 61,
+  "privateCommitCount": 321,
+  "refreshedAt": "2026-08-04T06:07:54.741Z",
+  "repositories": [
     {
-      "login": "itiraf-me",
-      "name": "itiraf-me",
-      "avatarUrl": "https://github.com/itiraf-me.png",
-      "url": "https://github.com/itiraf-me",
-      "lastUpdatedAt": null,
-      "latestRepository": null
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-04T06:01:00Z",
+      "pushedAt": "2026-08-04T06:07:24Z",
+      "url": "https://github.com/kilicdev/kilicdev"
     },
+    {
+      "name": "seo-indexer",
+      "fullName": "kilicdev/seo-indexer",
+      "description": "High-performance, multi-engine SEO indexing CLI tool. Automatically submits sitemap URLs to Google Indexing API, Bing, and Yandex for faster crawling and indexing.",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-07-29T23:38:02Z",
+      "pushedAt": "2026-07-29T22:13:48Z",
+      "url": "https://github.com/kilicdev/seo-indexer"
+    },
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
+      "language": "TypeScript",
+      "stars": 22,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-07-29T14:08:59Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "tiktok-auto-post",
+      "fullName": "kilicdev/tiktok-auto-post",
+      "description": "For educational purposes: a Puppeteer (real-browser) based Node.js automation that downloads video episodes from a source site and posts them to TikTok automatically. All responsibility lies with the user.",
+      "language": "JavaScript",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-06-23T09:11:22Z",
+      "pushedAt": "2026-06-20T10:52:11Z",
+      "url": "https://github.com/kilicdev/tiktok-auto-post"
+    },
+    {
+      "name": "instagram-reels-downloader",
+      "fullName": "kilicdev/instagram-reels-downloader",
+      "description": "A tiny, dependency-light Node.js CLI that downloads the Instagram Reels feed straight from the private web GraphQL endpoint. One dependency, no headless browser. Educational.",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-06-20T10:54:51Z",
+      "pushedAt": "2026-06-20T10:54:42Z",
+      "url": "https://github.com/kilicdev/instagram-reels-downloader"
+    }
+  ],
+  "organizations": [
     {
       "login": "smsmint",
       "name": "smsmint",
-      "avatarUrl": "https://github.com/smsmint.png",
-      "url": "https://github.com/smsmint",
-      "lastUpdatedAt": null,
-      "latestRepository": null
+      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
+      "url": "https://api.github.com/orgs/smsmint",
+      "lastUpdatedAt": "2026-07-28T07:23:44Z",
+      "latestRepository": ".github"
+    },
+    {
+      "login": "itiraf-me",
+      "name": "itiraf-me",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/299862939?v=4",
+      "url": "https://api.github.com/orgs/itiraf-me",
+      "lastUpdatedAt": "2026-07-05T02:37:41Z",
+      "latestRepository": ".github"
+    },
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-06-19T17:35:08Z",
+      "latestRepository": "watermark-lab"
+    },
+    {
+      "login": "FrostTR",
+      "name": "FrostTR",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/271686143?v=4",
+      "url": "https://api.github.com/orgs/FrostTR",
+      "lastUpdatedAt": "2026-06-15T17:20:29Z",
+      "latestRepository": "backend"
+    },
+    {
+      "login": "shadownoteTR",
+      "name": "shadownoteTR",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/271685600?v=4",
+      "url": "https://api.github.com/orgs/shadownoteTR",
+      "lastUpdatedAt": "2026-06-15T17:19:45Z",
+      "latestRepository": "client"
     }
   ],
-  "commits": []
+  "commits": [
+    {
+      "sha": "3d2188bc1c7f94372d9f7106ad2cf490149d4471",
+      "shortSha": "3d2188b",
+      "message": "Use GraphQL viewer data for profile sync......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/3d2188bc1c7f94372d9f7106ad2cf490149d4471",
+      "date": "2026-08-04T06:07:14Z"
+    },
+    {
+      "sha": "b4cc0b57eb9d1927f774343053d813a7bbacd749",
+      "shortSha": "b4cc0b5",
+      "message": "Improve commit stats and token fallback logic......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/b4cc0b57eb9d1927f774343053d813a7bbacd749",
+      "date": "2026-08-04T06:00:08Z"
+    },
+    {
+      "sha": "4b2492a05b236f9e5e26b01af50b50e6c4e27f93",
+      "shortSha": "4b2492a",
+      "message": "Improve profile data fetch for orgs and commits......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/4b2492a05b236f9e5e26b01af50b50e6c4e27f93",
+      "date": "2026-08-04T05:47:21Z"
+    },
+    {
+      "sha": "26d993190ce1ec2bcf4262eb11a1f82297bbb0c7",
+      "shortSha": "26d9931",
+      "message": "Add private profile token support and visuals......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/26d993190ce1ec2bcf4262eb11a1f82297bbb0c7",
+      "date": "2026-08-04T05:38:00Z"
+    },
+    {
+      "sha": "bbf6c36b71b06d1fe571743bf79ce5dec3bfdba2",
+      "shortSha": "bbf6c36",
+      "message": "Add README profile visual generator......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/bbf6c36b71b06d1fe571743bf79ce5dec3bfdba2",
+      "date": "2026-08-03T14:36:32Z"
+    }
+  ]
 }
