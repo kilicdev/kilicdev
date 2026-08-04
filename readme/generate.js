@@ -11,7 +11,7 @@ const MAX_REQUEST_RETRIES = 2;
 
 console.log("Generator initialized:");
 console.log("- PRIVATE_DATA_ENABLED:", PRIVATE_DATA_ENABLED);
-console.log("- Token Status:", PERSONAL_TOKEN ? `AUTHENTICATED (${PERSONAL_TOKEN.slice(0, 4)}...${PERSONAL_TOKEN.slice(-4)})` : "UNAUTHENTICATED (Public Only)");
+console.log("- Token Status:", PERSONAL_TOKEN ? "AUTHENTICATED (Private Access Enabled)" : "UNAUTHENTICATED (Public Only)");
 
 const COLORS = { background: "#08060b", panel: "#110b14", panelAlt: "#160d1a", line: "#3a1d3f", text: "#fff4f6", muted: "#b58c9d", coral: "#ff687b", pink: "#ff9dad", purple: "#b57aff", green: "#8ce3b0" };
 

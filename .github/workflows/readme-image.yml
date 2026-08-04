@@ -48,5 +48,6 @@ jobs:
             echo "README visual is already up to date."
             exit 0
           fi
-          git commit -m "chore: refresh README profile visual"
+          git commit -m "chore: refresh README profile visual [skip ci]"
+          git pull --rebase origin main || true
           git push
