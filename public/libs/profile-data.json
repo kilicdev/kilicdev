@@ -7,10 +7,10 @@
   "totalRepos": 58,
   "publicRepos": 29,
   "organizationCount": 9,
-  "commitCount": 387,
-  "publicCommitCount": 65,
+  "commitCount": 388,
+  "publicCommitCount": 66,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-04T08:25:24.811Z",
+  "refreshedAt": "2026-08-04T08:39:53.617Z",
   "repositories": [
     {
       "name": "kilicdev",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-04T08:11:56Z",
-      "pushedAt": "2026-08-04T08:24:53Z",
+      "updatedAt": "2026-08-04T08:25:48Z",
+      "pushedAt": "2026-08-04T08:39:29Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -127,9 +127,17 @@
   ],
   "commits": [
     {
+      "sha": "5ae2823128c84ed949721f74971a33b76bb58f52",
+      "shortSha": "5ae2823",
+      "message": "Normalize commit message truncation",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/5ae2823128c84ed949721f74971a33b76bb58f52",
+      "date": "2026-08-04T08:39:14Z"
+    },
+    {
       "sha": "3c3d9fad6b088eea92525dee9e4b47293b067585",
       "shortSha": "3c3d9fa",
-      "message": "Add syncing state to home status UI......",
+      "message": "Add syncing state to home status UI",
       "repository": "kilicdev/kilicdev",
       "url": "https://github.com/kilicdev/kilicdev/commit/3c3d9fad6b088eea92525dee9e4b47293b067585",
       "date": "2026-08-04T08:24:36Z"
@@ -137,7 +145,7 @@
     {
       "sha": "3a215e9b1c4ad8b87ab3cd298788648231b28f2b",
       "shortSha": "3a215e9",
-      "message": "Migrate site to Next.js static export......",
+      "message": "Migrate site to Next.js static export",
       "repository": "kilicdev/kilicdev",
       "url": "https://github.com/kilicdev/kilicdev/commit/3a215e9b1c4ad8b87ab3cd298788648231b28f2b",
       "date": "2026-08-04T08:09:16Z"
@@ -145,7 +153,7 @@
     {
       "sha": "f00986fef983bacf373f1d45c484bfe7e6efd607",
       "shortSha": "f00986f",
-      "message": "Update index.js......",
+      "message": "Update index.js",
       "repository": "kilicdev/kilicdev",
       "url": "https://github.com/kilicdev/kilicdev/commit/f00986fef983bacf373f1d45c484bfe7e6efd607",
       "date": "2026-08-04T07:38:13Z"
@@ -153,18 +161,10 @@
     {
       "sha": "a7a0426a223f1a545b5f4ab21c84c1344fd804fd",
       "shortSha": "a7a0426",
-      "message": "Sync live profile telemetry and offline UI......",
+      "message": "Sync live profile telemetry and offline UI",
       "repository": "kilicdev/kilicdev",
       "url": "https://github.com/kilicdev/kilicdev/commit/a7a0426a223f1a545b5f4ab21c84c1344fd804fd",
       "date": "2026-08-04T07:35:22Z"
-    },
-    {
-      "sha": "f486e5422a603e99e446f77c4d8dbc2c41c059ac",
-      "shortSha": "f486e54",
-      "message": "Initial commit......",
-      "repository": "smsmint/test",
-      "url": "https://github.com/smsmint/test/commit/f486e5422a603e99e446f77c4d8dbc2c41c059ac",
-      "date": "2026-08-04T06:09:35Z"
     }
   ]
 }
