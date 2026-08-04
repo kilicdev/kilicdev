@@ -3,7 +3,6 @@ import {
   FiGitCommit,
   FiCode,
   FiUsers,
-  FiActivity,
   FiTerminal,
   FiCopy,
   FiExternalLink,
@@ -28,13 +27,6 @@ const sanitizeCommitMessage = (value = "", limit = 50) => {
   if (!text) return "Commit updates...";
   const truncated = text.length > limit ? text.slice(0, limit).trim() : text;
   return truncated + "...";
-};
-
-const formatCount = (value) => {
-  const count = Number(value) || 0;
-  if (count >= 1000000) return `${(count / 1000000).toFixed(1)}M`;
-  if (count >= 1000) return `${(count / 1000).toFixed(1)}K`;
-  return String(count);
 };
 
 const formatRelativeTime = (value) => {
