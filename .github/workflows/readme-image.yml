@@ -34,7 +34,8 @@ jobs:
       - name: Generate profile visual
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.PAT || secrets.GH_PAT || secrets.PERSONAL_TOKEN || secrets.TOKEN || secrets.GH_TOKEN }}
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.PAT || secrets.GH_PAT || secrets.PERSONAL_TOKEN || secrets.TOKEN || secrets.GH_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: node readme/generate.js
 

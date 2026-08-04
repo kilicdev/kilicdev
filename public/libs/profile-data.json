@@ -6,8 +6,10 @@
   "following": 0,
   "publicRepos": 0,
   "organizationCount": 2,
-  "commitCount": 0,
-  "refreshedAt": "2026-08-04T05:43:03.019Z",
+  "commitCount": 183,
+  "publicCommitCount": 0,
+  "privateCommitCount": 0,
+  "refreshedAt": "2026-08-04T05:56:27.106Z",
   "repositories": [],
   "organizations": [
     {

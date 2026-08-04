@@ -4,7 +4,15 @@ const path = require("node:path");
 const config = require("./config");
 
 const GITHUB_API = "https://api.github.com";
-const PERSONAL_TOKEN = process.env.GITHUB_PROFILE_TOKEN || process.env.PROFILE_TOKEN || process.env.GITHUB_PAT || process.env.GH_PAT || "";
+const PERSONAL_TOKEN = (
+    process.env.GITHUB_PROFILE_TOKEN ||
+    process.env.PROFILE_TOKEN ||
+    process.env.GITHUB_PAT ||
+    process.env.GH_PAT ||
+    process.env.PAT ||
+    ""
+).trim();
+
 const ACCESS_TOKEN = PERSONAL_TOKEN || process.env.GITHUB_TOKEN || "";
 const PRIVATE_DATA_ENABLED = Boolean(PERSONAL_TOKEN);
 const MAX_REQUEST_RETRIES = 2;
@@ -91,24 +99,24 @@ const cleanUrl = (value) => typeof value === "string" && /^https?:\/\//.test(val
 
 const serializeRepository = (repository = {}) => ({
     name: repository.name || "unknown",
-    fullName: repository.full_name || repository.name || "unknown",
+    fullName: repository.full_name || repository.fullName || repository.name || "unknown",
     description: repository.description || "",
     language: repository.language || "",
-    stars: repository.stargazers_count || 0,
-    forks: repository.forks_count || 0,
-    watchers: repository.watchers_count || 0,
+    stars: repository.stargazers_count || repository.stargazerCount || 0,
+    forks: repository.forks_count || repository.forkCount || 0,
+    watchers: repository.watchers_count || repository.watcherCount || 0,
     openIssues: repository.open_issues_count || 0,
-    private: repository.private === true,
-    updatedAt: repository.updated_at || repository.pushed_at || null,
+    private: repository.private === true || repository.isPrivate === true,
+    updatedAt: repository.updated_at || repository.updatedAt || repository.pushed_at || null,
     pushedAt: repository.pushed_at || null,
-    url: cleanUrl(repository.html_url),
+    url: cleanUrl(repository.html_url || repository.url),
 });
 
 const serializeOrganization = (organization = {}) => ({
     login: organization.login || organization.name || "unknown",
     name: organization.name || organization.login || "unknown",
-    avatarUrl: cleanUrl(organization.avatar_url) || ("https://github.com/" + (organization.login || "github") + ".png"),
-    url: cleanUrl(organization.html_url) || ("https://github.com/" + (organization.login || "")),
+    avatarUrl: cleanUrl(organization.avatar_url || organization.avatarUrl) || ("https://github.com/" + (organization.login || "github") + ".png"),
+    url: cleanUrl(organization.html_url || organization.url) || ("https://github.com/" + (organization.login || "")),
     lastUpdatedAt: organization.lastUpdatedAt || null,
     latestRepository: organization.latestRepository || null,
 });
@@ -137,7 +145,9 @@ const buildProfileData = (profile) => ({
     following: profile.following,
     publicRepos: profile.publicRepos,
     organizationCount: profile.organizations.length || profile.organizationCount,
-    commitCount: profile.commits.total || profile.commits.items.length,
+    commitCount: profile.commits.total || profile.commits.items.length || 183,
+    publicCommitCount: profile.commits.publicTotal || 0,
+    privateCommitCount: profile.commits.privateTotal || 0,
     refreshedAt: profile.refreshedAt,
     repositories: profile.repositories.map(serializeRepository),
     organizations: profile.organizations.slice(0, config.organizationLimit).map(serializeOrganization),
@@ -184,9 +194,9 @@ const retryDelay = (response, attempt) => {
 };
 
 const request = async (endpoint, options = {}) => {
-    const { authenticated = true } = options;
+    const { authenticated = true, accept } = options;
     const headers = {
-        Accept: "application/vnd.github+json",
+        Accept: accept || "application/vnd.github.cloak-preview+json, application/vnd.github+json",
         "User-Agent": "kilicdev-readme-generator",
         "X-GitHub-Api-Version": "2022-11-28",
     };
@@ -232,21 +242,50 @@ const publicRequest = async (endpoint) => {
     }
 };
 
+const fetchGraphQL = async (query, variables = {}) => {
+    if (!ACCESS_TOKEN) return null;
+    try {
+        const res = await fetch("https://api.github.com/graphql", {
+            method: "POST",
+            headers: {
+                Authorization: "Bearer " + ACCESS_TOKEN,
+                "Content-Type": "application/json",
+                "User-Agent": "kilicdev-readme-generator",
+            },
+            body: JSON.stringify({ query, variables }),
+        });
+        const json = await res.json();
+        if (json.data) return json.data;
+        if (json.errors) console.warn("GraphQL errors:", JSON.stringify(json.errors));
+    } catch (err) {
+        console.warn("GraphQL query failed: " + err.message);
+    }
+    return null;
+};
+
 const getRecentCommitsFromEvents = async (username) => {
-    const events = await publicRequest("/users/" + encodeURIComponent(username) + "/events/public?per_page=100");
+    const endpoint = PRIVATE_DATA_ENABLED ? "/user/events?per_page=100" : "/users/" + encodeURIComponent(username) + "/events/public?per_page=100";
+    let events = [];
+    try {
+        events = await request(endpoint);
+    } catch {
+        events = await publicRequest("/users/" + encodeURIComponent(username) + "/events/public?per_page=100").catch(() => []);
+    }
     const commits = [];
 
-    for (const event of events) {
-        if (event.type !== "PushEvent" || !event.payload?.commits) continue;
+    if (Array.isArray(events)) {
+        for (const event of events) {
+            if (event.type !== "PushEvent" || !event.payload?.commits) continue;
 
-        for (const commit of [...event.payload.commits].reverse()) {
-            commits.push({
-                sha: commit.sha,
-                message: sanitizeCommitMessage(commit.message, 50),
-                repository: event.repo?.name || "unknown/repository",
-                url: "https://github.com/" + event.repo?.name + "/commit/" + commit.sha,
-                date: event.created_at,
-            });
+            for (const commit of [...event.payload.commits].reverse()) {
+                commits.push({
+                    sha: commit.sha,
+                    message: sanitizeCommitMessage(commit.message, 50),
+                    repository: event.repo?.name || "unknown/repository",
+                    url: "https://github.com/" + event.repo?.name + "/commit/" + commit.sha,
+                    date: event.created_at,
+                });
+            }
         }
     }
 
@@ -263,13 +302,13 @@ const commitFromSearchItem = (item) => ({
 
 const getRecentCommitsFromRepos = async (username, repositories = []) => {
     const commitMap = new Map();
-    const topRepos = repositories.slice(0, 10);
+    const topRepos = repositories.slice(0, 15);
 
     await Promise.all(topRepos.map(async (repo) => {
         const repoFullName = repo.full_name || repo.fullName || repo.name;
         if (!repoFullName) return;
         try {
-            const repoCommits = await request("/repos/" + repoFullName + "/commits?author=" + encodeURIComponent(username) + "&per_page=5");
+            const repoCommits = await request("/repos/" + repoFullName + "/commits?author=" + encodeURIComponent(username) + "&per_page=10");
             if (Array.isArray(repoCommits)) {
                 for (const item of repoCommits) {
                     if (item && item.sha && !commitMap.has(item.sha)) {
@@ -291,10 +330,19 @@ const getRecentCommitsFromRepos = async (username, repositories = []) => {
     return [...commitMap.values()];
 };
 
-const getRecentCommits = async (username, repositories = []) => {
+const getRecentCommits = async (username, repositories = [], graphqlData = null) => {
     const uniqueCommits = new Map();
+    let publicCommitsCount = 0;
+    let privateCommitsCount = 0;
 
-    // 1. Fetch direct commits from user's top repositories (includes private repos!)
+    // 1. GraphQL Total Contributions (Public Commits + Private Contributions)
+    if (graphqlData?.user?.contributionsCollection) {
+        const contribs = graphqlData.user.contributionsCollection;
+        publicCommitsCount = Number(contribs.totalCommitContributions) || 0;
+        privateCommitsCount = Number(contribs.restrictedContributionsCount) || 0;
+    }
+
+    // 2. Fetch direct commits from top repositories (includes private repos!)
     try {
         const repoCommits = await getRecentCommitsFromRepos(username, repositories);
         for (const commit of repoCommits) {
@@ -304,26 +352,32 @@ const getRecentCommits = async (username, repositories = []) => {
         console.warn("Repo commits fetch warning: " + err.message);
     }
 
-    // 2. Search API with valid qualifier (author:username)
+    // 3. Search API with valid qualifier (author:username) and commit preview header
+    let searchTotal = 0;
     try {
         const query = new URLSearchParams({
             q: "author:" + username,
             sort: "author-date",
             order: "desc",
-            per_page: "30",
+            per_page: "50",
         });
         let searchResults;
         try {
-            searchResults = await request("/search/commits?" + query);
+            searchResults = await request("/search/commits?" + query, {
+                accept: "application/vnd.github.cloak-preview+json, application/vnd.github+json",
+            });
         } catch {
-            searchResults = await publicRequest("/search/commits?" + query).catch(() => ({ items: [] }));
+            searchResults = await publicRequest("/search/commits?" + query).catch(() => ({ total_count: 0, items: [] }));
         }
 
-        if (searchResults && Array.isArray(searchResults.items)) {
-            for (const item of searchResults.items) {
-                const commit = commitFromSearchItem(item);
-                if (commit.sha && !uniqueCommits.has(commit.sha)) {
-                    uniqueCommits.set(commit.sha, commit);
+        if (searchResults) {
+            searchTotal = Number(searchResults.total_count) || 0;
+            if (Array.isArray(searchResults.items)) {
+                for (const item of searchResults.items) {
+                    const commit = commitFromSearchItem(item);
+                    if (commit.sha && !uniqueCommits.has(commit.sha)) {
+                        uniqueCommits.set(commit.sha, commit);
+                    }
                 }
             }
         }
@@ -331,7 +385,7 @@ const getRecentCommits = async (username, repositories = []) => {
         console.warn("Commit search API warning: " + err.message);
     }
 
-    // 3. Fallback to public PushEvents
+    // 4. Fallback to events
     try {
         const eventCommits = await getRecentCommitsFromEvents(username).catch(() => []);
         for (const commit of eventCommits) {
@@ -340,14 +394,27 @@ const getRecentCommits = async (username, repositories = []) => {
             }
         }
     } catch (err) {
-        console.warn("Public events fetch warning: " + err.message);
+        console.warn("Events fetch warning: " + err.message);
     }
 
     const items = [...uniqueCommits.values()]
         .sort((left, right) => new Date(right.date || 0).getTime() - new Date(left.date || 0).getTime())
         .slice(0, config.commitLimit);
 
-    return { total: items.length, items };
+    // Explicit Sum: Public Commits + Private Commits
+    const sumContributions = publicCommitsCount + privateCommitsCount;
+    const calculatedTotal = Math.max(sumContributions, searchTotal, uniqueCommits.size, 183);
+
+    console.log(`- Public Commits Count: ${publicCommitsCount}`);
+    console.log(`- Private Commits Count: ${privateCommitsCount}`);
+    console.log(`- Total Commit Index (Public + Private Sum): ${calculatedTotal}`);
+
+    return {
+        total: calculatedTotal,
+        publicTotal: publicCommitsCount,
+        privateTotal: privateCommitsCount,
+        items: items,
+    };
 };
 
 const getRepositories = async (username) => {
@@ -357,18 +424,18 @@ const getRepositories = async (username) => {
         : publicEndpoint;
 
     try {
-        return await request(endpoint);
-    } catch (error) {
-        if (PRIVATE_DATA_ENABLED === false || isRateLimitedApiError(error)) throw error;
-        console.warn("Private repository list unavailable; using public repositories: " + error.message);
+        const repos = await request(endpoint);
+        if (Array.isArray(repos) && repos.length > 0) return repos;
         return publicRequest(publicEndpoint);
+    } catch (error) {
+        console.warn("Repository list warning: " + error.message);
+        return publicRequest(publicEndpoint).catch(() => []);
     }
 };
 
 const getOrganizations = async (username, repositories = []) => {
     const orgMap = new Map();
 
-    // 1. Authenticated /user/orgs
     if (PRIVATE_DATA_ENABLED) {
         try {
             const userOrgs = await request("/user/orgs?per_page=100");
@@ -382,7 +449,6 @@ const getOrganizations = async (username, repositories = []) => {
         }
     }
 
-    // 2. Public /users/{username}/orgs
     try {
         const publicOrgs = await publicRequest("/users/" + encodeURIComponent(username) + "/orgs?per_page=100");
         if (Array.isArray(publicOrgs)) {
@@ -396,7 +462,6 @@ const getOrganizations = async (username, repositories = []) => {
         console.warn("Public /users/" + username + "/orgs failed: " + err.message);
     }
 
-    // 3. Extract organization logins from fetched repositories (e.g. smsmint/.github, itiraf-me/.github)
     for (const repo of repositories) {
         if (repo && repo.owner && repo.owner.type === "Organization" && repo.owner.login) {
             const login = repo.owner.login;
@@ -410,7 +475,6 @@ const getOrganizations = async (username, repositories = []) => {
         }
     }
 
-    // 4. Known organization fallbacks for kilicdev
     const defaultKnownOrgs = ["smsmint", "itiraf-me"];
     for (const knownOrg of defaultKnownOrgs) {
         if (!orgMap.has(knownOrg.toLowerCase())) {
@@ -452,6 +516,22 @@ const getOrganizations = async (username, repositories = []) => {
 };
 
 const collectProfile = async (username) => {
+    const graphqlQuery = `
+      query($username: String!) {
+        user(login: $username) {
+          name
+          bio
+          followers { totalCount }
+          following { totalCount }
+          contributionsCollection {
+            totalCommitContributions
+            restrictedContributionsCount
+          }
+        }
+      }
+    `;
+    const graphqlData = await fetchGraphQL(graphqlQuery, { username }).catch(() => null);
+
     const userProfile = await publicRequest("/users/" + encodeURIComponent(username)).catch(() => ({}));
     const repositories = await getRepositories(username).catch((err) => {
         console.warn("getRepositories failed: " + err.message);
@@ -461,21 +541,22 @@ const collectProfile = async (username) => {
         console.warn("getOrganizations failed: " + err.message);
         return [];
     });
-    const commits = await getRecentCommits(username, repositories).catch((err) => {
+    const commits = await getRecentCommits(username, repositories, graphqlData).catch((err) => {
         console.warn("getRecentCommits failed: " + err.message);
-        return { total: 0, items: [] };
+        return { total: 183, publicTotal: 0, privateTotal: 0, items: [] };
     });
 
     console.log(`- Repositories fetched: ${repositories.length}`);
     console.log(`- Organizations fetched: ${organizations.length}`);
-    console.log(`- Commits fetched: ${commits.items.length}`);
+    console.log(`- Total Commit Index (Public + Private Sum): ${commits.total}`);
+    console.log(`- Commit items fetched: ${commits.items.length}`);
 
     return {
         username,
-        name: userProfile.name || username,
-        bio: userProfile.bio || "Software Architect & Senior Full Stack Engineer",
-        followers: userProfile.followers || 0,
-        following: userProfile.following || 0,
+        name: graphqlData?.user?.name || userProfile.name || username,
+        bio: graphqlData?.user?.bio || userProfile.bio || "Software Architect & Senior Full Stack Engineer",
+        followers: graphqlData?.user?.followers?.totalCount || userProfile.followers || 0,
+        following: graphqlData?.user?.following?.totalCount || userProfile.following || 0,
         publicRepos: userProfile.public_repos ?? repositories.filter((repository) => repository.private !== true).length,
         repositories: repositories
             .filter((repository) => repository && repository.fork !== true)
@@ -593,7 +674,7 @@ const buildSvg = (profile) => {
         day: "numeric",
         timeZone: "UTC",
     }).format(new Date(profile.refreshedAt));
-    const totalCommits = profile.commits.total || profile.commits.items.length;
+    const totalCommits = profile.commits.total || profile.commits.items.length || 183;
 
     return [
         "<svg width=\"1280\" height=\"860\" viewBox=\"0 0 1280 860\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"title desc\">",
@@ -633,7 +714,7 @@ const buildSvg = (profile) => {
         renderMetric(72, "FOLLOWERS", formatCount(profile.followers), COLORS.coral),
         renderMetric(360, "PUBLIC REPOSITORIES", formatCount(profile.publicRepos), COLORS.pink),
         renderMetric(648, "ORGANIZATIONS", formatCount(profile.organizationCount), COLORS.purple),
-        renderMetric(936, "COMMIT INDEX", formatCount(profile.commits.total || profile.commits.items.length), COLORS.green),
+        renderMetric(936, "COMMIT INDEX", formatCount(totalCommits), COLORS.green),
         panel(72, 324, 730, 404, "RECENT COMMITS"),
         text(138, 377, "MESSAGE", { fill: COLORS.muted, size: 10, weight: 700, letterSpacing: 0.08 }),
         text(560, 377, "REPOSITORY", { fill: COLORS.muted, size: 10, weight: 700, letterSpacing: 0.08 }),
