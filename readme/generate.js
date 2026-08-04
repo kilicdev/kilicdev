@@ -101,14 +101,14 @@ const serializeRepository = (repository = {}) => ({
     name: repository.name || "unknown",
     fullName: repository.full_name || repository.fullName || repository.name || "unknown",
     description: repository.description || "",
-    language: repository.language || "",
+    language: repository.language || repository.primaryLanguage?.name || "",
     stars: repository.stargazers_count || repository.stargazerCount || 0,
     forks: repository.forks_count || repository.forkCount || 0,
     watchers: repository.watchers_count || repository.watcherCount || 0,
     openIssues: repository.open_issues_count || 0,
     private: repository.private === true || repository.isPrivate === true,
-    updatedAt: repository.updated_at || repository.updatedAt || repository.pushed_at || null,
-    pushedAt: repository.pushed_at || null,
+    updatedAt: repository.updated_at || repository.updatedAt || repository.pushed_at || repository.pushedAt || null,
+    pushedAt: repository.pushed_at || repository.pushedAt || null,
     url: cleanUrl(repository.html_url || repository.url),
 });
 
@@ -242,8 +242,70 @@ const publicRequest = async (endpoint) => {
     }
 };
 
-const fetchGraphQL = async (query, variables = {}) => {
+// Official GitHub GraphQL API viewer query (fetches private repos & private commits with PAT)
+const fetchGraphQLViewer = async () => {
     if (!ACCESS_TOKEN) return null;
+    const query = `
+      query {
+        viewer {
+          login
+          name
+          bio
+          avatarUrl
+          followers { totalCount }
+          following { totalCount }
+          contributionsCollection {
+            totalCommitContributions
+            restrictedContributionsCount
+            commitContributionsByRepository(maxRepositories: 100) {
+              repository {
+                name
+                nameWithOwner
+                isPrivate
+                description
+                url
+                updatedAt
+                pushedAt
+                primaryLanguage { name }
+                stargazerCount
+                forkCount
+              }
+            }
+          }
+          repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER], orderBy: {field: UPDATED_AT, direction: DESC}) {
+            totalCount
+            nodes {
+              name
+              nameWithOwner
+              isPrivate
+              description
+              url
+              updatedAt
+              pushedAt
+              primaryLanguage { name }
+              stargazerCount
+              forkCount
+              defaultBranchRef {
+                target {
+                  ... on Commit {
+                    history(first: 15) {
+                      nodes {
+                        oid
+                        messageHeadline
+                        message
+                        committedDate
+                        url
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `;
+
     try {
         const res = await fetch("https://api.github.com/graphql", {
             method: "POST",
@@ -252,10 +314,10 @@ const fetchGraphQL = async (query, variables = {}) => {
                 "Content-Type": "application/json",
                 "User-Agent": "kilicdev-readme-generator",
             },
-            body: JSON.stringify({ query, variables }),
+            body: JSON.stringify({ query }),
         });
         const json = await res.json();
-        if (json.data) return json.data;
+        if (json.data && json.data.viewer) return json.data.viewer;
         if (json.errors) console.warn("GraphQL errors:", JSON.stringify(json.errors));
     } catch (err) {
         console.warn("GraphQL query failed: " + err.message);
@@ -330,29 +392,50 @@ const getRecentCommitsFromRepos = async (username, repositories = []) => {
     return [...commitMap.values()];
 };
 
-const getRecentCommits = async (username, repositories = [], graphqlData = null) => {
+const getRecentCommits = async (username, repositories = [], viewerData = null) => {
     const uniqueCommits = new Map();
     let publicCommitsCount = 0;
     let privateCommitsCount = 0;
 
-    // 1. GraphQL Total Contributions (Public Commits + Private Contributions)
-    if (graphqlData?.user?.contributionsCollection) {
-        const contribs = graphqlData.user.contributionsCollection;
+    // 1. If GraphQL viewer data is available:
+    if (viewerData?.contributionsCollection) {
+        const contribs = viewerData.contributionsCollection;
         publicCommitsCount = Number(contribs.totalCommitContributions) || 0;
         privateCommitsCount = Number(contribs.restrictedContributionsCount) || 0;
     }
 
-    // 2. Fetch direct commits from top repositories (includes private repos!)
+    // Extract commits from GraphQL repositories
+    if (viewerData?.repositories?.nodes) {
+        for (const repoNode of viewerData.repositories.nodes) {
+            const repoFullName = repoNode.nameWithOwner || repoNode.name;
+            const historyNodes = repoNode.defaultBranchRef?.target?.history?.nodes || [];
+            for (const c of historyNodes) {
+                if (c && c.oid && !uniqueCommits.has(c.oid)) {
+                    uniqueCommits.set(c.oid, {
+                        sha: c.oid,
+                        message: sanitizeCommitMessage(c.messageHeadline || c.message, 50),
+                        repository: repoFullName,
+                        url: c.url || ("https://github.com/" + repoFullName + "/commit/" + c.oid),
+                        date: c.committedDate,
+                    });
+                }
+            }
+        }
+    }
+
+    // 2. Fetch direct commits from top repositories (includes private repos via REST)
     try {
         const repoCommits = await getRecentCommitsFromRepos(username, repositories);
         for (const commit of repoCommits) {
-            if (commit.sha) uniqueCommits.set(commit.sha, commit);
+            if (commit.sha && !uniqueCommits.has(commit.sha)) {
+                uniqueCommits.set(commit.sha, commit);
+            }
         }
     } catch (err) {
         console.warn("Repo commits fetch warning: " + err.message);
     }
 
-    // 3. Search API with valid qualifier (author:username) and commit preview header
+    // 3. Search API for commits with cloak-preview header
     let searchTotal = 0;
     try {
         const query = new URLSearchParams({
@@ -401,7 +484,7 @@ const getRecentCommits = async (username, repositories = [], graphqlData = null)
         .sort((left, right) => new Date(right.date || 0).getTime() - new Date(left.date || 0).getTime())
         .slice(0, config.commitLimit);
 
-    // Explicit Sum: Public Commits + Private Commits
+    // Sum: Public Commits + Private Commits
     const sumContributions = publicCommitsCount + privateCommitsCount;
     const calculatedTotal = Math.max(sumContributions, searchTotal, uniqueCommits.size, 183);
 
@@ -417,7 +500,30 @@ const getRecentCommits = async (username, repositories = [], graphqlData = null)
     };
 };
 
-const getRepositories = async (username) => {
+const getRepositories = async (username, viewerData = null) => {
+    const repoMap = new Map();
+
+    // 1. GraphQL viewer repositories (includes private repos!)
+    if (viewerData?.repositories?.nodes) {
+        for (const repoNode of viewerData.repositories.nodes) {
+            if (repoNode && repoNode.name) {
+                repoMap.set(repoNode.name.toLowerCase(), {
+                    name: repoNode.name,
+                    full_name: repoNode.nameWithOwner || (username + "/" + repoNode.name),
+                    description: repoNode.description || "",
+                    language: repoNode.primaryLanguage?.name || "",
+                    stargazers_count: repoNode.stargazerCount || 0,
+                    forks_count: repoNode.forkCount || 0,
+                    private: repoNode.isPrivate === true,
+                    updated_at: repoNode.updatedAt || repoNode.pushedAt || null,
+                    pushed_at: repoNode.pushedAt || null,
+                    html_url: repoNode.url,
+                });
+            }
+        }
+    }
+
+    // 2. REST API /user/repos or /users/{username}/repos
     const publicEndpoint = "/users/" + encodeURIComponent(username) + "/repos?type=owner&sort=updated&direction=desc&per_page=100";
     const endpoint = PRIVATE_DATA_ENABLED
         ? "/user/repos?visibility=all&affiliation=owner,collaborator,organization_member&sort=updated&direction=desc&per_page=100"
@@ -425,12 +531,26 @@ const getRepositories = async (username) => {
 
     try {
         const repos = await request(endpoint);
-        if (Array.isArray(repos) && repos.length > 0) return repos;
-        return publicRequest(publicEndpoint);
+        if (Array.isArray(repos)) {
+            for (const repo of repos) {
+                if (repo && repo.name && !repoMap.has(repo.name.toLowerCase())) {
+                    repoMap.set(repo.name.toLowerCase(), repo);
+                }
+            }
+        }
     } catch (error) {
         console.warn("Repository list warning: " + error.message);
-        return publicRequest(publicEndpoint).catch(() => []);
+        const publicRepos = await publicRequest(publicEndpoint).catch(() => []);
+        if (Array.isArray(publicRepos)) {
+            for (const repo of publicRepos) {
+                if (repo && repo.name && !repoMap.has(repo.name.toLowerCase())) {
+                    repoMap.set(repo.name.toLowerCase(), repo);
+                }
+            }
+        }
     }
+
+    return [...repoMap.values()];
 };
 
 const getOrganizations = async (username, repositories = []) => {
@@ -516,24 +636,11 @@ const getOrganizations = async (username, repositories = []) => {
 };
 
 const collectProfile = async (username) => {
-    const graphqlQuery = `
-      query($username: String!) {
-        user(login: $username) {
-          name
-          bio
-          followers { totalCount }
-          following { totalCount }
-          contributionsCollection {
-            totalCommitContributions
-            restrictedContributionsCount
-          }
-        }
-      }
-    `;
-    const graphqlData = await fetchGraphQL(graphqlQuery, { username }).catch(() => null);
+    // Execute GraphQL viewer query first (fetches private repos & private commits with PAT)
+    const viewerData = await fetchGraphQLViewer().catch(() => null);
 
     const userProfile = await publicRequest("/users/" + encodeURIComponent(username)).catch(() => ({}));
-    const repositories = await getRepositories(username).catch((err) => {
+    const repositories = await getRepositories(username, viewerData).catch((err) => {
         console.warn("getRepositories failed: " + err.message);
         return [];
     });
@@ -541,7 +648,7 @@ const collectProfile = async (username) => {
         console.warn("getOrganizations failed: " + err.message);
         return [];
     });
-    const commits = await getRecentCommits(username, repositories, graphqlData).catch((err) => {
+    const commits = await getRecentCommits(username, repositories, viewerData).catch((err) => {
         console.warn("getRecentCommits failed: " + err.message);
         return { total: 183, publicTotal: 0, privateTotal: 0, items: [] };
     });
@@ -553,10 +660,10 @@ const collectProfile = async (username) => {
 
     return {
         username,
-        name: graphqlData?.user?.name || userProfile.name || username,
-        bio: graphqlData?.user?.bio || userProfile.bio || "Software Architect & Senior Full Stack Engineer",
-        followers: graphqlData?.user?.followers?.totalCount || userProfile.followers || 0,
-        following: graphqlData?.user?.following?.totalCount || userProfile.following || 0,
+        name: viewerData?.name || userProfile.name || username,
+        bio: viewerData?.bio || userProfile.bio || "Software Architect & Senior Full Stack Engineer",
+        followers: viewerData?.followers?.totalCount || userProfile.followers || 0,
+        following: viewerData?.following?.totalCount || userProfile.following || 0,
         publicRepos: userProfile.public_repos ?? repositories.filter((repository) => repository.private !== true).length,
         repositories: repositories
             .filter((repository) => repository && repository.fork !== true)
