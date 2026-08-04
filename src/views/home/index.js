@@ -25,10 +25,10 @@ import TechStack from "../../components/TechStack";
 import ImageLightbox from "../../components/ImageLightbox";
 
 const sanitizeCommitMessage = (value = "", limit = 50) => {
-  const text = String(value || "").split("\n")[0].trim();
-  if (!text) return "Commit updates...";
-  const truncated = text.length > limit ? text.slice(0, limit).trim() : text;
-  return truncated + "...";
+  const text = String(value || "").split("\n")[0].trim().replace(/\.\.\.+$/g, "").trim();
+  if (!text) return "Commit updates";
+  if (text.length > limit) return text.slice(0, limit - 3).trim() + "...";
+  return text;
 };
 
 const formatRelativeTime = (value) => {

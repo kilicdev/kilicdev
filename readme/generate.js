@@ -16,7 +16,7 @@ console.log("- Token Status:", PERSONAL_TOKEN ? "AUTHENTICATED (Private Access E
 const COLORS = { background: "#08060b", panel: "#110b14", panelAlt: "#160d1a", line: "#3a1d3f", text: "#fff4f6", muted: "#b58c9d", coral: "#ff687b", pink: "#ff9dad", purple: "#b57aff", green: "#8ce3b0" };
 
 const escapeXml = (v = "") => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
-const shorten = (v = "", limit = 36) => { const t = String(v).replace(/\s+/g, " ").trim(); return t.length > limit ? t.slice(0, limit - 1) + "…" : t; };
+const shorten = (v = "", limit = 36) => { const t = String(v).replace(/\s+/g, " ").trim().replace(/\.\.\.+$/g, "").trim(); return t.length > limit ? t.slice(0, limit - 3).trim() + "..." : t; };
 const formatCount = (v) => { const c = Number(v) || 0; if (c >= 1e6) return (c / 1e6).toFixed(1) + "M"; if (c >= 1e3) return (c / 1e3).toFixed(1) + "K"; return String(c); };
 const formatRelativeTime = (d, now = Date.now()) => { if (d == null || d === "") return "—"; const ts = new Date(d).getTime(); if (Number.isNaN(ts)) return "—"; const e = Math.max(0, now - ts); const m = Math.floor(e / 6e4); const h = Math.floor(m / 60); const dy = Math.floor(h / 24); if (m < 1) return "just now"; if (h < 1) return m + "m ago"; if (dy < 1) return h + "h ago"; if (dy < 30) return dy + "d ago"; return new Intl.DateTimeFormat("en", { month: "short", day: "numeric" }).format(new Date(d)); };
 const languageColor = (l) => ({ JavaScript: "#f7df1e", TypeScript: "#3178c6", Python: "#8bc34a", Java: "#f89820", PHP: "#777bb4", Swift: "#ff8a65", Kotlin: "#a97bff", HTML: "#e44d26", CSS: "#563d7c" }[l] || COLORS.pink);
@@ -25,10 +25,10 @@ const cleanUrl = (v) => typeof v === "string" && /^https?:\/\//.test(v) ? v : nu
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const sanitizeCommitMessage = (value = "", limit = 50) => {
-    const text = String(value || "").split("\n")[0].trim();
-    if (!text) return "Commit updates...";
-    const truncated = text.length > limit ? text.slice(0, limit).trim() : text;
-    return truncated + "...";
+    const text = String(value || "").split("\n")[0].trim().replace(/\.\.\.+$/g, "").trim();
+    if (!text) return "Commit updates";
+    if (text.length > limit) return text.slice(0, limit - 3).trim() + "...";
+    return text;
 };
 
 const serializeRepository = (r = {}) => ({ name: r.name || "unknown", fullName: r.full_name || r.fullName || r.name || "unknown", description: r.description || "", language: r.language || r.primaryLanguage?.name || "", stars: r.stargazers_count || r.stargazerCount || 0, forks: r.forks_count || r.forkCount || 0, watchers: r.watchers_count || 0, openIssues: r.open_issues_count || 0, private: r.private === true || r.isPrivate === true, updatedAt: r.updated_at || r.updatedAt || r.pushed_at || r.pushedAt || null, pushedAt: r.pushed_at || r.pushedAt || null, url: cleanUrl(r.html_url || r.url) });
