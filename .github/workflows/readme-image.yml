@@ -9,6 +9,7 @@ on:
     paths:
       - "README.md"
       - "readme/**"
+      - "src/**"
       - ".github/workflows/readme-image.yml"
 
 permissions:
@@ -33,6 +34,7 @@ jobs:
       - name: Generate profile visual
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: node readme/generate.js
 
@@ -40,7 +42,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/libs/readme-stats.svg
+          git add public/libs/readme-stats.svg public/libs/profile-data.json
           if git diff --cached --quiet; then
             echo "README visual is already up to date."
             exit 0
