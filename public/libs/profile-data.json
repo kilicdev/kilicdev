@@ -7,11 +7,25 @@
   "totalRepos": 58,
   "publicRepos": 29,
   "organizationCount": 9,
-  "commitCount": 383,
-  "publicCommitCount": 61,
+  "commitCount": 385,
+  "publicCommitCount": 63,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-04T07:29:57.271Z",
+  "refreshedAt": "2026-08-04T07:38:48.137Z",
   "repositories": [
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-04T07:37:12Z",
+      "pushedAt": "2026-08-04T07:38:24Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "test",
       "fullName": "smsmint/test",
@@ -25,20 +39,6 @@
       "updatedAt": "2026-08-04T06:10:22Z",
       "pushedAt": "2026-08-04T06:09:36Z",
       "url": "https://github.com/smsmint/test"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-04T06:08:02Z",
-      "pushedAt": "2026-08-04T06:07:55Z",
-      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "web",
@@ -127,6 +127,22 @@
   ],
   "commits": [
     {
+      "sha": "f00986fef983bacf373f1d45c484bfe7e6efd607",
+      "shortSha": "f00986f",
+      "message": "Update index.js......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/f00986fef983bacf373f1d45c484bfe7e6efd607",
+      "date": "2026-08-04T07:38:13Z"
+    },
+    {
+      "sha": "a7a0426a223f1a545b5f4ab21c84c1344fd804fd",
+      "shortSha": "a7a0426",
+      "message": "Sync live profile telemetry and offline UI......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/a7a0426a223f1a545b5f4ab21c84c1344fd804fd",
+      "date": "2026-08-04T07:35:22Z"
+    },
+    {
       "sha": "f486e5422a603e99e446f77c4d8dbc2c41c059ac",
       "shortSha": "f486e54",
       "message": "Initial commit......",
@@ -149,22 +165,6 @@
       "repository": "kilicdev/kilicdev",
       "url": "https://github.com/kilicdev/kilicdev/commit/b4cc0b57eb9d1927f774343053d813a7bbacd749",
       "date": "2026-08-04T06:00:08Z"
-    },
-    {
-      "sha": "4b2492a05b236f9e5e26b01af50b50e6c4e27f93",
-      "shortSha": "4b2492a",
-      "message": "Improve profile data fetch for orgs and commits......",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/4b2492a05b236f9e5e26b01af50b50e6c4e27f93",
-      "date": "2026-08-04T05:47:21Z"
-    },
-    {
-      "sha": "26d993190ce1ec2bcf4262eb11a1f82297bbb0c7",
-      "shortSha": "26d9931",
-      "message": "Add private profile token support and visuals......",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/26d993190ce1ec2bcf4262eb11a1f82297bbb0c7",
-      "date": "2026-08-04T05:38:00Z"
     }
   ]
 }
