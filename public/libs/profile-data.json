@@ -7,10 +7,10 @@
   "totalRepos": 58,
   "publicRepos": 29,
   "organizationCount": 9,
-  "commitCount": 388,
-  "publicCommitCount": 66,
+  "commitCount": 389,
+  "publicCommitCount": 67,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-04T08:39:53.617Z",
+  "refreshedAt": "2026-08-04T13:21:59.947Z",
   "repositories": [
     {
       "name": "kilicdev",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-04T08:25:48Z",
-      "pushedAt": "2026-08-04T08:39:29Z",
+      "updatedAt": "2026-08-04T08:39:57Z",
+      "pushedAt": "2026-08-04T13:21:31Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -127,6 +127,14 @@
   ],
   "commits": [
     {
+      "sha": "5cd22946d2c31a2e5c2a2a583f5a4197634713bb",
+      "shortSha": "5cd2294",
+      "message": "Clean up comments and refresh profile assets",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/5cd22946d2c31a2e5c2a2a583f5a4197634713bb",
+      "date": "2026-08-04T13:21:21Z"
+    },
+    {
       "sha": "5ae2823128c84ed949721f74971a33b76bb58f52",
       "shortSha": "5ae2823",
       "message": "Normalize commit message truncation",
@@ -157,14 +165,6 @@
       "repository": "kilicdev/kilicdev",
       "url": "https://github.com/kilicdev/kilicdev/commit/f00986fef983bacf373f1d45c484bfe7e6efd607",
       "date": "2026-08-04T07:38:13Z"
-    },
-    {
-      "sha": "a7a0426a223f1a545b5f4ab21c84c1344fd804fd",
-      "shortSha": "a7a0426",
-      "message": "Sync live profile telemetry and offline UI",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/a7a0426a223f1a545b5f4ab21c84c1344fd804fd",
-      "date": "2026-08-04T07:35:22Z"
     }
   ]
 }
