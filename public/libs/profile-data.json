@@ -5,10 +5,27 @@
   "followers": 0,
   "following": 0,
   "publicRepos": 0,
-  "organizationCount": 0,
+  "organizationCount": 2,
   "commitCount": 0,
-  "refreshedAt": "2026-08-04T05:33:23.173Z",
+  "refreshedAt": "2026-08-04T05:43:03.019Z",
   "repositories": [],
-  "organizations": [],
+  "organizations": [
+    {
+      "login": "itiraf-me",
+      "name": "itiraf-me",
+      "avatarUrl": "https://github.com/itiraf-me.png",
+      "url": "https://github.com/itiraf-me",
+      "lastUpdatedAt": null,
+      "latestRepository": null
+    },
+    {
+      "login": "smsmint",
+      "name": "smsmint",
+      "avatarUrl": "https://github.com/smsmint.png",
+      "url": "https://github.com/smsmint",
+      "lastUpdatedAt": null,
+      "latestRepository": null
+    }
+  ],
   "commits": []
 }
