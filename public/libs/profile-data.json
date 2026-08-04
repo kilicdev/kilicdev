@@ -7,10 +7,10 @@
   "totalRepos": 58,
   "publicRepos": 29,
   "organizationCount": 9,
-  "commitCount": 385,
-  "publicCommitCount": 63,
+  "commitCount": 386,
+  "publicCommitCount": 64,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-04T07:48:36.158Z",
+  "refreshedAt": "2026-08-04T08:09:57.181Z",
   "repositories": [
     {
       "name": "kilicdev",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-04T07:40:27Z",
-      "pushedAt": "2026-08-04T07:38:48Z",
+      "updatedAt": "2026-08-04T07:49:16Z",
+      "pushedAt": "2026-08-04T08:09:30Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -127,6 +127,14 @@
   ],
   "commits": [
     {
+      "sha": "3a215e9b1c4ad8b87ab3cd298788648231b28f2b",
+      "shortSha": "3a215e9",
+      "message": "Migrate site to Next.js static export......",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/3a215e9b1c4ad8b87ab3cd298788648231b28f2b",
+      "date": "2026-08-04T08:09:16Z"
+    },
+    {
       "sha": "f00986fef983bacf373f1d45c484bfe7e6efd607",
       "shortSha": "f00986f",
       "message": "Update index.js......",
@@ -157,14 +165,6 @@
       "repository": "kilicdev/kilicdev",
       "url": "https://github.com/kilicdev/kilicdev/commit/3d2188bc1c7f94372d9f7106ad2cf490149d4471",
       "date": "2026-08-04T06:07:14Z"
-    },
-    {
-      "sha": "b4cc0b57eb9d1927f774343053d813a7bbacd749",
-      "shortSha": "b4cc0b5",
-      "message": "Improve commit stats and token fallback logic......",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/b4cc0b57eb9d1927f774343053d813a7bbacd749",
-      "date": "2026-08-04T06:00:08Z"
     }
   ]
 }
