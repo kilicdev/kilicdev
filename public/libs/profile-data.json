@@ -2,16 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 955,
+  "followers": 956,
   "following": 239,
   "totalRepos": 58,
-  "publicRepos": 29,
+  "publicRepos": 30,
   "organizationCount": 9,
   "commitCount": 389,
   "publicCommitCount": 67,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-04T13:21:59.947Z",
+  "refreshedAt": "2026-08-05T07:49:39.917Z",
   "repositories": [
+    {
+      "name": "CsYBot-old",
+      "fullName": "kilicdev/CsYBot-old",
+      "description": "CsYBot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-05T05:22:14Z",
+      "pushedAt": "2023-04-27T16:27:57Z",
+      "url": "https://github.com/kilicdev/CsYBot-old"
+    },
     {
       "name": "kilicdev",
       "fullName": "kilicdev/kilicdev",
@@ -22,8 +36,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-04T08:39:57Z",
-      "pushedAt": "2026-08-04T13:21:31Z",
+      "updatedAt": "2026-08-04T13:23:45Z",
+      "pushedAt": "2026-08-04T13:22:01Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -67,20 +81,6 @@
       "updatedAt": "2026-08-01T21:14:08Z",
       "pushedAt": "2026-08-01T21:14:03Z",
       "url": "https://github.com/smsmint/backend"
-    },
-    {
-      "name": "web",
-      "fullName": "dramalar/web",
-      "description": "Web frontend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-01T19:28:55Z",
-      "pushedAt": "2026-08-01T19:28:52Z",
-      "url": "https://github.com/dramalar/web"
     }
   ],
   "organizations": [
