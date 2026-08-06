@@ -2,7 +2,7 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 956,
+  "followers": 957,
   "following": 239,
   "totalRepos": 58,
   "publicRepos": 30,
@@ -10,8 +10,36 @@
   "commitCount": 389,
   "publicCommitCount": 67,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-05T07:49:39.917Z",
+  "refreshedAt": "2026-08-06T07:49:32.058Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
+      "language": "TypeScript",
+      "stars": 23,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-05T10:43:41Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-05T07:50:20Z",
+      "pushedAt": "2026-08-05T07:49:41Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "CsYBot-old",
       "fullName": "kilicdev/CsYBot-old",
@@ -25,20 +53,6 @@
       "updatedAt": "2026-08-05T05:22:14Z",
       "pushedAt": "2023-04-27T16:27:57Z",
       "url": "https://github.com/kilicdev/CsYBot-old"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-04T13:23:45Z",
-      "pushedAt": "2026-08-04T13:22:01Z",
-      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "test",
@@ -67,20 +81,6 @@
       "updatedAt": "2026-08-01T21:22:34Z",
       "pushedAt": "2026-08-01T21:22:30Z",
       "url": "https://github.com/smsmint/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "smsmint/backend",
-      "description": "SmsMint backend API infrastructure",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-01T21:14:08Z",
-      "pushedAt": "2026-08-01T21:14:03Z",
-      "url": "https://github.com/smsmint/backend"
     }
   ],
   "organizations": [
