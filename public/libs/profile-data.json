@@ -2,7 +2,7 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 953,
+  "followers": 951,
   "following": 239,
   "totalRepos": 58,
   "publicRepos": 30,
@@ -10,8 +10,22 @@
   "commitCount": 389,
   "publicCommitCount": 67,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-07T06:19:32.972Z",
+  "refreshedAt": "2026-08-08T05:56:58.154Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
+      "language": "TypeScript",
+      "stars": 24,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-07T13:14:02Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
     {
       "name": "kilicdev",
       "fullName": "kilicdev/kilicdev",
@@ -22,23 +36,9 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-06T07:50:56Z",
-      "pushedAt": "2026-08-06T07:49:33Z",
+      "updatedAt": "2026-08-07T06:20:14Z",
+      "pushedAt": "2026-08-07T06:19:34Z",
       "url": "https://github.com/kilicdev/kilicdev"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
-      "language": "TypeScript",
-      "stars": 23,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-05T10:43:41Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     },
     {
       "name": "CsYBot-old",
