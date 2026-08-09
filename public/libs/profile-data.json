@@ -10,8 +10,22 @@
   "commitCount": 389,
   "publicCommitCount": 67,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-08T05:56:58.154Z",
+  "refreshedAt": "2026-08-09T05:58:11.473Z",
   "repositories": [
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-08T05:57:04Z",
+      "pushedAt": "2026-08-08T05:56:59Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -25,20 +39,6 @@
       "updatedAt": "2026-08-07T13:14:02Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-07T06:20:14Z",
-      "pushedAt": "2026-08-07T06:19:34Z",
-      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "CsYBot-old",
