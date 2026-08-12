@@ -44,5 +44,10 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "websocket-driver": "0.7.5"
+    }
   }
 }
