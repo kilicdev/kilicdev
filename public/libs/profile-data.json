@@ -2,7 +2,7 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 949,
+  "followers": 952,
   "following": 239,
   "totalRepos": 58,
   "publicRepos": 30,
@@ -10,8 +10,22 @@
   "commitCount": 389,
   "publicCommitCount": 67,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-12T06:42:54.484Z",
+  "refreshedAt": "2026-08-13T06:45:33.757Z",
   "repositories": [
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-12T06:43:00Z",
+      "pushedAt": "2026-08-12T06:42:55Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -25,20 +39,6 @@
       "updatedAt": "2026-08-12T05:45:43Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-11T06:04:54Z",
-      "pushedAt": "2026-08-11T06:04:50Z",
-      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "CsYBot-old",
