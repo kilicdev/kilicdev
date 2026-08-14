@@ -2,7 +2,7 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 952,
+  "followers": 953,
   "following": 239,
   "totalRepos": 58,
   "publicRepos": 30,
@@ -10,7 +10,7 @@
   "commitCount": 389,
   "publicCommitCount": 67,
   "privateCommitCount": 322,
-  "refreshedAt": "2026-08-13T06:45:33.757Z",
+  "refreshedAt": "2026-08-14T06:43:02.296Z",
   "repositories": [
     {
       "name": "kilicdev",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-12T06:43:00Z",
-      "pushedAt": "2026-08-12T06:42:55Z",
+      "updatedAt": "2026-08-13T06:45:52Z",
+      "pushedAt": "2026-08-13T06:45:35Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
