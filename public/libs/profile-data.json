@@ -2,16 +2,44 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 955,
+  "followers": 961,
   "following": 239,
   "totalRepos": 58,
   "publicRepos": 30,
   "organizationCount": 9,
-  "commitCount": 389,
+  "commitCount": 397,
   "publicCommitCount": 67,
-  "privateCommitCount": 322,
-  "refreshedAt": "2026-08-15T05:42:07.481Z",
+  "privateCommitCount": 330,
+  "refreshedAt": "2026-08-16T05:44:01.979Z",
   "repositories": [
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "description": "Web frontend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-15T19:46:07Z",
+      "pushedAt": "2026-08-15T19:45:20Z",
+      "url": "https://github.com/dramalar/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "description": "Backend service",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-15T18:02:11Z",
+      "pushedAt": "2026-08-15T18:01:59Z",
+      "url": "https://github.com/dramalar/backend"
+    },
     {
       "name": "kilicdev",
       "fullName": "kilicdev/kilicdev",
@@ -22,8 +50,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-14T06:43:20Z",
-      "pushedAt": "2026-08-14T06:43:03Z",
+      "updatedAt": "2026-08-15T05:42:13Z",
+      "pushedAt": "2026-08-15T05:42:09Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -53,37 +81,17 @@
       "updatedAt": "2026-08-05T05:22:14Z",
       "pushedAt": "2023-04-27T16:27:57Z",
       "url": "https://github.com/kilicdev/CsYBot-old"
-    },
-    {
-      "name": "test",
-      "fullName": "smsmint/test",
-      "description": "test for readme generator",
-      "language": "",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-04T06:10:22Z",
-      "pushedAt": "2026-08-04T06:09:36Z",
-      "url": "https://github.com/smsmint/test"
-    },
-    {
-      "name": "web",
-      "fullName": "smsmint/web",
-      "description": "SmsMint web infrastructure",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-01T21:22:34Z",
-      "pushedAt": "2026-08-01T21:22:30Z",
-      "url": "https://github.com/smsmint/web"
     }
   ],
   "organizations": [
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-08-15T19:46:07Z",
+      "latestRepository": "web"
+    },
     {
       "login": "smsmint",
       "name": "smsmint",
@@ -91,14 +99,6 @@
       "url": "https://api.github.com/orgs/smsmint",
       "lastUpdatedAt": "2026-08-04T06:10:22Z",
       "latestRepository": "test"
-    },
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-08-01T19:28:55Z",
-      "latestRepository": "web"
     },
     {
       "login": "itiraf-me",
@@ -127,44 +127,44 @@
   ],
   "commits": [
     {
-      "sha": "5cd22946d2c31a2e5c2a2a583f5a4197634713bb",
-      "shortSha": "5cd2294",
-      "message": "Clean up comments and refresh profile assets",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/5cd22946d2c31a2e5c2a2a583f5a4197634713bb",
-      "date": "2026-08-04T13:21:21Z"
+      "sha": "c506dca9fad0fc7a84a7c1fb086b4700a14139d6",
+      "shortSha": "c506dca",
+      "message": "Handle all locked episodes in watch UI",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/c506dca9fad0fc7a84a7c1fb086b4700a14139d6",
+      "date": "2026-08-15T19:45:17Z"
     },
     {
-      "sha": "5ae2823128c84ed949721f74971a33b76bb58f52",
-      "shortSha": "5ae2823",
-      "message": "Normalize commit message truncation",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/5ae2823128c84ed949721f74971a33b76bb58f52",
-      "date": "2026-08-04T08:39:14Z"
+      "sha": "7905775872a98a81815fd2474fbea54f155ca3cf",
+      "shortSha": "7905775",
+      "message": "Refine payment modal compact layout",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/7905775872a98a81815fd2474fbea54f155ca3cf",
+      "date": "2026-08-15T19:28:33Z"
     },
     {
-      "sha": "3c3d9fad6b088eea92525dee9e4b47293b067585",
-      "shortSha": "3c3d9fa",
-      "message": "Add syncing state to home status UI",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/3c3d9fad6b088eea92525dee9e4b47293b067585",
-      "date": "2026-08-04T08:24:36Z"
+      "sha": "4585a1d200b4846f613b9da0cfd4a894c44a6d60",
+      "shortSha": "4585a1d",
+      "message": "Refine premium pricing layout and bump build",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/4585a1d200b4846f613b9da0cfd4a894c44a6d60",
+      "date": "2026-08-15T19:15:58Z"
     },
     {
-      "sha": "3a215e9b1c4ad8b87ab3cd298788648231b28f2b",
-      "shortSha": "3a215e9",
-      "message": "Migrate site to Next.js static export",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/3a215e9b1c4ad8b87ab3cd298788648231b28f2b",
-      "date": "2026-08-04T08:09:16Z"
+      "sha": "ed697f3354d876c63f2e5155fad8c9d66ad5f843",
+      "shortSha": "ed697f3",
+      "message": "Tighten premium modal layout on embedded views",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/ed697f3354d876c63f2e5155fad8c9d66ad5f843",
+      "date": "2026-08-15T19:06:43Z"
     },
     {
-      "sha": "f00986fef983bacf373f1d45c484bfe7e6efd607",
-      "shortSha": "f00986f",
-      "message": "Update index.js",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/f00986fef983bacf373f1d45c484bfe7e6efd607",
-      "date": "2026-08-04T07:38:13Z"
+      "sha": "1866f8b6d6526272ffcc95e42b97424a060758b2",
+      "shortSha": "1866f8b",
+      "message": "Polish compact payment modal layout",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/1866f8b6d6526272ffcc95e42b97424a060758b2",
+      "date": "2026-08-15T18:35:46Z"
     }
   ]
 }
