@@ -2,16 +2,44 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 961,
+  "followers": 962,
   "following": 239,
-  "totalRepos": 58,
-  "publicRepos": 30,
+  "totalRepos": 59,
+  "publicRepos": 31,
   "organizationCount": 9,
-  "commitCount": 397,
-  "publicCommitCount": 67,
+  "commitCount": 398,
+  "publicCommitCount": 68,
   "privateCommitCount": 330,
-  "refreshedAt": "2026-08-16T05:44:01.979Z",
+  "refreshedAt": "2026-08-17T05:50:59.652Z",
   "repositories": [
+    {
+      "name": "adsfrimo",
+      "fullName": "kilicdev/adsfrimo",
+      "description": "AdsFrimo For Whatsapp Messages",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-16T07:25:35Z",
+      "pushedAt": "2026-08-16T07:25:26Z",
+      "url": "https://github.com/kilicdev/adsfrimo"
+    },
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-16T05:44:17Z",
+      "pushedAt": "2026-08-16T05:44:03Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "web",
       "fullName": "dramalar/web",
@@ -41,20 +69,6 @@
       "url": "https://github.com/dramalar/backend"
     },
     {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-15T05:42:13Z",
-      "pushedAt": "2026-08-15T05:42:09Z",
-      "url": "https://github.com/kilicdev/kilicdev"
-    },
-    {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
       "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
@@ -67,20 +81,6 @@
       "updatedAt": "2026-08-12T05:45:43Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "CsYBot-old",
-      "fullName": "kilicdev/CsYBot-old",
-      "description": "CsYBot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-05T05:22:14Z",
-      "pushedAt": "2023-04-27T16:27:57Z",
-      "url": "https://github.com/kilicdev/CsYBot-old"
     }
   ],
   "organizations": [
@@ -127,6 +127,14 @@
   ],
   "commits": [
     {
+      "sha": "851c29d80edb0db4450e4f5a81621d0a9cd8c08f",
+      "shortSha": "851c29d",
+      "message": "Initial commit",
+      "repository": "kilicdev/adsfrimo",
+      "url": "https://github.com/kilicdev/adsfrimo/commit/851c29d80edb0db4450e4f5a81621d0a9cd8c08f",
+      "date": "2026-08-16T07:25:26Z"
+    },
+    {
       "sha": "c506dca9fad0fc7a84a7c1fb086b4700a14139d6",
       "shortSha": "c506dca",
       "message": "Handle all locked episodes in watch UI",
@@ -157,14 +165,6 @@
       "repository": "dramalar/web",
       "url": "https://github.com/dramalar/web/commit/ed697f3354d876c63f2e5155fad8c9d66ad5f843",
       "date": "2026-08-15T19:06:43Z"
-    },
-    {
-      "sha": "1866f8b6d6526272ffcc95e42b97424a060758b2",
-      "shortSha": "1866f8b",
-      "message": "Polish compact payment modal layout",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/1866f8b6d6526272ffcc95e42b97424a060758b2",
-      "date": "2026-08-15T18:35:46Z"
     }
   ]
 }
