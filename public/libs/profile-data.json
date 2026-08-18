@@ -2,7 +2,7 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 962,
+  "followers": 957,
   "following": 239,
   "totalRepos": 59,
   "publicRepos": 31,
@@ -10,8 +10,22 @@
   "commitCount": 398,
   "publicCommitCount": 68,
   "privateCommitCount": 330,
-  "refreshedAt": "2026-08-17T05:50:59.652Z",
+  "refreshedAt": "2026-08-18T05:45:18.008Z",
   "repositories": [
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-17T05:51:08Z",
+      "pushedAt": "2026-08-17T05:51:01Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "adsfrimo",
       "fullName": "kilicdev/adsfrimo",
@@ -25,20 +39,6 @@
       "updatedAt": "2026-08-16T07:25:35Z",
       "pushedAt": "2026-08-16T07:25:26Z",
       "url": "https://github.com/kilicdev/adsfrimo"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-16T05:44:17Z",
-      "pushedAt": "2026-08-16T05:44:03Z",
-      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "web",
