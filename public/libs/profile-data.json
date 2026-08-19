@@ -7,11 +7,53 @@
   "totalRepos": 59,
   "publicRepos": 31,
   "organizationCount": 9,
-  "commitCount": 398,
+  "commitCount": 400,
   "publicCommitCount": 68,
-  "privateCommitCount": 330,
-  "refreshedAt": "2026-08-18T05:45:18.008Z",
+  "privateCommitCount": 332,
+  "refreshedAt": "2026-08-19T05:47:04.422Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
+      "language": "TypeScript",
+      "stars": 26,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-18T14:30:13Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "description": "Backend service",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-18T11:38:46Z",
+      "pushedAt": "2026-08-18T11:34:30Z",
+      "url": "https://github.com/dramalar/backend"
+    },
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "description": "Web frontend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-18T11:38:03Z",
+      "pushedAt": "2026-08-18T11:35:00Z",
+      "url": "https://github.com/dramalar/web"
+    },
     {
       "name": "kilicdev",
       "fullName": "kilicdev/kilicdev",
@@ -22,8 +64,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-17T05:51:08Z",
-      "pushedAt": "2026-08-17T05:51:01Z",
+      "updatedAt": "2026-08-18T05:45:55Z",
+      "pushedAt": "2026-08-18T05:45:19Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -39,48 +81,6 @@
       "updatedAt": "2026-08-16T07:25:35Z",
       "pushedAt": "2026-08-16T07:25:26Z",
       "url": "https://github.com/kilicdev/adsfrimo"
-    },
-    {
-      "name": "web",
-      "fullName": "dramalar/web",
-      "description": "Web frontend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-15T19:46:07Z",
-      "pushedAt": "2026-08-15T19:45:20Z",
-      "url": "https://github.com/dramalar/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "dramalar/backend",
-      "description": "Backend service",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-15T18:02:11Z",
-      "pushedAt": "2026-08-15T18:01:59Z",
-      "url": "https://github.com/dramalar/backend"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
-      "language": "TypeScript",
-      "stars": 25,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-12T05:45:43Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     }
   ],
   "organizations": [
@@ -89,8 +89,8 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-08-15T19:46:07Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-08-18T11:38:46Z",
+      "latestRepository": "backend"
     },
     {
       "login": "smsmint",
@@ -127,6 +127,22 @@
   ],
   "commits": [
     {
+      "sha": "f1212296937608bd27182fc21270764b15dfc4c2",
+      "shortSha": "f121229",
+      "message": "Use hard redirect after Google auth flows",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/f1212296937608bd27182fc21270764b15dfc4c2",
+      "date": "2026-08-18T11:34:56Z"
+    },
+    {
+      "sha": "7e9934a7222608c21acdcc708105e961fcdbdd03",
+      "shortSha": "7e9934a",
+      "message": "Enhance sales emails with sender pools and opt-out",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/7e9934a7222608c21acdcc708105e961fcdbdd03",
+      "date": "2026-08-18T11:34:27Z"
+    },
+    {
       "sha": "851c29d80edb0db4450e4f5a81621d0a9cd8c08f",
       "shortSha": "851c29d",
       "message": "Initial commit",
@@ -149,22 +165,6 @@
       "repository": "dramalar/web",
       "url": "https://github.com/dramalar/web/commit/7905775872a98a81815fd2474fbea54f155ca3cf",
       "date": "2026-08-15T19:28:33Z"
-    },
-    {
-      "sha": "4585a1d200b4846f613b9da0cfd4a894c44a6d60",
-      "shortSha": "4585a1d",
-      "message": "Refine premium pricing layout and bump build",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/4585a1d200b4846f613b9da0cfd4a894c44a6d60",
-      "date": "2026-08-15T19:15:58Z"
-    },
-    {
-      "sha": "ed697f3354d876c63f2e5155fad8c9d66ad5f843",
-      "shortSha": "ed697f3",
-      "message": "Tighten premium modal layout on embedded views",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/ed697f3354d876c63f2e5155fad8c9d66ad5f843",
-      "date": "2026-08-15T19:06:43Z"
     }
   ]
 }
