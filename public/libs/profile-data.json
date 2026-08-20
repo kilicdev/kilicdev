@@ -2,7 +2,7 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 957,
+  "followers": 958,
   "following": 239,
   "totalRepos": 59,
   "publicRepos": 31,
@@ -10,21 +10,35 @@
   "commitCount": 400,
   "publicCommitCount": 68,
   "privateCommitCount": 332,
-  "refreshedAt": "2026-08-19T05:47:04.422Z",
+  "refreshedAt": "2026-08-20T05:46:29.382Z",
   "repositories": [
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
       "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
       "language": "TypeScript",
-      "stars": 26,
+      "stars": 27,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-18T14:30:13Z",
+      "updatedAt": "2026-08-20T05:43:27Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-19T05:47:25Z",
+      "pushedAt": "2026-08-19T05:47:06Z",
+      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "backend",
@@ -53,20 +67,6 @@
       "updatedAt": "2026-08-18T11:38:03Z",
       "pushedAt": "2026-08-18T11:35:00Z",
       "url": "https://github.com/dramalar/web"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-18T05:45:55Z",
-      "pushedAt": "2026-08-18T05:45:19Z",
-      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "adsfrimo",
