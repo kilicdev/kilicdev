@@ -2,7 +2,7 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 958,
+  "followers": 944,
   "following": 239,
   "totalRepos": 59,
   "publicRepos": 31,
@@ -10,19 +10,19 @@
   "commitCount": 400,
   "publicCommitCount": 68,
   "privateCommitCount": 332,
-  "refreshedAt": "2026-08-20T05:46:29.382Z",
+  "refreshedAt": "2026-08-21T05:48:46.865Z",
   "repositories": [
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
       "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
       "language": "TypeScript",
-      "stars": 27,
+      "stars": 28,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-20T05:43:27Z",
+      "updatedAt": "2026-08-20T14:23:25Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
     },
@@ -36,8 +36,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-19T05:47:25Z",
-      "pushedAt": "2026-08-19T05:47:06Z",
+      "updatedAt": "2026-08-20T05:47:49Z",
+      "pushedAt": "2026-08-20T05:46:30Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
