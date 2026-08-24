@@ -2,16 +2,44 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1008,
-  "following": 527,
-  "totalRepos": 59,
-  "publicRepos": 31,
+  "followers": 1015,
+  "following": 183,
+  "totalRepos": 60,
+  "publicRepos": 32,
   "organizationCount": 9,
-  "commitCount": 400,
-  "publicCommitCount": 68,
+  "commitCount": 402,
+  "publicCommitCount": 70,
   "privateCommitCount": 332,
-  "refreshedAt": "2026-08-23T05:45:38.989Z",
+  "refreshedAt": "2026-08-24T05:54:16.294Z",
   "repositories": [
+    {
+      "name": "adsfrimo",
+      "fullName": "kilicdev/adsfrimo",
+      "description": "AdsFrimo For Whatsapp Messages",
+      "language": "",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-23T11:35:44Z",
+      "pushedAt": "2026-08-16T07:25:26Z",
+      "url": "https://github.com/kilicdev/adsfrimo"
+    },
+    {
+      "name": "minecraft-bet",
+      "fullName": "kilicdev/minecraft-bet",
+      "description": "Minecraft Bet Bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-23T11:35:43Z",
+      "pushedAt": "2026-08-23T09:00:58Z",
+      "url": "https://github.com/kilicdev/minecraft-bet"
+    },
     {
       "name": "kilicdev",
       "fullName": "kilicdev/kilicdev",
@@ -22,8 +50,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-22T05:43:29Z",
-      "pushedAt": "2026-08-22T05:43:15Z",
+      "updatedAt": "2026-08-23T05:46:46Z",
+      "pushedAt": "2026-08-23T05:45:40Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -53,34 +81,6 @@
       "updatedAt": "2026-08-18T11:38:46Z",
       "pushedAt": "2026-08-18T11:34:30Z",
       "url": "https://github.com/dramalar/backend"
-    },
-    {
-      "name": "web",
-      "fullName": "dramalar/web",
-      "description": "Web frontend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-18T11:38:03Z",
-      "pushedAt": "2026-08-18T11:35:00Z",
-      "url": "https://github.com/dramalar/web"
-    },
-    {
-      "name": "adsfrimo",
-      "fullName": "kilicdev/adsfrimo",
-      "description": "AdsFrimo For Whatsapp Messages",
-      "language": "",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-16T07:25:35Z",
-      "pushedAt": "2026-08-16T07:25:26Z",
-      "url": "https://github.com/kilicdev/adsfrimo"
     }
   ],
   "organizations": [
@@ -127,6 +127,22 @@
   ],
   "commits": [
     {
+      "sha": "e9df699af24ed665927a6c01d771a421be00c9ac",
+      "shortSha": "e9df699",
+      "message": "Add Minecraft gambling bot and DB models",
+      "repository": "kilicdev/minecraft-bet",
+      "url": "https://github.com/kilicdev/minecraft-bet/commit/e9df699af24ed665927a6c01d771a421be00c9ac",
+      "date": "2026-08-23T09:00:55Z"
+    },
+    {
+      "sha": "7e80009796ecbd520f5ebf38d5a047529e2dd274",
+      "shortSha": "7e80009",
+      "message": "Initial commit",
+      "repository": "kilicdev/minecraft-bet",
+      "url": "https://github.com/kilicdev/minecraft-bet/commit/7e80009796ecbd520f5ebf38d5a047529e2dd274",
+      "date": "2026-08-23T08:59:14Z"
+    },
+    {
       "sha": "f1212296937608bd27182fc21270764b15dfc4c2",
       "shortSha": "f121229",
       "message": "Use hard redirect after Google auth flows",
@@ -149,22 +165,6 @@
       "repository": "kilicdev/adsfrimo",
       "url": "https://github.com/kilicdev/adsfrimo/commit/851c29d80edb0db4450e4f5a81621d0a9cd8c08f",
       "date": "2026-08-16T07:25:26Z"
-    },
-    {
-      "sha": "c506dca9fad0fc7a84a7c1fb086b4700a14139d6",
-      "shortSha": "c506dca",
-      "message": "Handle all locked episodes in watch UI",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/c506dca9fad0fc7a84a7c1fb086b4700a14139d6",
-      "date": "2026-08-15T19:45:17Z"
-    },
-    {
-      "sha": "7905775872a98a81815fd2474fbea54f155ca3cf",
-      "shortSha": "7905775",
-      "message": "Refine payment modal compact layout",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/7905775872a98a81815fd2474fbea54f155ca3cf",
-      "date": "2026-08-15T19:28:33Z"
     }
   ]
 }
