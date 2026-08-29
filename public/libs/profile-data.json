@@ -2,16 +2,44 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1004,
+  "followers": 1005,
   "following": 181,
-  "totalRepos": 60,
+  "totalRepos": 61,
   "publicRepos": 32,
-  "organizationCount": 9,
-  "commitCount": 402,
+  "organizationCount": 10,
+  "commitCount": 404,
   "publicCommitCount": 70,
-  "privateCommitCount": 332,
-  "refreshedAt": "2026-08-28T17:26:57.357Z",
+  "privateCommitCount": 334,
+  "refreshedAt": "2026-08-29T11:40:03.336Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
+      "language": "TypeScript",
+      "stars": 29,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-29T05:10:31Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "scraper",
+      "fullName": "Dramazan-Inc/scraper",
+      "description": "Scraper for dramaflix.net",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-28T20:13:17Z",
+      "pushedAt": "2026-08-28T20:11:47Z",
+      "url": "https://github.com/Dramazan-Inc/scraper"
+    },
     {
       "name": "kilicdev",
       "fullName": "kilicdev/kilicdev",
@@ -22,8 +50,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-27T16:49:04Z",
-      "pushedAt": "2026-08-27T16:31:14Z",
+      "updatedAt": "2026-08-28T17:28:31Z",
+      "pushedAt": "2026-08-28T17:26:58Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -53,37 +81,17 @@
       "updatedAt": "2026-08-23T11:35:43Z",
       "pushedAt": "2026-08-23T09:00:58Z",
       "url": "https://github.com/kilicdev/minecraft-bet"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
-      "language": "TypeScript",
-      "stars": 30,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-21T15:26:52Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "backend",
-      "fullName": "dramalar/backend",
-      "description": "Backend service",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-18T11:38:46Z",
-      "pushedAt": "2026-08-18T11:34:30Z",
-      "url": "https://github.com/dramalar/backend"
     }
   ],
   "organizations": [
+    {
+      "login": "Dramazan-Inc",
+      "name": "Dramazan-Inc",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/322264011?v=4",
+      "url": "https://api.github.com/orgs/Dramazan-Inc",
+      "lastUpdatedAt": "2026-08-28T20:13:17Z",
+      "latestRepository": "scraper"
+    },
     {
       "login": "dramalar",
       "name": "dramalar",
@@ -115,17 +123,25 @@
       "url": "https://api.github.com/orgs/duct-tr",
       "lastUpdatedAt": "2026-07-10T15:53:30Z",
       "latestRepository": "backend"
-    },
-    {
-      "login": "inelity",
-      "name": "inelity",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/269519114?v=4",
-      "url": "https://api.github.com/orgs/inelity",
-      "lastUpdatedAt": "2026-07-10T15:53:25Z",
-      "latestRepository": "backend"
     }
   ],
   "commits": [
+    {
+      "sha": "caf5c302c7a49be83cd653bd69ed30fa88038ce3",
+      "shortSha": "caf5c30",
+      "message": "First Commit",
+      "repository": "Dramazan-Inc/scraper",
+      "url": "https://github.com/Dramazan-Inc/scraper/commit/caf5c302c7a49be83cd653bd69ed30fa88038ce3",
+      "date": "2026-08-28T20:11:43Z"
+    },
+    {
+      "sha": "60962947b97ebac54b3bec965dedfef3c00829bb",
+      "shortSha": "6096294",
+      "message": "Initial commit",
+      "repository": "Dramazan-Inc/scraper",
+      "url": "https://github.com/Dramazan-Inc/scraper/commit/60962947b97ebac54b3bec965dedfef3c00829bb",
+      "date": "2026-08-28T20:10:05Z"
+    },
     {
       "sha": "e9df699af24ed665927a6c01d771a421be00c9ac",
       "shortSha": "e9df699",
@@ -149,22 +165,6 @@
       "repository": "dramalar/web",
       "url": "https://github.com/dramalar/web/commit/f1212296937608bd27182fc21270764b15dfc4c2",
       "date": "2026-08-18T11:34:56Z"
-    },
-    {
-      "sha": "7e9934a7222608c21acdcc708105e961fcdbdd03",
-      "shortSha": "7e9934a",
-      "message": "Enhance sales emails with sender pools and opt-out",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/7e9934a7222608c21acdcc708105e961fcdbdd03",
-      "date": "2026-08-18T11:34:27Z"
-    },
-    {
-      "sha": "851c29d80edb0db4450e4f5a81621d0a9cd8c08f",
-      "shortSha": "851c29d",
-      "message": "Initial commit",
-      "repository": "kilicdev/adsfrimo",
-      "url": "https://github.com/kilicdev/adsfrimo/commit/851c29d80edb0db4450e4f5a81621d0a9cd8c08f",
-      "date": "2026-08-16T07:25:26Z"
     }
   ]
 }
