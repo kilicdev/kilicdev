@@ -2,16 +2,72 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1005,
+  "followers": 1006,
   "following": 181,
   "totalRepos": 61,
   "publicRepos": 32,
   "organizationCount": 10,
-  "commitCount": 404,
-  "publicCommitCount": 70,
-  "privateCommitCount": 334,
-  "refreshedAt": "2026-08-29T11:40:03.336Z",
+  "commitCount": 408,
+  "publicCommitCount": 71,
+  "privateCommitCount": 337,
+  "refreshedAt": "2026-08-30T10:29:19.154Z",
   "repositories": [
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "description": "Backend service",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-29T15:57:50Z",
+      "pushedAt": "2026-08-29T15:57:21Z",
+      "url": "https://github.com/dramalar/backend"
+    },
+    {
+      "name": "scraper",
+      "fullName": "Dramazan-Inc/scraper",
+      "description": "Scraper for dramaflix.net",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-08-29T14:34:37Z",
+      "pushedAt": "2026-08-29T14:34:16Z",
+      "url": "https://github.com/Dramazan-Inc/scraper"
+    },
+    {
+      "name": "adsfrimo",
+      "fullName": "kilicdev/adsfrimo",
+      "description": "AdsFrimo For Whatsapp Messages",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-29T13:15:13Z",
+      "pushedAt": "2026-08-29T13:14:56Z",
+      "url": "https://github.com/kilicdev/adsfrimo"
+    },
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-29T11:40:09Z",
+      "pushedAt": "2026-08-29T11:40:04Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -25,80 +81,24 @@
       "updatedAt": "2026-08-29T05:10:31Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "scraper",
-      "fullName": "Dramazan-Inc/scraper",
-      "description": "Scraper for dramaflix.net",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-08-28T20:13:17Z",
-      "pushedAt": "2026-08-28T20:11:47Z",
-      "url": "https://github.com/Dramazan-Inc/scraper"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-28T17:28:31Z",
-      "pushedAt": "2026-08-28T17:26:58Z",
-      "url": "https://github.com/kilicdev/kilicdev"
-    },
-    {
-      "name": "adsfrimo",
-      "fullName": "kilicdev/adsfrimo",
-      "description": "AdsFrimo For Whatsapp Messages",
-      "language": "",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-23T11:35:44Z",
-      "pushedAt": "2026-08-16T07:25:26Z",
-      "url": "https://github.com/kilicdev/adsfrimo"
-    },
-    {
-      "name": "minecraft-bet",
-      "fullName": "kilicdev/minecraft-bet",
-      "description": "Minecraft Bet Bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-23T11:35:43Z",
-      "pushedAt": "2026-08-23T09:00:58Z",
-      "url": "https://github.com/kilicdev/minecraft-bet"
     }
   ],
   "organizations": [
-    {
-      "login": "Dramazan-Inc",
-      "name": "Dramazan-Inc",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/322264011?v=4",
-      "url": "https://api.github.com/orgs/Dramazan-Inc",
-      "lastUpdatedAt": "2026-08-28T20:13:17Z",
-      "latestRepository": "scraper"
-    },
     {
       "login": "dramalar",
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-08-18T11:38:46Z",
+      "lastUpdatedAt": "2026-08-29T15:57:50Z",
       "latestRepository": "backend"
+    },
+    {
+      "login": "Dramazan-Inc",
+      "name": "Dramazan-Inc",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/322264011?v=4",
+      "url": "https://api.github.com/orgs/Dramazan-Inc",
+      "lastUpdatedAt": "2026-08-29T14:34:37Z",
+      "latestRepository": "scraper"
     },
     {
       "login": "smsmint",
@@ -127,44 +127,44 @@
   ],
   "commits": [
     {
+      "sha": "50ffaf9e2db2a2ff863df27a25b3a2d0befb2ab4",
+      "shortSha": "50ffaf9",
+      "message": "Delete media.test.js",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/50ffaf9e2db2a2ff863df27a25b3a2d0befb2ab4",
+      "date": "2026-08-29T15:57:18Z"
+    },
+    {
+      "sha": "8102dc725a60633e780d6598405fed51ee67e61b",
+      "shortSha": "8102dc7",
+      "message": "Relax Dramabox decrypt host restriction",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/8102dc725a60633e780d6598405fed51ee67e61b",
+      "date": "2026-08-29T15:54:53Z"
+    },
+    {
+      "sha": "a49582157d0cdcaf87a170b3b04f8a5823cd6cf0",
+      "shortSha": "a495821",
+      "message": "Improve source session handling and ingest flow",
+      "repository": "Dramazan-Inc/scraper",
+      "url": "https://github.com/Dramazan-Inc/scraper/commit/a49582157d0cdcaf87a170b3b04f8a5823cd6cf0",
+      "date": "2026-08-29T14:34:13Z"
+    },
+    {
+      "sha": "46d2b943afb81eb6adba59c656305f8523670b99",
+      "shortSha": "46d2b94",
+      "message": "first commit",
+      "repository": "kilicdev/adsfrimo",
+      "url": "https://github.com/kilicdev/adsfrimo/commit/46d2b943afb81eb6adba59c656305f8523670b99",
+      "date": "2026-08-29T13:14:52Z"
+    },
+    {
       "sha": "caf5c302c7a49be83cd653bd69ed30fa88038ce3",
       "shortSha": "caf5c30",
       "message": "First Commit",
       "repository": "Dramazan-Inc/scraper",
       "url": "https://github.com/Dramazan-Inc/scraper/commit/caf5c302c7a49be83cd653bd69ed30fa88038ce3",
       "date": "2026-08-28T20:11:43Z"
-    },
-    {
-      "sha": "60962947b97ebac54b3bec965dedfef3c00829bb",
-      "shortSha": "6096294",
-      "message": "Initial commit",
-      "repository": "Dramazan-Inc/scraper",
-      "url": "https://github.com/Dramazan-Inc/scraper/commit/60962947b97ebac54b3bec965dedfef3c00829bb",
-      "date": "2026-08-28T20:10:05Z"
-    },
-    {
-      "sha": "e9df699af24ed665927a6c01d771a421be00c9ac",
-      "shortSha": "e9df699",
-      "message": "Add Minecraft gambling bot and DB models",
-      "repository": "kilicdev/minecraft-bet",
-      "url": "https://github.com/kilicdev/minecraft-bet/commit/e9df699af24ed665927a6c01d771a421be00c9ac",
-      "date": "2026-08-23T09:00:55Z"
-    },
-    {
-      "sha": "7e80009796ecbd520f5ebf38d5a047529e2dd274",
-      "shortSha": "7e80009",
-      "message": "Initial commit",
-      "repository": "kilicdev/minecraft-bet",
-      "url": "https://github.com/kilicdev/minecraft-bet/commit/7e80009796ecbd520f5ebf38d5a047529e2dd274",
-      "date": "2026-08-23T08:59:14Z"
-    },
-    {
-      "sha": "f1212296937608bd27182fc21270764b15dfc4c2",
-      "shortSha": "f121229",
-      "message": "Use hard redirect after Google auth flows",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/f1212296937608bd27182fc21270764b15dfc4c2",
-      "date": "2026-08-18T11:34:56Z"
     }
   ]
 }
