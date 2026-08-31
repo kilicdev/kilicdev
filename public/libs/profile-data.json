@@ -10,8 +10,22 @@
   "commitCount": 408,
   "publicCommitCount": 71,
   "privateCommitCount": 337,
-  "refreshedAt": "2026-08-30T10:29:19.154Z",
+  "refreshedAt": "2026-08-31T11:36:38.321Z",
   "repositories": [
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-08-30T10:29:46Z",
+      "pushedAt": "2026-08-30T10:29:20Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
     {
       "name": "backend",
       "fullName": "dramalar/backend",
@@ -53,20 +67,6 @@
       "updatedAt": "2026-08-29T13:15:13Z",
       "pushedAt": "2026-08-29T13:14:56Z",
       "url": "https://github.com/kilicdev/adsfrimo"
-    },
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-29T11:40:09Z",
-      "pushedAt": "2026-08-29T11:40:04Z",
-      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "kilic.db",
