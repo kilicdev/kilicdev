@@ -2,30 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1006,
+  "followers": 1005,
   "following": 181,
   "totalRepos": 61,
   "publicRepos": 32,
-  "organizationCount": 10,
-  "commitCount": 408,
+  "organizationCount": 9,
+  "commitCount": 423,
   "publicCommitCount": 71,
-  "privateCommitCount": 337,
-  "refreshedAt": "2026-08-31T11:36:38.321Z",
+  "privateCommitCount": 352,
+  "refreshedAt": "2026-09-01T10:07:07.818Z",
   "repositories": [
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-30T10:29:46Z",
-      "pushedAt": "2026-08-30T10:29:20Z",
-      "url": "https://github.com/kilicdev/kilicdev"
-    },
     {
       "name": "backend",
       "fullName": "dramalar/backend",
@@ -36,13 +22,41 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-08-29T15:57:50Z",
-      "pushedAt": "2026-08-29T15:57:21Z",
+      "updatedAt": "2026-09-01T09:10:20Z",
+      "pushedAt": "2026-09-01T09:03:03Z",
       "url": "https://github.com/dramalar/backend"
     },
     {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "description": "Web frontend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-01T08:45:52Z",
+      "pushedAt": "2026-09-01T08:40:51Z",
+      "url": "https://github.com/dramalar/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "inelity/backend",
+      "description": "inelity.com Backend Official Source",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-01T04:34:35Z",
+      "pushedAt": "2026-09-01T04:33:29Z",
+      "url": "https://github.com/inelity/backend"
+    },
+    {
       "name": "scraper",
-      "fullName": "Dramazan-Inc/scraper",
+      "fullName": "kilicdev/scraper",
       "description": "Scraper for dramaflix.net",
       "language": "JavaScript",
       "stars": 0,
@@ -50,37 +64,23 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-08-29T14:34:37Z",
+      "updatedAt": "2026-08-31T16:25:25Z",
       "pushedAt": "2026-08-29T14:34:16Z",
-      "url": "https://github.com/Dramazan-Inc/scraper"
+      "url": "https://github.com/kilicdev/scraper"
     },
     {
-      "name": "adsfrimo",
-      "fullName": "kilicdev/adsfrimo",
-      "description": "AdsFrimo For Whatsapp Messages",
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
       "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
+      "stars": 11,
+      "forks": 1,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-08-29T13:15:13Z",
-      "pushedAt": "2026-08-29T13:14:56Z",
-      "url": "https://github.com/kilicdev/adsfrimo"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "description": "Zero-boilerplate MongoDB wrapper. Configure once, use everywhere. Singleton-based, race condition proof, and fully typed.",
-      "language": "TypeScript",
-      "stars": 29,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-08-29T05:10:31Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
+      "updatedAt": "2026-08-31T11:42:16Z",
+      "pushedAt": "2026-08-31T11:36:40Z",
+      "url": "https://github.com/kilicdev/kilicdev"
     }
   ],
   "organizations": [
@@ -89,16 +89,16 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-08-29T15:57:50Z",
+      "lastUpdatedAt": "2026-09-01T09:10:20Z",
       "latestRepository": "backend"
     },
     {
-      "login": "Dramazan-Inc",
-      "name": "Dramazan-Inc",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/322264011?v=4",
-      "url": "https://api.github.com/orgs/Dramazan-Inc",
-      "lastUpdatedAt": "2026-08-29T14:34:37Z",
-      "latestRepository": "scraper"
+      "login": "inelity",
+      "name": "inelity",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/269519114?v=4",
+      "url": "https://api.github.com/orgs/inelity",
+      "lastUpdatedAt": "2026-09-01T04:34:35Z",
+      "latestRepository": "backend"
     },
     {
       "login": "smsmint",
@@ -127,44 +127,44 @@
   ],
   "commits": [
     {
-      "sha": "50ffaf9e2db2a2ff863df27a25b3a2d0befb2ab4",
-      "shortSha": "50ffaf9",
-      "message": "Delete media.test.js",
+      "sha": "a2e432f891d5283c1137615e878ab59a6d3a60e6",
+      "shortSha": "a2e432f",
+      "message": "try",
       "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/50ffaf9e2db2a2ff863df27a25b3a2d0befb2ab4",
-      "date": "2026-08-29T15:57:18Z"
+      "url": "https://github.com/dramalar/backend/commit/a2e432f891d5283c1137615e878ab59a6d3a60e6",
+      "date": "2026-09-01T09:03:00Z"
     },
     {
-      "sha": "8102dc725a60633e780d6598405fed51ee67e61b",
-      "shortSha": "8102dc7",
-      "message": "Relax Dramabox decrypt host restriction",
+      "sha": "d2db51282fd81ce32fefe3ccc308da34d6d0f3c4",
+      "shortSha": "d2db512",
+      "message": "try",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/d2db51282fd81ce32fefe3ccc308da34d6d0f3c4",
+      "date": "2026-09-01T08:40:46Z"
+    },
+    {
+      "sha": "4879ef41644ce670477cef1bafac99180b42660c",
+      "shortSha": "4879ef4",
+      "message": "try",
       "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/8102dc725a60633e780d6598405fed51ee67e61b",
-      "date": "2026-08-29T15:54:53Z"
+      "url": "https://github.com/dramalar/backend/commit/4879ef41644ce670477cef1bafac99180b42660c",
+      "date": "2026-09-01T08:40:04Z"
     },
     {
-      "sha": "a49582157d0cdcaf87a170b3b04f8a5823cd6cf0",
-      "shortSha": "a495821",
-      "message": "Improve source session handling and ingest flow",
-      "repository": "Dramazan-Inc/scraper",
-      "url": "https://github.com/Dramazan-Inc/scraper/commit/a49582157d0cdcaf87a170b3b04f8a5823cd6cf0",
-      "date": "2026-08-29T14:34:13Z"
+      "sha": "16c69ce610c293b45674a2d28fb136c05ee2d8de",
+      "shortSha": "16c69ce",
+      "message": "Update payment.js",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/16c69ce610c293b45674a2d28fb136c05ee2d8de",
+      "date": "2026-09-01T04:33:51Z"
     },
     {
-      "sha": "46d2b943afb81eb6adba59c656305f8523670b99",
-      "shortSha": "46d2b94",
-      "message": "first commit",
-      "repository": "kilicdev/adsfrimo",
-      "url": "https://github.com/kilicdev/adsfrimo/commit/46d2b943afb81eb6adba59c656305f8523670b99",
-      "date": "2026-08-29T13:14:52Z"
-    },
-    {
-      "sha": "caf5c302c7a49be83cd653bd69ed30fa88038ce3",
-      "shortSha": "caf5c30",
-      "message": "First Commit",
-      "repository": "Dramazan-Inc/scraper",
-      "url": "https://github.com/Dramazan-Inc/scraper/commit/caf5c302c7a49be83cd653bd69ed30fa88038ce3",
-      "date": "2026-08-28T20:11:43Z"
+      "sha": "ca3764bebe020d780cb137e10acb1a275e9390a3",
+      "shortSha": "ca3764b",
+      "message": "Update payment.js",
+      "repository": "inelity/backend",
+      "url": "https://github.com/inelity/backend/commit/ca3764bebe020d780cb137e10acb1a275e9390a3",
+      "date": "2026-09-01T04:33:26Z"
     }
   ]
 }
