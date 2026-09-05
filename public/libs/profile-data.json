@@ -2,30 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1005,
+  "followers": 1004,
   "following": 180,
   "totalRepos": 61,
   "publicRepos": 32,
   "organizationCount": 9,
-  "commitCount": 454,
+  "commitCount": 459,
   "publicCommitCount": 71,
-  "privateCommitCount": 383,
-  "refreshedAt": "2026-09-04T09:40:20.006Z",
+  "privateCommitCount": 388,
+  "refreshedAt": "2026-09-05T09:05:52.454Z",
   "repositories": [
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "description": "kilicdev.com Home Page",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-09-03T09:51:37Z",
-      "pushedAt": "2026-09-03T09:51:33Z",
-      "url": "https://github.com/kilicdev/kilicdev"
-    },
     {
       "name": "backend",
       "fullName": "dramalar/backend",
@@ -36,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-03T08:07:10Z",
-      "pushedAt": "2026-09-03T08:05:50Z",
+      "updatedAt": "2026-09-04T22:39:12Z",
+      "pushedAt": "2026-09-04T22:39:08Z",
       "url": "https://github.com/dramalar/backend"
     },
     {
@@ -50,9 +36,23 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-02T17:37:10Z",
-      "pushedAt": "2026-09-02T17:32:38Z",
+      "updatedAt": "2026-09-04T22:38:50Z",
+      "pushedAt": "2026-09-04T22:38:47Z",
       "url": "https://github.com/dramalar/web"
+    },
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "description": "kilicdev.com Home Page",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-09-04T09:42:31Z",
+      "pushedAt": "2026-09-04T09:40:21Z",
+      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "kilic.db",
@@ -89,7 +89,7 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-03T08:07:10Z",
+      "lastUpdatedAt": "2026-09-04T22:39:12Z",
       "latestRepository": "backend"
     },
     {
@@ -127,44 +127,44 @@
   ],
   "commits": [
     {
-      "sha": "5dd564c1b125fc0968bafa05ed1b05b6cf0c0a8c",
-      "shortSha": "5dd564c",
-      "message": "Support random title query filters",
+      "sha": "ef74904490f0ffbb5f450ffd817124db5558880c",
+      "shortSha": "ef74904",
+      "message": "Enable notifications for Dramalar and Dramazam",
       "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/5dd564c1b125fc0968bafa05ed1b05b6cf0c0a8c",
-      "date": "2026-09-03T08:05:47Z"
+      "url": "https://github.com/dramalar/backend/commit/ef74904490f0ffbb5f450ffd817124db5558880c",
+      "date": "2026-09-04T22:39:03Z"
     },
     {
-      "sha": "905725908875ae201c72c5446085c73e46710afe",
-      "shortSha": "9057259",
+      "sha": "042f391c9fa560ed2f3b8b9ca7665fc7894f8998",
+      "shortSha": "042f391",
+      "message": "Configure Firebase for two theme sites",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/042f391c9fa560ed2f3b8b9ca7665fc7894f8998",
+      "date": "2026-09-04T22:38:43Z"
+    },
+    {
+      "sha": "0f019e219945e188684f01df53af5149286de78e",
+      "shortSha": "0f019e2",
       "message": "latest",
       "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/905725908875ae201c72c5446085c73e46710afe",
-      "date": "2026-09-02T17:32:35Z"
+      "url": "https://github.com/dramalar/web/commit/0f019e219945e188684f01df53af5149286de78e",
+      "date": "2026-09-04T10:16:28Z"
     },
     {
-      "sha": "de32db2f0e16f7454aa0658be2806013d47e7b54",
-      "shortSha": "de32db2",
+      "sha": "120c1a7b41810dd79e4e3ec2c0c4b7888c8aa1f2",
+      "shortSha": "120c1a7",
       "message": "latest",
       "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/de32db2f0e16f7454aa0658be2806013d47e7b54",
-      "date": "2026-09-02T17:22:11Z"
+      "url": "https://github.com/dramalar/web/commit/120c1a7b41810dd79e4e3ec2c0c4b7888c8aa1f2",
+      "date": "2026-09-04T09:59:50Z"
     },
     {
-      "sha": "2653add02e57c4a824d75bfe40d3baafc581b117",
-      "shortSha": "2653add",
+      "sha": "5b2fceb4900b845c21825e8efadc8825780317c3",
+      "shortSha": "5b2fceb",
       "message": "latest",
       "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/2653add02e57c4a824d75bfe40d3baafc581b117",
-      "date": "2026-09-02T14:50:30Z"
-    },
-    {
-      "sha": "efd3275d542412c04783a2becdd2140ece72d72a",
-      "shortSha": "efd3275",
-      "message": "Update home.js",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/efd3275d542412c04783a2becdd2140ece72d72a",
-      "date": "2026-09-02T14:50:14Z"
+      "url": "https://github.com/dramalar/backend/commit/5b2fceb4900b845c21825e8efadc8825780317c3",
+      "date": "2026-09-04T09:59:42Z"
     }
   ]
 }
