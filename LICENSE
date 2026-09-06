@@ -1,0 +1,38 @@
+Copyright (c) 2026 Kılıç Sarsılmaz (kilicdev). All Rights Reserved.
+
+PROPRIETARY AND CONFIDENTIAL LICENSE AGREEMENT
+
+This software, including but not limited to its source code, design, layout, 
+telemetry algorithms, graphical elements, visual identity, and documentation, 
+is the exclusive proprietary property of Kılıç Sarsılmaz (kilicdev).
+
+1. RESTRICTIONS ON USE, FORKING, AND CLONING:
+   - FORBIDDEN TO REPRODUCE OR USE: You may NOT copy, reproduce, modify, 
+     distribute, publish, display, perform, sublicense, sell, rent, lease, 
+     or create derivative works from any part of this repository without the 
+     express, prior written authorization of the copyright holder.
+   - NO SELF-HOSTING OR DEPLOYMENT: You may NOT deploy, host, or execute this 
+     application or any modified version thereof on any server, hosting provider 
+     (including GitHub Pages, Vercel, Netlify, Cloudflare, AWS, etc.), or 
+     private infrastructure.
+   - NO FORK / MIRROR USAGE: While GitHub's platform mechanics provide a technical 
+     "Fork" button for public repositories, using forks or clone copies to host, 
+     rebrand, copy code, or operate alternative instances of this project is 
+     strictly prohibited and constitutes willful infringement of copyright.
+   - ASSETS AND BRANDING: All logos, visual badges, telemetry card layouts, and 
+     associated assets are proprietary and cannot be utilized in other projects.
+
+2. LEGAL ENFORCEMENT AND DMCA NOTICE:
+   - Any unauthorized fork, clone, public mirror, or live deployment discovered 
+     will be immediately subjected to Digital Millennium Copyright Act (DMCA) 
+     takedown notices filed directly with GitHub and/or relevant hosting and domain 
+     service providers.
+   - The copyright owner reserves all rights to pursue statutory damages, injunctions, 
+     and legal remedies under applicable international copyright and intellectual 
+     property laws.
+
+3. DISCLAIMER:
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER "AS IS" WITHOUT ANY WARRANTIES 
+   OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. 
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY.

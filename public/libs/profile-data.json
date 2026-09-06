@@ -1,0 +1,166 @@
+{
+  "username": "kilicdev",
+  "name": "Kılıç Sarsılmaz",
+  "bio": "Software Architect & Senior Full Stack Engineer",
+  "followers": 1002,
+  "following": 180,
+  "totalRepos": 62,
+  "publicRepos": 32,
+  "totalStars": 243,
+  "organizationCount": 9,
+  "commitCount": 500,
+  "publicCommitCount": 79,
+  "privateCommitCount": 421,
+  "refreshedAt": "2026-09-06T02:03:55.036Z",
+  "repositories": [
+    {
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "language": "HTML",
+      "stars": 11,
+      "forks": 1,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-09-06T02:03:25Z",
+      "pushedAt": "2026-09-06T02:03:21Z",
+      "url": "https://github.com/kilicdev/kilicdev"
+    },
+    {
+      "name": "kilicdev-private",
+      "fullName": "kilicdev/kilicdev-private",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-06T02:02:08Z",
+      "pushedAt": "2026-09-06T02:02:05Z",
+      "url": "https://github.com/kilicdev/kilicdev-private"
+    },
+    {
+      "name": "scraper",
+      "fullName": "kilicdev/scraper",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-06T01:32:21Z",
+      "pushedAt": "2026-08-29T14:34:16Z",
+      "url": "https://github.com/kilicdev/scraper"
+    },
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-06T00:32:09Z",
+      "pushedAt": "2026-09-06T00:32:05Z",
+      "url": "https://github.com/dramalar/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-04T22:39:12Z",
+      "pushedAt": "2026-09-04T22:39:08Z",
+      "url": "https://github.com/dramalar/backend"
+    }
+  ],
+  "organizations": [
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-09-06T00:32:09Z",
+      "latestRepository": "web"
+    },
+    {
+      "login": "inelity",
+      "name": "inelity",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/269519114?v=4",
+      "url": "https://api.github.com/orgs/inelity",
+      "lastUpdatedAt": "2026-09-01T04:34:35Z",
+      "latestRepository": "backend"
+    },
+    {
+      "login": "smsmint",
+      "name": "smsmint",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
+      "url": "https://api.github.com/orgs/smsmint",
+      "lastUpdatedAt": "2026-08-04T06:10:22Z",
+      "latestRepository": "test"
+    },
+    {
+      "login": "itiraf-me",
+      "name": "itiraf-me",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/299862939?v=4",
+      "url": "https://api.github.com/orgs/itiraf-me",
+      "lastUpdatedAt": "2026-07-29T22:58:18Z",
+      "latestRepository": "backend"
+    },
+    {
+      "login": "duct-tr",
+      "name": "duct-tr",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/283725190?v=4",
+      "url": "https://api.github.com/orgs/duct-tr",
+      "lastUpdatedAt": "2026-07-10T15:53:30Z",
+      "latestRepository": "backend"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "261ceaa957d99581d9dc8e0ce75b2f944463dbfe",
+      "shortSha": "261ceaa",
+      "message": "feat: remove repository descriptions from repos",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/261ceaa957d99581d9dc8e0ce75b2f944463dbfe",
+      "date": "2026-09-06T02:02:02Z"
+    },
+    {
+      "sha": "d4367a84d881b74b31db3116d31950de914f2a3c",
+      "shortSha": "d4367a8",
+      "message": "feat: enhance mobile UX layout, server-side SEO",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/d4367a84d881b74b31db3116d31950de914f2a3c",
+      "date": "2026-09-06T01:56:51Z"
+    },
+    {
+      "sha": "354e642e04ac5412a0a9bad6bd26da21ce29e192",
+      "shortSha": "354e642",
+      "message": "feat: trigger pages deployment on public reposi",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/354e642e04ac5412a0a9bad6bd26da21ce29e192",
+      "date": "2026-09-06T01:40:07Z"
+    },
+    {
+      "sha": "015ef2ccf90e07a4c424abfe74ace9859e4ab487",
+      "shortSha": "015ef2c",
+      "message": "fix: remove pnpm-workspace.yaml and use --no-fr",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/015ef2ccf90e07a4c424abfe74ace9859e4ab487",
+      "date": "2026-09-06T01:38:22Z"
+    },
+    {
+      "sha": "ef2ebbc2f4908bd1c5c6efb9f188c21311cc62ae",
+      "shortSha": "ef2ebbc",
+      "message": "feat: establish dual-repo build, obfuscation, a",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/ef2ebbc2f4908bd1c5c6efb9f188c21311cc62ae",
+      "date": "2026-09-06T01:37:02Z"
+    }
+  ]
+}
