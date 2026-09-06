@@ -4,28 +4,15 @@
   "bio": "Software Architect & Senior Full Stack Engineer",
   "followers": 1002,
   "following": 180,
-  "totalRepos": 62,
+  "totalRepos": 64,
   "publicRepos": 32,
-  "totalStars": 234,
+  "totalStars": 237,
   "organizationCount": 9,
-  "commitCount": 477,
-  "publicCommitCount": 54,
-  "privateCommitCount": 423,
-  "refreshedAt": "2026-09-06T02:20:08.656Z",
+  "commitCount": 481,
+  "publicCommitCount": 55,
+  "privateCommitCount": 426,
+  "refreshedAt": "2026-09-06T02:36:42.820Z",
   "repositories": [
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "language": "HTML",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-09-06T02:19:52Z",
-      "pushedAt": "2026-09-06T02:18:28Z",
-      "url": "https://github.com/kilicdev/kilicdev"
-    },
     {
       "name": "kilicdev-private",
       "fullName": "kilicdev/kilicdev-private",
@@ -35,48 +22,61 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-06T02:19:19Z",
-      "pushedAt": "2026-09-06T02:19:15Z",
+      "updatedAt": "2026-09-06T02:36:08Z",
+      "pushedAt": "2026-09-06T02:36:05Z",
       "url": "https://github.com/kilicdev/kilicdev-private"
     },
     {
-      "name": "scraper",
-      "fullName": "kilicdev/scraper",
-      "language": "JavaScript",
+      "name": "kilicdev",
+      "fullName": "kilicdev/kilicdev",
+      "language": "HTML",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-06T01:32:21Z",
-      "pushedAt": "2026-08-29T14:34:16Z",
-      "url": "https://github.com/kilicdev/scraper"
+      "private": false,
+      "updatedAt": "2026-09-06T02:31:03Z",
+      "pushedAt": "2026-09-06T02:20:37Z",
+      "url": "https://github.com/kilicdev/kilicdev"
     },
     {
-      "name": "web",
-      "fullName": "dramalar/web",
+      "name": "downloader-bot",
+      "fullName": "dramalar/downloader-bot",
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-06T00:32:09Z",
-      "pushedAt": "2026-09-06T00:32:05Z",
-      "url": "https://github.com/dramalar/web"
+      "updatedAt": "2026-09-06T02:27:50Z",
+      "pushedAt": "2026-09-06T02:26:08Z",
+      "url": "https://github.com/dramalar/downloader-bot"
     },
     {
-      "name": "backend",
-      "fullName": "dramalar/backend",
+      "name": "scraper-bot",
+      "fullName": "dramalar/scraper-bot",
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-04T22:39:12Z",
-      "pushedAt": "2026-09-04T22:39:08Z",
-      "url": "https://github.com/dramalar/backend"
+      "updatedAt": "2026-09-06T02:27:48Z",
+      "pushedAt": "2026-09-06T02:26:14Z",
+      "url": "https://github.com/dramalar/scraper-bot"
+    },
+    {
+      "name": ".github",
+      "fullName": "smsmint/.github",
+      "language": "",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-09-06T02:25:09Z",
+      "pushedAt": "2026-07-28T07:22:15Z",
+      "url": "https://github.com/smsmint/.github"
     }
   ],
   "organizations": [
@@ -85,8 +85,16 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-06T00:32:09Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-09-06T02:27:50Z",
+      "latestRepository": "downloader-bot"
+    },
+    {
+      "login": "smsmint",
+      "name": "smsmint",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
+      "url": "https://api.github.com/orgs/smsmint",
+      "lastUpdatedAt": "2026-09-06T02:25:09Z",
+      "latestRepository": ".github"
     },
     {
       "login": "inelity",
@@ -95,14 +103,6 @@
       "url": "https://api.github.com/orgs/inelity",
       "lastUpdatedAt": "2026-09-01T04:34:35Z",
       "latestRepository": "backend"
-    },
-    {
-      "login": "smsmint",
-      "name": "smsmint",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
-      "url": "https://api.github.com/orgs/smsmint",
-      "lastUpdatedAt": "2026-08-04T06:10:22Z",
-      "latestRepository": "test"
     },
     {
       "login": "itiraf-me",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
+      "sha": "d2d6ffa13cb5556b63adad8f5c4758dc1cb3f547",
+      "shortSha": "d2d6ffa",
+      "message": "feat: add Instagram and WhatsApp styled links t",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/d2d6ffa13cb5556b63adad8f5c4758dc1cb3f547",
+      "date": "2026-09-06T02:36:02Z"
+    },
+    {
+      "sha": "e60eb231eb5a045358fdd12737a28479c7005748",
+      "shortSha": "e60eb23",
+      "message": "Initial commit: dramazan scraper bot",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/e60eb231eb5a045358fdd12737a28479c7005748",
+      "date": "2026-09-06T02:26:09Z"
+    },
+    {
+      "sha": "c197032d0dd7bfeb09747942317896384897dbb8",
+      "shortSha": "c197032",
+      "message": "Initial commit: telegram downloader bot",
+      "repository": "dramalar/downloader-bot",
+      "url": "https://github.com/dramalar/downloader-bot/commit/c197032d0dd7bfeb09747942317896384897dbb8",
+      "date": "2026-09-06T02:26:00Z"
+    },
+    {
+      "sha": "70a884a44f9cddd548e7d94a3fa47a1d14794cc0",
+      "shortSha": "70a884a",
+      "message": "chore: update obfuscated production release",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/70a884a44f9cddd548e7d94a3fa47a1d14794cc0",
+      "date": "2026-09-06T02:20:36Z"
+    },
+    {
       "sha": "0859fba61f058137e2938c4ba61c8c226432957b",
       "shortSha": "0859fba",
       "message": "chore: configure Kılıç Sarsılmaz as sole contri",
       "repository": "kilicdev/kilicdev-private",
       "url": "https://github.com/kilicdev/kilicdev-private/commit/0859fba61f058137e2938c4ba61c8c226432957b",
       "date": "2026-09-06T02:19:13Z"
-    },
-    {
-      "sha": "5085e15935c70bde5f5ee6871e81e6412fe88033",
-      "shortSha": "5085e15",
-      "message": "Production release",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/5085e15935c70bde5f5ee6871e81e6412fe88033",
-      "date": "2026-09-06T02:18:25Z"
-    },
-    {
-      "sha": "bbac3a7ec67a5a0e296a0f70fd147af6a39fb7ad",
-      "shortSha": "bbac3a7",
-      "message": "feat: completely omit repository descriptions f",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/bbac3a7ec67a5a0e296a0f70fd147af6a39fb7ad",
-      "date": "2026-09-06T02:04:12Z"
-    },
-    {
-      "sha": "261ceaa957d99581d9dc8e0ce75b2f944463dbfe",
-      "shortSha": "261ceaa",
-      "message": "feat: remove repository descriptions from repos",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/261ceaa957d99581d9dc8e0ce75b2f944463dbfe",
-      "date": "2026-09-06T02:02:02Z"
-    },
-    {
-      "sha": "d4367a84d881b74b31db3116d31950de914f2a3c",
-      "shortSha": "d4367a8",
-      "message": "feat: enhance mobile UX layout, server-side SEO",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/d4367a84d881b74b31db3116d31950de914f2a3c",
-      "date": "2026-09-06T01:56:51Z"
     }
   ]
 }
