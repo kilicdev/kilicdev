@@ -6,37 +6,37 @@
   "following": 180,
   "totalRepos": 62,
   "publicRepos": 32,
-  "totalStars": 243,
+  "totalStars": 234,
   "organizationCount": 9,
-  "commitCount": 500,
-  "publicCommitCount": 79,
-  "privateCommitCount": 421,
-  "refreshedAt": "2026-09-06T02:03:55.036Z",
+  "commitCount": 477,
+  "publicCommitCount": 54,
+  "privateCommitCount": 423,
+  "refreshedAt": "2026-09-06T02:20:08.656Z",
   "repositories": [
     {
       "name": "kilicdev",
       "fullName": "kilicdev/kilicdev",
       "language": "HTML",
-      "stars": 11,
-      "forks": 1,
+      "stars": 1,
+      "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-09-06T02:03:25Z",
-      "pushedAt": "2026-09-06T02:03:21Z",
+      "updatedAt": "2026-09-06T02:19:52Z",
+      "pushedAt": "2026-09-06T02:18:28Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
       "name": "kilicdev-private",
       "fullName": "kilicdev/kilicdev-private",
       "language": "JavaScript",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-06T02:02:08Z",
-      "pushedAt": "2026-09-06T02:02:05Z",
+      "updatedAt": "2026-09-06T02:19:19Z",
+      "pushedAt": "2026-09-06T02:19:15Z",
       "url": "https://github.com/kilicdev/kilicdev-private"
     },
     {
@@ -123,6 +123,30 @@
   ],
   "commits": [
     {
+      "sha": "0859fba61f058137e2938c4ba61c8c226432957b",
+      "shortSha": "0859fba",
+      "message": "chore: configure Kılıç Sarsılmaz as sole contri",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/0859fba61f058137e2938c4ba61c8c226432957b",
+      "date": "2026-09-06T02:19:13Z"
+    },
+    {
+      "sha": "5085e15935c70bde5f5ee6871e81e6412fe88033",
+      "shortSha": "5085e15",
+      "message": "Production release",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/5085e15935c70bde5f5ee6871e81e6412fe88033",
+      "date": "2026-09-06T02:18:25Z"
+    },
+    {
+      "sha": "bbac3a7ec67a5a0e296a0f70fd147af6a39fb7ad",
+      "shortSha": "bbac3a7",
+      "message": "feat: completely omit repository descriptions f",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/bbac3a7ec67a5a0e296a0f70fd147af6a39fb7ad",
+      "date": "2026-09-06T02:04:12Z"
+    },
+    {
       "sha": "261ceaa957d99581d9dc8e0ce75b2f944463dbfe",
       "shortSha": "261ceaa",
       "message": "feat: remove repository descriptions from repos",
@@ -137,30 +161,6 @@
       "repository": "kilicdev/kilicdev-private",
       "url": "https://github.com/kilicdev/kilicdev-private/commit/d4367a84d881b74b31db3116d31950de914f2a3c",
       "date": "2026-09-06T01:56:51Z"
-    },
-    {
-      "sha": "354e642e04ac5412a0a9bad6bd26da21ce29e192",
-      "shortSha": "354e642",
-      "message": "feat: trigger pages deployment on public reposi",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/354e642e04ac5412a0a9bad6bd26da21ce29e192",
-      "date": "2026-09-06T01:40:07Z"
-    },
-    {
-      "sha": "015ef2ccf90e07a4c424abfe74ace9859e4ab487",
-      "shortSha": "015ef2c",
-      "message": "fix: remove pnpm-workspace.yaml and use --no-fr",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/015ef2ccf90e07a4c424abfe74ace9859e4ab487",
-      "date": "2026-09-06T01:38:22Z"
-    },
-    {
-      "sha": "ef2ebbc2f4908bd1c5c6efb9f188c21311cc62ae",
-      "shortSha": "ef2ebbc",
-      "message": "feat: establish dual-repo build, obfuscation, a",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/ef2ebbc2f4908bd1c5c6efb9f188c21311cc62ae",
-      "date": "2026-09-06T01:37:02Z"
     }
   ]
 }
