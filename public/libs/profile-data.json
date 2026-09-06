@@ -2,30 +2,17 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1001,
+  "followers": 1000,
   "following": 180,
   "totalRepos": 64,
   "publicRepos": 32,
   "totalStars": 237,
   "organizationCount": 9,
-  "commitCount": 488,
-  "publicCommitCount": 59,
-  "privateCommitCount": 429,
-  "refreshedAt": "2026-09-06T08:41:52.788Z",
+  "commitCount": 490,
+  "publicCommitCount": 60,
+  "privateCommitCount": 430,
+  "refreshedAt": "2026-09-06T13:37:26.189Z",
   "repositories": [
-    {
-      "name": "kilicdev",
-      "fullName": "kilicdev/kilicdev",
-      "language": "HTML",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-09-06T02:46:07Z",
-      "pushedAt": "2026-09-06T02:46:02Z",
-      "url": "https://github.com/kilicdev/kilicdev"
-    },
     {
       "name": "kilicdev-private",
       "fullName": "kilicdev/kilicdev-private",
@@ -35,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-06T02:44:46Z",
-      "pushedAt": "2026-09-06T02:44:43Z",
+      "updatedAt": "2026-09-06T13:36:42Z",
+      "pushedAt": "2026-09-06T13:36:38Z",
       "url": "https://github.com/kilicdev/kilicdev-private"
     },
     {
@@ -77,6 +64,19 @@
       "updatedAt": "2026-09-06T02:25:09Z",
       "pushedAt": "2026-07-28T07:22:15Z",
       "url": "https://github.com/smsmint/.github"
+    },
+    {
+      "name": "scraper",
+      "fullName": "kilicdev/scraper",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-06T01:32:21Z",
+      "pushedAt": "2026-08-29T14:34:16Z",
+      "url": "https://github.com/kilicdev/scraper"
     }
   ],
   "organizations": [
@@ -123,12 +123,12 @@
   ],
   "commits": [
     {
-      "sha": "b1651db5e97d3c0357867d21aa854fa81f3d11b5",
-      "shortSha": "b1651db",
-      "message": "chore: update obfuscated production release",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/b1651db5e97d3c0357867d21aa854fa81f3d11b5",
-      "date": "2026-09-06T02:46:01Z"
+      "sha": "40fd3a172915ff6580b3e494517bc59b4ec645b7",
+      "shortSha": "40fd3a1",
+      "message": "feat: ignore kilicdev repository from recent co",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/40fd3a172915ff6580b3e494517bc59b4ec645b7",
+      "date": "2026-09-06T13:36:35Z"
     },
     {
       "sha": "080304927f34cbfeba3cad8d4a6314dee43530e6",
@@ -139,14 +139,6 @@
       "date": "2026-09-06T02:44:41Z"
     },
     {
-      "sha": "5f90057c1dd2ac62f47c464cc07b778d7f47deb0",
-      "shortSha": "5f90057",
-      "message": "chore: update obfuscated production release",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/5f90057c1dd2ac62f47c464cc07b778d7f47deb0",
-      "date": "2026-09-06T02:41:47Z"
-    },
-    {
       "sha": "e06b4ef8945acc93e1253b4674b0ac2cbc1a5e32",
       "shortSha": "e06b4ef",
       "message": "feat: add Telegram link under domain in profile",
@@ -155,12 +147,20 @@
       "date": "2026-09-06T02:40:31Z"
     },
     {
-      "sha": "62d29247198dfa6908b54547b5e0df7836630125",
-      "shortSha": "62d2924",
-      "message": "chore: update obfuscated production release",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/62d29247198dfa6908b54547b5e0df7836630125",
-      "date": "2026-09-06T02:40:16Z"
+      "sha": "bad2c3c90ca218f9565550be4a8e0d2df36bc82d",
+      "shortSha": "bad2c3c",
+      "message": "feat: enlarge and enhance header command palett",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/bad2c3c90ca218f9565550be4a8e0d2df36bc82d",
+      "date": "2026-09-06T02:38:57Z"
+    },
+    {
+      "sha": "d2d6ffa13cb5556b63adad8f5c4758dc1cb3f547",
+      "shortSha": "d2d6ffa",
+      "message": "feat: add Instagram and WhatsApp styled links t",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/d2d6ffa13cb5556b63adad8f5c4758dc1cb3f547",
+      "date": "2026-09-06T02:36:02Z"
     }
   ]
 }
