@@ -8,10 +8,10 @@
   "publicRepos": 32,
   "totalStars": 237,
   "organizationCount": 9,
-  "commitCount": 483,
-  "publicCommitCount": 56,
-  "privateCommitCount": 427,
-  "refreshedAt": "2026-09-06T02:39:40.177Z",
+  "commitCount": 485,
+  "publicCommitCount": 57,
+  "privateCommitCount": 428,
+  "refreshedAt": "2026-09-06T02:41:11.338Z",
   "repositories": [
     {
       "name": "kilicdev-private",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-06T02:39:03Z",
-      "pushedAt": "2026-09-06T02:38:59Z",
+      "updatedAt": "2026-09-06T02:40:37Z",
+      "pushedAt": "2026-09-06T02:40:33Z",
       "url": "https://github.com/kilicdev/kilicdev-private"
     },
     {
@@ -35,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-09-06T02:37:22Z",
-      "pushedAt": "2026-09-06T02:37:18Z",
+      "updatedAt": "2026-09-06T02:40:22Z",
+      "pushedAt": "2026-09-06T02:40:18Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "e06b4ef8945acc93e1253b4674b0ac2cbc1a5e32",
+      "shortSha": "e06b4ef",
+      "message": "feat: add Telegram link under domain in profile",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/e06b4ef8945acc93e1253b4674b0ac2cbc1a5e32",
+      "date": "2026-09-06T02:40:31Z"
+    },
+    {
+      "sha": "62d29247198dfa6908b54547b5e0df7836630125",
+      "shortSha": "62d2924",
+      "message": "chore: update obfuscated production release",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/62d29247198dfa6908b54547b5e0df7836630125",
+      "date": "2026-09-06T02:40:16Z"
+    },
+    {
       "sha": "bad2c3c90ca218f9565550be4a8e0d2df36bc82d",
       "shortSha": "bad2c3c",
       "message": "feat: enlarge and enhance header command palett",
@@ -145,22 +161,6 @@
       "repository": "kilicdev/kilicdev-private",
       "url": "https://github.com/kilicdev/kilicdev-private/commit/d2d6ffa13cb5556b63adad8f5c4758dc1cb3f547",
       "date": "2026-09-06T02:36:02Z"
-    },
-    {
-      "sha": "e60eb231eb5a045358fdd12737a28479c7005748",
-      "shortSha": "e60eb23",
-      "message": "Initial commit: dramazan scraper bot",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/e60eb231eb5a045358fdd12737a28479c7005748",
-      "date": "2026-09-06T02:26:09Z"
-    },
-    {
-      "sha": "c197032d0dd7bfeb09747942317896384897dbb8",
-      "shortSha": "c197032",
-      "message": "Initial commit: telegram downloader bot",
-      "repository": "dramalar/downloader-bot",
-      "url": "https://github.com/dramalar/downloader-bot/commit/c197032d0dd7bfeb09747942317896384897dbb8",
-      "date": "2026-09-06T02:26:00Z"
     }
   ]
 }
