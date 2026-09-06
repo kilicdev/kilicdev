@@ -8,10 +8,10 @@
   "publicRepos": 32,
   "totalStars": 237,
   "organizationCount": 9,
-  "commitCount": 485,
-  "publicCommitCount": 57,
-  "privateCommitCount": 428,
-  "refreshedAt": "2026-09-06T02:41:11.338Z",
+  "commitCount": 487,
+  "publicCommitCount": 58,
+  "privateCommitCount": 429,
+  "refreshedAt": "2026-09-06T02:45:25.299Z",
   "repositories": [
     {
       "name": "kilicdev-private",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-06T02:40:37Z",
-      "pushedAt": "2026-09-06T02:40:33Z",
+      "updatedAt": "2026-09-06T02:44:46Z",
+      "pushedAt": "2026-09-06T02:44:43Z",
       "url": "https://github.com/kilicdev/kilicdev-private"
     },
     {
@@ -35,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-09-06T02:40:22Z",
-      "pushedAt": "2026-09-06T02:40:18Z",
+      "updatedAt": "2026-09-06T02:41:52Z",
+      "pushedAt": "2026-09-06T02:41:48Z",
       "url": "https://github.com/kilicdev/kilicdev"
     },
     {
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "080304927f34cbfeba3cad8d4a6314dee43530e6",
+      "shortSha": "0803049",
+      "message": "ci: update schedule to run telemetry and deploy",
+      "repository": "kilicdev/kilicdev-private",
+      "url": "https://github.com/kilicdev/kilicdev-private/commit/080304927f34cbfeba3cad8d4a6314dee43530e6",
+      "date": "2026-09-06T02:44:41Z"
+    },
+    {
+      "sha": "5f90057c1dd2ac62f47c464cc07b778d7f47deb0",
+      "shortSha": "5f90057",
+      "message": "chore: update obfuscated production release",
+      "repository": "kilicdev/kilicdev",
+      "url": "https://github.com/kilicdev/kilicdev/commit/5f90057c1dd2ac62f47c464cc07b778d7f47deb0",
+      "date": "2026-09-06T02:41:47Z"
+    },
+    {
       "sha": "e06b4ef8945acc93e1253b4674b0ac2cbc1a5e32",
       "shortSha": "e06b4ef",
       "message": "feat: add Telegram link under domain in profile",
@@ -145,22 +161,6 @@
       "repository": "kilicdev/kilicdev-private",
       "url": "https://github.com/kilicdev/kilicdev-private/commit/bad2c3c90ca218f9565550be4a8e0d2df36bc82d",
       "date": "2026-09-06T02:38:57Z"
-    },
-    {
-      "sha": "b055a070cefb8a82b907e5975caac807eaa3bb1e",
-      "shortSha": "b055a07",
-      "message": "chore: update obfuscated production release",
-      "repository": "kilicdev/kilicdev",
-      "url": "https://github.com/kilicdev/kilicdev/commit/b055a070cefb8a82b907e5975caac807eaa3bb1e",
-      "date": "2026-09-06T02:37:16Z"
-    },
-    {
-      "sha": "d2d6ffa13cb5556b63adad8f5c4758dc1cb3f547",
-      "shortSha": "d2d6ffa",
-      "message": "feat: add Instagram and WhatsApp styled links t",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/d2d6ffa13cb5556b63adad8f5c4758dc1cb3f547",
-      "date": "2026-09-06T02:36:02Z"
     }
   ]
 }
