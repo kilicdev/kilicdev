@@ -6,13 +6,26 @@
   "following": 180,
   "totalRepos": 64,
   "publicRepos": 32,
-  "totalStars": 237,
+  "totalStars": 236,
   "organizationCount": 9,
-  "commitCount": 495,
-  "publicCommitCount": 65,
+  "commitCount": 496,
+  "publicCommitCount": 66,
   "privateCommitCount": 430,
-  "refreshedAt": "2026-09-07T14:17:21.478Z",
+  "refreshedAt": "2026-09-07T19:59:22.521Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 29,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-09-07T17:12:51Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
     {
       "name": "kilicdev-private",
       "fullName": "kilicdev/kilicdev-private",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-09-06T02:25:09Z",
       "pushedAt": "2026-07-28T07:22:15Z",
       "url": "https://github.com/smsmint/.github"
-    },
-    {
-      "name": "scraper",
-      "fullName": "kilicdev/scraper",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-06T01:32:21Z",
-      "pushedAt": "2026-08-29T14:34:16Z",
-      "url": "https://github.com/kilicdev/scraper"
     }
   ],
   "organizations": [
