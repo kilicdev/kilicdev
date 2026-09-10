@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1001,
+  "followers": 1002,
   "following": 180,
   "totalRepos": 67,
   "publicRepos": 32,
   "totalStars": 237,
   "organizationCount": 10,
-  "commitCount": 526,
-  "publicCommitCount": 78,
-  "privateCommitCount": 448,
-  "refreshedAt": "2026-09-10T19:08:45.609Z",
+  "commitCount": 529,
+  "publicCommitCount": 79,
+  "privateCommitCount": 450,
+  "refreshedAt": "2026-09-10T22:37:34.421Z",
   "repositories": [
     {
       "name": "backend",
@@ -22,9 +22,22 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-10T15:03:57Z",
-      "pushedAt": "2026-09-10T14:58:06Z",
+      "updatedAt": "2026-09-10T19:45:13Z",
+      "pushedAt": "2026-09-10T19:46:39Z",
       "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-10T19:39:17Z",
+      "pushedAt": "2026-09-10T19:40:54Z",
+      "url": "https://github.com/velity-app/android"
     },
     {
       "name": "contracts",
@@ -38,19 +51,6 @@
       "updatedAt": "2026-09-10T14:40:07Z",
       "pushedAt": "2026-09-10T14:35:15Z",
       "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-10T09:21:07Z",
-      "pushedAt": "2026-09-10T09:22:34Z",
-      "url": "https://github.com/velity-app/android"
     },
     {
       "name": "kilic.db",
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-10T15:03:57Z",
+      "lastUpdatedAt": "2026-09-10T19:45:13Z",
       "latestRepository": "backend"
     },
     {
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "f32980d3fa6fd3592a3a779f35547aeb82b94b0c",
+      "shortSha": "f32980d",
+      "message": "Update verification evidence and remaining scop",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/f32980d3fa6fd3592a3a779f35547aeb82b94b0c",
+      "date": "2026-09-10T19:45:07Z"
+    },
+    {
+      "sha": "52156edd0b62c1738d440f8a3d19399504a43c67",
+      "shortSha": "52156ed",
+      "message": "Fix composer startup, portrait and locale handl",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/52156edd0b62c1738d440f8a3d19399504a43c67",
+      "date": "2026-09-10T19:39:11Z"
+    },
+    {
       "sha": "5e610f952d60fe0f824e9dbbdf800d27cdff28c2",
       "shortSha": "5e610f9",
       "message": "Enable single-bucket media, host MongoDB and im",
@@ -145,22 +161,6 @@
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/a7c4e17b2ad617fe9404cd06508f690eb29c7c24",
       "date": "2026-09-10T09:20:56Z"
-    },
-    {
-      "sha": "c3c2cc21d494bf552c1b6b1d81bd46e43ec3a030",
-      "shortSha": "c3c2cc2",
-      "message": "Restrict pending deletion sessions and support",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/c3c2cc21d494bf552c1b6b1d81bd46e43ec3a030",
-      "date": "2026-09-10T09:15:48Z"
-    },
-    {
-      "sha": "cb5a4c87cdbc4a2ad572cea1427f47d6689f953e",
-      "shortSha": "cb5a4c8",
-      "message": "Resume account deletion with fenced checkpoints",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/cb5a4c87cdbc4a2ad572cea1427f47d6689f953e",
-      "date": "2026-09-09T23:40:11Z"
     }
   ]
 }
