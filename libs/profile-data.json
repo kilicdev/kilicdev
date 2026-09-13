@@ -2,30 +2,17 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 999,
+  "followers": 1000,
   "following": 180,
   "totalRepos": 68,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 578,
-  "publicCommitCount": 91,
-  "privateCommitCount": 487,
-  "refreshedAt": "2026-09-13T18:49:06.291Z",
+  "commitCount": 584,
+  "publicCommitCount": 92,
+  "privateCommitCount": 492,
+  "refreshedAt": "2026-09-13T22:26:59.146Z",
   "repositories": [
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-13T15:32:50Z",
-      "pushedAt": "2026-09-13T15:34:24Z",
-      "url": "https://github.com/velity-app/android"
-    },
     {
       "name": "backend",
       "fullName": "velity-app/backend",
@@ -35,9 +22,22 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-13T15:32:43Z",
-      "pushedAt": "2026-09-13T15:34:22Z",
+      "updatedAt": "2026-09-13T21:32:36Z",
+      "pushedAt": "2026-09-13T21:02:06Z",
       "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-13T21:06:42Z",
+      "pushedAt": "2026-09-13T21:06:52Z",
+      "url": "https://github.com/velity-app/android"
     },
     {
       "name": "contracts",
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-13T15:32:50Z",
-      "latestRepository": "android"
+      "lastUpdatedAt": "2026-09-13T21:32:36Z",
+      "latestRepository": "backend"
     },
     {
       "login": "dramalar",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "7aa3d21d6f818324f43a1e765f465ee78a62ef44",
-      "shortSha": "7aa3d21",
-      "message": "feat(android): double-tap to like with heart an",
+      "sha": "85bca65d50c90a32ec796207a0808cb119ac3a4e",
+      "shortSha": "85bca65",
+      "message": "feat: publish successful releases to Play inter",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/7aa3d21d6f818324f43a1e765f465ee78a62ef44",
-      "date": "2026-09-13T15:32:43Z"
+      "url": "https://github.com/velity-app/android/commit/85bca65d50c90a32ec796207a0808cb119ac3a4e",
+      "date": "2026-09-13T21:05:14Z"
     },
     {
-      "sha": "d65f7978c70679ffb52b32088dae73551ce8a68d",
-      "shortSha": "d65f797",
-      "message": "fix(backend): update contracts sha1 to 9f7824d",
+      "sha": "19d79ea2982e04fac5974856e155cf1eae981218",
+      "shortSha": "19d79ea",
+      "message": "feat: activate minimum Android version from tru",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/d65f7978c70679ffb52b32088dae73551ce8a68d",
-      "date": "2026-09-13T15:32:38Z"
+      "url": "https://github.com/velity-app/backend/commit/19d79ea2982e04fac5974856e155cf1eae981218",
+      "date": "2026-09-13T21:00:09Z"
     },
     {
-      "sha": "a2082f697d4c1dc2c0f9aa157a3e12e988f36e89",
-      "shortSha": "a2082f6",
-      "message": "fix(backend): typecheck fixes for push service",
+      "sha": "b576eddfa950de3ef6dcf0b1c83a09fe8730673e",
+      "shortSha": "b576edd",
+      "message": "fix(deploy): allow generous timeout and resume",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/a2082f697d4c1dc2c0f9aa157a3e12e988f36e89",
-      "date": "2026-09-13T15:23:56Z"
+      "url": "https://github.com/velity-app/backend/commit/b576eddfa950de3ef6dcf0b1c83a09fe8730673e",
+      "date": "2026-09-13T20:47:24Z"
     },
     {
-      "sha": "9affd579050876630709c1df5ea77cc4126ab9fe",
-      "shortSha": "9affd57",
-      "message": "feat(android): 12-item UX and architecture rele",
+      "sha": "a3b020c9126787d030c61ebe6e55c440aa8675ea",
+      "shortSha": "a3b020c",
+      "message": "perf(deploy): fetch release image directly from",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/a3b020c9126787d030c61ebe6e55c440aa8675ea",
+      "date": "2026-09-13T20:34:08Z"
+    },
+    {
+      "sha": "5b9b1f170fd053efd52074d8b77c9bca275e6a34",
+      "shortSha": "5b9b1f1",
+      "message": "feat: add notification inline reply, Play Store",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/9affd579050876630709c1df5ea77cc4126ab9fe",
-      "date": "2026-09-13T15:21:22Z"
-    },
-    {
-      "sha": "55825042123c402f7d3e137d52e3584932b6ef34",
-      "shortSha": "5582504",
-      "message": "feat(backend): optional auth for discover feed,",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/55825042123c402f7d3e137d52e3584932b6ef34",
-      "date": "2026-09-13T15:21:14Z"
+      "url": "https://github.com/velity-app/android/commit/5b9b1f170fd053efd52074d8b77c9bca275e6a34",
+      "date": "2026-09-13T19:48:26Z"
     }
   ]
 }
