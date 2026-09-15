@@ -8,10 +8,10 @@
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 595,
-  "publicCommitCount": 97,
-  "privateCommitCount": 498,
-  "refreshedAt": "2026-09-15T13:36:36.617Z",
+  "commitCount": 601,
+  "publicCommitCount": 98,
+  "privateCommitCount": 503,
+  "refreshedAt": "2026-09-15T19:43:07.648Z",
   "repositories": [
     {
       "name": "android",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-14T20:17:41Z",
-      "pushedAt": "2026-09-14T20:19:13Z",
+      "updatedAt": "2026-09-15T19:08:08Z",
+      "pushedAt": "2026-09-15T19:09:30Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -35,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-14T20:17:32Z",
-      "pushedAt": "2026-09-14T20:18:42Z",
+      "updatedAt": "2026-09-15T19:01:20Z",
+      "pushedAt": "2026-09-15T19:02:27Z",
       "url": "https://github.com/velity-app/web"
     },
     {
@@ -48,8 +48,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-14T20:17:28Z",
-      "pushedAt": "2026-09-14T20:19:06Z",
+      "updatedAt": "2026-09-15T19:00:45Z",
+      "pushedAt": "2026-09-15T19:02:30Z",
       "url": "https://github.com/velity-app/backend"
     },
     {
@@ -61,8 +61,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-13T15:21:13Z",
-      "pushedAt": "2026-09-13T15:21:34Z",
+      "updatedAt": "2026-09-15T19:00:26Z",
+      "pushedAt": "2026-09-15T19:00:46Z",
       "url": "https://github.com/velity-app/contracts"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-14T20:17:41Z",
+      "lastUpdatedAt": "2026-09-15T19:08:08Z",
       "latestRepository": "android"
     },
     {
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "83f6204ba680c0a552eec05d4beab7b71d616d4e",
-      "shortSha": "83f6204",
-      "message": "feat(android): winged-V theme, video player con",
+      "sha": "dcb115da90f3d7eefba1765f3e40d74b2335dc9d",
+      "shortSha": "dcb115d",
+      "message": "fix(ci): bypass deprecated tools package in set",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/83f6204ba680c0a552eec05d4beab7b71d616d4e",
-      "date": "2026-09-14T20:17:16Z"
+      "url": "https://github.com/velity-app/android/commit/dcb115da90f3d7eefba1765f3e40d74b2335dc9d",
+      "date": "2026-09-15T19:08:02Z"
     },
     {
-      "sha": "7b7f3817c01e0bb53f4d6ccee59aaaa273bcf068",
-      "shortSha": "7b7f381",
-      "message": "feat(web): add deep-link app-launcher redirect",
+      "sha": "a1d81adea6faa675471d26f92bf7b862bdf56312",
+      "shortSha": "a1d81ad",
+      "message": "feat(android): security hardening, contracts 0",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/a1d81adea6faa675471d26f92bf7b862bdf56312",
+      "date": "2026-09-15T19:01:29Z"
+    },
+    {
+      "sha": "cc650752cb3c01d9dd38a754f38ef45378ac54bc",
+      "shortSha": "cc65075",
+      "message": "feat(web): update contracts dependencies, clien",
       "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/7b7f3817c01e0bb53f4d6ccee59aaaa273bcf068",
-      "date": "2026-09-14T20:17:10Z"
+      "url": "https://github.com/velity-app/web/commit/cc650752cb3c01d9dd38a754f38ef45378ac54bc",
+      "date": "2026-09-15T19:01:14Z"
     },
     {
-      "sha": "a40d552a6bec9901e88f1d6f11fc8d6343e5ba46",
-      "shortSha": "a40d552",
-      "message": "feat: implement feed discovery, profanity moder",
+      "sha": "4c161f03757861cc80de658a3896a44ca090df24",
+      "shortSha": "4c161f0",
+      "message": "feat(backend): security remediation, contracts",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/a40d552a6bec9901e88f1d6f11fc8d6343e5ba46",
-      "date": "2026-09-14T20:17:04Z"
+      "url": "https://github.com/velity-app/backend/commit/4c161f03757861cc80de658a3896a44ca090df24",
+      "date": "2026-09-15T19:00:38Z"
     },
     {
-      "sha": "85bca65d50c90a32ec796207a0808cb119ac3a4e",
-      "shortSha": "85bca65",
-      "message": "feat: publish successful releases to Play inter",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/85bca65d50c90a32ec796207a0808cb119ac3a4e",
-      "date": "2026-09-13T21:05:14Z"
-    },
-    {
-      "sha": "19d79ea2982e04fac5974856e155cf1eae981218",
-      "shortSha": "19d79ea",
-      "message": "feat: activate minimum Android version from tru",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/19d79ea2982e04fac5974856e155cf1eae981218",
-      "date": "2026-09-13T21:00:09Z"
+      "sha": "bb6f6e88ac45a8962b3153ae6705ef63117b8ec8",
+      "shortSha": "bb6f6e8",
+      "message": "feat(contracts): bump to 0.0.2 with enhanced se",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/bb6f6e88ac45a8962b3153ae6705ef63117b8ec8",
+      "date": "2026-09-15T19:00:19Z"
     }
   ]
 }
