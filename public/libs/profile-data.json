@@ -8,24 +8,11 @@
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 613,
-  "publicCommitCount": 102,
-  "privateCommitCount": 511,
-  "refreshedAt": "2026-09-16T19:35:23.894Z",
+  "commitCount": 618,
+  "publicCommitCount": 103,
+  "privateCommitCount": 515,
+  "refreshedAt": "2026-09-16T22:58:43.055Z",
   "repositories": [
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-15T21:31:31Z",
-      "pushedAt": "2026-09-15T21:32:46Z",
-      "url": "https://github.com/velity-app/android"
-    },
     {
       "name": "backend",
       "fullName": "velity-app/backend",
@@ -35,9 +22,35 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-15T21:31:20Z",
-      "pushedAt": "2026-09-15T21:33:06Z",
+      "updatedAt": "2026-09-16T19:53:41Z",
+      "pushedAt": "2026-09-16T19:55:33Z",
       "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-16T19:46:54Z",
+      "pushedAt": "2026-09-16T19:48:15Z",
+      "url": "https://github.com/velity-app/android"
+    },
+    {
+      "name": "contracts",
+      "fullName": "velity-app/contracts",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-16T19:46:02Z",
+      "pushedAt": "2026-09-16T19:46:21Z",
+      "url": "https://github.com/velity-app/contracts"
     },
     {
       "name": "web",
@@ -51,19 +64,6 @@
       "updatedAt": "2026-09-15T21:13:40Z",
       "pushedAt": "2026-09-15T21:14:48Z",
       "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": "contracts",
-      "fullName": "velity-app/contracts",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-15T19:00:26Z",
-      "pushedAt": "2026-09-15T19:00:46Z",
-      "url": "https://github.com/velity-app/contracts"
     },
     {
       "name": "kilic.db",
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-15T21:31:31Z",
-      "latestRepository": "android"
+      "lastUpdatedAt": "2026-09-16T19:53:41Z",
+      "latestRepository": "backend"
     },
     {
       "login": "dramalar",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
+      "sha": "14e741b6d3ee415fd7682c90bf8fe83497551255",
+      "shortSha": "14e741b",
+      "message": "fix(deploy): restore proven deployment pipeline",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/14e741b6d3ee415fd7682c90bf8fe83497551255",
+      "date": "2026-09-16T19:53:35Z"
+    },
+    {
+      "sha": "c6ba62858d927ccd8a6a236d33ff7a6ad4c8cbfb",
+      "shortSha": "c6ba628",
+      "message": "feat(android): contract 0.0.3 integration, noti",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/c6ba62858d927ccd8a6a236d33ff7a6ad4c8cbfb",
+      "date": "2026-09-16T19:46:47Z"
+    },
+    {
+      "sha": "52e707c28311d2b7fb85ac036179ef4fb2a912d3",
+      "shortSha": "52e707c",
+      "message": "feat(backend): security followup hardening, med",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/52e707c28311d2b7fb85ac036179ef4fb2a912d3",
+      "date": "2026-09-16T19:46:27Z"
+    },
+    {
+      "sha": "be63d2de07c656971f5c7ea853249de2463e7198",
+      "shortSha": "be63d2d",
+      "message": "feat(contracts): v0.0.3 with upload checksums,",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/be63d2de07c656971f5c7ea853249de2463e7198",
+      "date": "2026-09-16T19:45:55Z"
+    },
+    {
       "sha": "949c673cd19424593368a57b6e658d8dc693e9fc",
       "shortSha": "949c673",
       "message": "feat(version): format dynamic version string fo",
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/949c673cd19424593368a57b6e658d8dc693e9fc",
       "date": "2026-09-15T21:31:20Z"
-    },
-    {
-      "sha": "4e3a45fb500736648a98f06fa4424215ee1b3f50",
-      "shortSha": "4e3a45f",
-      "message": "feat(releases): enforce v8.2.7 (versionCode 27)",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/4e3a45fb500736648a98f06fa4424215ee1b3f50",
-      "date": "2026-09-15T21:31:11Z"
-    },
-    {
-      "sha": "290acb343efe77906d07ebcc264e5a9e00af01e6",
-      "shortSha": "290acb3",
-      "message": "fix(media): resolve video and media cropping wi",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/290acb343efe77906d07ebcc264e5a9e00af01e6",
-      "date": "2026-09-15T21:19:22Z"
-    },
-    {
-      "sha": "e2e4b8ffd744e1c0874d3dba407b1fea40a798d4",
-      "shortSha": "e2e4b8f",
-      "message": "feat(design): sync web theme with brand atmosph",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/e2e4b8ffd744e1c0874d3dba407b1fea40a798d4",
-      "date": "2026-09-15T21:13:32Z"
-    },
-    {
-      "sha": "aa17d8ee12fc789c304fe0996c2832ab589a80d0",
-      "shortSha": "aa17d8e",
-      "message": "feat(design): overhaul brand visual identity wi",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/aa17d8ee12fc789c304fe0996c2832ab589a80d0",
-      "date": "2026-09-15T21:13:25Z"
     }
   ]
 }
