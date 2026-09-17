@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1006,
+  "followers": 1007,
   "following": 180,
   "totalRepos": 68,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 620,
-  "publicCommitCount": 105,
-  "privateCommitCount": 515,
-  "refreshedAt": "2026-09-17T13:31:23.671Z",
+  "commitCount": 632,
+  "publicCommitCount": 106,
+  "privateCommitCount": 526,
+  "refreshedAt": "2026-09-17T19:44:59.503Z",
   "repositories": [
     {
       "name": "backend",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-16T19:53:41Z",
-      "pushedAt": "2026-09-16T19:55:33Z",
+      "updatedAt": "2026-09-17T19:33:01Z",
+      "pushedAt": "2026-09-17T19:34:55Z",
       "url": "https://github.com/velity-app/backend"
     },
     {
@@ -35,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-16T19:46:54Z",
-      "pushedAt": "2026-09-16T19:48:15Z",
+      "updatedAt": "2026-09-17T19:30:12Z",
+      "pushedAt": "2026-09-17T19:31:28Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-16T19:53:41Z",
+      "lastUpdatedAt": "2026-09-17T19:33:01Z",
       "latestRepository": "backend"
     },
     {
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "14e741b6d3ee415fd7682c90bf8fe83497551255",
-      "shortSha": "14e741b",
-      "message": "fix(deploy): restore proven deployment pipeline",
+      "sha": "199cae7c7d5bbb7878f87d5be6ba92e1bb74a047",
+      "shortSha": "199cae7",
+      "message": "feat(version): update MIN_SUPPORTED_VERSION_COD",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/14e741b6d3ee415fd7682c90bf8fe83497551255",
-      "date": "2026-09-16T19:53:35Z"
+      "url": "https://github.com/velity-app/backend/commit/199cae7c7d5bbb7878f87d5be6ba92e1bb74a047",
+      "date": "2026-09-17T19:32:52Z"
     },
     {
-      "sha": "c6ba62858d927ccd8a6a236d33ff7a6ad4c8cbfb",
-      "shortSha": "c6ba628",
-      "message": "feat(android): contract 0.0.3 integration, noti",
+      "sha": "1a1d5c53ff173c1ebbb51dcd4185f534066e2843",
+      "shortSha": "1a1d5c5",
+      "message": "feat(ui): auth modal redesign, bottom bar polis",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/c6ba62858d927ccd8a6a236d33ff7a6ad4c8cbfb",
-      "date": "2026-09-16T19:46:47Z"
+      "url": "https://github.com/velity-app/android/commit/1a1d5c53ff173c1ebbb51dcd4185f534066e2843",
+      "date": "2026-09-17T19:30:02Z"
     },
     {
-      "sha": "52e707c28311d2b7fb85ac036179ef4fb2a912d3",
-      "shortSha": "52e707c",
-      "message": "feat(backend): security followup hardening, med",
+      "sha": "c8f37c791247f68d94ecc0a733fe45d5701f5ed8",
+      "shortSha": "c8f37c7",
+      "message": "feat(version): update MIN_SUPPORTED_VERSION_COD",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/52e707c28311d2b7fb85ac036179ef4fb2a912d3",
-      "date": "2026-09-16T19:46:27Z"
+      "url": "https://github.com/velity-app/backend/commit/c8f37c791247f68d94ecc0a733fe45d5701f5ed8",
+      "date": "2026-09-17T17:54:41Z"
     },
     {
-      "sha": "be63d2de07c656971f5c7ea853249de2463e7198",
-      "shortSha": "be63d2d",
-      "message": "feat(contracts): v0.0.3 with upload checksums,",
-      "repository": "velity-app/contracts",
-      "url": "https://github.com/velity-app/contracts/commit/be63d2de07c656971f5c7ea853249de2463e7198",
-      "date": "2026-09-16T19:45:55Z"
-    },
-    {
-      "sha": "949c673cd19424593368a57b6e658d8dc693e9fc",
-      "shortSha": "949c673",
-      "message": "feat(version): format dynamic version string fo",
+      "sha": "03747c14dd8043a86e9e3197b25052402015ea1f",
+      "shortSha": "03747c1",
+      "message": "feat(ui): modal-only auth, prestige top bar, re",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/949c673cd19424593368a57b6e658d8dc693e9fc",
-      "date": "2026-09-15T21:31:20Z"
+      "url": "https://github.com/velity-app/android/commit/03747c14dd8043a86e9e3197b25052402015ea1f",
+      "date": "2026-09-17T17:54:06Z"
+    },
+    {
+      "sha": "0a97ecbf3a3c575c8b4798ef6f4f430a83a024de",
+      "shortSha": "0a97ecb",
+      "message": "feat(version): update MIN_SUPPORTED_VERSION_COD",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/0a97ecbf3a3c575c8b4798ef6f4f430a83a024de",
+      "date": "2026-09-17T15:26:10Z"
     }
   ]
 }
