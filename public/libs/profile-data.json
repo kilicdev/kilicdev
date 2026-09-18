@@ -6,13 +6,26 @@
   "following": 180,
   "totalRepos": 68,
   "publicRepos": 32,
-  "totalStars": 241,
+  "totalStars": 242,
   "organizationCount": 10,
-  "commitCount": 635,
-  "publicCommitCount": 109,
+  "commitCount": 636,
+  "publicCommitCount": 110,
   "privateCommitCount": 526,
-  "refreshedAt": "2026-09-18T12:59:45.431Z",
+  "refreshedAt": "2026-09-18T19:03:39.230Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 31,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-09-18T16:35:02Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
     {
       "name": "backend",
       "fullName": "velity-app/backend",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-09-15T21:13:40Z",
       "pushedAt": "2026-09-15T21:14:48Z",
       "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 30,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-09-09T10:05:14Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     }
   ],
   "organizations": [
