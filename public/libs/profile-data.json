@@ -8,10 +8,10 @@
   "publicRepos": 32,
   "totalStars": 242,
   "organizationCount": 10,
-  "commitCount": 657,
-  "publicCommitCount": 118,
+  "commitCount": 658,
+  "publicCommitCount": 119,
   "privateCommitCount": 539,
-  "refreshedAt": "2026-09-20T18:50:49.186Z",
+  "refreshedAt": "2026-09-20T22:29:04.391Z",
   "repositories": [
     {
       "name": "android",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-20T14:11:23Z",
-      "pushedAt": "2026-09-20T14:12:43Z",
+      "updatedAt": "2026-09-20T21:11:11Z",
+      "pushedAt": "2026-09-20T21:12:35Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-20T14:11:23Z",
+      "lastUpdatedAt": "2026-09-20T21:11:11Z",
       "latestRepository": "android"
     },
     {
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "95564e5a910cd001dc77fbc89b7808195a833b12",
+      "shortSha": "95564e5",
+      "message": "feat(android): complete 13-item polish - storie",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/95564e5a910cd001dc77fbc89b7808195a833b12",
+      "date": "2026-09-20T21:11:01Z"
+    },
+    {
       "sha": "dec608fd380bb002b5ec06bd8413a89246d57bb5",
       "shortSha": "dec608f",
       "message": "feat(android): 13-item polish release - stories",
@@ -153,14 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/f60271717e086b79b86a378acec093ca0968553c",
       "date": "2026-09-20T09:59:13Z"
-    },
-    {
-      "sha": "d798b95af81e26191763059d2000c6c92865bc64",
-      "shortSha": "d798b95",
-      "message": "Add chat settings and revamp notifications",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/d798b95af81e26191763059d2000c6c92865bc64",
-      "date": "2026-09-20T09:58:53Z"
     }
   ]
 }
