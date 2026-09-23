@@ -6,13 +6,39 @@
   "following": 180,
   "totalRepos": 68,
   "publicRepos": 32,
-  "totalStars": 242,
+  "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 672,
-  "publicCommitCount": 128,
-  "privateCommitCount": 544,
-  "refreshedAt": "2026-09-23T13:40:53.021Z",
+  "commitCount": 675,
+  "publicCommitCount": 129,
+  "privateCommitCount": 546,
+  "refreshedAt": "2026-09-23T19:42:12.497Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 30,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-09-23T17:28:17Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-23T15:55:03Z",
+      "pushedAt": "2026-09-23T15:56:24Z",
+      "url": "https://github.com/velity-app/android"
+    },
     {
       "name": "backend",
       "fullName": "velity-app/backend",
@@ -27,19 +53,6 @@
       "url": "https://github.com/velity-app/backend"
     },
     {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-23T06:11:13Z",
-      "pushedAt": "2026-09-23T06:12:36Z",
-      "url": "https://github.com/velity-app/android"
-    },
-    {
       "name": "contracts",
       "fullName": "velity-app/contracts",
       "language": "TypeScript",
@@ -51,19 +64,6 @@
       "updatedAt": "2026-09-23T06:06:32Z",
       "pushedAt": "2026-09-23T06:17:02Z",
       "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 31,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-09-18T16:35:02Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     },
     {
       "name": "web",
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-23T06:26:53Z",
-      "latestRepository": "backend"
+      "lastUpdatedAt": "2026-09-23T15:55:03Z",
+      "latestRepository": "android"
     },
     {
       "login": "dramalar",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "8b0c1f0155a376e1b6c8c675a664351da350b765",
+      "shortSha": "8b0c1f0",
+      "message": "Finish social UI polish and media reliability",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/8b0c1f0155a376e1b6c8c675a664351da350b765",
+      "date": "2026-09-23T15:40:42Z"
+    },
+    {
+      "sha": "45a6fda50c942b910360d075d2cec7a377fd39f0",
+      "shortSha": "45a6fda",
+      "message": "Polish modals and profile post rendering",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/45a6fda50c942b910360d075d2cec7a377fd39f0",
+      "date": "2026-09-23T14:10:10Z"
+    },
+    {
       "sha": "d35003ebe11264e3bbfc169339a26bc2b484d875",
       "shortSha": "d35003e",
       "message": "fix(messages): include theme in ConversationDto",
@@ -145,22 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/e1095b7c4e962734d2e4f997f3fb1d1db3b092a0",
       "date": "2026-09-23T06:10:33Z"
-    },
-    {
-      "sha": "2a0ca34e68355e3bd99870de83e9685638b279d2",
-      "shortSha": "2a0ca34",
-      "message": "feat(contracts): add chatThemeChanged code, con",
-      "repository": "velity-app/contracts",
-      "url": "https://github.com/velity-app/contracts/commit/2a0ca34e68355e3bd99870de83e9685638b279d2",
-      "date": "2026-09-23T06:06:23Z"
-    },
-    {
-      "sha": "95564e5a910cd001dc77fbc89b7808195a833b12",
-      "shortSha": "95564e5",
-      "message": "feat(android): complete 13-item polish - storie",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/95564e5a910cd001dc77fbc89b7808195a833b12",
-      "date": "2026-09-20T21:11:01Z"
     }
   ]
 }
