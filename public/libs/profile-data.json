@@ -4,15 +4,41 @@
   "bio": "Software Architect & Senior Full Stack Engineer",
   "followers": 1002,
   "following": 180,
-  "totalRepos": 68,
+  "totalRepos": 69,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 702,
-  "publicCommitCount": 136,
-  "privateCommitCount": 566,
-  "refreshedAt": "2026-09-25T13:51:51.835Z",
+  "commitCount": 720,
+  "publicCommitCount": 137,
+  "privateCommitCount": 583,
+  "refreshedAt": "2026-09-25T20:02:23.232Z",
   "repositories": [
+    {
+      "name": "scraper-bot",
+      "fullName": "dramalar/scraper-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-25T18:24:46Z",
+      "pushedAt": "2026-09-25T18:24:59Z",
+      "url": "https://github.com/dramalar/scraper-bot"
+    },
+    {
+      "name": "advertiser-bot",
+      "fullName": "dramalar/advertiser-bot",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-25T18:24:11Z",
+      "pushedAt": "2026-09-25T18:24:31Z",
+      "url": "https://github.com/dramalar/advertiser-bot"
+    },
     {
       "name": "web",
       "fullName": "dramalar/web",
@@ -25,19 +51,6 @@
       "updatedAt": "2026-09-25T12:59:44Z",
       "pushedAt": "2026-09-25T12:59:39Z",
       "url": "https://github.com/dramalar/web"
-    },
-    {
-      "name": "scraper-bot",
-      "fullName": "dramalar/scraper-bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-25T11:06:35Z",
-      "pushedAt": "2026-09-25T11:06:31Z",
-      "url": "https://github.com/dramalar/scraper-bot"
     },
     {
       "name": "backend",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-09-23T17:28:17Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-23T15:55:03Z",
-      "pushedAt": "2026-09-23T15:56:24Z",
-      "url": "https://github.com/velity-app/android"
     }
   ],
   "organizations": [
@@ -85,8 +85,8 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-25T12:59:44Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-09-25T18:24:46Z",
+      "latestRepository": "scraper-bot"
     },
     {
       "login": "velity-app",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "11d10be38469e8b89a566de58f5ba785296d2a17",
-      "shortSha": "11d10be",
-      "message": "Update TelegramInvite.js",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/11d10be38469e8b89a566de58f5ba785296d2a17",
-      "date": "2026-09-25T12:59:35Z"
+      "sha": "f25c57ae22dae6f534375834d015c3be9afb3ef2",
+      "shortSha": "f25c57a",
+      "message": "Harden scheduler and headless publish flow",
+      "repository": "dramalar/advertiser-bot",
+      "url": "https://github.com/dramalar/advertiser-bot/commit/f25c57ae22dae6f534375834d015c3be9afb3ef2",
+      "date": "2026-09-25T18:17:49Z"
     },
     {
-      "sha": "745e6585cd313e25af05a78416892dfdee61b3c5",
-      "shortSha": "745e658",
-      "message": "Update TelegramInvite.js",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/745e6585cd313e25af05a78416892dfdee61b3c5",
-      "date": "2026-09-25T12:45:19Z"
+      "sha": "38b111f97e12139d43d01d7cbed2612325b89717",
+      "shortSha": "38b111f",
+      "message": "Enable headless Chrome by default with aggressi",
+      "repository": "dramalar/advertiser-bot",
+      "url": "https://github.com/dramalar/advertiser-bot/commit/38b111f97e12139d43d01d7cbed2612325b89717",
+      "date": "2026-09-25T17:59:24Z"
     },
     {
-      "sha": "6f5e160551900a25002be17ad33fa1a4119a8d4f",
-      "shortSha": "6f5e160",
-      "message": "Add themed Telegram invite modal",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/6f5e160551900a25002be17ad33fa1a4119a8d4f",
-      "date": "2026-09-25T12:35:34Z"
+      "sha": "104275fd51c09e0c9006509a33154104b8343a23",
+      "shortSha": "104275f",
+      "message": "Optimize FFmpeg video generation with ultrafast",
+      "repository": "dramalar/advertiser-bot",
+      "url": "https://github.com/dramalar/advertiser-bot/commit/104275fd51c09e0c9006509a33154104b8343a23",
+      "date": "2026-09-25T17:49:12Z"
     },
     {
-      "sha": "4ed6985e863033e5143ba27a82bc1b6e92229ab9",
-      "shortSha": "4ed6985",
-      "message": "Update [slug].js",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/4ed6985e863033e5143ba27a82bc1b6e92229ab9",
-      "date": "2026-09-25T12:02:29Z"
+      "sha": "b4e88ada8a2bd35d27dcb582defcfd6ba5cffea2",
+      "shortSha": "b4e88ad",
+      "message": "Add automatic self-healing SQLite corruption an",
+      "repository": "dramalar/advertiser-bot",
+      "url": "https://github.com/dramalar/advertiser-bot/commit/b4e88ada8a2bd35d27dcb582defcfd6ba5cffea2",
+      "date": "2026-09-25T17:37:47Z"
     },
     {
-      "sha": "3c73dd17d15ac09cccb3267f8a3d63f9f5e8f1cd",
-      "shortSha": "3c73dd1",
-      "message": "Fix watch page: replace mutable let pattern wit",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/3c73dd17d15ac09cccb3267f8a3d63f9f5e8f1cd",
-      "date": "2026-09-25T11:40:43Z"
+      "sha": "d477151b7a2a4fec67f7e0b1c75617f0695f256e",
+      "shortSha": "d477151",
+      "message": "update acc",
+      "repository": "dramalar/advertiser-bot",
+      "url": "https://github.com/dramalar/advertiser-bot/commit/d477151b7a2a4fec67f7e0b1c75617f0695f256e",
+      "date": "2026-09-25T17:34:15Z"
     }
   ]
 }
