@@ -8,11 +8,50 @@
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 681,
-  "publicCommitCount": 135,
-  "privateCommitCount": 546,
-  "refreshedAt": "2026-09-25T05:01:40.017Z",
+  "commitCount": 702,
+  "publicCommitCount": 136,
+  "privateCommitCount": 566,
+  "refreshedAt": "2026-09-25T13:51:51.835Z",
   "repositories": [
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-25T12:59:44Z",
+      "pushedAt": "2026-09-25T12:59:39Z",
+      "url": "https://github.com/dramalar/web"
+    },
+    {
+      "name": "scraper-bot",
+      "fullName": "dramalar/scraper-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-25T11:06:35Z",
+      "pushedAt": "2026-09-25T11:06:31Z",
+      "url": "https://github.com/dramalar/scraper-bot"
+    },
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-25T10:56:10Z",
+      "pushedAt": "2026-09-25T10:56:07Z",
+      "url": "https://github.com/dramalar/backend"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -38,48 +77,17 @@
       "updatedAt": "2026-09-23T15:55:03Z",
       "pushedAt": "2026-09-23T15:56:24Z",
       "url": "https://github.com/velity-app/android"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-23T06:26:53Z",
-      "pushedAt": "2026-09-23T06:28:59Z",
-      "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "contracts",
-      "fullName": "velity-app/contracts",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-23T06:06:32Z",
-      "pushedAt": "2026-09-23T06:17:02Z",
-      "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "web",
-      "fullName": "velity-app/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-15T21:13:40Z",
-      "pushedAt": "2026-09-15T21:14:48Z",
-      "url": "https://github.com/velity-app/web"
     }
   ],
   "organizations": [
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-09-25T12:59:44Z",
+      "latestRepository": "web"
+    },
     {
       "login": "velity-app",
       "name": "velity-app",
@@ -87,14 +95,6 @@
       "url": "https://api.github.com/orgs/velity-app",
       "lastUpdatedAt": "2026-09-23T15:55:03Z",
       "latestRepository": "android"
-    },
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-06T02:27:50Z",
-      "latestRepository": "downloader-bot"
     },
     {
       "login": "smsmint",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "8b0c1f0155a376e1b6c8c675a664351da350b765",
-      "shortSha": "8b0c1f0",
-      "message": "Finish social UI polish and media reliability",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/8b0c1f0155a376e1b6c8c675a664351da350b765",
-      "date": "2026-09-23T15:40:42Z"
+      "sha": "11d10be38469e8b89a566de58f5ba785296d2a17",
+      "shortSha": "11d10be",
+      "message": "Update TelegramInvite.js",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/11d10be38469e8b89a566de58f5ba785296d2a17",
+      "date": "2026-09-25T12:59:35Z"
     },
     {
-      "sha": "45a6fda50c942b910360d075d2cec7a377fd39f0",
-      "shortSha": "45a6fda",
-      "message": "Polish modals and profile post rendering",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/45a6fda50c942b910360d075d2cec7a377fd39f0",
-      "date": "2026-09-23T14:10:10Z"
+      "sha": "745e6585cd313e25af05a78416892dfdee61b3c5",
+      "shortSha": "745e658",
+      "message": "Update TelegramInvite.js",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/745e6585cd313e25af05a78416892dfdee61b3c5",
+      "date": "2026-09-25T12:45:19Z"
     },
     {
-      "sha": "d35003ebe11264e3bbfc169339a26bc2b484d875",
-      "shortSha": "d35003e",
-      "message": "fix(messages): include theme in ConversationDto",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/d35003ebe11264e3bbfc169339a26bc2b484d875",
-      "date": "2026-09-23T06:26:48Z"
+      "sha": "6f5e160551900a25002be17ad33fa1a4119a8d4f",
+      "shortSha": "6f5e160",
+      "message": "Add themed Telegram invite modal",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/6f5e160551900a25002be17ad33fa1a4119a8d4f",
+      "date": "2026-09-25T12:35:34Z"
     },
     {
-      "sha": "74ad456645ecbcc5ef44c9b17d584260a26b7f2b",
-      "shortSha": "74ad456",
-      "message": "feat(android): update contracts SHA, shared con",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/74ad456645ecbcc5ef44c9b17d584260a26b7f2b",
-      "date": "2026-09-23T06:11:02Z"
+      "sha": "4ed6985e863033e5143ba27a82bc1b6e92229ab9",
+      "shortSha": "4ed6985",
+      "message": "Update [slug].js",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/4ed6985e863033e5143ba27a82bc1b6e92229ab9",
+      "date": "2026-09-25T12:02:29Z"
     },
     {
-      "sha": "e1095b7c4e962734d2e4f997f3fb1d1db3b092a0",
-      "shortSha": "e1095b7",
-      "message": "feat(backend): update contracts SHA, support co",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/e1095b7c4e962734d2e4f997f3fb1d1db3b092a0",
-      "date": "2026-09-23T06:10:33Z"
+      "sha": "3c73dd17d15ac09cccb3267f8a3d63f9f5e8f1cd",
+      "shortSha": "3c73dd1",
+      "message": "Fix watch page: replace mutable let pattern wit",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/3c73dd17d15ac09cccb3267f8a3d63f9f5e8f1cd",
+      "date": "2026-09-25T11:40:43Z"
     }
   ]
 }
