@@ -8,11 +8,37 @@
   "publicRepos": 32,
   "totalStars": 242,
   "organizationCount": 10,
-  "commitCount": 737,
-  "publicCommitCount": 141,
-  "privateCommitCount": 596,
-  "refreshedAt": "2026-09-26T19:14:29.918Z",
+  "commitCount": 740,
+  "publicCommitCount": 142,
+  "privateCommitCount": 598,
+  "refreshedAt": "2026-09-26T22:54:40.900Z",
   "repositories": [
+    {
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-26T20:40:54Z",
+      "pushedAt": "2026-09-26T20:42:51Z",
+      "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-26T20:40:33Z",
+      "pushedAt": "2026-09-26T20:42:04Z",
+      "url": "https://github.com/velity-app/android"
+    },
     {
       "name": "advertiser-bot",
       "fullName": "dramalar/advertiser-bot",
@@ -51,35 +77,17 @@
       "updatedAt": "2026-09-25T12:59:44Z",
       "pushedAt": "2026-09-25T12:59:39Z",
       "url": "https://github.com/dramalar/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "dramalar/backend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-25T10:56:10Z",
-      "pushedAt": "2026-09-25T10:56:07Z",
-      "url": "https://github.com/dramalar/backend"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 30,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-09-23T17:28:17Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     }
   ],
   "organizations": [
+    {
+      "login": "velity-app",
+      "name": "velity-app",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
+      "url": "https://api.github.com/orgs/velity-app",
+      "lastUpdatedAt": "2026-09-26T20:40:54Z",
+      "latestRepository": "backend"
+    },
     {
       "login": "dramalar",
       "name": "dramalar",
@@ -87,14 +95,6 @@
       "url": "https://api.github.com/orgs/dramalar",
       "lastUpdatedAt": "2026-09-26T14:13:20Z",
       "latestRepository": "advertiser-bot"
-    },
-    {
-      "login": "velity-app",
-      "name": "velity-app",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
-      "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-23T15:55:03Z",
-      "latestRepository": "android"
     },
     {
       "login": "smsmint",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "b00dbe8b88a89a4273469a54488a0009bc42d907",
+      "shortSha": "b00dbe8",
+      "message": "Allow alpha track for Play release updates",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/b00dbe8b88a89a4273469a54488a0009bc42d907",
+      "date": "2026-09-26T20:40:47Z"
+    },
+    {
+      "sha": "63b10dec1a61e3cd96075aeaf9b245be9d5eed0f",
+      "shortSha": "63b10de",
+      "message": "Default Play publish to closed alpha track",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/63b10dec1a61e3cd96075aeaf9b245be9d5eed0f",
+      "date": "2026-09-26T20:40:25Z"
+    },
+    {
       "sha": "8ca725f443115d227f4439323d622f07bb61a66c",
       "shortSha": "8ca725f",
       "message": "vibeshort errors",
@@ -145,22 +161,6 @@
       "repository": "dramalar/scraper-bot",
       "url": "https://github.com/dramalar/scraper-bot/commit/29f3321554e44dc7c28f4d9979bc66938b93e844",
       "date": "2026-09-26T12:17:12Z"
-    },
-    {
-      "sha": "e3176381321655598c5162efca3cc1eca226dfbd",
-      "shortSha": "e317638",
-      "message": "retry",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/e3176381321655598c5162efca3cc1eca226dfbd",
-      "date": "2026-09-26T12:09:20Z"
-    },
-    {
-      "sha": "0c0372d04a6b214f01110da2719651217499cc34",
-      "shortSha": "0c0372d",
-      "message": "vibeshort",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/0c0372d04a6b214f01110da2719651217499cc34",
-      "date": "2026-09-26T11:38:31Z"
     }
   ]
 }
