@@ -2,17 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1000,
+  "followers": 1001,
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
-  "totalStars": 241,
+  "totalStars": 242,
   "organizationCount": 10,
-  "commitCount": 736,
-  "publicCommitCount": 140,
+  "commitCount": 737,
+  "publicCommitCount": 141,
   "privateCommitCount": 596,
-  "refreshedAt": "2026-09-26T13:09:09.029Z",
+  "refreshedAt": "2026-09-26T19:14:29.918Z",
   "repositories": [
+    {
+      "name": "advertiser-bot",
+      "fullName": "dramalar/advertiser-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-26T14:13:20Z",
+      "pushedAt": "2026-09-26T00:49:00Z",
+      "url": "https://github.com/dramalar/advertiser-bot"
+    },
     {
       "name": "scraper-bot",
       "fullName": "dramalar/scraper-bot",
@@ -25,19 +38,6 @@
       "updatedAt": "2026-09-26T12:37:23Z",
       "pushedAt": "2026-09-26T12:37:20Z",
       "url": "https://github.com/dramalar/scraper-bot"
-    },
-    {
-      "name": "advertiser-bot",
-      "fullName": "dramalar/advertiser-bot",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-26T00:49:04Z",
-      "pushedAt": "2026-09-26T00:49:00Z",
-      "url": "https://github.com/dramalar/advertiser-bot"
     },
     {
       "name": "web",
@@ -85,8 +85,8 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-26T12:37:23Z",
-      "latestRepository": "scraper-bot"
+      "lastUpdatedAt": "2026-09-26T14:13:20Z",
+      "latestRepository": "advertiser-bot"
     },
     {
       "login": "velity-app",
