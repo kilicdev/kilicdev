@@ -6,13 +6,65 @@
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
-  "totalStars": 242,
+  "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 741,
-  "publicCommitCount": 143,
-  "privateCommitCount": 598,
-  "refreshedAt": "2026-09-27T05:22:31.587Z",
+  "commitCount": 745,
+  "publicCommitCount": 144,
+  "privateCommitCount": 601,
+  "refreshedAt": "2026-09-27T14:01:29.288Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 29,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-09-27T13:28:38Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-27T06:09:09Z",
+      "pushedAt": "2026-09-27T06:09:05Z",
+      "url": "https://github.com/dramalar/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-27T06:09:02Z",
+      "pushedAt": "2026-09-27T06:08:58Z",
+      "url": "https://github.com/dramalar/backend"
+    },
+    {
+      "name": "advertiser-bot",
+      "fullName": "dramalar/advertiser-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-27T06:02:30Z",
+      "pushedAt": "2026-09-27T06:02:26Z",
+      "url": "https://github.com/dramalar/advertiser-bot"
+    },
     {
       "name": "backend",
       "fullName": "velity-app/backend",
@@ -25,61 +77,17 @@
       "updatedAt": "2026-09-26T20:40:54Z",
       "pushedAt": "2026-09-26T20:42:51Z",
       "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-26T20:40:33Z",
-      "pushedAt": "2026-09-26T20:42:04Z",
-      "url": "https://github.com/velity-app/android"
-    },
-    {
-      "name": "advertiser-bot",
-      "fullName": "dramalar/advertiser-bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-26T14:13:20Z",
-      "pushedAt": "2026-09-26T00:49:00Z",
-      "url": "https://github.com/dramalar/advertiser-bot"
-    },
-    {
-      "name": "scraper-bot",
-      "fullName": "dramalar/scraper-bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-26T12:37:23Z",
-      "pushedAt": "2026-09-26T12:37:20Z",
-      "url": "https://github.com/dramalar/scraper-bot"
-    },
-    {
-      "name": "web",
-      "fullName": "dramalar/web",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-25T12:59:44Z",
-      "pushedAt": "2026-09-25T12:59:39Z",
-      "url": "https://github.com/dramalar/web"
     }
   ],
   "organizations": [
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-09-27T06:09:09Z",
+      "latestRepository": "web"
+    },
     {
       "login": "velity-app",
       "name": "velity-app",
@@ -87,14 +95,6 @@
       "url": "https://api.github.com/orgs/velity-app",
       "lastUpdatedAt": "2026-09-26T20:40:54Z",
       "latestRepository": "backend"
-    },
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-26T14:13:20Z",
-      "latestRepository": "advertiser-bot"
     },
     {
       "login": "smsmint",
@@ -123,6 +123,30 @@
   ],
   "commits": [
     {
+      "sha": "985c8f34fec45b3fdcb3fec253d300cce69a245c",
+      "shortSha": "985c8f3",
+      "message": "Update index.js",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/985c8f34fec45b3fdcb3fec253d300cce69a245c",
+      "date": "2026-09-27T06:09:02Z"
+    },
+    {
+      "sha": "58198a927716eab1e976edb56fb64daf24c080e6",
+      "shortSha": "58198a9",
+      "message": "Align Dramazam episode access with percentages",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/58198a927716eab1e976edb56fb64daf24c080e6",
+      "date": "2026-09-27T06:08:55Z"
+    },
+    {
+      "sha": "a928d1eea469f16e29f562853fde3707783dd9db",
+      "shortSha": "a928d1e",
+      "message": "Update state.sqlite",
+      "repository": "dramalar/advertiser-bot",
+      "url": "https://github.com/dramalar/advertiser-bot/commit/a928d1eea469f16e29f562853fde3707783dd9db",
+      "date": "2026-09-27T06:02:23Z"
+    },
+    {
       "sha": "b00dbe8b88a89a4273469a54488a0009bc42d907",
       "shortSha": "b00dbe8",
       "message": "Allow alpha track for Play release updates",
@@ -137,30 +161,6 @@
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/63b10dec1a61e3cd96075aeaf9b245be9d5eed0f",
       "date": "2026-09-26T20:40:25Z"
-    },
-    {
-      "sha": "8ca725f443115d227f4439323d622f07bb61a66c",
-      "shortSha": "8ca725f",
-      "message": "vibeshort errors",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/8ca725f443115d227f4439323d622f07bb61a66c",
-      "date": "2026-09-26T12:37:17Z"
-    },
-    {
-      "sha": "a5c7620c6aa05980ebea4afeb8f1cb47b434e373",
-      "shortSha": "a5c7620",
-      "message": "Add FFmpeg TLS CA bundle support and tests",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/a5c7620c6aa05980ebea4afeb8f1cb47b434e373",
-      "date": "2026-09-26T12:24:38Z"
-    },
-    {
-      "sha": "29f3321554e44dc7c28f4d9979bc66938b93e844",
-      "shortSha": "29f3321",
-      "message": "Update ffmpeg.js",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/29f3321554e44dc7c28f4d9979bc66938b93e844",
-      "date": "2026-09-26T12:17:12Z"
     }
   ]
 }
