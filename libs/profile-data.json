@@ -8,11 +8,24 @@
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 745,
-  "publicCommitCount": 144,
-  "privateCommitCount": 601,
-  "refreshedAt": "2026-09-27T14:01:29.288Z",
+  "commitCount": 747,
+  "publicCommitCount": 145,
+  "privateCommitCount": 602,
+  "refreshedAt": "2026-09-27T19:47:11.450Z",
   "repositories": [
+    {
+      "name": "advertiser-bot",
+      "fullName": "dramalar/advertiser-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-27T16:48:18Z",
+      "pushedAt": "2026-09-27T16:48:14Z",
+      "url": "https://github.com/dramalar/advertiser-bot"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -53,19 +66,6 @@
       "url": "https://github.com/dramalar/backend"
     },
     {
-      "name": "advertiser-bot",
-      "fullName": "dramalar/advertiser-bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-27T06:02:30Z",
-      "pushedAt": "2026-09-27T06:02:26Z",
-      "url": "https://github.com/dramalar/advertiser-bot"
-    },
-    {
       "name": "backend",
       "fullName": "velity-app/backend",
       "language": "TypeScript",
@@ -85,8 +85,8 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-27T06:09:09Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-09-27T16:48:18Z",
+      "latestRepository": "advertiser-bot"
     },
     {
       "login": "velity-app",
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "d5a057d5e09678e76563aedc232ecc7465be3f69",
+      "shortSha": "d5a057d",
+      "message": "Add TikTok profile session cookies",
+      "repository": "dramalar/advertiser-bot",
+      "url": "https://github.com/dramalar/advertiser-bot/commit/d5a057d5e09678e76563aedc232ecc7465be3f69",
+      "date": "2026-09-27T16:48:11Z"
+    },
+    {
       "sha": "985c8f34fec45b3fdcb3fec253d300cce69a245c",
       "shortSha": "985c8f3",
       "message": "Update index.js",
@@ -153,14 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/b00dbe8b88a89a4273469a54488a0009bc42d907",
       "date": "2026-09-26T20:40:47Z"
-    },
-    {
-      "sha": "63b10dec1a61e3cd96075aeaf9b245be9d5eed0f",
-      "shortSha": "63b10de",
-      "message": "Default Play publish to closed alpha track",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/63b10dec1a61e3cd96075aeaf9b245be9d5eed0f",
-      "date": "2026-09-26T20:40:25Z"
     }
   ]
 }
