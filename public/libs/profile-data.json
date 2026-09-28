@@ -8,49 +8,23 @@
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 749,
-  "publicCommitCount": 147,
-  "privateCommitCount": 602,
-  "refreshedAt": "2026-09-28T05:28:42.848Z",
+  "commitCount": 760,
+  "publicCommitCount": 148,
+  "privateCommitCount": 612,
+  "refreshedAt": "2026-09-28T16:47:24.789Z",
   "repositories": [
     {
-      "name": "advertiser-bot",
-      "fullName": "dramalar/advertiser-bot",
+      "name": "windows",
+      "fullName": "hackmety/windows",
       "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-27T16:48:18Z",
-      "pushedAt": "2026-09-27T16:48:14Z",
-      "url": "https://github.com/dramalar/advertiser-bot"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 29,
-      "forks": 0,
+      "stars": 7,
+      "forks": 1,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-09-27T13:28:38Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "web",
-      "fullName": "dramalar/web",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-27T06:09:09Z",
-      "pushedAt": "2026-09-27T06:09:05Z",
-      "url": "https://github.com/dramalar/web"
+      "updatedAt": "2026-09-28T15:45:17Z",
+      "pushedAt": "2026-04-16T23:19:48Z",
+      "url": "https://github.com/hackmety/windows"
     },
     {
       "name": "backend",
@@ -61,9 +35,22 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-27T06:09:02Z",
-      "pushedAt": "2026-09-27T06:08:58Z",
+      "updatedAt": "2026-09-28T14:30:53Z",
+      "pushedAt": "2026-09-28T14:30:38Z",
       "url": "https://github.com/dramalar/backend"
+    },
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-28T13:29:26Z",
+      "pushedAt": "2026-09-28T13:29:21Z",
+      "url": "https://github.com/dramalar/web"
     },
     {
       "name": "backend",
@@ -74,26 +61,47 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-26T20:40:54Z",
-      "pushedAt": "2026-09-26T20:42:51Z",
+      "updatedAt": "2026-09-28T10:34:32Z",
+      "pushedAt": "2026-09-28T10:36:27Z",
       "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-28T10:34:24Z",
+      "pushedAt": "2026-09-28T10:35:55Z",
+      "url": "https://github.com/velity-app/android"
     }
   ],
   "organizations": [
+    {
+      "login": "hackmety",
+      "name": "hackmety",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/276630337?v=4",
+      "url": "https://api.github.com/orgs/hackmety",
+      "lastUpdatedAt": "2026-09-28T15:45:17Z",
+      "latestRepository": "windows"
+    },
     {
       "login": "dramalar",
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-27T16:48:18Z",
-      "latestRepository": "advertiser-bot"
+      "lastUpdatedAt": "2026-09-28T14:30:53Z",
+      "latestRepository": "backend"
     },
     {
       "login": "velity-app",
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-26T20:40:54Z",
+      "lastUpdatedAt": "2026-09-28T10:34:32Z",
       "latestRepository": "backend"
     },
     {
@@ -111,56 +119,48 @@
       "url": "https://api.github.com/orgs/inelity",
       "lastUpdatedAt": "2026-09-01T04:34:35Z",
       "latestRepository": "backend"
-    },
-    {
-      "login": "itiraf-me",
-      "name": "itiraf-me",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/299862939?v=4",
-      "url": "https://api.github.com/orgs/itiraf-me",
-      "lastUpdatedAt": "2026-07-29T22:58:18Z",
-      "latestRepository": "backend"
     }
   ],
   "commits": [
     {
-      "sha": "d5a057d5e09678e76563aedc232ecc7465be3f69",
-      "shortSha": "d5a057d",
-      "message": "Add TikTok profile session cookies",
-      "repository": "dramalar/advertiser-bot",
-      "url": "https://github.com/dramalar/advertiser-bot/commit/d5a057d5e09678e76563aedc232ecc7465be3f69",
-      "date": "2026-09-27T16:48:11Z"
-    },
-    {
-      "sha": "985c8f34fec45b3fdcb3fec253d300cce69a245c",
-      "shortSha": "985c8f3",
-      "message": "Update index.js",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/985c8f34fec45b3fdcb3fec253d300cce69a245c",
-      "date": "2026-09-27T06:09:02Z"
-    },
-    {
-      "sha": "58198a927716eab1e976edb56fb64daf24c080e6",
-      "shortSha": "58198a9",
-      "message": "Align Dramazam episode access with percentages",
+      "sha": "b2d414b77110e4ab91685bdfc3deb1c3c246fe57",
+      "shortSha": "b2d414b",
+      "message": "feat(payment): deliver premium by email across",
       "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/58198a927716eab1e976edb56fb64daf24c080e6",
-      "date": "2026-09-27T06:08:55Z"
+      "url": "https://github.com/dramalar/backend/commit/b2d414b77110e4ab91685bdfc3deb1c3c246fe57",
+      "date": "2026-09-28T14:30:36Z"
     },
     {
-      "sha": "a928d1eea469f16e29f562853fde3707783dd9db",
-      "shortSha": "a928d1e",
-      "message": "Update state.sqlite",
-      "repository": "dramalar/advertiser-bot",
-      "url": "https://github.com/dramalar/advertiser-bot/commit/a928d1eea469f16e29f562853fde3707783dd9db",
-      "date": "2026-09-27T06:02:23Z"
+      "sha": "bb4786ed8d14149fc763fcc88a9e38b265372939",
+      "shortSha": "bb4786e",
+      "message": "feat(payment): log shopier incoming webhook and",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/bb4786ed8d14149fc763fcc88a9e38b265372939",
+      "date": "2026-09-28T14:18:49Z"
     },
     {
-      "sha": "b00dbe8b88a89a4273469a54488a0009bc42d907",
-      "shortSha": "b00dbe8",
-      "message": "Allow alpha track for Play release updates",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/b00dbe8b88a89a4273469a54488a0009bc42d907",
-      "date": "2026-09-26T20:40:47Z"
+      "sha": "7cae6f76c87670578fbf3d387dc170692e313ba9",
+      "shortSha": "7cae6f7",
+      "message": "feat(payment): support GET ping, query fallback",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/7cae6f76c87670578fbf3d387dc170692e313ba9",
+      "date": "2026-09-28T14:11:49Z"
+    },
+    {
+      "sha": "a0581fb79a3bb919d894ac72bb2a171de96a6250",
+      "shortSha": "a0581fb",
+      "message": "fix(payment): resolve cross-site OSB payments a",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/a0581fb79a3bb919d894ac72bb2a171de96a6250",
+      "date": "2026-09-28T14:04:29Z"
+    },
+    {
+      "sha": "5f08e9b469d827ac189c8f1c9a247bbc2058a330",
+      "shortSha": "5f08e9b",
+      "message": "fix(payment-modal): enforce strict 512px maxWid",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/5f08e9b469d827ac189c8f1c9a247bbc2058a330",
+      "date": "2026-09-28T13:29:17Z"
     }
   ]
 }
