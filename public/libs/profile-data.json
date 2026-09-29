@@ -2,17 +2,56 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1000,
+  "followers": 999,
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 761,
-  "publicCommitCount": 149,
-  "privateCommitCount": 612,
-  "refreshedAt": "2026-09-29T00:23:50.869Z",
+  "commitCount": 765,
+  "publicCommitCount": 150,
+  "privateCommitCount": 615,
+  "refreshedAt": "2026-09-29T10:43:35.202Z",
   "repositories": [
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-29T03:43:26Z",
+      "pushedAt": "2026-09-29T03:44:46Z",
+      "url": "https://github.com/velity-app/android"
+    },
+    {
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-29T03:43:13Z",
+      "pushedAt": "2026-09-29T03:45:26Z",
+      "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "contracts",
+      "fullName": "velity-app/contracts",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-29T03:38:58Z",
+      "pushedAt": "2026-09-29T03:39:22Z",
+      "url": "https://github.com/velity-app/contracts"
+    },
     {
       "name": "windows",
       "fullName": "hackmety/windows",
@@ -38,48 +77,17 @@
       "updatedAt": "2026-09-28T14:30:53Z",
       "pushedAt": "2026-09-28T14:30:38Z",
       "url": "https://github.com/dramalar/backend"
-    },
-    {
-      "name": "web",
-      "fullName": "dramalar/web",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-28T13:29:26Z",
-      "pushedAt": "2026-09-28T13:29:21Z",
-      "url": "https://github.com/dramalar/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-28T10:34:32Z",
-      "pushedAt": "2026-09-28T10:36:27Z",
-      "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-28T10:34:24Z",
-      "pushedAt": "2026-09-28T10:35:55Z",
-      "url": "https://github.com/velity-app/android"
     }
   ],
   "organizations": [
+    {
+      "login": "velity-app",
+      "name": "velity-app",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
+      "url": "https://api.github.com/orgs/velity-app",
+      "lastUpdatedAt": "2026-09-29T03:43:26Z",
+      "latestRepository": "android"
+    },
     {
       "login": "hackmety",
       "name": "hackmety",
@@ -94,14 +102,6 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
       "lastUpdatedAt": "2026-09-28T14:30:53Z",
-      "latestRepository": "backend"
-    },
-    {
-      "login": "velity-app",
-      "name": "velity-app",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
-      "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-09-28T10:34:32Z",
       "latestRepository": "backend"
     },
     {
@@ -123,6 +123,30 @@
   ],
   "commits": [
     {
+      "sha": "47c363e64d0aa414a135beb483acbf478363fbd9",
+      "shortSha": "47c363e",
+      "message": "feat(android): update contracts SHA, story edit",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/47c363e64d0aa414a135beb483acbf478363fbd9",
+      "date": "2026-09-29T03:43:18Z"
+    },
+    {
+      "sha": "4aa00e99880f91600305e12396e2537c21b65a8a",
+      "shortSha": "4aa00e9",
+      "message": "feat(backend): update contracts SHA, story arch",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/4aa00e99880f91600305e12396e2537c21b65a8a",
+      "date": "2026-09-29T03:43:07Z"
+    },
+    {
+      "sha": "ff3f268bf60feb21c0fceb663bf533cfbb1478c6",
+      "shortSha": "ff3f268",
+      "message": "feat(contracts): allow empty text with media in",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/ff3f268bf60feb21c0fceb663bf533cfbb1478c6",
+      "date": "2026-09-29T03:38:51Z"
+    },
+    {
       "sha": "b2d414b77110e4ab91685bdfc3deb1c3c246fe57",
       "shortSha": "b2d414b",
       "message": "feat(payment): deliver premium by email across",
@@ -137,30 +161,6 @@
       "repository": "dramalar/backend",
       "url": "https://github.com/dramalar/backend/commit/bb4786ed8d14149fc763fcc88a9e38b265372939",
       "date": "2026-09-28T14:18:49Z"
-    },
-    {
-      "sha": "7cae6f76c87670578fbf3d387dc170692e313ba9",
-      "shortSha": "7cae6f7",
-      "message": "feat(payment): support GET ping, query fallback",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/7cae6f76c87670578fbf3d387dc170692e313ba9",
-      "date": "2026-09-28T14:11:49Z"
-    },
-    {
-      "sha": "a0581fb79a3bb919d894ac72bb2a171de96a6250",
-      "shortSha": "a0581fb",
-      "message": "fix(payment): resolve cross-site OSB payments a",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/a0581fb79a3bb919d894ac72bb2a171de96a6250",
-      "date": "2026-09-28T14:04:29Z"
-    },
-    {
-      "sha": "5f08e9b469d827ac189c8f1c9a247bbc2058a330",
-      "shortSha": "5f08e9b",
-      "message": "fix(payment-modal): enforce strict 512px maxWid",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/5f08e9b469d827ac189c8f1c9a247bbc2058a330",
-      "date": "2026-09-28T13:29:17Z"
     }
   ]
 }
