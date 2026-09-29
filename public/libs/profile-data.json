@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 1000,
+  "followers": 999,
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 768,
-  "publicCommitCount": 151,
-  "privateCommitCount": 617,
-  "refreshedAt": "2026-09-29T18:06:58.053Z",
+  "commitCount": 774,
+  "publicCommitCount": 152,
+  "privateCommitCount": 622,
+  "refreshedAt": "2026-09-29T23:45:08.364Z",
   "repositories": [
     {
       "name": "scraper-bot",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-29T17:37:37Z",
-      "pushedAt": "2026-09-29T17:37:26Z",
+      "updatedAt": "2026-09-29T20:50:53Z",
+      "pushedAt": "2026-09-29T20:50:49Z",
       "url": "https://github.com/dramalar/scraper-bot"
     },
     {
@@ -85,7 +85,7 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-29T17:37:37Z",
+      "lastUpdatedAt": "2026-09-29T20:50:53Z",
       "latestRepository": "scraper-bot"
     },
     {
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "9e447f3d231700be1de71aafca9bbcdb54b79061",
-      "shortSha": "9e447f3",
-      "message": "Add bulk IndexNow CLI and indexing improvements",
+      "sha": "7b5c9331b0fd2a11580a2db035a66dd3b7ae6493",
+      "shortSha": "7b5c933",
+      "message": "Improve DramaDunyam caching and retry logic",
       "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/9e447f3d231700be1de71aafca9bbcdb54b79061",
-      "date": "2026-09-29T17:37:24Z"
+      "url": "https://github.com/dramalar/scraper-bot/commit/7b5c9331b0fd2a11580a2db035a66dd3b7ae6493",
+      "date": "2026-09-29T20:50:46Z"
     },
     {
-      "sha": "5cd72f65e0d5e2b70224f68d055733222948fcb5",
-      "shortSha": "5cd72f6",
-      "message": "Add DramaDunyam provider and HLS headers",
+      "sha": "c613a34076cfbe8729fdd8294592544e361973d4",
+      "shortSha": "c613a34",
+      "message": "Update client.js",
       "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/5cd72f65e0d5e2b70224f68d055733222948fcb5",
-      "date": "2026-09-29T17:15:32Z"
+      "url": "https://github.com/dramalar/scraper-bot/commit/c613a34076cfbe8729fdd8294592544e361973d4",
+      "date": "2026-09-29T20:34:07Z"
     },
     {
-      "sha": "48ef5f9460f1d1c065c0278da34cab8bdc8c7016",
-      "shortSha": "48ef5f9",
-      "message": "Add native story camera and gesture overhaul",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/48ef5f9460f1d1c065c0278da34cab8bdc8c7016",
-      "date": "2026-09-29T16:41:24Z"
+      "sha": "26058303e7189593e5aded81dd8a6c46dd73d8d2",
+      "shortSha": "2605830",
+      "message": "Update client.js",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/26058303e7189593e5aded81dd8a6c46dd73d8d2",
+      "date": "2026-09-29T20:33:57Z"
     },
     {
-      "sha": "94ae73a0e3537fd871c2a170b427e7190319a4f3",
-      "shortSha": "94ae73a",
-      "message": "try new",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/94ae73a0e3537fd871c2a170b427e7190319a4f3",
-      "date": "2026-09-29T16:41:20Z"
+      "sha": "cf9477063c6da3fe8d83933ae5745ad03c97337b",
+      "shortSha": "cf94770",
+      "message": "Update hls-download.js",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/cf9477063c6da3fe8d83933ae5745ad03c97337b",
+      "date": "2026-09-29T20:31:40Z"
     },
     {
-      "sha": "47c363e64d0aa414a135beb483acbf478363fbd9",
-      "shortSha": "47c363e",
-      "message": "feat(android): update contracts SHA, story edit",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/47c363e64d0aa414a135beb483acbf478363fbd9",
-      "date": "2026-09-29T03:43:18Z"
+      "sha": "d7d2891c129b7cbc138496e4949b79a563f701fa",
+      "shortSha": "d7d2891",
+      "message": "Improve metadata enrichment and cover downloads",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/d7d2891c129b7cbc138496e4949b79a563f701fa",
+      "date": "2026-09-29T20:18:14Z"
     }
   ]
 }
