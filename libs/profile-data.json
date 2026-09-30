@@ -11,8 +11,34 @@
   "commitCount": 775,
   "publicCommitCount": 153,
   "privateCommitCount": 622,
-  "refreshedAt": "2026-09-30T05:37:18.707Z",
+  "refreshedAt": "2026-09-30T14:57:45.790Z",
   "repositories": [
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-30T14:33:24Z",
+      "pushedAt": "2026-09-30T14:33:19Z",
+      "url": "https://github.com/dramalar/backend"
+    },
+    {
+      "name": "web",
+      "fullName": "dramalar/web",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-09-30T14:33:20Z",
+      "pushedAt": "2026-09-30T14:33:15Z",
+      "url": "https://github.com/dramalar/web"
+    },
     {
       "name": "scraper-bot",
       "fullName": "dramalar/scraper-bot",
@@ -22,8 +48,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-29T20:50:53Z",
-      "pushedAt": "2026-09-29T20:50:49Z",
+      "updatedAt": "2026-09-30T12:51:50Z",
+      "pushedAt": "2026-09-30T12:51:43Z",
       "url": "https://github.com/dramalar/scraper-bot"
     },
     {
@@ -51,32 +77,6 @@
       "updatedAt": "2026-09-29T16:41:27Z",
       "pushedAt": "2026-09-29T16:44:19Z",
       "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "contracts",
-      "fullName": "velity-app/contracts",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-29T03:38:58Z",
-      "pushedAt": "2026-09-29T03:39:22Z",
-      "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "windows",
-      "fullName": "hackmety/windows",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-09-28T15:45:17Z",
-      "pushedAt": "2026-04-16T23:19:48Z",
-      "url": "https://github.com/hackmety/windows"
     }
   ],
   "organizations": [
@@ -85,8 +85,8 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-29T20:50:53Z",
-      "latestRepository": "scraper-bot"
+      "lastUpdatedAt": "2026-09-30T14:33:24Z",
+      "latestRepository": "backend"
     },
     {
       "login": "velity-app",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "7b5c9331b0fd2a11580a2db035a66dd3b7ae6493",
-      "shortSha": "7b5c933",
-      "message": "Improve DramaDunyam caching and retry logic",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/7b5c9331b0fd2a11580a2db035a66dd3b7ae6493",
-      "date": "2026-09-29T20:50:46Z"
+      "sha": "14abae3f1aa734ef8dd94118a858903b97efcce1",
+      "shortSha": "14abae3",
+      "message": "Update catalog.js",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/14abae3f1aa734ef8dd94118a858903b97efcce1",
+      "date": "2026-09-30T14:33:16Z"
     },
     {
-      "sha": "c613a34076cfbe8729fdd8294592544e361973d4",
-      "shortSha": "c613a34",
-      "message": "Update client.js",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/c613a34076cfbe8729fdd8294592544e361973d4",
-      "date": "2026-09-29T20:34:07Z"
+      "sha": "b0b0c9023ab53df46ab825ee254e50f08b3ff5d7",
+      "shortSha": "b0b0c90",
+      "message": "Update sitemap.js",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/b0b0c9023ab53df46ab825ee254e50f08b3ff5d7",
+      "date": "2026-09-30T14:33:11Z"
     },
     {
-      "sha": "26058303e7189593e5aded81dd8a6c46dd73d8d2",
-      "shortSha": "2605830",
-      "message": "Update client.js",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/26058303e7189593e5aded81dd8a6c46dd73d8d2",
-      "date": "2026-09-29T20:33:57Z"
+      "sha": "042e6cef14562a5fd1af32b486acbf7f243f879a",
+      "shortSha": "042e6ce",
+      "message": "try new",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/042e6cef14562a5fd1af32b486acbf7f243f879a",
+      "date": "2026-09-30T14:25:48Z"
     },
     {
-      "sha": "cf9477063c6da3fe8d83933ae5745ad03c97337b",
-      "shortSha": "cf94770",
-      "message": "Update hls-download.js",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/cf9477063c6da3fe8d83933ae5745ad03c97337b",
-      "date": "2026-09-29T20:31:40Z"
+      "sha": "f63486cdb7720ffe1c3dedf1ab23f2d166088767",
+      "shortSha": "f63486c",
+      "message": "Update catalog.js",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/f63486cdb7720ffe1c3dedf1ab23f2d166088767",
+      "date": "2026-09-30T14:25:22Z"
     },
     {
-      "sha": "d7d2891c129b7cbc138496e4949b79a563f701fa",
-      "shortSha": "d7d2891",
-      "message": "Improve metadata enrichment and cover downloads",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/d7d2891c129b7cbc138496e4949b79a563f701fa",
-      "date": "2026-09-29T20:18:14Z"
+      "sha": "e4e70edf9cfe3e4cb3d156f9f92bebab3e8ac7ce",
+      "shortSha": "e4e70ed",
+      "message": "Update catalog-progress.test.js",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/e4e70edf9cfe3e4cb3d156f9f92bebab3e8ac7ce",
+      "date": "2026-09-30T13:44:27Z"
     }
   ]
 }
