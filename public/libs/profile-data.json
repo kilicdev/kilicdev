@@ -2,29 +2,29 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 999,
+  "followers": 998,
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 775,
-  "publicCommitCount": 153,
-  "privateCommitCount": 622,
-  "refreshedAt": "2026-09-30T14:57:45.790Z",
+  "commitCount": 791,
+  "publicCommitCount": 155,
+  "privateCommitCount": 636,
+  "refreshedAt": "2026-09-30T20:50:37.207Z",
   "repositories": [
     {
-      "name": "backend",
-      "fullName": "dramalar/backend",
+      "name": "scraper-bot",
+      "fullName": "dramalar/scraper-bot",
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-30T14:33:24Z",
-      "pushedAt": "2026-09-30T14:33:19Z",
-      "url": "https://github.com/dramalar/backend"
+      "updatedAt": "2026-09-30T19:24:54Z",
+      "pushedAt": "2026-09-30T19:24:49Z",
+      "url": "https://github.com/dramalar/scraper-bot"
     },
     {
       "name": "web",
@@ -35,22 +35,22 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-30T14:33:20Z",
-      "pushedAt": "2026-09-30T14:33:15Z",
+      "updatedAt": "2026-09-30T19:05:55Z",
+      "pushedAt": "2026-09-30T19:05:49Z",
       "url": "https://github.com/dramalar/web"
     },
     {
-      "name": "scraper-bot",
-      "fullName": "dramalar/scraper-bot",
+      "name": "backend",
+      "fullName": "dramalar/backend",
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-30T12:51:50Z",
-      "pushedAt": "2026-09-30T12:51:43Z",
-      "url": "https://github.com/dramalar/scraper-bot"
+      "updatedAt": "2026-09-30T18:46:57Z",
+      "pushedAt": "2026-09-30T18:46:52Z",
+      "url": "https://github.com/dramalar/backend"
     },
     {
       "name": "android",
@@ -85,8 +85,8 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-30T14:33:24Z",
-      "latestRepository": "backend"
+      "lastUpdatedAt": "2026-09-30T19:24:54Z",
+      "latestRepository": "scraper-bot"
     },
     {
       "login": "velity-app",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "14abae3f1aa734ef8dd94118a858903b97efcce1",
-      "shortSha": "14abae3",
-      "message": "Update catalog.js",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/14abae3f1aa734ef8dd94118a858903b97efcce1",
-      "date": "2026-09-30T14:33:16Z"
+      "sha": "93ee8f7555c2abc3bec129ffaecf57e576d5fd49",
+      "shortSha": "93ee8f7",
+      "message": "Harden HLS/session handling and ReelShort parsing",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/93ee8f7555c2abc3bec129ffaecf57e576d5fd49",
+      "date": "2026-09-30T19:24:46Z"
     },
     {
-      "sha": "b0b0c9023ab53df46ab825ee254e50f08b3ff5d7",
-      "shortSha": "b0b0c90",
-      "message": "Update sitemap.js",
+      "sha": "4551a9e923911f4169ee9ded0e992317184f3832",
+      "shortSha": "4551a9e",
+      "message": "fix(player): auto-hide controls after 3s, resto",
       "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/b0b0c9023ab53df46ab825ee254e50f08b3ff5d7",
-      "date": "2026-09-30T14:33:11Z"
+      "url": "https://github.com/dramalar/web/commit/4551a9e923911f4169ee9ded0e992317184f3832",
+      "date": "2026-09-30T19:05:46Z"
     },
     {
-      "sha": "042e6cef14562a5fd1af32b486acbf7f243f879a",
-      "shortSha": "042e6ce",
-      "message": "try new",
+      "sha": "1112a47772f3a1d9e48e8012bf51c5f2a5f87b0f",
+      "shortSha": "1112a47",
+      "message": "fix(seo): fix provider breadcrumb, noindex genr",
       "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/042e6cef14562a5fd1af32b486acbf7f243f879a",
-      "date": "2026-09-30T14:25:48Z"
+      "url": "https://github.com/dramalar/web/commit/1112a47772f3a1d9e48e8012bf51c5f2a5f87b0f",
+      "date": "2026-09-30T18:46:56Z"
     },
     {
-      "sha": "f63486cdb7720ffe1c3dedf1ab23f2d166088767",
-      "shortSha": "f63486c",
-      "message": "Update catalog.js",
+      "sha": "ca6d210a9d921a22296d72ea19d52ecded87044d",
+      "shortSha": "ca6d210",
+      "message": "feat(sitemap): expose freeEpisodesCount for gue",
       "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/f63486cdb7720ffe1c3dedf1ab23f2d166088767",
-      "date": "2026-09-30T14:25:22Z"
+      "url": "https://github.com/dramalar/backend/commit/ca6d210a9d921a22296d72ea19d52ecded87044d",
+      "date": "2026-09-30T18:46:49Z"
     },
     {
-      "sha": "e4e70edf9cfe3e4cb3d156f9f92bebab3e8ac7ce",
-      "shortSha": "e4e70ed",
-      "message": "Update catalog-progress.test.js",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/e4e70edf9cfe3e4cb3d156f9f92bebab3e8ac7ce",
-      "date": "2026-09-30T13:44:27Z"
+      "sha": "9c3f6aba03b9df71e765e7cfca6da86fc7f87194",
+      "shortSha": "9c3f6ab",
+      "message": "feat(player,seo,sitemap): integrate hls.js, ded",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/9c3f6aba03b9df71e765e7cfca6da86fc7f87194",
+      "date": "2026-09-30T18:29:29Z"
     }
   ]
 }
