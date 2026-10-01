@@ -2,17 +2,43 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 996,
+  "followers": 995,
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
   "totalStars": 242,
   "organizationCount": 10,
-  "commitCount": 793,
-  "publicCommitCount": 156,
-  "privateCommitCount": 637,
-  "refreshedAt": "2026-10-01T06:00:32.455Z",
+  "commitCount": 802,
+  "publicCommitCount": 157,
+  "privateCommitCount": 645,
+  "refreshedAt": "2026-10-01T15:29:18.751Z",
   "repositories": [
+    {
+      "name": "scraper-bot",
+      "fullName": "dramalar/scraper-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-01T12:05:19Z",
+      "pushedAt": "2026-10-01T12:05:15Z",
+      "url": "https://github.com/dramalar/scraper-bot"
+    },
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-01T10:16:06Z",
+      "pushedAt": "2026-10-01T10:16:02Z",
+      "url": "https://github.com/dramalar/backend"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -27,19 +53,6 @@
       "url": "https://github.com/kilicdev/kilic.db"
     },
     {
-      "name": "scraper-bot",
-      "fullName": "dramalar/scraper-bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-30T22:21:49Z",
-      "pushedAt": "2026-09-30T22:21:46Z",
-      "url": "https://github.com/dramalar/scraper-bot"
-    },
-    {
       "name": "web",
       "fullName": "dramalar/web",
       "language": "JavaScript",
@@ -51,19 +64,6 @@
       "updatedAt": "2026-09-30T19:05:55Z",
       "pushedAt": "2026-09-30T19:05:49Z",
       "url": "https://github.com/dramalar/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "dramalar/backend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-30T18:46:57Z",
-      "pushedAt": "2026-09-30T18:46:52Z",
-      "url": "https://github.com/dramalar/backend"
     },
     {
       "name": "android",
@@ -85,7 +85,7 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-30T22:21:49Z",
+      "lastUpdatedAt": "2026-10-01T12:05:19Z",
       "latestRepository": "scraper-bot"
     },
     {
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "6412b4ae4f7e5af1fcec43471c2a5faa19501989",
-      "shortSha": "6412b4a",
-      "message": "Harden duplicate detection and 409 handling",
+      "sha": "25b71f666844cb9b372b316a709fc7579e1ae506",
+      "shortSha": "25b71f6",
+      "message": "fix(slug): use canonical SEO slug (-dublajli-<p",
       "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/6412b4ae4f7e5af1fcec43471c2a5faa19501989",
-      "date": "2026-09-30T22:21:42Z"
+      "url": "https://github.com/dramalar/scraper-bot/commit/25b71f666844cb9b372b316a709fc7579e1ae506",
+      "date": "2026-10-01T12:05:13Z"
     },
     {
-      "sha": "93ee8f7555c2abc3bec129ffaecf57e576d5fd49",
-      "shortSha": "93ee8f7",
-      "message": "Harden HLS/session handling and ReelShort parsing",
+      "sha": "6324782bbbe5466c6bfcc025160e4b34402241e9",
+      "shortSha": "6324782",
+      "message": "feat(telegram): include dramazam.com/dizi/slug",
       "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/93ee8f7555c2abc3bec129ffaecf57e576d5fd49",
-      "date": "2026-09-30T19:24:46Z"
+      "url": "https://github.com/dramalar/scraper-bot/commit/6324782bbbe5466c6bfcc025160e4b34402241e9",
+      "date": "2026-10-01T11:59:42Z"
     },
     {
-      "sha": "4551a9e923911f4169ee9ded0e992317184f3832",
-      "shortSha": "4551a9e",
-      "message": "fix(player): auto-hide controls after 3s, resto",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/4551a9e923911f4169ee9ded0e992317184f3832",
-      "date": "2026-09-30T19:05:46Z"
+      "sha": "543bd5d3e72cbf768ce0a8e08adcce202c609834",
+      "shortSha": "543bd5d",
+      "message": "perf(dedup): optimize fuzzy duplicate check to",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/543bd5d3e72cbf768ce0a8e08adcce202c609834",
+      "date": "2026-10-01T11:06:53Z"
     },
     {
-      "sha": "1112a47772f3a1d9e48e8012bf51c5f2a5f87b0f",
-      "shortSha": "1112a47",
-      "message": "fix(seo): fix provider breadcrumb, noindex genr",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/1112a47772f3a1d9e48e8012bf51c5f2a5f87b0f",
-      "date": "2026-09-30T18:46:56Z"
+      "sha": "b5c22997f379c3cb1f8aabbacb032f9435015370",
+      "shortSha": "b5c2299",
+      "message": "fix: extend ad and promo sentence patterns to s",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/b5c22997f379c3cb1f8aabbacb032f9435015370",
+      "date": "2026-10-01T10:57:56Z"
     },
     {
-      "sha": "ca6d210a9d921a22296d72ea19d52ecded87044d",
-      "shortSha": "ca6d210",
-      "message": "feat(sitemap): expose freeEpisodesCount for gue",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/ca6d210a9d921a22296d72ea19d52ecded87044d",
-      "date": "2026-09-30T18:46:49Z"
+      "sha": "5fb7fd50aae1c7318a36c6e8959be594493f195b",
+      "shortSha": "5fb7fd5",
+      "message": "feat: normalize titles to Turkish Title Case an",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/5fb7fd50aae1c7318a36c6e8959be594493f195b",
+      "date": "2026-10-01T10:56:58Z"
     }
   ]
 }
