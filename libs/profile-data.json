@@ -2,17 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 998,
+  "followers": 996,
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
-  "totalStars": 241,
+  "totalStars": 242,
   "organizationCount": 10,
-  "commitCount": 791,
-  "publicCommitCount": 155,
-  "privateCommitCount": 636,
-  "refreshedAt": "2026-09-30T20:50:37.207Z",
+  "commitCount": 793,
+  "publicCommitCount": 156,
+  "privateCommitCount": 637,
+  "refreshedAt": "2026-10-01T06:00:32.455Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 30,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-10-01T03:53:46Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
     {
       "name": "scraper-bot",
       "fullName": "dramalar/scraper-bot",
@@ -22,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-30T19:24:54Z",
-      "pushedAt": "2026-09-30T19:24:49Z",
+      "updatedAt": "2026-09-30T22:21:49Z",
+      "pushedAt": "2026-09-30T22:21:46Z",
       "url": "https://github.com/dramalar/scraper-bot"
     },
     {
@@ -64,19 +77,6 @@
       "updatedAt": "2026-09-29T16:42:29Z",
       "pushedAt": "2026-09-29T16:43:11Z",
       "url": "https://github.com/velity-app/android"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-29T16:41:27Z",
-      "pushedAt": "2026-09-29T16:44:19Z",
-      "url": "https://github.com/velity-app/backend"
     }
   ],
   "organizations": [
@@ -85,7 +85,7 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-09-30T19:24:54Z",
+      "lastUpdatedAt": "2026-09-30T22:21:49Z",
       "latestRepository": "scraper-bot"
     },
     {
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "6412b4ae4f7e5af1fcec43471c2a5faa19501989",
+      "shortSha": "6412b4a",
+      "message": "Harden duplicate detection and 409 handling",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/6412b4ae4f7e5af1fcec43471c2a5faa19501989",
+      "date": "2026-09-30T22:21:42Z"
+    },
+    {
       "sha": "93ee8f7555c2abc3bec129ffaecf57e576d5fd49",
       "shortSha": "93ee8f7",
       "message": "Harden HLS/session handling and ReelShort parsing",
@@ -153,14 +161,6 @@
       "repository": "dramalar/backend",
       "url": "https://github.com/dramalar/backend/commit/ca6d210a9d921a22296d72ea19d52ecded87044d",
       "date": "2026-09-30T18:46:49Z"
-    },
-    {
-      "sha": "9c3f6aba03b9df71e765e7cfca6da86fc7f87194",
-      "shortSha": "9c3f6ab",
-      "message": "feat(player,seo,sitemap): integrate hls.js, ded",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/9c3f6aba03b9df71e765e7cfca6da86fc7f87194",
-      "date": "2026-09-30T18:29:29Z"
     }
   ]
 }
