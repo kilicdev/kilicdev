@@ -6,49 +6,23 @@
   "following": 180,
   "totalRepos": 69,
   "publicRepos": 32,
-  "totalStars": 242,
+  "totalStars": 241,
   "organizationCount": 10,
-  "commitCount": 807,
-  "publicCommitCount": 162,
-  "privateCommitCount": 645,
-  "refreshedAt": "2026-10-03T05:22:33.328Z",
+  "commitCount": 810,
+  "publicCommitCount": 163,
+  "privateCommitCount": 647,
+  "refreshedAt": "2026-10-03T13:26:17.821Z",
   "repositories": [
-    {
-      "name": "scraper-bot",
-      "fullName": "dramalar/scraper-bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-01T12:05:19Z",
-      "pushedAt": "2026-10-01T12:05:15Z",
-      "url": "https://github.com/dramalar/scraper-bot"
-    },
-    {
-      "name": "backend",
-      "fullName": "dramalar/backend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-01T10:16:06Z",
-      "pushedAt": "2026-10-01T10:16:02Z",
-      "url": "https://github.com/dramalar/backend"
-    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
       "language": "TypeScript",
-      "stars": 30,
+      "stars": 29,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-10-01T03:53:46Z",
+      "updatedAt": "2026-10-03T09:15:11Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
     },
@@ -61,9 +35,35 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-09-30T19:05:55Z",
-      "pushedAt": "2026-09-30T19:05:49Z",
+      "updatedAt": "2026-10-03T07:40:47Z",
+      "pushedAt": "2026-10-03T07:40:43Z",
       "url": "https://github.com/dramalar/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "dramalar/backend",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-03T07:40:32Z",
+      "pushedAt": "2026-10-03T07:40:28Z",
+      "url": "https://github.com/dramalar/backend"
+    },
+    {
+      "name": "scraper-bot",
+      "fullName": "dramalar/scraper-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-01T12:05:19Z",
+      "pushedAt": "2026-10-01T12:05:15Z",
+      "url": "https://github.com/dramalar/scraper-bot"
     },
     {
       "name": "android",
@@ -85,8 +85,8 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-10-01T12:05:19Z",
-      "latestRepository": "scraper-bot"
+      "lastUpdatedAt": "2026-10-03T07:40:47Z",
+      "latestRepository": "web"
     },
     {
       "login": "velity-app",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "e8d32cd3ca9a980f7e7eec8524ffeae1336bb6d3",
+      "shortSha": "e8d32cd",
+      "message": "Add CDN content URLs to video SEO metadata",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/e8d32cd3ca9a980f7e7eec8524ffeae1336bb6d3",
+      "date": "2026-10-03T07:40:39Z"
+    },
+    {
+      "sha": "da69b0b51e52d61f9b9b58ff2c94eee80fc7c114",
+      "shortSha": "da69b0b",
+      "message": "Include r2Location in sitemap titles",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/da69b0b51e52d61f9b9b58ff2c94eee80fc7c114",
+      "date": "2026-10-03T07:40:25Z"
+    },
+    {
       "sha": "25b71f666844cb9b372b316a709fc7579e1ae506",
       "shortSha": "25b71f6",
       "message": "fix(slug): use canonical SEO slug (-dublajli-<p",
@@ -145,22 +161,6 @@
       "repository": "dramalar/scraper-bot",
       "url": "https://github.com/dramalar/scraper-bot/commit/543bd5d3e72cbf768ce0a8e08adcce202c609834",
       "date": "2026-10-01T11:06:53Z"
-    },
-    {
-      "sha": "b5c22997f379c3cb1f8aabbacb032f9435015370",
-      "shortSha": "b5c2299",
-      "message": "fix: extend ad and promo sentence patterns to s",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/b5c22997f379c3cb1f8aabbacb032f9435015370",
-      "date": "2026-10-01T10:57:56Z"
-    },
-    {
-      "sha": "5fb7fd50aae1c7318a36c6e8959be594493f195b",
-      "shortSha": "5fb7fd5",
-      "message": "feat: normalize titles to Turkish Title Case an",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/5fb7fd50aae1c7318a36c6e8959be594493f195b",
-      "date": "2026-10-01T10:56:58Z"
     }
   ]
 }
