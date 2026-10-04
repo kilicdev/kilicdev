@@ -4,15 +4,41 @@
   "bio": "Software Architect & Senior Full Stack Engineer",
   "followers": 996,
   "following": 179,
-  "totalRepos": 69,
+  "totalRepos": 71,
   "publicRepos": 32,
   "totalStars": 241,
-  "organizationCount": 10,
-  "commitCount": 813,
-  "publicCommitCount": 166,
-  "privateCommitCount": 647,
-  "refreshedAt": "2026-10-04T05:58:48.196Z",
+  "organizationCount": 11,
+  "commitCount": 835,
+  "publicCommitCount": 167,
+  "privateCommitCount": 668,
+  "refreshedAt": "2026-10-04T14:06:35.523Z",
   "repositories": [
+    {
+      "name": "web",
+      "fullName": "Dijital-Marketin/web",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-04T13:23:32Z",
+      "pushedAt": "2026-10-04T13:23:28Z",
+      "url": "https://github.com/Dijital-Marketin/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "Dijital-Marketin/backend",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-04T12:53:19Z",
+      "pushedAt": "2026-10-04T12:53:16Z",
+      "url": "https://github.com/Dijital-Marketin/backend"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -51,35 +77,17 @@
       "updatedAt": "2026-10-03T07:40:32Z",
       "pushedAt": "2026-10-03T07:40:28Z",
       "url": "https://github.com/dramalar/backend"
-    },
-    {
-      "name": "scraper-bot",
-      "fullName": "dramalar/scraper-bot",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-01T12:05:19Z",
-      "pushedAt": "2026-10-01T12:05:15Z",
-      "url": "https://github.com/dramalar/scraper-bot"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-09-29T16:42:29Z",
-      "pushedAt": "2026-09-29T16:43:11Z",
-      "url": "https://github.com/velity-app/android"
     }
   ],
   "organizations": [
+    {
+      "login": "Dijital-Marketin",
+      "name": "Dijital-Marketin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/337672063?v=4",
+      "url": "https://api.github.com/orgs/Dijital-Marketin",
+      "lastUpdatedAt": "2026-10-04T13:23:32Z",
+      "latestRepository": "web"
+    },
     {
       "login": "dramalar",
       "name": "dramalar",
@@ -111,56 +119,48 @@
       "url": "https://api.github.com/orgs/smsmint",
       "lastUpdatedAt": "2026-09-06T02:25:09Z",
       "latestRepository": ".github"
-    },
-    {
-      "login": "inelity",
-      "name": "inelity",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/269519114?v=4",
-      "url": "https://api.github.com/orgs/inelity",
-      "lastUpdatedAt": "2026-09-01T04:34:35Z",
-      "latestRepository": "backend"
     }
   ],
   "commits": [
     {
-      "sha": "e8d32cd3ca9a980f7e7eec8524ffeae1336bb6d3",
-      "shortSha": "e8d32cd",
-      "message": "Add CDN content URLs to video SEO metadata",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/e8d32cd3ca9a980f7e7eec8524ffeae1336bb6d3",
-      "date": "2026-10-03T07:40:39Z"
+      "sha": "7e2c098f506c5d0d978e38c66702d47ec8983976",
+      "shortSha": "7e2c098",
+      "message": "Keep every hero booklet visible on compact desk",
+      "repository": "Dijital-Marketin/web",
+      "url": "https://github.com/Dijital-Marketin/web/commit/7e2c098f506c5d0d978e38c66702d47ec8983976",
+      "date": "2026-10-04T13:23:25Z"
     },
     {
-      "sha": "da69b0b51e52d61f9b9b58ff2c94eee80fc7c114",
-      "shortSha": "da69b0b",
-      "message": "Include r2Location in sitemap titles",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/da69b0b51e52d61f9b9b58ff2c94eee80fc7c114",
-      "date": "2026-10-03T07:40:25Z"
+      "sha": "99e16553f31c152ac13792e658b333674f178427",
+      "shortSha": "99e1655",
+      "message": "Switch the entire experience to charcoal and or",
+      "repository": "Dijital-Marketin/web",
+      "url": "https://github.com/Dijital-Marketin/web/commit/99e16553f31c152ac13792e658b333674f178427",
+      "date": "2026-10-04T13:18:50Z"
     },
     {
-      "sha": "25b71f666844cb9b372b316a709fc7579e1ae506",
-      "shortSha": "25b71f6",
-      "message": "fix(slug): use canonical SEO slug (-dublajli-<p",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/25b71f666844cb9b372b316a709fc7579e1ae506",
-      "date": "2026-10-01T12:05:13Z"
+      "sha": "d5635c7db4f6703bbd2f4acfe9d76eedd4891fba",
+      "shortSha": "d5635c7",
+      "message": "Improve text contrast across reading and accoun",
+      "repository": "Dijital-Marketin/web",
+      "url": "https://github.com/Dijital-Marketin/web/commit/d5635c7db4f6703bbd2f4acfe9d76eedd4891fba",
+      "date": "2026-10-04T13:03:19Z"
     },
     {
-      "sha": "6324782bbbe5466c6bfcc025160e4b34402241e9",
-      "shortSha": "6324782",
-      "message": "feat(telegram): include dramazam.com/dizi/slug",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/6324782bbbe5466c6bfcc025160e4b34402241e9",
-      "date": "2026-10-01T11:59:42Z"
+      "sha": "7daf9d6d659316bcf48a12fceb4cd3fbdb56679e",
+      "shortSha": "7daf9d6",
+      "message": "Redesign booklet library and independent access",
+      "repository": "Dijital-Marketin/web",
+      "url": "https://github.com/Dijital-Marketin/web/commit/7daf9d6d659316bcf48a12fceb4cd3fbdb56679e",
+      "date": "2026-10-04T12:55:13Z"
     },
     {
-      "sha": "543bd5d3e72cbf768ce0a8e08adcce202c609834",
-      "shortSha": "543bd5d",
-      "message": "perf(dedup): optimize fuzzy duplicate check to",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/543bd5d3e72cbf768ce0a8e08adcce202c609834",
-      "date": "2026-10-01T11:06:53Z"
+      "sha": "d6c8547bf8938449c69ca9f5418afb9949d084aa",
+      "shortSha": "d6c8547",
+      "message": "Add independent booklet access periods and read",
+      "repository": "Dijital-Marketin/backend",
+      "url": "https://github.com/Dijital-Marketin/backend/commit/d6c8547bf8938449c69ca9f5418afb9949d084aa",
+      "date": "2026-10-04T12:53:14Z"
     }
   ]
 }
