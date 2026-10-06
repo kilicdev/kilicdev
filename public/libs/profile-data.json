@@ -2,30 +2,17 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 996,
+  "followers": 998,
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 11,
-  "commitCount": 843,
-  "publicCommitCount": 172,
-  "privateCommitCount": 671,
-  "refreshedAt": "2026-10-05T17:10:55.933Z",
+  "commitCount": 854,
+  "publicCommitCount": 174,
+  "privateCommitCount": 680,
+  "refreshedAt": "2026-10-06T01:19:18.418Z",
   "repositories": [
-    {
-      "name": "web",
-      "fullName": "Dijital-Marketin/web",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-05T11:53:39Z",
-      "pushedAt": "2026-10-05T11:53:35Z",
-      "url": "https://github.com/Dijital-Marketin/web"
-    },
     {
       "name": "backend",
       "fullName": "Dijital-Marketin/backend",
@@ -35,9 +22,22 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-05T11:53:38Z",
-      "pushedAt": "2026-10-05T11:53:34Z",
+      "updatedAt": "2026-10-05T22:07:06Z",
+      "pushedAt": "2026-10-05T22:07:02Z",
       "url": "https://github.com/Dijital-Marketin/backend"
+    },
+    {
+      "name": "web",
+      "fullName": "Dijital-Marketin/web",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-05T22:00:57Z",
+      "pushedAt": "2026-10-05T22:00:53Z",
+      "url": "https://github.com/Dijital-Marketin/web"
     },
     {
       "name": ".github",
@@ -48,8 +48,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-10-04T22:07:06Z",
-      "pushedAt": "2026-10-04T22:07:03Z",
+      "updatedAt": "2026-10-05T21:56:11Z",
+      "pushedAt": "2026-10-05T21:56:08Z",
       "url": "https://github.com/Dijital-Marketin/.github"
     },
     {
@@ -85,8 +85,8 @@
       "name": "Dijital-Marketin",
       "avatarUrl": "https://avatars.githubusercontent.com/u/337672063?v=4",
       "url": "https://api.github.com/orgs/Dijital-Marketin",
-      "lastUpdatedAt": "2026-10-05T11:53:39Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-10-05T22:07:06Z",
+      "latestRepository": "backend"
     },
     {
       "login": "dramalar",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "384e65e90e5f7cc10382d7793993532f58f8e129",
-      "shortSha": "384e65e",
-      "message": "Add branded legal pages, product details and cu",
-      "repository": "Dijital-Marketin/web",
-      "url": "https://github.com/Dijital-Marketin/web/commit/384e65e90e5f7cc10382d7793993532f58f8e129",
-      "date": "2026-10-05T11:53:31Z"
-    },
-    {
-      "sha": "aa5507c48028e7add26ce6cbfd8d599672272d0e",
-      "shortSha": "aa5507c",
-      "message": "Add seller policies, transparent catalog and sa",
+      "sha": "8386ddf6f68b1ee7130eed7e4e8723511dc7f4e8",
+      "shortSha": "8386ddf",
+      "message": "Preserve release ordering across workflow re-re",
       "repository": "Dijital-Marketin/backend",
-      "url": "https://github.com/Dijital-Marketin/backend/commit/aa5507c48028e7add26ce6cbfd8d599672272d0e",
-      "date": "2026-10-05T11:53:30Z"
+      "url": "https://github.com/Dijital-Marketin/backend/commit/8386ddf6f68b1ee7130eed7e4e8723511dc7f4e8",
+      "date": "2026-10-05T22:06:59Z"
     },
     {
-      "sha": "fcbfbe6e8ee16694886406d5f0cdff5f9681aee5",
-      "shortSha": "fcbfbe6",
-      "message": "Add Dijital Marketin organization profile and b",
-      "repository": "Dijital-Marketin/.github",
-      "url": "https://github.com/Dijital-Marketin/.github/commit/fcbfbe6e8ee16694886406d5f0cdff5f9681aee5",
-      "date": "2026-10-04T22:06:57Z"
-    },
-    {
-      "sha": "44b016f712a00fb3139ecd336c1eca99e3e2a34f",
-      "shortSha": "44b016f",
-      "message": "Change production domain to dijitalmarketin.com",
+      "sha": "525ae6a695df3479fbb2cdbe8e5837adf3175ae1",
+      "shortSha": "525ae6a",
+      "message": "Re-register backend deployment workflow after m",
       "repository": "Dijital-Marketin/backend",
-      "url": "https://github.com/Dijital-Marketin/backend/commit/44b016f712a00fb3139ecd336c1eca99e3e2a34f",
-      "date": "2026-10-04T21:54:58Z"
+      "url": "https://github.com/Dijital-Marketin/backend/commit/525ae6a695df3479fbb2cdbe8e5837adf3175ae1",
+      "date": "2026-10-05T22:03:41Z"
     },
     {
-      "sha": "c14996f76be9a85c6f29a207e2ff09faedace1b7",
-      "shortSha": "c14996f",
-      "message": "Change production domain to dijitalmarketin.com",
+      "sha": "eb9d0e05d281b7a1683ff5f311cf353d0a588b71",
+      "shortSha": "eb9d0e0",
+      "message": "Document deployment verification and dispatch r",
+      "repository": "Dijital-Marketin/backend",
+      "url": "https://github.com/Dijital-Marketin/backend/commit/eb9d0e05d281b7a1683ff5f311cf353d0a588b71",
+      "date": "2026-10-05T22:02:53Z"
+    },
+    {
+      "sha": "5273e2acfc57147887fcd260d2470926fc96df14",
+      "shortSha": "5273e2a",
+      "message": "Bound backend CI execution time and verify main",
+      "repository": "Dijital-Marketin/backend",
+      "url": "https://github.com/Dijital-Marketin/backend/commit/5273e2acfc57147887fcd260d2470926fc96df14",
+      "date": "2026-10-05T22:01:26Z"
+    },
+    {
+      "sha": "2e58b17bb38421de2b9e1e23d37133554e4eafdc",
+      "shortSha": "2e58b17",
+      "message": "Keep long campaign amounts readable on narrow s",
       "repository": "Dijital-Marketin/web",
-      "url": "https://github.com/Dijital-Marketin/web/commit/c14996f76be9a85c6f29a207e2ff09faedace1b7",
-      "date": "2026-10-04T21:54:56Z"
+      "url": "https://github.com/Dijital-Marketin/web/commit/2e58b17bb38421de2b9e1e23d37133554e4eafdc",
+      "date": "2026-10-05T22:00:50Z"
     }
   ]
 }
