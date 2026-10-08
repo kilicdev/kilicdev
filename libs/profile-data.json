@@ -2,17 +2,43 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 996,
+  "followers": 994,
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 11,
-  "commitCount": 862,
-  "publicCommitCount": 182,
-  "privateCommitCount": 680,
-  "refreshedAt": "2026-10-08T15:40:08.599Z",
+  "commitCount": 868,
+  "publicCommitCount": 183,
+  "privateCommitCount": 685,
+  "refreshedAt": "2026-10-08T21:22:15.848Z",
   "repositories": [
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-08T17:55:38Z",
+      "pushedAt": "2026-10-08T17:57:29Z",
+      "url": "https://github.com/velity-app/android"
+    },
+    {
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-08T17:55:28Z",
+      "pushedAt": "2026-10-08T17:57:50Z",
+      "url": "https://github.com/velity-app/backend"
+    },
     {
       "name": "web",
       "fullName": "velity-app/web",
@@ -25,32 +51,6 @@
       "updatedAt": "2026-10-08T15:22:47Z",
       "pushedAt": "2026-10-08T15:23:43Z",
       "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-08T15:07:40Z",
-      "pushedAt": "2026-10-08T15:09:57Z",
-      "url": "https://github.com/velity-app/android"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-08T15:07:24Z",
-      "pushedAt": "2026-10-08T15:10:02Z",
-      "url": "https://github.com/velity-app/backend"
     },
     {
       "name": "backend",
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-08T15:22:47Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-10-08T17:55:38Z",
+      "latestRepository": "android"
     },
     {
       "login": "Dijital-Marketin",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "fe560d3024a762706d557bfe6e8495af3cb01d10",
+      "shortSha": "fe560d3",
+      "message": "feat(android): story text editor overhaul, reel",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/fe560d3024a762706d557bfe6e8495af3cb01d10",
+      "date": "2026-10-08T17:55:28Z"
+    },
+    {
+      "sha": "fc99ae578f2004396729e834c6c52852e96c4982",
+      "shortSha": "fc99ae5",
+      "message": "fix(backend): google client id config, exclude",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/fc99ae578f2004396729e834c6c52852e96c4982",
+      "date": "2026-10-08T17:55:19Z"
+    },
+    {
       "sha": "a660d5fce93921c4cfcbc87879acda9baea3318c",
       "shortSha": "a660d5f",
       "message": "try latest",
@@ -145,22 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/6785492fdb7f563a5ccfffb199432d442fb06eb9",
       "date": "2026-10-08T15:03:20Z"
-    },
-    {
-      "sha": "8386ddf6f68b1ee7130eed7e4e8723511dc7f4e8",
-      "shortSha": "8386ddf",
-      "message": "Preserve release ordering across workflow re-re",
-      "repository": "Dijital-Marketin/backend",
-      "url": "https://github.com/Dijital-Marketin/backend/commit/8386ddf6f68b1ee7130eed7e4e8723511dc7f4e8",
-      "date": "2026-10-05T22:06:59Z"
-    },
-    {
-      "sha": "525ae6a695df3479fbb2cdbe8e5837adf3175ae1",
-      "shortSha": "525ae6a",
-      "message": "Re-register backend deployment workflow after m",
-      "repository": "Dijital-Marketin/backend",
-      "url": "https://github.com/Dijital-Marketin/backend/commit/525ae6a695df3479fbb2cdbe8e5837adf3175ae1",
-      "date": "2026-10-05T22:03:41Z"
     }
   ]
 }
