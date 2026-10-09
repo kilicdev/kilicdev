@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 995,
+  "followers": 994,
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
   "totalStars": 241,
   "organizationCount": 11,
-  "commitCount": 869,
-  "publicCommitCount": 184,
-  "privateCommitCount": 685,
-  "refreshedAt": "2026-10-09T06:13:52.119Z",
+  "commitCount": 872,
+  "publicCommitCount": 185,
+  "privateCommitCount": 687,
+  "refreshedAt": "2026-10-09T15:20:20.721Z",
   "repositories": [
     {
       "name": "android",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-08T17:55:38Z",
-      "pushedAt": "2026-10-08T17:57:29Z",
+      "updatedAt": "2026-10-09T13:07:48Z",
+      "pushedAt": "2026-10-09T13:09:30Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-08T17:55:38Z",
+      "lastUpdatedAt": "2026-10-09T13:07:48Z",
       "latestRepository": "android"
     },
     {
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "4ab24015236ed2bcc6e7e40d1d199d75d8dae06c",
+      "shortSha": "4ab2401",
+      "message": "fix(android): remove invalid exoplayer layout o",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/4ab24015236ed2bcc6e7e40d1d199d75d8dae06c",
+      "date": "2026-10-09T13:07:37Z"
+    },
+    {
+      "sha": "e095b1441e9ced8663b1139dc49748275fb52483",
+      "shortSha": "e095b14",
+      "message": "fix(android): completely eliminate native exopl",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/e095b1441e9ced8663b1139dc49748275fb52483",
+      "date": "2026-10-09T11:50:41Z"
+    },
+    {
       "sha": "fe560d3024a762706d557bfe6e8495af3cb01d10",
       "shortSha": "fe560d3",
       "message": "feat(android): story text editor overhaul, reel",
@@ -145,22 +161,6 @@
       "repository": "velity-app/web",
       "url": "https://github.com/velity-app/web/commit/a660d5fce93921c4cfcbc87879acda9baea3318c",
       "date": "2026-10-08T15:22:39Z"
-    },
-    {
-      "sha": "e3e7836e2ab59aa64fbc7be99f10c6739d7eba4c",
-      "shortSha": "e3e7836",
-      "message": "latest try",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/e3e7836e2ab59aa64fbc7be99f10c6739d7eba4c",
-      "date": "2026-10-08T15:03:32Z"
-    },
-    {
-      "sha": "6785492fdb7f563a5ccfffb199432d442fb06eb9",
-      "shortSha": "6785492",
-      "message": "latest try",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/6785492fdb7f563a5ccfffb199432d442fb06eb9",
-      "date": "2026-10-08T15:03:20Z"
     }
   ]
 }
