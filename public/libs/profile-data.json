@@ -2,29 +2,29 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 994,
+  "followers": 993,
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
-  "totalStars": 241,
+  "totalStars": 242,
   "organizationCount": 11,
-  "commitCount": 872,
-  "publicCommitCount": 185,
-  "privateCommitCount": 687,
-  "refreshedAt": "2026-10-09T15:20:20.721Z",
+  "commitCount": 876,
+  "publicCommitCount": 186,
+  "privateCommitCount": 690,
+  "refreshedAt": "2026-10-09T20:57:10.843Z",
   "repositories": [
     {
-      "name": "android",
-      "fullName": "velity-app/android",
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
       "language": "TypeScript",
-      "stars": 1,
+      "stars": 30,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-09T13:07:48Z",
-      "pushedAt": "2026-10-09T13:09:30Z",
-      "url": "https://github.com/velity-app/android"
+      "private": false,
+      "updatedAt": "2026-10-09T19:00:15Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
     },
     {
       "name": "backend",
@@ -35,9 +35,22 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-08T17:55:28Z",
-      "pushedAt": "2026-10-08T17:57:50Z",
+      "updatedAt": "2026-10-09T17:09:33Z",
+      "pushedAt": "2026-10-09T17:11:34Z",
       "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-09T15:30:05Z",
+      "pushedAt": "2026-10-09T15:31:41Z",
+      "url": "https://github.com/velity-app/android"
     },
     {
       "name": "web",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-10-05T22:07:06Z",
       "pushedAt": "2026-10-05T22:07:02Z",
       "url": "https://github.com/Dijital-Marketin/backend"
-    },
-    {
-      "name": "web",
-      "fullName": "Dijital-Marketin/web",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-05T22:00:57Z",
-      "pushedAt": "2026-10-05T22:00:53Z",
-      "url": "https://github.com/Dijital-Marketin/web"
     }
   ],
   "organizations": [
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-09T13:07:48Z",
-      "latestRepository": "android"
+      "lastUpdatedAt": "2026-10-09T17:09:33Z",
+      "latestRepository": "backend"
     },
     {
       "login": "Dijital-Marketin",
@@ -123,6 +123,30 @@
   ],
   "commits": [
     {
+      "sha": "35e95d1c0aff19e38c547c13301157cbf48d4308",
+      "shortSha": "35e95d1",
+      "message": "fix(google): resolve DNS ipv4first to avoid ETI",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/35e95d1c0aff19e38c547c13301157cbf48d4308",
+      "date": "2026-10-09T17:09:27Z"
+    },
+    {
+      "sha": "bbe0ed928c3022ed9b7b0a61c2d29eaa8fe9dd62",
+      "shortSha": "bbe0ed9",
+      "message": "fix(auth): update google sign-in client id to w",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/bbe0ed928c3022ed9b7b0a61c2d29eaa8fe9dd62",
+      "date": "2026-10-09T15:29:57Z"
+    },
+    {
+      "sha": "6cb7ae4ef824d7d2cf45ebf0a7a84636458ebbd4",
+      "shortSha": "6cb7ae4",
+      "message": "fix(auth): configure web application google oau",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/6cb7ae4ef824d7d2cf45ebf0a7a84636458ebbd4",
+      "date": "2026-10-09T15:29:36Z"
+    },
+    {
       "sha": "4ab24015236ed2bcc6e7e40d1d199d75d8dae06c",
       "shortSha": "4ab2401",
       "message": "fix(android): remove invalid exoplayer layout o",
@@ -137,30 +161,6 @@
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/e095b1441e9ced8663b1139dc49748275fb52483",
       "date": "2026-10-09T11:50:41Z"
-    },
-    {
-      "sha": "fe560d3024a762706d557bfe6e8495af3cb01d10",
-      "shortSha": "fe560d3",
-      "message": "feat(android): story text editor overhaul, reel",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/fe560d3024a762706d557bfe6e8495af3cb01d10",
-      "date": "2026-10-08T17:55:28Z"
-    },
-    {
-      "sha": "fc99ae578f2004396729e834c6c52852e96c4982",
-      "shortSha": "fc99ae5",
-      "message": "fix(backend): google client id config, exclude",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/fc99ae578f2004396729e834c6c52852e96c4982",
-      "date": "2026-10-08T17:55:19Z"
-    },
-    {
-      "sha": "a660d5fce93921c4cfcbc87879acda9baea3318c",
-      "shortSha": "a660d5f",
-      "message": "try latest",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/a660d5fce93921c4cfcbc87879acda9baea3318c",
-      "date": "2026-10-08T15:22:39Z"
     }
   ]
 }
