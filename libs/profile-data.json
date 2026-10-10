@@ -6,23 +6,36 @@
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
-  "totalStars": 242,
+  "totalStars": 243,
   "organizationCount": 11,
-  "commitCount": 876,
-  "publicCommitCount": 186,
+  "commitCount": 877,
+  "publicCommitCount": 187,
   "privateCommitCount": 690,
-  "refreshedAt": "2026-10-09T20:57:10.843Z",
+  "refreshedAt": "2026-10-10T05:57:19.358Z",
   "repositories": [
+    {
+      "name": "kilicdev-private",
+      "fullName": "kilicdev/kilicdev-private",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-10T03:33:50Z",
+      "pushedAt": "2026-10-10T03:33:40Z",
+      "url": "https://github.com/kilicdev/kilicdev-private"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
       "language": "TypeScript",
-      "stars": 30,
+      "stars": 31,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-10-09T19:00:15Z",
+      "updatedAt": "2026-10-10T03:09:08Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
     },
@@ -64,19 +77,6 @@
       "updatedAt": "2026-10-08T15:22:47Z",
       "pushedAt": "2026-10-08T15:23:43Z",
       "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "Dijital-Marketin/backend",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-05T22:07:06Z",
-      "pushedAt": "2026-10-05T22:07:02Z",
-      "url": "https://github.com/Dijital-Marketin/backend"
     }
   ],
   "organizations": [
