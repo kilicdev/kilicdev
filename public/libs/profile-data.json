@@ -2,17 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 992,
+  "followers": 993,
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
   "totalStars": 242,
   "organizationCount": 11,
-  "commitCount": 878,
-  "publicCommitCount": 188,
-  "privateCommitCount": 690,
-  "refreshedAt": "2026-10-10T14:29:59.106Z",
+  "commitCount": 880,
+  "publicCommitCount": 189,
+  "privateCommitCount": 691,
+  "refreshedAt": "2026-10-10T20:06:10.969Z",
   "repositories": [
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-10T15:53:28Z",
+      "pushedAt": "2026-10-10T15:54:57Z",
+      "url": "https://github.com/velity-app/android"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -53,19 +66,6 @@
       "url": "https://github.com/velity-app/backend"
     },
     {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-09T15:30:05Z",
-      "pushedAt": "2026-10-09T15:31:41Z",
-      "url": "https://github.com/velity-app/android"
-    },
-    {
       "name": "web",
       "fullName": "velity-app/web",
       "language": "TypeScript",
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-09T17:09:33Z",
-      "latestRepository": "backend"
+      "lastUpdatedAt": "2026-10-10T15:53:28Z",
+      "latestRepository": "android"
     },
     {
       "login": "Dijital-Marketin",
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "811da0fd3ff29220e92dcaf7af0f37961b74d6c8",
+      "shortSha": "811da0f",
+      "message": "feat: comprehensive UI/UX overhaul, carousel pe",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/811da0fd3ff29220e92dcaf7af0f37961b74d6c8",
+      "date": "2026-10-10T15:53:18Z"
+    },
+    {
       "sha": "35e95d1c0aff19e38c547c13301157cbf48d4308",
       "shortSha": "35e95d1",
       "message": "fix(google): resolve DNS ipv4first to avoid ETI",
@@ -153,14 +161,6 @@
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/4ab24015236ed2bcc6e7e40d1d199d75d8dae06c",
       "date": "2026-10-09T13:07:37Z"
-    },
-    {
-      "sha": "e095b1441e9ced8663b1139dc49748275fb52483",
-      "shortSha": "e095b14",
-      "message": "fix(android): completely eliminate native exopl",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/e095b1441e9ced8663b1139dc49748275fb52483",
-      "date": "2026-10-09T11:50:41Z"
     }
   ]
 }
