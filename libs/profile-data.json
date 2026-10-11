@@ -8,11 +8,24 @@
   "publicRepos": 32,
   "totalStars": 242,
   "organizationCount": 11,
-  "commitCount": 881,
-  "publicCommitCount": 190,
-  "privateCommitCount": 691,
-  "refreshedAt": "2026-10-10T23:36:00.540Z",
+  "commitCount": 883,
+  "publicCommitCount": 191,
+  "privateCommitCount": 692,
+  "refreshedAt": "2026-10-11T05:52:05.895Z",
   "repositories": [
+    {
+      "name": "contracts",
+      "fullName": "velity-app/contracts",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-11T05:46:29Z",
+      "pushedAt": "2026-10-11T05:46:51Z",
+      "url": "https://github.com/velity-app/contracts"
+    },
     {
       "name": "android",
       "fullName": "velity-app/android",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-10-09T17:09:33Z",
       "pushedAt": "2026-10-09T17:11:34Z",
       "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "web",
-      "fullName": "velity-app/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-08T15:22:47Z",
-      "pushedAt": "2026-10-08T15:23:43Z",
-      "url": "https://github.com/velity-app/web"
     }
   ],
   "organizations": [
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-10T15:53:28Z",
-      "latestRepository": "android"
+      "lastUpdatedAt": "2026-10-11T05:46:29Z",
+      "latestRepository": "contracts"
     },
     {
       "login": "Dijital-Marketin",
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "dabefcdb0d4751ff81633a731389989514dc8ecb",
+      "shortSha": "dabefcd",
+      "message": "Support bounded mixed-media post carousels",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/dabefcdb0d4751ff81633a731389989514dc8ecb",
+      "date": "2026-10-11T05:46:23Z"
+    },
+    {
       "sha": "811da0fd3ff29220e92dcaf7af0f37961b74d6c8",
       "shortSha": "811da0f",
       "message": "feat: comprehensive UI/UX overhaul, carousel pe",
@@ -153,14 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/6cb7ae4ef824d7d2cf45ebf0a7a84636458ebbd4",
       "date": "2026-10-09T15:29:36Z"
-    },
-    {
-      "sha": "4ab24015236ed2bcc6e7e40d1d199d75d8dae06c",
-      "shortSha": "4ab2401",
-      "message": "fix(android): remove invalid exoplayer layout o",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/4ab24015236ed2bcc6e7e40d1d199d75d8dae06c",
-      "date": "2026-10-09T13:07:37Z"
     }
   ]
 }
