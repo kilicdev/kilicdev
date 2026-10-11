@@ -8,11 +8,37 @@
   "publicRepos": 32,
   "totalStars": 242,
   "organizationCount": 11,
-  "commitCount": 883,
-  "publicCommitCount": 191,
-  "privateCommitCount": 692,
-  "refreshedAt": "2026-10-11T05:52:05.895Z",
+  "commitCount": 893,
+  "publicCommitCount": 192,
+  "privateCommitCount": 701,
+  "refreshedAt": "2026-10-11T14:56:50.601Z",
   "repositories": [
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-11T11:38:55Z",
+      "pushedAt": "2026-10-11T11:57:25Z",
+      "url": "https://github.com/velity-app/android"
+    },
+    {
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-11T05:59:08Z",
+      "pushedAt": "2026-10-11T06:04:28Z",
+      "url": "https://github.com/velity-app/backend"
+    },
     {
       "name": "contracts",
       "fullName": "velity-app/contracts",
@@ -25,19 +51,6 @@
       "updatedAt": "2026-10-11T05:46:29Z",
       "pushedAt": "2026-10-11T05:46:51Z",
       "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-10T15:53:28Z",
-      "pushedAt": "2026-10-10T15:54:57Z",
-      "url": "https://github.com/velity-app/android"
     },
     {
       "name": "kilic.db",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-10-10T03:33:50Z",
       "pushedAt": "2026-10-10T03:33:40Z",
       "url": "https://github.com/kilicdev/kilicdev-private"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-09T17:09:33Z",
-      "pushedAt": "2026-10-09T17:11:34Z",
-      "url": "https://github.com/velity-app/backend"
     }
   ],
   "organizations": [
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-11T05:46:29Z",
-      "latestRepository": "contracts"
+      "lastUpdatedAt": "2026-10-11T11:38:55Z",
+      "latestRepository": "android"
     },
     {
       "login": "Dijital-Marketin",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "dabefcdb0d4751ff81633a731389989514dc8ecb",
-      "shortSha": "dabefcd",
-      "message": "Support bounded mixed-media post carousels",
-      "repository": "velity-app/contracts",
-      "url": "https://github.com/velity-app/contracts/commit/dabefcdb0d4751ff81633a731389989514dc8ecb",
-      "date": "2026-10-11T05:46:23Z"
-    },
-    {
-      "sha": "811da0fd3ff29220e92dcaf7af0f37961b74d6c8",
-      "shortSha": "811da0f",
-      "message": "feat: comprehensive UI/UX overhaul, carousel pe",
+      "sha": "0fa823393bb97cd015df144a928359ffb526096f",
+      "shortSha": "0fa8233",
+      "message": "Recover all remaining reads without replaying c",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/811da0fd3ff29220e92dcaf7af0f37961b74d6c8",
-      "date": "2026-10-10T15:53:18Z"
+      "url": "https://github.com/velity-app/android/commit/0fa823393bb97cd015df144a928359ffb526096f",
+      "date": "2026-10-11T11:38:48Z"
     },
     {
-      "sha": "35e95d1c0aff19e38c547c13301157cbf48d4308",
-      "shortSha": "35e95d1",
-      "message": "fix(google): resolve DNS ipv4first to avoid ETI",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/35e95d1c0aff19e38c547c13301157cbf48d4308",
-      "date": "2026-10-09T17:09:27Z"
-    },
-    {
-      "sha": "bbe0ed928c3022ed9b7b0a61c2d29eaa8fe9dd62",
-      "shortSha": "bbe0ed9",
-      "message": "fix(auth): update google sign-in client id to w",
+      "sha": "5778a0192b782852a866c4a360f417657ec4abac",
+      "shortSha": "5778a01",
+      "message": "Classify native media errors without serializin",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/bbe0ed928c3022ed9b7b0a61c2d29eaa8fe9dd62",
-      "date": "2026-10-09T15:29:57Z"
+      "url": "https://github.com/velity-app/android/commit/5778a0192b782852a866c4a360f417657ec4abac",
+      "date": "2026-10-11T11:12:52Z"
     },
     {
-      "sha": "6cb7ae4ef824d7d2cf45ebf0a7a84636458ebbd4",
-      "shortSha": "6cb7ae4",
-      "message": "fix(auth): configure web application google oau",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/6cb7ae4ef824d7d2cf45ebf0a7a84636458ebbd4",
-      "date": "2026-10-09T15:29:36Z"
+      "sha": "be1265d1f893544f34c43c1ede23fc98f9aa9961",
+      "shortSha": "be1265d",
+      "message": "Exercise decoder failures through the video com",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/be1265d1f893544f34c43c1ede23fc98f9aa9961",
+      "date": "2026-10-11T11:10:33Z"
+    },
+    {
+      "sha": "375ea642ce45abfeebf5236e1f65c3f47ee2c205",
+      "shortSha": "375ea64",
+      "message": "Distinguish media transport recovery from perma",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/375ea642ce45abfeebf5236e1f65c3f47ee2c205",
+      "date": "2026-10-11T11:09:27Z"
+    },
+    {
+      "sha": "a9d840d4d01b82ecf85701f52239d35b471dc457",
+      "shortSha": "a9d840d",
+      "message": "Pause refresh indicators during connection reco",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/a9d840d4d01b82ecf85701f52239d35b471dc457",
+      "date": "2026-10-11T11:00:34Z"
     }
   ]
 }
