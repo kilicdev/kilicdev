@@ -8,10 +8,10 @@
   "publicRepos": 32,
   "totalStars": 243,
   "organizationCount": 11,
-  "commitCount": 917,
-  "publicCommitCount": 196,
-  "privateCommitCount": 721,
-  "refreshedAt": "2026-10-13T02:03:13.236Z",
+  "commitCount": 928,
+  "publicCommitCount": 197,
+  "privateCommitCount": 731,
+  "refreshedAt": "2026-10-13T11:51:25.060Z",
   "repositories": [
     {
       "name": "android",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-13T00:46:22Z",
-      "pushedAt": "2026-10-13T01:06:07Z",
+      "updatedAt": "2026-10-13T06:36:28Z",
+      "pushedAt": "2026-10-13T06:59:36Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -35,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-13T00:46:16Z",
-      "pushedAt": "2026-10-13T00:53:50Z",
+      "updatedAt": "2026-10-13T04:19:32Z",
+      "pushedAt": "2026-10-13T04:26:23Z",
       "url": "https://github.com/velity-app/backend"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-13T00:46:22Z",
+      "lastUpdatedAt": "2026-10-13T06:36:28Z",
       "latestRepository": "android"
     },
     {
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "c88e14ad47c5d6734168169b9f08702725820ada",
-      "shortSha": "c88e14a",
-      "message": "fix(push): enable FCM in .env.local for local t",
+      "sha": "e9b84a18f0931898ce22b8a1a1c8fa5fab9d7b88",
+      "shortSha": "e9b84a1",
+      "message": "test(push): require exact post generation match",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/c88e14ad47c5d6734168169b9f08702725820ada",
-      "date": "2026-10-13T00:46:16Z"
+      "url": "https://github.com/velity-app/android/commit/e9b84a18f0931898ce22b8a1a1c8fa5fab9d7b88",
+      "date": "2026-10-13T06:36:21Z"
     },
     {
-      "sha": "ead0ad0b715f5a3440690390ffe95929af5b3043",
-      "shortSha": "ead0ad0",
-      "message": "fix(privacy,push,auth): populate full user docu",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/ead0ad0b715f5a3440690390ffe95929af5b3043",
-      "date": "2026-10-13T00:46:10Z"
-    },
-    {
-      "sha": "71b76f1625d9168e7d208fc319bc5a957f6ddcee",
-      "shortSha": "71b76f1",
-      "message": "feat(db): route core writes and reads to Postgr",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/71b76f1625d9168e7d208fc319bc5a957f6ddcee",
-      "date": "2026-10-12T23:36:49Z"
-    },
-    {
-      "sha": "2d4076280e27494ecccfc26cf37275aa05237e98",
-      "shortSha": "2d40762",
-      "message": "fix(presence): keep strict null serverClock che",
+      "sha": "cf9fce700ade1e11d23524ec8c49a5538de38738",
+      "shortSha": "cf9fce7",
+      "message": "fix(push): restore publication queuing for non-",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/2d4076280e27494ecccfc26cf37275aa05237e98",
-      "date": "2026-10-12T23:23:22Z"
+      "url": "https://github.com/velity-app/android/commit/cf9fce700ade1e11d23524ec8c49a5538de38738",
+      "date": "2026-10-13T06:10:36Z"
     },
     {
-      "sha": "4b127144f7fdc2b7e78b4a5fd2f6b760fec1f759",
-      "shortSha": "4b12714",
-      "message": "fix(media,ui): dynamic video reservation sizing",
+      "sha": "dd59af590e29a9d461b4c9ef67198948e990bcd7",
+      "shortSha": "dd59af5",
+      "message": "fix(push): set badge number synchronously befor",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/4b127144f7fdc2b7e78b4a5fd2f6b760fec1f759",
-      "date": "2026-10-12T23:10:59Z"
+      "url": "https://github.com/velity-app/android/commit/dd59af590e29a9d461b4c9ef67198948e990bcd7",
+      "date": "2026-10-13T05:47:41Z"
+    },
+    {
+      "sha": "295c23baa79ea365ae3d9054140b34621003bc5c",
+      "shortSha": "295c23b",
+      "message": "ci(android): restore native debug emulator test",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/295c23baa79ea365ae3d9054140b34621003bc5c",
+      "date": "2026-10-13T05:18:30Z"
+    },
+    {
+      "sha": "63a368aa222cd2f0b562d616159b55da62afdded",
+      "shortSha": "63a368a",
+      "message": "ci(android): specify headless emulator options",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/63a368aa222cd2f0b562d616159b55da62afdded",
+      "date": "2026-10-13T04:51:24Z"
     }
   ]
 }
