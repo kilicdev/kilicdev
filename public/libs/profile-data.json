@@ -2,17 +2,56 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 992,
+  "followers": 991,
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
   "totalStars": 243,
   "organizationCount": 11,
-  "commitCount": 896,
-  "publicCommitCount": 195,
-  "privateCommitCount": 701,
-  "refreshedAt": "2026-10-12T17:58:50.240Z",
+  "commitCount": 917,
+  "publicCommitCount": 196,
+  "privateCommitCount": 721,
+  "refreshedAt": "2026-10-13T02:03:13.236Z",
   "repositories": [
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-13T00:46:22Z",
+      "pushedAt": "2026-10-13T01:06:07Z",
+      "url": "https://github.com/velity-app/android"
+    },
+    {
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-13T00:46:16Z",
+      "pushedAt": "2026-10-13T00:53:50Z",
+      "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "contracts",
+      "fullName": "velity-app/contracts",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-12T18:32:28Z",
+      "pushedAt": "2026-10-12T18:32:53Z",
+      "url": "https://github.com/velity-app/contracts"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -25,45 +64,6 @@
       "updatedAt": "2026-10-11T16:39:01Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-11T11:38:55Z",
-      "pushedAt": "2026-10-11T11:57:25Z",
-      "url": "https://github.com/velity-app/android"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-11T05:59:08Z",
-      "pushedAt": "2026-10-11T06:04:28Z",
-      "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "contracts",
-      "fullName": "velity-app/contracts",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-11T05:46:29Z",
-      "pushedAt": "2026-10-11T05:46:51Z",
-      "url": "https://github.com/velity-app/contracts"
     },
     {
       "name": "kilicdev-private",
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-11T11:38:55Z",
+      "lastUpdatedAt": "2026-10-13T00:46:22Z",
       "latestRepository": "android"
     },
     {
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "0fa823393bb97cd015df144a928359ffb526096f",
-      "shortSha": "0fa8233",
-      "message": "Recover all remaining reads without replaying c",
+      "sha": "c88e14ad47c5d6734168169b9f08702725820ada",
+      "shortSha": "c88e14a",
+      "message": "fix(push): enable FCM in .env.local for local t",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/0fa823393bb97cd015df144a928359ffb526096f",
-      "date": "2026-10-11T11:38:48Z"
+      "url": "https://github.com/velity-app/android/commit/c88e14ad47c5d6734168169b9f08702725820ada",
+      "date": "2026-10-13T00:46:16Z"
     },
     {
-      "sha": "5778a0192b782852a866c4a360f417657ec4abac",
-      "shortSha": "5778a01",
-      "message": "Classify native media errors without serializin",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/5778a0192b782852a866c4a360f417657ec4abac",
-      "date": "2026-10-11T11:12:52Z"
+      "sha": "ead0ad0b715f5a3440690390ffe95929af5b3043",
+      "shortSha": "ead0ad0",
+      "message": "fix(privacy,push,auth): populate full user docu",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/ead0ad0b715f5a3440690390ffe95929af5b3043",
+      "date": "2026-10-13T00:46:10Z"
     },
     {
-      "sha": "be1265d1f893544f34c43c1ede23fc98f9aa9961",
-      "shortSha": "be1265d",
-      "message": "Exercise decoder failures through the video com",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/be1265d1f893544f34c43c1ede23fc98f9aa9961",
-      "date": "2026-10-11T11:10:33Z"
+      "sha": "71b76f1625d9168e7d208fc319bc5a957f6ddcee",
+      "shortSha": "71b76f1",
+      "message": "feat(db): route core writes and reads to Postgr",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/71b76f1625d9168e7d208fc319bc5a957f6ddcee",
+      "date": "2026-10-12T23:36:49Z"
     },
     {
-      "sha": "375ea642ce45abfeebf5236e1f65c3f47ee2c205",
-      "shortSha": "375ea64",
-      "message": "Distinguish media transport recovery from perma",
+      "sha": "2d4076280e27494ecccfc26cf37275aa05237e98",
+      "shortSha": "2d40762",
+      "message": "fix(presence): keep strict null serverClock che",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/375ea642ce45abfeebf5236e1f65c3f47ee2c205",
-      "date": "2026-10-11T11:09:27Z"
+      "url": "https://github.com/velity-app/android/commit/2d4076280e27494ecccfc26cf37275aa05237e98",
+      "date": "2026-10-12T23:23:22Z"
     },
     {
-      "sha": "a9d840d4d01b82ecf85701f52239d35b471dc457",
-      "shortSha": "a9d840d",
-      "message": "Pause refresh indicators during connection reco",
+      "sha": "4b127144f7fdc2b7e78b4a5fd2f6b760fec1f759",
+      "shortSha": "4b12714",
+      "message": "fix(media,ui): dynamic video reservation sizing",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/a9d840d4d01b82ecf85701f52239d35b471dc457",
-      "date": "2026-10-11T11:00:34Z"
+      "url": "https://github.com/velity-app/android/commit/4b127144f7fdc2b7e78b4a5fd2f6b760fec1f759",
+      "date": "2026-10-12T23:10:59Z"
     }
   ]
 }
