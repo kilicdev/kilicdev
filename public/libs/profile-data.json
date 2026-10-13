@@ -6,13 +6,26 @@
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
-  "totalStars": 243,
+  "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 929,
-  "publicCommitCount": 198,
+  "commitCount": 930,
+  "publicCommitCount": 199,
   "privateCommitCount": 731,
-  "refreshedAt": "2026-10-13T19:20:01.951Z",
+  "refreshedAt": "2026-10-13T23:45:09.302Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 32,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-10-13T19:42:02Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
     {
       "name": "android",
       "fullName": "velity-app/android",
@@ -51,19 +64,6 @@
       "updatedAt": "2026-10-12T18:32:28Z",
       "pushedAt": "2026-10-12T18:32:53Z",
       "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 31,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-10-11T16:39:01Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     },
     {
       "name": "kilicdev-private",
