@@ -8,11 +8,24 @@
   "publicRepos": 32,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 938,
-  "publicCommitCount": 202,
-  "privateCommitCount": 736,
-  "refreshedAt": "2026-10-14T20:13:41.965Z",
+  "commitCount": 942,
+  "publicCommitCount": 203,
+  "privateCommitCount": 739,
+  "refreshedAt": "2026-10-14T23:16:51.281Z",
   "repositories": [
+    {
+      "name": "android",
+      "fullName": "velity-app/android",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-14T22:01:23Z",
+      "pushedAt": "2026-10-14T22:23:38Z",
+      "url": "https://github.com/velity-app/android"
+    },
     {
       "name": "backend",
       "fullName": "velity-app/backend",
@@ -22,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-14T19:35:17Z",
-      "pushedAt": "2026-10-14T19:43:21Z",
+      "updatedAt": "2026-10-14T22:01:14Z",
+      "pushedAt": "2026-10-14T22:09:02Z",
       "url": "https://github.com/velity-app/backend"
     },
     {
@@ -38,19 +51,6 @@
       "updatedAt": "2026-10-13T19:42:02Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-13T06:36:28Z",
-      "pushedAt": "2026-10-13T06:59:36Z",
-      "url": "https://github.com/velity-app/android"
     },
     {
       "name": "contracts",
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-14T19:35:17Z",
-      "latestRepository": "backend"
+      "lastUpdatedAt": "2026-10-14T22:01:23Z",
+      "latestRepository": "android"
     },
     {
       "login": "Dijital-Marketin",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "84ef658fa13f636cfed836f7d31e07f079fd24d0",
-      "shortSha": "84ef658",
-      "message": "fix(queue): prevent queue budget underflow from",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/84ef658fa13f636cfed836f7d31e07f079fd24d0",
-      "date": "2026-10-14T19:35:11Z"
+      "sha": "cd7d25de4a056210d28b5e9f86d4f5fb82ffe096",
+      "shortSha": "cd7d25d",
+      "message": "Gate connections and fix deletion impact fields",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/cd7d25de4a056210d28b5e9f86d4f5fb82ffe096",
+      "date": "2026-10-14T22:01:07Z"
     },
     {
-      "sha": "f11372355f5eeadcda3bab2a7c9068e824ccc295",
-      "shortSha": "f113723",
-      "message": "fix(schema,deploy): align postgres v1 schema ch",
+      "sha": "b942ed5dc11d941e129fe1c4a800821543354eb6",
+      "shortSha": "b942ed5",
+      "message": "Harden privacy and client IP handling",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/f11372355f5eeadcda3bab2a7c9068e824ccc295",
-      "date": "2026-10-14T18:08:11Z"
+      "url": "https://github.com/velity-app/backend/commit/b942ed5dc11d941e129fe1c4a800821543354eb6",
+      "date": "2026-10-14T22:01:03Z"
     },
     {
-      "sha": "909e3fc276f2463de95612a684e3bf08e1e588bc",
-      "shortSha": "909e3fc",
-      "message": "ci: free runner disk space before docker build",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/909e3fc276f2463de95612a684e3bf08e1e588bc",
-      "date": "2026-10-14T17:44:58Z"
+      "sha": "966ba96c0b770fda37d7d15fe9768f557a15aa32",
+      "shortSha": "966ba96",
+      "message": "fix: unify FCM token registration on velity-494",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/966ba96c0b770fda37d7d15fe9768f557a15aa32",
+      "date": "2026-10-14T21:38:54Z"
     },
     {
-      "sha": "2dab6c196c1476f748e69432b94b3c8c29cf796c",
-      "shortSha": "2dab6c1",
-      "message": "fix(users): restore missing-settings invariant",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/2dab6c196c1476f748e69432b94b3c8c29cf796c",
-      "date": "2026-10-14T17:35:30Z"
+      "sha": "5c4d1e4fbeeda3c5e261740076d14d025d1af89e",
+      "shortSha": "5c4d1e4",
+      "message": "feat: integrate Google Analytics (Firebase Anal",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/5c4d1e4fbeeda3c5e261740076d14d025d1af89e",
+      "date": "2026-10-14T21:36:24Z"
     },
     {
-      "sha": "660165d39a9431ffd360302b56a9ff2ccd5e7f5b",
-      "shortSha": "660165d",
-      "message": "fix(users,rows): handle missing user_settings g",
+      "sha": "c42c35431d5bded28d74014563984e81e90158d0",
+      "shortSha": "c42c354",
+      "message": "fix(worker): align account_sequences with sync_",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/660165d39a9431ffd360302b56a9ff2ccd5e7f5b",
-      "date": "2026-10-14T17:28:02Z"
+      "url": "https://github.com/velity-app/backend/commit/c42c35431d5bded28d74014563984e81e90158d0",
+      "date": "2026-10-14T21:11:46Z"
     }
   ]
 }
