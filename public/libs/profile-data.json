@@ -8,10 +8,10 @@
   "publicRepos": 32,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 955,
-  "publicCommitCount": 205,
-  "privateCommitCount": 750,
-  "refreshedAt": "2026-10-15T13:28:51.735Z",
+  "commitCount": 957,
+  "publicCommitCount": 206,
+  "privateCommitCount": 751,
+  "refreshedAt": "2026-10-15T19:54:55.263Z",
   "repositories": [
     {
       "name": "android",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-15T09:25:11Z",
-      "pushedAt": "2026-10-15T09:43:34Z",
+      "updatedAt": "2026-10-15T15:26:39Z",
+      "pushedAt": "2026-10-15T15:46:51Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-15T09:25:11Z",
+      "lastUpdatedAt": "2026-10-15T15:26:39Z",
       "latestRepository": "android"
     },
     {
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "c2925db94978033372add2601cfb4b3c3224ccbc",
+      "shortSha": "c2925db",
+      "message": "Standardize translucent surfaces and cycle acco",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/c2925db94978033372add2601cfb4b3c3224ccbc",
+      "date": "2026-10-15T15:26:32Z"
+    },
+    {
       "sha": "53f403ed1b7438ddb8d3a9fd6b5b68466a5a169a",
       "shortSha": "53f403e",
       "message": "Use velity-494c3 for production Firebase messag",
@@ -153,14 +161,6 @@
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/d15441198e1f522705a5006cd832fe5e1aa48711",
       "date": "2026-10-15T04:45:10Z"
-    },
-    {
-      "sha": "3aa35db424293845b4364063939ee3be5e8972cf",
-      "shortSha": "3aa35db",
-      "message": "Fix audited messaging, privacy and retention de",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/3aa35db424293845b4364063939ee3be5e8972cf",
-      "date": "2026-10-15T04:44:10Z"
     }
   ]
 }
