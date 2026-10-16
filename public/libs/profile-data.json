@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 991,
+  "followers": 990,
   "following": 179,
   "totalRepos": 72,
   "publicRepos": 32,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 960,
-  "publicCommitCount": 209,
-  "privateCommitCount": 751,
-  "refreshedAt": "2026-10-16T13:17:46.143Z",
+  "commitCount": 962,
+  "publicCommitCount": 210,
+  "privateCommitCount": 752,
+  "refreshedAt": "2026-10-16T19:34:57.159Z",
   "repositories": [
     {
       "name": "android",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-15T15:26:39Z",
-      "pushedAt": "2026-10-15T15:46:51Z",
+      "updatedAt": "2026-10-16T15:28:19Z",
+      "pushedAt": "2026-10-16T15:45:53Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-15T15:26:39Z",
+      "lastUpdatedAt": "2026-10-16T15:28:19Z",
       "latestRepository": "android"
     },
     {
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "d1d85e33ea1997e2a99f3bcbe2582e4fb91af4d8",
+      "shortSha": "d1d85e3",
+      "message": "Restore filled actions and chat colors; refine",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/d1d85e33ea1997e2a99f3bcbe2582e4fb91af4d8",
+      "date": "2026-10-16T15:28:08Z"
+    },
+    {
       "sha": "c2925db94978033372add2601cfb4b3c3224ccbc",
       "shortSha": "c2925db",
       "message": "Standardize translucent surfaces and cycle acco",
@@ -153,14 +161,6 @@
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/9b25a367ad611da4b061a1dba17063b39434f029",
       "date": "2026-10-15T09:15:54Z"
-    },
-    {
-      "sha": "d15441198e1f522705a5006cd832fe5e1aa48711",
-      "shortSha": "d154411",
-      "message": "Fix audited Android lifecycle, durable replies",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/d15441198e1f522705a5006cd832fe5e1aa48711",
-      "date": "2026-10-15T04:45:10Z"
     }
   ]
 }
