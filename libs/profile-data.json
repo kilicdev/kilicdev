@@ -2,17 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 989,
+  "followers": 987,
   "following": 179,
-  "totalRepos": 72,
-  "publicRepos": 32,
-  "totalStars": 244,
+  "totalRepos": 73,
+  "publicRepos": 33,
+  "totalStars": 245,
   "organizationCount": 11,
-  "commitCount": 969,
-  "publicCommitCount": 217,
+  "commitCount": 971,
+  "publicCommitCount": 219,
   "privateCommitCount": 752,
-  "refreshedAt": "2026-10-18T04:39:09.836Z",
+  "refreshedAt": "2026-10-18T12:38:19.075Z",
   "repositories": [
+    {
+      "name": "actions_flash",
+      "fullName": "kilicdev/actions_flash",
+      "language": "C",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-10-18T09:51:42Z",
+      "pushedAt": "2026-10-18T09:48:13Z",
+      "url": "https://github.com/kilicdev/actions_flash"
+    },
     {
       "name": "android",
       "fullName": "velity-app/android",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-10-13T19:42:02Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "kilicdev-private",
-      "fullName": "kilicdev/kilicdev-private",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-10T03:33:50Z",
-      "pushedAt": "2026-10-10T03:33:40Z",
-      "url": "https://github.com/kilicdev/kilicdev-private"
     }
   ],
   "organizations": [
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "007efc82eccdf40f096d33310340d1763f70f531",
+      "shortSha": "007efc8",
+      "message": "Initial commit: Actions ATJ2127/ATJ2157 ADFU fl",
+      "repository": "kilicdev/actions_flash",
+      "url": "https://github.com/kilicdev/actions_flash/commit/007efc82eccdf40f096d33310340d1763f70f531",
+      "date": "2026-10-18T09:17:10Z"
+    },
+    {
       "sha": "d1d85e33ea1997e2a99f3bcbe2582e4fb91af4d8",
       "shortSha": "d1d85e3",
       "message": "Restore filled actions and chat colors; refine",
@@ -153,14 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/f7a06db994c54958c054b601c4f07019eb021b4f",
       "date": "2026-10-15T09:24:59Z"
-    },
-    {
-      "sha": "9b25a367ad611da4b061a1dba17063b39434f029",
-      "shortSha": "9b25a36",
-      "message": "Remove advertising ID permissions and guard rel",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/9b25a367ad611da4b061a1dba17063b39434f029",
-      "date": "2026-10-15T09:15:54Z"
     }
   ]
 }
