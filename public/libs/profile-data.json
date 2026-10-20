@@ -2,17 +2,43 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 988,
+  "followers": 987,
   "following": 179,
   "totalRepos": 73,
   "publicRepos": 33,
-  "totalStars": 245,
+  "totalStars": 243,
   "organizationCount": 11,
-  "commitCount": 978,
-  "publicCommitCount": 226,
+  "commitCount": 979,
+  "publicCommitCount": 227,
   "privateCommitCount": 752,
-  "refreshedAt": "2026-10-20T13:35:15.368Z",
+  "refreshedAt": "2026-10-20T20:00:54.560Z",
   "repositories": [
+    {
+      "name": ".github",
+      "fullName": "dramalar/.github",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-10-20T16:54:12Z",
+      "pushedAt": "2026-06-16T18:12:35Z",
+      "url": "https://github.com/dramalar/.github"
+    },
+    {
+      "name": "eokul-tahta",
+      "fullName": "kilicdev/eokul-tahta",
+      "language": "JavaScript",
+      "stars": 8,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-10-20T16:54:07Z",
+      "pushedAt": "2026-06-02T21:53:18Z",
+      "url": "https://github.com/kilicdev/eokul-tahta"
+    },
     {
       "name": "actions_flash",
       "fullName": "kilicdev/actions_flash",
@@ -51,35 +77,17 @@
       "updatedAt": "2026-10-15T09:25:06Z",
       "pushedAt": "2026-10-15T09:33:19Z",
       "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "contracts",
-      "fullName": "velity-app/contracts",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-15T04:43:58Z",
-      "pushedAt": "2026-10-15T04:44:20Z",
-      "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 32,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-10-13T19:42:02Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     }
   ],
   "organizations": [
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-10-20T16:54:12Z",
+      "latestRepository": ".github"
+    },
     {
       "login": "velity-app",
       "name": "velity-app",
@@ -95,14 +103,6 @@
       "url": "https://api.github.com/orgs/Dijital-Marketin",
       "lastUpdatedAt": "2026-10-05T22:07:06Z",
       "latestRepository": "backend"
-    },
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-10-03T07:40:47Z",
-      "latestRepository": "web"
     },
     {
       "login": "hackmety",
