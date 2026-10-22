@@ -2,17 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 986,
+  "followers": 985,
   "following": 179,
   "totalRepos": 73,
   "publicRepos": 33,
-  "totalStars": 243,
+  "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 1112,
-  "publicCommitCount": 234,
+  "commitCount": 1113,
+  "publicCommitCount": 235,
   "privateCommitCount": 878,
-  "refreshedAt": "2026-10-22T13:50:07.965Z",
+  "refreshedAt": "2026-10-22T20:10:16.013Z",
   "repositories": [
+    {
+      "name": "actions_flash",
+      "fullName": "kilicdev/actions_flash",
+      "language": "C",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-10-22T17:43:32Z",
+      "pushedAt": "2026-10-18T09:48:13Z",
+      "url": "https://github.com/kilicdev/actions_flash"
+    },
     {
       "name": "android",
       "fullName": "velity-app/android",
@@ -23,7 +36,7 @@
       "openIssues": 0,
       "private": true,
       "updatedAt": "2026-10-22T13:13:48Z",
-      "pushedAt": "2026-10-22T13:39:02Z",
+      "pushedAt": "2026-10-22T14:22:39Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -64,19 +77,6 @@
       "updatedAt": "2026-10-21T12:43:47Z",
       "pushedAt": "2026-10-21T12:45:07Z",
       "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": ".github",
-      "fullName": "dramalar/.github",
-      "language": "",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-10-20T16:54:12Z",
-      "pushedAt": "2026-06-16T18:12:35Z",
-      "url": "https://github.com/dramalar/.github"
     }
   ],
   "organizations": [
