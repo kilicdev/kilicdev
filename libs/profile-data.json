@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 1129,
-  "publicCommitCount": 242,
-  "privateCommitCount": 887,
-  "refreshedAt": "2026-10-24T12:43:20.101Z",
+  "commitCount": 1162,
+  "publicCommitCount": 243,
+  "privateCommitCount": 919,
+  "refreshedAt": "2026-10-24T18:49:24.268Z",
   "repositories": [
     {
       "name": "web",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-24T12:38:39Z",
-      "pushedAt": "2026-10-24T12:38:36Z",
+      "updatedAt": "2026-10-24T12:54:28Z",
+      "pushedAt": "2026-10-24T13:52:05Z",
       "url": "https://github.com/velity-app/web"
     },
     {
@@ -35,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-24T12:38:36Z",
-      "pushedAt": "2026-10-24T12:41:07Z",
+      "updatedAt": "2026-10-24T12:54:21Z",
+      "pushedAt": "2026-10-24T13:26:30Z",
       "url": "https://github.com/velity-app/backend"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-24T12:38:39Z",
+      "lastUpdatedAt": "2026-10-24T12:54:28Z",
       "latestRepository": "web"
     },
     {
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "46116bdb33d2caa4659ff2973063c38601651a66",
+      "shortSha": "46116bd",
+      "message": "Target amd64 production and reject incompatible",
+      "repository": "velity-app/web",
+      "url": "https://github.com/velity-app/web/commit/46116bdb33d2caa4659ff2973063c38601651a66",
+      "date": "2026-10-24T12:54:22Z"
+    },
+    {
+      "sha": "cac51037ee255647da79e3ec57dd8e83c4e88a27",
+      "shortSha": "cac5103",
+      "message": "Build production images for amd64 and reject in",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/cac51037ee255647da79e3ec57dd8e83c4e88a27",
+      "date": "2026-10-24T12:54:16Z"
+    },
+    {
       "sha": "64cd3b7da588f1facbb7c46e99f503118c91d6d6",
       "shortSha": "64cd3b7",
       "message": "fix: stream gzip without macOS tar transport pa",
@@ -145,22 +161,6 @@
       "repository": "velity-app/velity-ai",
       "url": "https://github.com/velity-app/velity-ai/commit/2d29a66cae296686a6a16d1d3cbd7769c584e711",
       "date": "2026-10-24T12:25:11Z"
-    },
-    {
-      "sha": "35c3dd5a288a6067155b77307dad890698a82040",
-      "shortSha": "35c3dd5",
-      "message": "Initial commit",
-      "repository": "velity-app/velity-ai",
-      "url": "https://github.com/velity-app/velity-ai/commit/35c3dd5a288a6067155b77307dad890698a82040",
-      "date": "2026-10-24T12:23:48Z"
-    },
-    {
-      "sha": "c1c6f232c2ef6d4ab7ebdfe34d9c1ad4efadda75",
-      "shortSha": "c1c6f23",
-      "message": "fix: exclude macOS metadata from deployment arc",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/c1c6f232c2ef6d4ab7ebdfe34d9c1ad4efadda75",
-      "date": "2026-10-24T11:53:10Z"
     }
   ]
 }
