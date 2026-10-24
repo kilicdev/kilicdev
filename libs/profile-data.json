@@ -2,17 +2,69 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 987,
+  "followers": 985,
   "following": 180,
-  "totalRepos": 73,
+  "totalRepos": 74,
   "publicRepos": 33,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 1119,
-  "publicCommitCount": 241,
-  "privateCommitCount": 878,
-  "refreshedAt": "2026-10-24T04:41:34.206Z",
+  "commitCount": 1129,
+  "publicCommitCount": 242,
+  "privateCommitCount": 887,
+  "refreshedAt": "2026-10-24T12:43:20.101Z",
   "repositories": [
+    {
+      "name": "web",
+      "fullName": "velity-app/web",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-24T12:38:39Z",
+      "pushedAt": "2026-10-24T12:38:36Z",
+      "url": "https://github.com/velity-app/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-24T12:38:36Z",
+      "pushedAt": "2026-10-24T12:41:07Z",
+      "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "velity-ai",
+      "fullName": "velity-app/velity-ai",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-24T12:25:17Z",
+      "pushedAt": "2026-10-24T12:25:13Z",
+      "url": "https://github.com/velity-app/velity-ai"
+    },
+    {
+      "name": "contracts",
+      "fullName": "velity-app/contracts",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-24T11:23:05Z",
+      "pushedAt": "2026-10-24T11:24:13Z",
+      "url": "https://github.com/velity-app/contracts"
+    },
     {
       "name": "actions_flash",
       "fullName": "kilicdev/actions_flash",
@@ -25,58 +77,6 @@
       "updatedAt": "2026-10-22T17:43:32Z",
       "pushedAt": "2026-10-18T09:48:13Z",
       "url": "https://github.com/kilicdev/actions_flash"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-22T13:13:48Z",
-      "pushedAt": "2026-10-22T14:22:39Z",
-      "url": "https://github.com/velity-app/android"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-22T12:18:53Z",
-      "pushedAt": "2026-10-22T12:27:13Z",
-      "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "contracts",
-      "fullName": "velity-app/contracts",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-22T11:32:15Z",
-      "pushedAt": "2026-10-22T11:32:37Z",
-      "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "web",
-      "fullName": "velity-app/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-21T12:43:47Z",
-      "pushedAt": "2026-10-21T12:45:07Z",
-      "url": "https://github.com/velity-app/web"
     }
   ],
   "organizations": [
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-22T13:13:48Z",
-      "latestRepository": "android"
+      "lastUpdatedAt": "2026-10-24T12:38:39Z",
+      "latestRepository": "web"
     },
     {
       "login": "dramalar",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "bc76b643225ae62d60d3f6b6433f645648970f3c",
-      "shortSha": "bc76b64",
-      "message": "fix(notifications): optimistic UI update on lik",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/bc76b643225ae62d60d3f6b6433f645648970f3c",
-      "date": "2026-10-22T13:13:36Z"
+      "sha": "64cd3b7da588f1facbb7c46e99f503118c91d6d6",
+      "shortSha": "64cd3b7",
+      "message": "fix: stream gzip without macOS tar transport pa",
+      "repository": "velity-app/web",
+      "url": "https://github.com/velity-app/web/commit/64cd3b7da588f1facbb7c46e99f503118c91d6d6",
+      "date": "2026-10-24T12:38:33Z"
     },
     {
-      "sha": "183d96dffc9df28c7ac86ef545132c3cbf9c18c9",
-      "shortSha": "183d96d",
-      "message": "fix(test): configure test locale in preferences",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/183d96dffc9df28c7ac86ef545132c3cbf9c18c9",
-      "date": "2026-10-22T12:39:52Z"
-    },
-    {
-      "sha": "56f8f41b3c326863b93bc02f011ebb5217f2bedc",
-      "shortSha": "56f8f41",
-      "message": "test(auth): use distinct installation ID for se",
+      "sha": "8b4a74c01e9c6ff3cede653b18ba9e193a9c5007",
+      "shortSha": "8b4a74c",
+      "message": "fix: use internal build storage and portable de",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/56f8f41b3c326863b93bc02f011ebb5217f2bedc",
-      "date": "2026-10-22T12:18:47Z"
+      "url": "https://github.com/velity-app/backend/commit/8b4a74c01e9c6ff3cede653b18ba9e193a9c5007",
+      "date": "2026-10-24T12:38:30Z"
     },
     {
-      "sha": "51253d92e3c96141842e75e88ba985362ec1c6f8",
-      "shortSha": "51253d9",
-      "message": "fix(notifications): bypass heads-up deferral in",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/51253d92e3c96141842e75e88ba985362ec1c6f8",
-      "date": "2026-10-22T12:07:04Z"
+      "sha": "2d29a66cae296686a6a16d1d3cbd7769c584e711",
+      "shortSha": "2d29a66",
+      "message": "first commit",
+      "repository": "velity-app/velity-ai",
+      "url": "https://github.com/velity-app/velity-ai/commit/2d29a66cae296686a6a16d1d3cbd7769c584e711",
+      "date": "2026-10-24T12:25:11Z"
     },
     {
-      "sha": "947fbc7c85bfe404fed6baf69d429164b6a453cd",
-      "shortSha": "947fbc7",
-      "message": "test(messages): align message status with auto-",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/947fbc7c85bfe404fed6baf69d429164b6a453cd",
-      "date": "2026-10-22T12:05:55Z"
+      "sha": "35c3dd5a288a6067155b77307dad890698a82040",
+      "shortSha": "35c3dd5",
+      "message": "Initial commit",
+      "repository": "velity-app/velity-ai",
+      "url": "https://github.com/velity-app/velity-ai/commit/35c3dd5a288a6067155b77307dad890698a82040",
+      "date": "2026-10-24T12:23:48Z"
+    },
+    {
+      "sha": "c1c6f232c2ef6d4ab7ebdfe34d9c1ad4efadda75",
+      "shortSha": "c1c6f23",
+      "message": "fix: exclude macOS metadata from deployment arc",
+      "repository": "velity-app/web",
+      "url": "https://github.com/velity-app/web/commit/c1c6f232c2ef6d4ab7ebdfe34d9c1ad4efadda75",
+      "date": "2026-10-24T11:53:10Z"
     }
   ]
 }
