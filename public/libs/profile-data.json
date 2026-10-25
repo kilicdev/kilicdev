@@ -8,11 +8,37 @@
   "publicRepos": 33,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 1163,
-  "publicCommitCount": 244,
-  "privateCommitCount": 919,
-  "refreshedAt": "2026-10-24T22:31:10.374Z",
+  "commitCount": 1175,
+  "publicCommitCount": 245,
+  "privateCommitCount": 930,
+  "refreshedAt": "2026-10-25T04:47:10.481Z",
   "repositories": [
+    {
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-25T04:28:04Z",
+      "pushedAt": "2026-10-25T04:45:42Z",
+      "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "contracts",
+      "fullName": "velity-app/contracts",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-25T04:14:20Z",
+      "pushedAt": "2026-10-25T04:18:07Z",
+      "url": "https://github.com/velity-app/contracts"
+    },
     {
       "name": "web",
       "fullName": "velity-app/web",
@@ -27,19 +53,6 @@
       "url": "https://github.com/velity-app/web"
     },
     {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-24T12:54:21Z",
-      "pushedAt": "2026-10-24T13:26:30Z",
-      "url": "https://github.com/velity-app/backend"
-    },
-    {
       "name": "velity-ai",
       "fullName": "velity-app/velity-ai",
       "language": "JavaScript",
@@ -51,19 +64,6 @@
       "updatedAt": "2026-10-24T12:25:17Z",
       "pushedAt": "2026-10-24T12:25:13Z",
       "url": "https://github.com/velity-app/velity-ai"
-    },
-    {
-      "name": "contracts",
-      "fullName": "velity-app/contracts",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-24T11:23:05Z",
-      "pushedAt": "2026-10-24T11:24:13Z",
-      "url": "https://github.com/velity-app/contracts"
     },
     {
       "name": "actions_flash",
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-24T12:54:28Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-10-25T04:28:04Z",
+      "latestRepository": "backend"
     },
     {
       "login": "dramalar",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "46116bdb33d2caa4659ff2973063c38601651a66",
-      "shortSha": "46116bd",
-      "message": "Target amd64 production and reject incompatible",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/46116bdb33d2caa4659ff2973063c38601651a66",
-      "date": "2026-10-24T12:54:22Z"
-    },
-    {
-      "sha": "cac51037ee255647da79e3ec57dd8e83c4e88a27",
-      "shortSha": "cac5103",
-      "message": "Build production images for amd64 and reject in",
+      "sha": "bf4f07fbbdb31dde9c02ec04e4d17ff3b000fbc4",
+      "shortSha": "bf4f07f",
+      "message": "test(schema): include shared calls in foundatio",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/cac51037ee255647da79e3ec57dd8e83c4e88a27",
-      "date": "2026-10-24T12:54:16Z"
+      "url": "https://github.com/velity-app/backend/commit/bf4f07fbbdb31dde9c02ec04e4d17ff3b000fbc4",
+      "date": "2026-10-25T04:27:46Z"
     },
     {
-      "sha": "64cd3b7da588f1facbb7c46e99f503118c91d6d6",
-      "shortSha": "64cd3b7",
-      "message": "fix: stream gzip without macOS tar transport pa",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/64cd3b7da588f1facbb7c46e99f503118c91d6d6",
-      "date": "2026-10-24T12:38:33Z"
-    },
-    {
-      "sha": "8b4a74c01e9c6ff3cede653b18ba9e193a9c5007",
-      "shortSha": "8b4a74c",
-      "message": "fix: use internal build storage and portable de",
+      "sha": "8d5d10ab4c11877c12a3a890669537116e2962f5",
+      "shortSha": "8d5d10a",
+      "message": "test(db): stabilize published story fixture for",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/8b4a74c01e9c6ff3cede653b18ba9e193a9c5007",
-      "date": "2026-10-24T12:38:30Z"
+      "url": "https://github.com/velity-app/backend/commit/8d5d10ab4c11877c12a3a890669537116e2962f5",
+      "date": "2026-10-25T04:23:02Z"
     },
     {
-      "sha": "2d29a66cae296686a6a16d1d3cbd7769c584e711",
-      "shortSha": "2d29a66",
-      "message": "first commit",
-      "repository": "velity-app/velity-ai",
-      "url": "https://github.com/velity-app/velity-ai/commit/2d29a66cae296686a6a16d1d3cbd7769c584e711",
-      "date": "2026-10-24T12:25:11Z"
+      "sha": "d4939b093e3d391ff550c03667cbe84495bc0e57",
+      "shortSha": "d4939b0",
+      "message": "feat(contracts): expose staff and expiring veri",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/d4939b093e3d391ff550c03667cbe84495bc0e57",
+      "date": "2026-10-25T04:08:26Z"
+    },
+    {
+      "sha": "7afdd788bb2a7ae23443ecc250adf4a2a590141e",
+      "shortSha": "7afdd78",
+      "message": "feat(identity): replace legacy badges with expi",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/7afdd788bb2a7ae23443ecc250adf4a2a590141e",
+      "date": "2026-10-25T04:08:25Z"
+    },
+    {
+      "sha": "bb890bbb24e1dac3d248b8771a03a97fbacb6ab4",
+      "shortSha": "bb890bb",
+      "message": "fix(mail): restore SMTP sender identities after",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/bb890bbb24e1dac3d248b8771a03a97fbacb6ab4",
+      "date": "2026-10-25T03:50:15Z"
     }
   ]
 }
