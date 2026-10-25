@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 984,
+  "followers": 985,
   "following": 180,
   "totalRepos": 74,
   "publicRepos": 33,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 1175,
-  "publicCommitCount": 245,
-  "privateCommitCount": 930,
-  "refreshedAt": "2026-10-25T04:47:10.481Z",
+  "commitCount": 1177,
+  "publicCommitCount": 246,
+  "privateCommitCount": 931,
+  "refreshedAt": "2026-10-25T13:13:04.395Z",
   "repositories": [
     {
       "name": "backend",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-25T04:28:04Z",
-      "pushedAt": "2026-10-25T04:45:42Z",
+      "updatedAt": "2026-10-25T04:59:45Z",
+      "pushedAt": "2026-10-25T05:26:28Z",
       "url": "https://github.com/velity-app/backend"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-25T04:28:04Z",
+      "lastUpdatedAt": "2026-10-25T04:59:45Z",
       "latestRepository": "backend"
     },
     {
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "e1065d08d1940de7f8d6f75137fdb1b5fd201395",
+      "shortSha": "e1065d0",
+      "message": "fix(deploy): reuse verified archives when retry",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/e1065d08d1940de7f8d6f75137fdb1b5fd201395",
+      "date": "2026-10-25T04:59:26Z"
+    },
+    {
       "sha": "bf4f07fbbdb31dde9c02ec04e4d17ff3b000fbc4",
       "shortSha": "bf4f07f",
       "message": "test(schema): include shared calls in foundatio",
@@ -153,14 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/7afdd788bb2a7ae23443ecc250adf4a2a590141e",
       "date": "2026-10-25T04:08:25Z"
-    },
-    {
-      "sha": "bb890bbb24e1dac3d248b8771a03a97fbacb6ab4",
-      "shortSha": "bb890bb",
-      "message": "fix(mail): restore SMTP sender identities after",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/bb890bbb24e1dac3d248b8771a03a97fbacb6ab4",
-      "date": "2026-10-25T03:50:15Z"
     }
   ]
 }
