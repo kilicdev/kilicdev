@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 986,
+  "followers": 987,
   "following": 179,
   "totalRepos": 74,
   "publicRepos": 33,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 1191,
-  "publicCommitCount": 255,
-  "privateCommitCount": 936,
-  "refreshedAt": "2026-10-28T05:47:22.331Z",
+  "commitCount": 1193,
+  "publicCommitCount": 256,
+  "privateCommitCount": 937,
+  "refreshedAt": "2026-10-28T15:09:30.672Z",
   "repositories": [
     {
       "name": "web",
@@ -22,8 +22,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-25T17:48:09Z",
-      "pushedAt": "2026-10-25T18:13:45Z",
+      "updatedAt": "2026-10-28T10:29:40Z",
+      "pushedAt": "2026-10-28T10:35:45Z",
       "url": "https://github.com/velity-app/web"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-25T17:48:09Z",
+      "lastUpdatedAt": "2026-10-28T10:29:40Z",
       "latestRepository": "web"
     },
     {
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "2daaa345ca30546bc77d707734cbb752c3730c27",
+      "shortSha": "2daaa34",
+      "message": "feat(policy): add child safety standards page a",
+      "repository": "velity-app/web",
+      "url": "https://github.com/velity-app/web/commit/2daaa345ca30546bc77d707734cbb752c3730c27",
+      "date": "2026-10-28T10:29:17Z"
+    },
+    {
       "sha": "20304d9cdb7bce50b347a2fe0c2a0d46f574548c",
       "shortSha": "20304d9",
       "message": "feat(settings): update new account defaults to",
@@ -153,14 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/e1065d08d1940de7f8d6f75137fdb1b5fd201395",
       "date": "2026-10-25T04:59:26Z"
-    },
-    {
-      "sha": "bf4f07fbbdb31dde9c02ec04e4d17ff3b000fbc4",
-      "shortSha": "bf4f07f",
-      "message": "test(schema): include shared calls in foundatio",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/bf4f07fbbdb31dde9c02ec04e4d17ff3b000fbc4",
-      "date": "2026-10-25T04:27:46Z"
     }
   ]
 }
