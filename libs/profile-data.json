@@ -8,11 +8,24 @@
   "publicRepos": 33,
   "totalStars": 244,
   "organizationCount": 11,
-  "commitCount": 1195,
-  "publicCommitCount": 258,
-  "privateCommitCount": 937,
-  "refreshedAt": "2026-10-29T05:52:37.647Z",
+  "commitCount": 1197,
+  "publicCommitCount": 259,
+  "privateCommitCount": 938,
+  "refreshedAt": "2026-10-29T15:15:51.198Z",
   "repositories": [
+    {
+      "name": "scraper-bot",
+      "fullName": "dramalar/scraper-bot",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-29T15:08:21Z",
+      "pushedAt": "2026-10-29T15:08:16Z",
+      "url": "https://github.com/dramalar/scraper-bot"
+    },
     {
       "name": "web",
       "fullName": "velity-app/web",
@@ -64,22 +77,17 @@
       "updatedAt": "2026-10-24T12:25:17Z",
       "pushedAt": "2026-10-24T12:25:13Z",
       "url": "https://github.com/velity-app/velity-ai"
-    },
-    {
-      "name": "actions_flash",
-      "fullName": "kilicdev/actions_flash",
-      "language": "C",
-      "stars": 2,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-10-22T17:43:32Z",
-      "pushedAt": "2026-10-18T09:48:13Z",
-      "url": "https://github.com/kilicdev/actions_flash"
     }
   ],
   "organizations": [
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-10-29T15:08:21Z",
+      "latestRepository": "scraper-bot"
+    },
     {
       "login": "velity-app",
       "name": "velity-app",
@@ -87,14 +95,6 @@
       "url": "https://api.github.com/orgs/velity-app",
       "lastUpdatedAt": "2026-10-28T10:29:40Z",
       "latestRepository": "web"
-    },
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-10-20T16:54:12Z",
-      "latestRepository": ".github"
     },
     {
       "login": "Dijital-Marketin",
@@ -122,6 +122,14 @@
     }
   ],
   "commits": [
+    {
+      "sha": "d89c0b25444c01df3dbe2f8d1e934960c56fe0fe",
+      "shortSha": "d89c0b2",
+      "message": "fix(scraper): remove dramadunyam, restore drama",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/d89c0b25444c01df3dbe2f8d1e934960c56fe0fe",
+      "date": "2026-10-29T14:51:55Z"
+    },
     {
       "sha": "2daaa345ca30546bc77d707734cbb752c3730c27",
       "shortSha": "2daaa34",
@@ -153,14 +161,6 @@
       "repository": "velity-app/backend",
       "url": "https://github.com/velity-app/backend/commit/7970a218ece1ec41c9628160b7e34d3339d76774",
       "date": "2026-10-25T14:43:08Z"
-    },
-    {
-      "sha": "e1065d08d1940de7f8d6f75137fdb1b5fd201395",
-      "shortSha": "e1065d0",
-      "message": "fix(deploy): reuse verified archives when retry",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/e1065d08d1940de7f8d6f75137fdb1b5fd201395",
-      "date": "2026-10-25T04:59:26Z"
     }
   ]
 }
