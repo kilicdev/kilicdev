@@ -8,36 +8,49 @@
   "publicRepos": 33,
   "totalStars": 245,
   "organizationCount": 11,
-  "commitCount": 1206,
-  "publicCommitCount": 261,
-  "privateCommitCount": 945,
-  "refreshedAt": "2026-10-30T05:54:03.011Z",
+  "commitCount": 1218,
+  "publicCommitCount": 262,
+  "privateCommitCount": 956,
+  "refreshedAt": "2026-10-30T15:04:51.420Z",
   "repositories": [
     {
-      "name": "actions_flash",
-      "fullName": "kilicdev/actions_flash",
-      "language": "C",
-      "stars": 3,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-10-30T05:51:16Z",
-      "pushedAt": "2026-10-18T09:48:13Z",
-      "url": "https://github.com/kilicdev/actions_flash"
-    },
-    {
-      "name": "scraper-bot",
-      "fullName": "dramalar/scraper-bot",
-      "language": "JavaScript",
+      "name": "backend",
+      "fullName": "velity-app/backend",
+      "language": "Rust",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-30T04:03:35Z",
-      "pushedAt": "2026-10-30T04:03:31Z",
-      "url": "https://github.com/dramalar/scraper-bot"
+      "updatedAt": "2026-10-30T14:30:33Z",
+      "pushedAt": "2026-10-30T14:36:47Z",
+      "url": "https://github.com/velity-app/backend"
+    },
+    {
+      "name": "web",
+      "fullName": "smsmint/web",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-30T12:54:17Z",
+      "pushedAt": "2026-10-30T12:54:13Z",
+      "url": "https://github.com/smsmint/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "smsmint/backend",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-10-30T12:54:05Z",
+      "pushedAt": "2026-10-30T12:54:01Z",
+      "url": "https://github.com/smsmint/backend"
     },
     {
       "name": "web",
@@ -48,8 +61,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-29T15:18:45Z",
-      "pushedAt": "2026-10-29T15:18:40Z",
+      "updatedAt": "2026-10-30T10:09:15Z",
+      "pushedAt": "2026-10-30T10:09:11Z",
       "url": "https://github.com/dramalar/web"
     },
     {
@@ -61,39 +74,34 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-29T15:18:43Z",
-      "pushedAt": "2026-10-29T15:18:38Z",
+      "updatedAt": "2026-10-30T10:09:08Z",
+      "pushedAt": "2026-10-30T10:09:04Z",
       "url": "https://github.com/dramalar/backend"
-    },
-    {
-      "name": "web",
-      "fullName": "velity-app/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-28T10:29:40Z",
-      "pushedAt": "2026-10-28T10:35:45Z",
-      "url": "https://github.com/velity-app/web"
     }
   ],
   "organizations": [
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-10-30T04:03:35Z",
-      "latestRepository": "scraper-bot"
-    },
     {
       "login": "velity-app",
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-10-28T10:29:40Z",
+      "lastUpdatedAt": "2026-10-30T14:30:33Z",
+      "latestRepository": "backend"
+    },
+    {
+      "login": "smsmint",
+      "name": "smsmint",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
+      "url": "https://api.github.com/orgs/smsmint",
+      "lastUpdatedAt": "2026-10-30T12:54:17Z",
+      "latestRepository": "web"
+    },
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-10-30T10:09:15Z",
       "latestRepository": "web"
     },
     {
@@ -111,56 +119,48 @@
       "url": "https://api.github.com/orgs/hackmety",
       "lastUpdatedAt": "2026-09-28T15:45:17Z",
       "latestRepository": "windows"
-    },
-    {
-      "login": "smsmint",
-      "name": "smsmint",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
-      "url": "https://api.github.com/orgs/smsmint",
-      "lastUpdatedAt": "2026-09-06T02:25:09Z",
-      "latestRepository": ".github"
     }
   ],
   "commits": [
     {
-      "sha": "134a3f6150fb17ad1bea597cb15fc087c35238ba",
-      "shortSha": "134a3f6",
-      "message": "fix(dramabox): robust live edge transport on Cl",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/134a3f6150fb17ad1bea597cb15fc087c35238ba",
-      "date": "2026-10-30T04:03:29Z"
+      "sha": "d8686968d3204c56dc169a8f3b5e94eb4422125d",
+      "shortSha": "d868696",
+      "message": "fix(tests): stabilize feed timestamps, sync con",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/d8686968d3204c56dc169a8f3b5e94eb4422125d",
+      "date": "2026-10-30T14:30:23Z"
     },
     {
-      "sha": "8df43785a1ab7579828d0d5170d01b9075447d0b",
-      "shortSha": "8df4378",
-      "message": "fix(dramabox): restore clean direct tier-1 scra",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/8df43785a1ab7579828d0d5170d01b9075447d0b",
-      "date": "2026-10-29T19:15:10Z"
+      "sha": "cd97b90a24856c0a7cfeba6d7a604c932f7de4cb",
+      "shortSha": "cd97b90",
+      "message": "Add worker health monitoring endpoint",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/cd97b90a24856c0a7cfeba6d7a604c932f7de4cb",
+      "date": "2026-10-30T13:44:57Z"
     },
     {
-      "sha": "fb26e30ceb23e214eb760479c8c620278662dd14",
-      "shortSha": "fb26e30",
-      "message": "refactor(dramabox): remove fallback layers (see",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/fb26e30ceb23e214eb760479c8c620278662dd14",
-      "date": "2026-10-29T15:47:56Z"
+      "sha": "85822970f164811d3df3d888483e5800421b32a5",
+      "shortSha": "8582297",
+      "message": "feat: isolate whitelisted services and transiti",
+      "repository": "smsmint/web",
+      "url": "https://github.com/smsmint/web/commit/85822970f164811d3df3d888483e5800421b32a5",
+      "date": "2026-10-30T12:54:11Z"
     },
     {
-      "sha": "9310c4f1a4e52a365290e0e5c2a7e8b818deed1f",
-      "shortSha": "9310c4f",
-      "message": "feat(dramabox): auto-activate live edge gateway",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/9310c4f1a4e52a365290e0e5c2a7e8b818deed1f",
-      "date": "2026-10-29T15:42:24Z"
+      "sha": "f51a53ab4f89f7fac79ba4bc7c20f55acf35cf71",
+      "shortSha": "f51a53a",
+      "message": "feat: enforce service whitelist to prevent DMCA",
+      "repository": "smsmint/backend",
+      "url": "https://github.com/smsmint/backend/commit/f51a53ab4f89f7fac79ba4bc7c20f55acf35cf71",
+      "date": "2026-10-30T12:53:59Z"
     },
     {
-      "sha": "16dbfcbbc81b600075b180e965554e8a3302e4bd",
-      "shortSha": "16dbfcb",
-      "message": "fix(dramabox): bundle seed catalog and resilien",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/16dbfcbbc81b600075b180e965554e8a3302e4bd",
-      "date": "2026-10-29T15:31:21Z"
+      "sha": "a2783fe0db20229a24f1cbefc18f7bf2167f6130",
+      "shortSha": "a2783fe",
+      "message": "feat(pricing): align plans to daily 49.99, mont",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/a2783fe0db20229a24f1cbefc18f7bf2167f6130",
+      "date": "2026-10-30T10:09:07Z"
     }
   ]
 }
