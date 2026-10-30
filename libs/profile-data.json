@@ -6,13 +6,26 @@
   "following": 179,
   "totalRepos": 74,
   "publicRepos": 33,
-  "totalStars": 244,
+  "totalStars": 245,
   "organizationCount": 11,
-  "commitCount": 1204,
-  "publicCommitCount": 260,
-  "privateCommitCount": 944,
-  "refreshedAt": "2026-10-29T21:10:48.149Z",
+  "commitCount": 1206,
+  "publicCommitCount": 261,
+  "privateCommitCount": 945,
+  "refreshedAt": "2026-10-30T05:54:03.011Z",
   "repositories": [
+    {
+      "name": "actions_flash",
+      "fullName": "kilicdev/actions_flash",
+      "language": "C",
+      "stars": 3,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-10-30T05:51:16Z",
+      "pushedAt": "2026-10-18T09:48:13Z",
+      "url": "https://github.com/kilicdev/actions_flash"
+    },
     {
       "name": "scraper-bot",
       "fullName": "dramalar/scraper-bot",
@@ -22,8 +35,8 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-10-29T19:15:17Z",
-      "pushedAt": "2026-10-29T19:15:12Z",
+      "updatedAt": "2026-10-30T04:03:35Z",
+      "pushedAt": "2026-10-30T04:03:31Z",
       "url": "https://github.com/dramalar/scraper-bot"
     },
     {
@@ -64,19 +77,6 @@
       "updatedAt": "2026-10-28T10:29:40Z",
       "pushedAt": "2026-10-28T10:35:45Z",
       "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-10-25T15:24:07Z",
-      "pushedAt": "2026-10-25T15:24:04Z",
-      "url": "https://github.com/velity-app/backend"
     }
   ],
   "organizations": [
@@ -85,7 +85,7 @@
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-10-29T19:15:17Z",
+      "lastUpdatedAt": "2026-10-30T04:03:35Z",
       "latestRepository": "scraper-bot"
     },
     {
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "134a3f6150fb17ad1bea597cb15fc087c35238ba",
+      "shortSha": "134a3f6",
+      "message": "fix(dramabox): robust live edge transport on Cl",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/134a3f6150fb17ad1bea597cb15fc087c35238ba",
+      "date": "2026-10-30T04:03:29Z"
+    },
+    {
       "sha": "8df43785a1ab7579828d0d5170d01b9075447d0b",
       "shortSha": "8df4378",
       "message": "fix(dramabox): restore clean direct tier-1 scra",
@@ -153,14 +161,6 @@
       "repository": "dramalar/scraper-bot",
       "url": "https://github.com/dramalar/scraper-bot/commit/16dbfcbbc81b600075b180e965554e8a3302e4bd",
       "date": "2026-10-29T15:31:21Z"
-    },
-    {
-      "sha": "c3330b6c71c5030d12c19a28cb21678e4f857a34",
-      "shortSha": "c3330b6",
-      "message": "fix(pricing): align dramalar.info pricing and u",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/c3330b6c71c5030d12c19a28cb21678e4f857a34",
-      "date": "2026-10-29T15:18:29Z"
     }
   ]
 }
