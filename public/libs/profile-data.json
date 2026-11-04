@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 246,
   "organizationCount": 11,
-  "commitCount": 1330,
-  "publicCommitCount": 276,
-  "privateCommitCount": 1054,
-  "refreshedAt": "2026-11-04T00:38:25.759Z",
+  "commitCount": 1346,
+  "publicCommitCount": 277,
+  "privateCommitCount": 1069,
+  "refreshedAt": "2026-11-04T12:12:17.820Z",
   "repositories": [
     {
       "name": "backend",
@@ -22,22 +22,9 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-11-04T00:18:16Z",
-      "pushedAt": "2026-11-04T00:18:12Z",
+      "updatedAt": "2026-11-04T11:32:38Z",
+      "pushedAt": "2026-11-04T11:32:34Z",
       "url": "https://github.com/velity-app/backend"
-    },
-    {
-      "name": "web",
-      "fullName": "velity-app/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-04T00:07:42Z",
-      "pushedAt": "2026-11-04T00:16:47Z",
-      "url": "https://github.com/velity-app/web"
     },
     {
       "name": "contracts",
@@ -48,9 +35,22 @@
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-11-04T00:02:27Z",
-      "pushedAt": "2026-11-04T00:02:23Z",
+      "updatedAt": "2026-11-04T04:29:20Z",
+      "pushedAt": "2026-11-04T04:31:05Z",
       "url": "https://github.com/velity-app/contracts"
+    },
+    {
+      "name": "web",
+      "fullName": "velity-app/web",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-04T04:19:21Z",
+      "pushedAt": "2026-11-04T04:23:30Z",
+      "url": "https://github.com/velity-app/web"
     },
     {
       "name": "android",
@@ -62,7 +62,7 @@
       "openIssues": 0,
       "private": true,
       "updatedAt": "2026-11-01T18:54:11Z",
-      "pushedAt": "2026-11-01T19:01:57Z",
+      "pushedAt": "2026-11-04T11:51:09Z",
       "url": "https://github.com/velity-app/android"
     },
     {
@@ -85,7 +85,7 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-11-04T00:18:16Z",
+      "lastUpdatedAt": "2026-11-04T11:32:38Z",
       "latestRepository": "backend"
     },
     {
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "8afcf658194a39c886ab3b7ff24b6f93f8c841e5",
-      "shortSha": "8afcf65",
-      "message": "fix(groups,moderation): avoid owner side effect",
+      "sha": "7d85ee3d7ba0f8ea9692b8c8093288f7c2248751",
+      "shortSha": "7d85ee3",
+      "message": "feat(groups): return username, avatarUrl and of",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/8afcf658194a39c886ab3b7ff24b6f93f8c841e5",
-      "date": "2026-11-04T00:18:10Z"
+      "url": "https://github.com/velity-app/backend/commit/7d85ee3d7ba0f8ea9692b8c8093288f7c2248751",
+      "date": "2026-11-04T11:32:32Z"
     },
     {
-      "sha": "8bc3ae786eeffd9b1269f6e45870b2ec9da19d24",
-      "shortSha": "8bc3ae7",
-      "message": "fix(security): parse X-Forwarded-For hops byte-",
+      "sha": "6c41a2b345b8d0ade0d160d57bb38990a382b36d",
+      "shortSha": "6c41a2b",
+      "message": "feat(chat): support viewOnce, audio notes, grou",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/8bc3ae786eeffd9b1269f6e45870b2ec9da19d24",
-      "date": "2026-11-04T00:13:35Z"
+      "url": "https://github.com/velity-app/backend/commit/6c41a2b345b8d0ade0d160d57bb38990a382b36d",
+      "date": "2026-11-04T04:44:02Z"
     },
     {
-      "sha": "b9e3fbdb7493527e2e439cd82514c09eec6ee194",
-      "shortSha": "b9e3fbd",
-      "message": "fix(auth): accept privacyVersion 2026-10-23 on",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/b9e3fbdb7493527e2e439cd82514c09eec6ee194",
-      "date": "2026-11-04T00:10:58Z"
+      "sha": "0ec7c60a767178b4b0394b96cc4f04fe0788a02f",
+      "shortSha": "0ec7c60",
+      "message": "feat(contracts): add viewOnce, audioNote, group",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/0ec7c60a767178b4b0394b96cc4f04fe0788a02f",
+      "date": "2026-11-04T04:29:13Z"
     },
     {
-      "sha": "d386ac71079e5a7df1f03aec417d032d06205eaf",
-      "shortSha": "d386ac7",
-      "message": "ci(workflows): add job/SSH timeouts, fix .next/",
+      "sha": "936392ac6301331f283a06d66e86d88c5ca0441c",
+      "shortSha": "936392a",
+      "message": "fix(mail): localize transactional email timesta",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/936392ac6301331f283a06d66e86d88c5ca0441c",
+      "date": "2026-11-04T04:21:21Z"
+    },
+    {
+      "sha": "ff068995494cf49e1615370438603f0e14fc0229",
+      "shortSha": "ff06899",
+      "message": "fix(brand): optimize velity-icon and favicon as",
       "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/d386ac71079e5a7df1f03aec417d032d06205eaf",
-      "date": "2026-11-04T00:07:36Z"
-    },
-    {
-      "sha": "0fbead8b1791c64be2e0f35edaae5cbd746e2c34",
-      "shortSha": "0fbead8",
-      "message": "fix(web): untrack .env.local, exclude from Dock",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/0fbead8b1791c64be2e0f35edaae5cbd746e2c34",
-      "date": "2026-11-04T00:06:53Z"
+      "url": "https://github.com/velity-app/web/commit/ff068995494cf49e1615370438603f0e14fc0229",
+      "date": "2026-11-04T04:19:14Z"
     }
   ]
 }
