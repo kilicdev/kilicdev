@@ -2,17 +2,43 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 984,
+  "followers": 983,
   "following": 179,
   "totalRepos": 74,
   "publicRepos": 33,
-  "totalStars": 246,
+  "totalStars": 247,
   "organizationCount": 11,
-  "commitCount": 1391,
-  "publicCommitCount": 282,
-  "privateCommitCount": 1109,
-  "refreshedAt": "2026-11-06T06:52:58.242Z",
+  "commitCount": 1393,
+  "publicCommitCount": 283,
+  "privateCommitCount": 1110,
+  "refreshedAt": "2026-11-06T15:57:40.929Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 33,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-06T14:48:43Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
+    {
+      "name": "web",
+      "fullName": "velity-app/web",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-06T12:36:38Z",
+      "pushedAt": "2026-11-06T12:37:51Z",
+      "url": "https://github.com/velity-app/web"
+    },
     {
       "name": "android",
       "fullName": "velity-app/android",
@@ -51,32 +77,6 @@
       "updatedAt": "2026-11-04T14:51:50Z",
       "pushedAt": "2026-11-04T14:52:26Z",
       "url": "https://github.com/velity-app/contracts"
-    },
-    {
-      "name": "web",
-      "fullName": "velity-app/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-04T04:19:21Z",
-      "pushedAt": "2026-11-04T04:23:30Z",
-      "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": "velity-ai",
-      "fullName": "velity-app/velity-ai",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-01T16:47:37Z",
-      "pushedAt": "2026-10-24T12:25:13Z",
-      "url": "https://github.com/velity-app/velity-ai"
     }
   ],
   "organizations": [
@@ -85,8 +85,8 @@
       "name": "velity-app",
       "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
       "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-11-05T04:01:48Z",
-      "latestRepository": "android"
+      "lastUpdatedAt": "2026-11-06T12:36:38Z",
+      "latestRepository": "web"
     },
     {
       "login": "smsmint",
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "1b1e69b2bddb2db12151616cc73f6e2974c8f9b5",
+      "shortSha": "1b1e69b",
+      "message": "feat(policy): add terms of service page and cro",
+      "repository": "velity-app/web",
+      "url": "https://github.com/velity-app/web/commit/1b1e69b2bddb2db12151616cc73f6e2974c8f9b5",
+      "date": "2026-11-06T12:36:12Z"
+    },
+    {
       "sha": "edf66f45b9e8f51de76c7a426275f4ba36797510",
       "shortSha": "edf66f4",
       "message": "fix(native): implement standard Object methods",
@@ -153,14 +161,6 @@
       "repository": "velity-app/android",
       "url": "https://github.com/velity-app/android/commit/b2c45e1c58b74cb12675c63b70ae2cfeeed4e9c1",
       "date": "2026-11-05T02:59:00Z"
-    },
-    {
-      "sha": "816c3d9fc572faaf26e615af84c5e1daa17a3e0d",
-      "shortSha": "816c3d9",
-      "message": "fix(crash): resolve startup crash and API 24-36",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/816c3d9fc572faaf26e615af84c5e1daa17a3e0d",
-      "date": "2026-11-05T02:27:55Z"
     }
   ]
 }
