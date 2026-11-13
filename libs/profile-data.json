@@ -4,15 +4,67 @@
   "bio": "Software Architect & Senior Full Stack Engineer",
   "followers": 983,
   "following": 179,
-  "totalRepos": 74,
+  "totalRepos": 75,
   "publicRepos": 33,
-  "totalStars": 247,
+  "totalStars": 251,
   "organizationCount": 11,
-  "commitCount": 1416,
-  "publicCommitCount": 303,
-  "privateCommitCount": 1113,
-  "refreshedAt": "2026-11-13T12:16:50.159Z",
+  "commitCount": 1427,
+  "publicCommitCount": 304,
+  "privateCommitCount": 1123,
+  "refreshedAt": "2026-11-13T19:52:18.847Z",
   "repositories": [
+    {
+      "name": ".github",
+      "fullName": "Dijital-Marketin/.github",
+      "language": "",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-13T14:02:29Z",
+      "pushedAt": "2026-10-05T21:56:08Z",
+      "url": "https://github.com/Dijital-Marketin/.github"
+    },
+    {
+      "name": "web",
+      "fullName": "Dijital-Marketin/web",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-13T14:02:25Z",
+      "pushedAt": "2026-10-05T22:00:53Z",
+      "url": "https://github.com/Dijital-Marketin/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "Dijital-Marketin/backend",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-13T14:02:22Z",
+      "pushedAt": "2026-10-05T22:07:02Z",
+      "url": "https://github.com/Dijital-Marketin/backend"
+    },
+    {
+      "name": "wa-guard",
+      "fullName": "kilicdev/wa-guard",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-13T14:01:09Z",
+      "pushedAt": "2026-11-13T14:00:59Z",
+      "url": "https://github.com/kilicdev/wa-guard"
+    },
     {
       "name": "ai",
       "fullName": "velity-app/ai",
@@ -25,61 +77,17 @@
       "updatedAt": "2026-11-13T11:51:37Z",
       "pushedAt": "2026-11-13T10:51:56Z",
       "url": "https://github.com/velity-app/ai"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 33,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-11-12T17:19:40Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": "web",
-      "fullName": "velity-app/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-06T12:36:38Z",
-      "pushedAt": "2026-11-13T12:14:01Z",
-      "url": "https://github.com/velity-app/web"
-    },
-    {
-      "name": "android",
-      "fullName": "velity-app/android",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-05T04:01:48Z",
-      "pushedAt": "2026-11-09T16:29:44Z",
-      "url": "https://github.com/velity-app/android"
-    },
-    {
-      "name": "backend",
-      "fullName": "velity-app/backend",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-05T03:14:05Z",
-      "pushedAt": "2026-11-13T12:13:03Z",
-      "url": "https://github.com/velity-app/backend"
     }
   ],
   "organizations": [
+    {
+      "login": "Dijital-Marketin",
+      "name": "Dijital-Marketin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/337672063?v=4",
+      "url": "https://api.github.com/orgs/Dijital-Marketin",
+      "lastUpdatedAt": "2026-11-13T14:02:29Z",
+      "latestRepository": ".github"
+    },
     {
       "login": "velity-app",
       "name": "velity-app",
@@ -105,14 +113,6 @@
       "latestRepository": "web"
     },
     {
-      "login": "Dijital-Marketin",
-      "name": "Dijital-Marketin",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/337672063?v=4",
-      "url": "https://api.github.com/orgs/Dijital-Marketin",
-      "lastUpdatedAt": "2026-10-05T22:07:06Z",
-      "latestRepository": "backend"
-    },
-    {
       "login": "hackmety",
       "name": "hackmety",
       "avatarUrl": "https://avatars.githubusercontent.com/u/276630337?v=4",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "565d77907dd248deeae21aea85caa0c1ac094123",
-      "shortSha": "565d779",
-      "message": "docs(ai): synchronize shared AI rules and runne",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/565d77907dd248deeae21aea85caa0c1ac094123",
-      "date": "2026-11-13T12:13:59Z"
-    },
-    {
-      "sha": "c4bb35858fc3cb82354ebd5660810fdf9debb5ae",
-      "shortSha": "c4bb358",
-      "message": "feat(calls): record call end and decline system",
+      "sha": "c69a945b561d28ba0d42832c889a2d6b3212e61a",
+      "shortSha": "c69a945",
+      "message": "fix(deploy): preserve placeholder backend-image",
       "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/c4bb35858fc3cb82354ebd5660810fdf9debb5ae",
-      "date": "2026-11-13T12:13:00Z"
+      "url": "https://github.com/velity-app/backend/commit/c69a945b561d28ba0d42832c889a2d6b3212e61a",
+      "date": "2026-11-13T19:23:18Z"
     },
     {
-      "sha": "41625252ca5a11a9a069ca63ff2f6747196dd02f",
-      "shortSha": "4162525",
-      "message": "docs(ai): synchronize shared AI rules and runne",
-      "repository": "velity-app/contracts",
-      "url": "https://github.com/velity-app/contracts/commit/41625252ca5a11a9a069ca63ff2f6747196dd02f",
-      "date": "2026-11-13T12:01:07Z"
+      "sha": "6f3bff48ee165028e4663abc977833918d1dee5a",
+      "shortSha": "6f3bff4",
+      "message": "fix(backend): resolve integration test regressi",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/6f3bff48ee165028e4663abc977833918d1dee5a",
+      "date": "2026-11-13T15:13:50Z"
     },
     {
-      "sha": "3cc7bd9460639573608784ca55cf4bf9b013a8c7",
-      "shortSha": "3cc7bd9",
-      "message": "version managment and others",
-      "repository": "velity-app/ai",
-      "url": "https://github.com/velity-app/ai/commit/3cc7bd9460639573608784ca55cf4bf9b013a8c7",
-      "date": "2026-11-13T10:51:54Z"
+      "sha": "d9550e28167fec3f08fe4fb2d9c3c904fd6fcd80",
+      "shortSha": "d9550e2",
+      "message": "chore: rename package to wa-guard",
+      "repository": "kilicdev/wa-guard",
+      "url": "https://github.com/kilicdev/wa-guard/commit/d9550e28167fec3f08fe4fb2d9c3c904fd6fcd80",
+      "date": "2026-11-13T13:57:24Z"
     },
     {
-      "sha": "1b1e69b2bddb2db12151616cc73f6e2974c8f9b5",
-      "shortSha": "1b1e69b",
-      "message": "feat(policy): add terms of service page and cro",
-      "repository": "velity-app/web",
-      "url": "https://github.com/velity-app/web/commit/1b1e69b2bddb2db12151616cc73f6e2974c8f9b5",
-      "date": "2026-11-06T12:36:12Z"
+      "sha": "467955b21c260be3ed2e7dfc697dd475d26548a8",
+      "shortSha": "467955b",
+      "message": "feat: initial WA GUARD AI WhatsApp group modera",
+      "repository": "kilicdev/wa-guard",
+      "url": "https://github.com/kilicdev/wa-guard/commit/467955b21c260be3ed2e7dfc697dd475d26548a8",
+      "date": "2026-11-13T13:54:09Z"
+    },
+    {
+      "sha": "1e7d0c8eac4e53fa40c2bbf8dcac1022dde63d12",
+      "shortSha": "1e7d0c8",
+      "message": "fix(test): align delayed refresh test replay in",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/1e7d0c8eac4e53fa40c2bbf8dcac1022dde63d12",
+      "date": "2026-11-13T13:04:10Z"
     }
   ]
 }
