@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 251,
   "organizationCount": 11,
-  "commitCount": 1427,
-  "publicCommitCount": 304,
-  "privateCommitCount": 1123,
-  "refreshedAt": "2026-11-13T19:52:18.847Z",
+  "commitCount": 1430,
+  "publicCommitCount": 305,
+  "privateCommitCount": 1125,
+  "refreshedAt": "2026-11-14T00:54:40.711Z",
   "repositories": [
     {
       "name": ".github",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "2dfe17ada6478121b7b9e4509f54d71816341672",
+      "shortSha": "2dfe17a",
+      "message": "chore(release): bump fallback version name to 9",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/2dfe17ada6478121b7b9e4509f54d71816341672",
+      "date": "2026-11-13T21:21:24Z"
+    },
+    {
+      "sha": "91a6fb94059c66ad061ef2a2607db6c912445b2b",
+      "shortSha": "91a6fb9",
+      "message": "fix(config): restore Cloudflare and R2 provider",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/91a6fb94059c66ad061ef2a2607db6c912445b2b",
+      "date": "2026-11-13T19:53:04Z"
+    },
+    {
       "sha": "c69a945b561d28ba0d42832c889a2d6b3212e61a",
       "shortSha": "c69a945",
       "message": "fix(deploy): preserve placeholder backend-image",
@@ -145,22 +161,6 @@
       "repository": "kilicdev/wa-guard",
       "url": "https://github.com/kilicdev/wa-guard/commit/d9550e28167fec3f08fe4fb2d9c3c904fd6fcd80",
       "date": "2026-11-13T13:57:24Z"
-    },
-    {
-      "sha": "467955b21c260be3ed2e7dfc697dd475d26548a8",
-      "shortSha": "467955b",
-      "message": "feat: initial WA GUARD AI WhatsApp group modera",
-      "repository": "kilicdev/wa-guard",
-      "url": "https://github.com/kilicdev/wa-guard/commit/467955b21c260be3ed2e7dfc697dd475d26548a8",
-      "date": "2026-11-13T13:54:09Z"
-    },
-    {
-      "sha": "1e7d0c8eac4e53fa40c2bbf8dcac1022dde63d12",
-      "shortSha": "1e7d0c8",
-      "message": "fix(test): align delayed refresh test replay in",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/1e7d0c8eac4e53fa40c2bbf8dcac1022dde63d12",
-      "date": "2026-11-13T13:04:10Z"
     }
   ]
 }
