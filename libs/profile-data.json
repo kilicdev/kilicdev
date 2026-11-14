@@ -2,17 +2,43 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 983,
+  "followers": 982,
   "following": 179,
   "totalRepos": 75,
   "publicRepos": 33,
-  "totalStars": 251,
+  "totalStars": 253,
   "organizationCount": 11,
-  "commitCount": 1430,
-  "publicCommitCount": 305,
+  "commitCount": 1431,
+  "publicCommitCount": 306,
   "privateCommitCount": 1125,
-  "refreshedAt": "2026-11-14T00:54:40.711Z",
+  "refreshedAt": "2026-11-14T11:32:04.514Z",
   "repositories": [
+    {
+      "name": "web",
+      "fullName": "itiraf-me/web",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-14T11:22:47Z",
+      "pushedAt": "2026-07-29T22:57:57Z",
+      "url": "https://github.com/itiraf-me/web"
+    },
+    {
+      "name": "backend",
+      "fullName": "itiraf-me/backend",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-14T11:22:43Z",
+      "pushedAt": "2026-07-29T22:58:14Z",
+      "url": "https://github.com/itiraf-me/backend"
+    },
     {
       "name": ".github",
       "fullName": "Dijital-Marketin/.github",
@@ -51,35 +77,17 @@
       "updatedAt": "2026-11-13T14:02:22Z",
       "pushedAt": "2026-10-05T22:07:02Z",
       "url": "https://github.com/Dijital-Marketin/backend"
-    },
-    {
-      "name": "wa-guard",
-      "fullName": "kilicdev/wa-guard",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-13T14:01:09Z",
-      "pushedAt": "2026-11-13T14:00:59Z",
-      "url": "https://github.com/kilicdev/wa-guard"
-    },
-    {
-      "name": "ai",
-      "fullName": "velity-app/ai",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-13T11:51:37Z",
-      "pushedAt": "2026-11-13T10:51:56Z",
-      "url": "https://github.com/velity-app/ai"
     }
   ],
   "organizations": [
+    {
+      "login": "itiraf-me",
+      "name": "itiraf-me",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/299862939?v=4",
+      "url": "https://api.github.com/orgs/itiraf-me",
+      "lastUpdatedAt": "2026-11-14T11:22:47Z",
+      "latestRepository": "web"
+    },
     {
       "login": "Dijital-Marketin",
       "name": "Dijital-Marketin",
@@ -111,14 +119,6 @@
       "url": "https://api.github.com/orgs/dramalar",
       "lastUpdatedAt": "2026-10-30T10:09:15Z",
       "latestRepository": "web"
-    },
-    {
-      "login": "hackmety",
-      "name": "hackmety",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/276630337?v=4",
-      "url": "https://api.github.com/orgs/hackmety",
-      "lastUpdatedAt": "2026-09-28T15:45:17Z",
-      "latestRepository": "windows"
     }
   ],
   "commits": [
