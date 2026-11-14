@@ -6,119 +6,119 @@
   "following": 179,
   "totalRepos": 75,
   "publicRepos": 33,
-  "totalStars": 253,
+  "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1436,
-  "publicCommitCount": 307,
+  "commitCount": 1437,
+  "publicCommitCount": 308,
   "privateCommitCount": 1129,
-  "refreshedAt": "2026-11-14T18:09:24.091Z",
+  "refreshedAt": "2026-11-14T23:57:09.249Z",
   "repositories": [
     {
-      "name": "web",
-      "fullName": "itiraf-me/web",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-14T11:22:47Z",
-      "pushedAt": "2026-07-29T22:57:57Z",
-      "url": "https://github.com/itiraf-me/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "itiraf-me/backend",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-14T11:22:43Z",
-      "pushedAt": "2026-07-29T22:58:14Z",
-      "url": "https://github.com/itiraf-me/backend"
-    },
-    {
       "name": ".github",
-      "fullName": "Dijital-Marketin/.github",
+      "fullName": "inelity/.github",
       "language": "",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": false,
-      "updatedAt": "2026-11-13T14:02:29Z",
-      "pushedAt": "2026-10-05T21:56:08Z",
-      "url": "https://github.com/Dijital-Marketin/.github"
+      "updatedAt": "2026-11-14T18:33:25Z",
+      "pushedAt": "2026-04-06T21:37:44Z",
+      "url": "https://github.com/inelity/.github"
     },
     {
       "name": "web",
-      "fullName": "Dijital-Marketin/web",
-      "language": "TypeScript",
+      "fullName": "inelity/web",
+      "language": "JavaScript",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-11-13T14:02:25Z",
-      "pushedAt": "2026-10-05T22:00:53Z",
-      "url": "https://github.com/Dijital-Marketin/web"
+      "updatedAt": "2026-11-14T18:33:18Z",
+      "pushedAt": "2026-07-05T03:24:30Z",
+      "url": "https://github.com/inelity/web"
     },
     {
       "name": "backend",
-      "fullName": "Dijital-Marketin/backend",
-      "language": "TypeScript",
+      "fullName": "inelity/backend",
+      "language": "JavaScript",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "private": true,
-      "updatedAt": "2026-11-13T14:02:22Z",
-      "pushedAt": "2026-10-05T22:07:02Z",
-      "url": "https://github.com/Dijital-Marketin/backend"
+      "updatedAt": "2026-11-14T18:33:14Z",
+      "pushedAt": "2026-09-01T04:33:29Z",
+      "url": "https://github.com/inelity/backend"
+    },
+    {
+      "name": ".github",
+      "fullName": "hackmety/.github",
+      "language": "",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-14T18:32:24Z",
+      "pushedAt": "2026-04-16T23:50:38Z",
+      "url": "https://github.com/hackmety/.github"
+    },
+    {
+      "name": ".github",
+      "fullName": "duct-tr/.github",
+      "language": "",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-14T18:32:02Z",
+      "pushedAt": "2026-05-12T00:10:27Z",
+      "url": "https://github.com/duct-tr/.github"
     }
   ],
   "organizations": [
     {
-      "login": "itiraf-me",
-      "name": "itiraf-me",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/299862939?v=4",
-      "url": "https://api.github.com/orgs/itiraf-me",
-      "lastUpdatedAt": "2026-11-14T11:22:47Z",
-      "latestRepository": "web"
-    },
-    {
-      "login": "Dijital-Marketin",
-      "name": "Dijital-Marketin",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/337672063?v=4",
-      "url": "https://api.github.com/orgs/Dijital-Marketin",
-      "lastUpdatedAt": "2026-11-13T14:02:29Z",
+      "login": "inelity",
+      "name": "inelity",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/269519114?v=4",
+      "url": "https://api.github.com/orgs/inelity",
+      "lastUpdatedAt": "2026-11-14T18:33:25Z",
       "latestRepository": ".github"
     },
     {
-      "login": "velity-app",
-      "name": "velity-app",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
-      "url": "https://api.github.com/orgs/velity-app",
-      "lastUpdatedAt": "2026-11-13T11:51:37Z",
-      "latestRepository": "ai"
+      "login": "hackmety",
+      "name": "hackmety",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/276630337?v=4",
+      "url": "https://api.github.com/orgs/hackmety",
+      "lastUpdatedAt": "2026-11-14T18:32:24Z",
+      "latestRepository": ".github"
     },
     {
-      "login": "smsmint",
-      "name": "smsmint",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
-      "url": "https://api.github.com/orgs/smsmint",
-      "lastUpdatedAt": "2026-10-30T12:54:17Z",
-      "latestRepository": "web"
+      "login": "duct-tr",
+      "name": "duct-tr",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/283725190?v=4",
+      "url": "https://api.github.com/orgs/duct-tr",
+      "lastUpdatedAt": "2026-11-14T18:32:02Z",
+      "latestRepository": ".github"
     },
     {
       "login": "dramalar",
       "name": "dramalar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
       "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-10-30T10:09:15Z",
-      "latestRepository": "web"
+      "lastUpdatedAt": "2026-11-14T18:31:44Z",
+      "latestRepository": ".github"
+    },
+    {
+      "login": "smsmint",
+      "name": "smsmint",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
+      "url": "https://api.github.com/orgs/smsmint",
+      "lastUpdatedAt": "2026-11-14T18:31:21Z",
+      "latestRepository": "test"
     }
   ],
   "commits": [
