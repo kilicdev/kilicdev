@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1438,
-  "publicCommitCount": 309,
-  "privateCommitCount": 1129,
-  "refreshedAt": "2026-11-15T06:39:41.031Z",
+  "commitCount": 1454,
+  "publicCommitCount": 310,
+  "privateCommitCount": 1144,
+  "refreshedAt": "2026-11-15T15:41:30.269Z",
   "repositories": [
     {
       "name": ".github",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "4a424c0015add479b94c9c330513010fe80f2d39",
-      "shortSha": "4a424c0",
-      "message": "Enrich call push payloads with avatar, clock sk",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/4a424c0015add479b94c9c330513010fe80f2d39",
-      "date": "2026-11-14T18:01:43Z"
-    },
-    {
-      "sha": "263d323608a2b455402b19222eb967cdfb68f8ad",
-      "shortSha": "263d323",
-      "message": "feat(ranking): add client-IP coarse geo-proximi",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/263d323608a2b455402b19222eb967cdfb68f8ad",
-      "date": "2026-11-14T14:49:34Z"
-    },
-    {
-      "sha": "02df91acb3b3eb9fe862de805a0fc5bd39f0e9a0",
-      "shortSha": "02df91a",
-      "message": "feat(ranking): implement Unified Ranking Engine",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/02df91acb3b3eb9fe862de805a0fc5bd39f0e9a0",
-      "date": "2026-11-14T13:49:22Z"
-    },
-    {
-      "sha": "f0bc5b61caebc5dc82d2d509f6b174ea7f62a143",
-      "shortSha": "f0bc5b6",
-      "message": "chore(contracts): sync generated OpenAPI for Ra",
-      "repository": "velity-app/contracts",
-      "url": "https://github.com/velity-app/contracts/commit/f0bc5b61caebc5dc82d2d509f6b174ea7f62a143",
-      "date": "2026-11-14T13:49:19Z"
-    },
-    {
-      "sha": "2dfe17ada6478121b7b9e4509f54d71816341672",
-      "shortSha": "2dfe17a",
-      "message": "chore(release): bump fallback version name to 9",
+      "sha": "f95192d83a5571f2a3b7ebc58c63ab72daafed76",
+      "shortSha": "f95192d",
+      "message": "fix(android,release): hardware bitmap story cap",
       "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/2dfe17ada6478121b7b9e4509f54d71816341672",
-      "date": "2026-11-13T21:21:24Z"
+      "url": "https://github.com/velity-app/android/commit/f95192d83a5571f2a3b7ebc58c63ab72daafed76",
+      "date": "2026-11-15T14:43:48Z"
+    },
+    {
+      "sha": "49ca3d5188c69fb17793d37d75ae8d465c8f9bd6",
+      "shortSha": "49ca3d5",
+      "message": "fix(android): youtube music trimmer, full-bleed",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/49ca3d5188c69fb17793d37d75ae8d465c8f9bd6",
+      "date": "2026-11-15T13:41:58Z"
+    },
+    {
+      "sha": "a0be9d0cb09bab3fac29f33c9ac4fe58baef38ef",
+      "shortSha": "a0be9d0",
+      "message": "fix(jobs): ensure all queue lanes exist in queu",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/a0be9d0cb09bab3fac29f33c9ac4fe58baef38ef",
+      "date": "2026-11-15T13:41:52Z"
+    },
+    {
+      "sha": "53f80719e07c357a949660d55332107080fcca08",
+      "shortSha": "53f8071",
+      "message": "fix(android): numeric 5-digit OTPs with number-",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/53f80719e07c357a949660d55332107080fcca08",
+      "date": "2026-11-15T10:34:48Z"
+    },
+    {
+      "sha": "154c8109190598e20c579e43fd0edc282e04640a",
+      "shortSha": "154c810",
+      "message": "fix(auth,mail,media,realtime): verified direct",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/154c8109190598e20c579e43fd0edc282e04640a",
+      "date": "2026-11-15T10:34:39Z"
     }
   ]
 }
