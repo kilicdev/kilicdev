@@ -6,13 +6,26 @@
   "following": 179,
   "totalRepos": 75,
   "publicRepos": 33,
-  "totalStars": 264,
+  "totalStars": 263,
   "organizationCount": 11,
-  "commitCount": 1464,
-  "publicCommitCount": 312,
-  "privateCommitCount": 1152,
-  "refreshedAt": "2026-11-16T06:36:20.208Z",
+  "commitCount": 1467,
+  "publicCommitCount": 311,
+  "privateCommitCount": 1156,
+  "refreshedAt": "2026-11-16T18:37:17.385Z",
   "repositories": [
+    {
+      "name": ".github",
+      "fullName": "itiraf-me/.github",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-16T07:20:00Z",
+      "pushedAt": "2026-07-04T15:23:16Z",
+      "url": "https://github.com/itiraf-me/.github"
+    },
     {
       "name": ".github",
       "fullName": "inelity/.github",
@@ -64,22 +77,17 @@
       "updatedAt": "2026-11-14T18:32:24Z",
       "pushedAt": "2026-04-16T23:50:38Z",
       "url": "https://github.com/hackmety/.github"
-    },
-    {
-      "name": ".github",
-      "fullName": "duct-tr/.github",
-      "language": "",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-11-14T18:32:02Z",
-      "pushedAt": "2026-05-12T00:10:27Z",
-      "url": "https://github.com/duct-tr/.github"
     }
   ],
   "organizations": [
+    {
+      "login": "itiraf-me",
+      "name": "itiraf-me",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/299862939?v=4",
+      "url": "https://api.github.com/orgs/itiraf-me",
+      "lastUpdatedAt": "2026-11-16T07:20:00Z",
+      "latestRepository": ".github"
+    },
     {
       "login": "inelity",
       "name": "inelity",
@@ -111,14 +119,6 @@
       "url": "https://api.github.com/orgs/dramalar",
       "lastUpdatedAt": "2026-11-14T18:31:44Z",
       "latestRepository": ".github"
-    },
-    {
-      "login": "smsmint",
-      "name": "smsmint",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/308891896?v=4",
-      "url": "https://api.github.com/orgs/smsmint",
-      "lastUpdatedAt": "2026-11-14T18:31:21Z",
-      "latestRepository": "test"
     }
   ],
   "commits": [
