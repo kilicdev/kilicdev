@@ -8,11 +8,24 @@
   "publicRepos": 33,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1471,
-  "publicCommitCount": 313,
+  "commitCount": 1472,
+  "publicCommitCount": 314,
   "privateCommitCount": 1158,
-  "refreshedAt": "2026-11-17T13:30:29.285Z",
+  "refreshedAt": "2026-11-17T23:32:06.663Z",
   "repositories": [
+    {
+      "name": "mobile",
+      "fullName": "velity-app/mobile",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": true,
+      "updatedAt": "2026-11-17T14:02:55Z",
+      "pushedAt": "2026-11-16T23:13:52Z",
+      "url": "https://github.com/velity-app/mobile"
+    },
     {
       "name": "kilic.db",
       "fullName": "kilicdev/kilic.db",
@@ -64,22 +77,17 @@
       "updatedAt": "2026-11-14T18:33:18Z",
       "pushedAt": "2026-07-05T03:24:30Z",
       "url": "https://github.com/inelity/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "inelity/backend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-14T18:33:14Z",
-      "pushedAt": "2026-09-01T04:33:29Z",
-      "url": "https://github.com/inelity/backend"
     }
   ],
   "organizations": [
+    {
+      "login": "velity-app",
+      "name": "velity-app",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/326901432?v=4",
+      "url": "https://api.github.com/orgs/velity-app",
+      "lastUpdatedAt": "2026-11-17T14:02:55Z",
+      "latestRepository": "mobile"
+    },
     {
       "login": "itiraf-me",
       "name": "itiraf-me",
@@ -111,14 +119,6 @@
       "url": "https://api.github.com/orgs/duct-tr",
       "lastUpdatedAt": "2026-11-14T18:32:02Z",
       "latestRepository": ".github"
-    },
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-11-14T18:31:44Z",
-      "latestRepository": ".github"
     }
   ],
   "commits": [
@@ -126,8 +126,8 @@
       "sha": "058b7758feb0ce29928d7721bb1b74f5b2ac83a3",
       "shortSha": "058b775",
       "message": "fix(ux,auth): stabilize chat expandable text, s",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/058b7758feb0ce29928d7721bb1b74f5b2ac83a3",
+      "repository": "velity-app/mobile",
+      "url": "https://github.com/velity-app/mobile/commit/058b7758feb0ce29928d7721bb1b74f5b2ac83a3",
       "date": "2026-11-16T22:56:22Z"
     },
     {
@@ -142,8 +142,8 @@
       "sha": "6815f2bca58bb9dc2dc1aff613bdf09af5769c2d",
       "shortSha": "6815f2b",
       "message": "feat: improve realtime chat, push cleanup, call",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/6815f2bca58bb9dc2dc1aff613bdf09af5769c2d",
+      "repository": "velity-app/mobile",
+      "url": "https://github.com/velity-app/mobile/commit/6815f2bca58bb9dc2dc1aff613bdf09af5769c2d",
       "date": "2026-11-15T21:12:49Z"
     },
     {
