@@ -2,17 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 982,
+  "followers": 981,
   "following": 179,
   "totalRepos": 75,
   "publicRepos": 33,
-  "totalStars": 263,
+  "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1470,
-  "publicCommitCount": 312,
+  "commitCount": 1471,
+  "publicCommitCount": 313,
   "privateCommitCount": 1158,
-  "refreshedAt": "2026-11-17T02:57:39.849Z",
+  "refreshedAt": "2026-11-17T13:30:29.285Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 34,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-17T12:24:39Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
     {
       "name": ".github",
       "fullName": "itiraf-me/.github",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-11-14T18:33:14Z",
       "pushedAt": "2026-09-01T04:33:29Z",
       "url": "https://github.com/inelity/backend"
-    },
-    {
-      "name": ".github",
-      "fullName": "hackmety/.github",
-      "language": "",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-11-14T18:32:24Z",
-      "pushedAt": "2026-04-16T23:50:38Z",
-      "url": "https://github.com/hackmety/.github"
     }
   ],
   "organizations": [
