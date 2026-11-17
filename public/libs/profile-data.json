@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 263,
   "organizationCount": 11,
-  "commitCount": 1467,
-  "publicCommitCount": 311,
-  "privateCommitCount": 1156,
-  "refreshedAt": "2026-11-16T18:37:17.385Z",
+  "commitCount": 1470,
+  "publicCommitCount": 312,
+  "privateCommitCount": 1158,
+  "refreshedAt": "2026-11-17T02:57:39.849Z",
   "repositories": [
     {
       "name": ".github",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "058b7758feb0ce29928d7721bb1b74f5b2ac83a3",
+      "shortSha": "058b775",
+      "message": "fix(ux,auth): stabilize chat expandable text, s",
+      "repository": "velity-app/android",
+      "url": "https://github.com/velity-app/android/commit/058b7758feb0ce29928d7721bb1b74f5b2ac83a3",
+      "date": "2026-11-16T22:56:22Z"
+    },
+    {
+      "sha": "f0a1ad9f63475936b97041ea041e477d7e715f46",
+      "shortSha": "f0a1ad9",
+      "message": "fix(auth,push): extend sliding session lifetime",
+      "repository": "velity-app/backend",
+      "url": "https://github.com/velity-app/backend/commit/f0a1ad9f63475936b97041ea041e477d7e715f46",
+      "date": "2026-11-16T22:36:56Z"
+    },
+    {
       "sha": "6815f2bca58bb9dc2dc1aff613bdf09af5769c2d",
       "shortSha": "6815f2b",
       "message": "feat: improve realtime chat, push cleanup, call",
@@ -145,22 +161,6 @@
       "repository": "Dijital-Marketin/web",
       "url": "https://github.com/Dijital-Marketin/web/commit/ec62738d5f78d08f64c3f39ee46340eb8e0a9b6b",
       "date": "2026-11-15T20:09:26Z"
-    },
-    {
-      "sha": "8cbb0731410db065dc4a9f340c976b6526633274",
-      "shortSha": "8cbb073",
-      "message": "Rebuild backend as Dijital Marketin SMM store w",
-      "repository": "Dijital-Marketin/backend",
-      "url": "https://github.com/Dijital-Marketin/backend/commit/8cbb0731410db065dc4a9f340c976b6526633274",
-      "date": "2026-11-15T20:09:22Z"
-    },
-    {
-      "sha": "95a3aff0cb1e06689f161b11178ea1e720276ac5",
-      "shortSha": "95a3aff",
-      "message": "fix(android,perf): eliminate Fabric mounting cr",
-      "repository": "velity-app/android",
-      "url": "https://github.com/velity-app/android/commit/95a3aff0cb1e06689f161b11178ea1e720276ac5",
-      "date": "2026-11-15T19:27:15Z"
     }
   ]
 }
