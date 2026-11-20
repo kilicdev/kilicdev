@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1484,
-  "publicCommitCount": 321,
-  "privateCommitCount": 1163,
-  "refreshedAt": "2026-11-20T11:05:16.599Z",
+  "commitCount": 1507,
+  "publicCommitCount": 322,
+  "privateCommitCount": 1185,
+  "refreshedAt": "2026-11-20T16:59:40.669Z",
   "repositories": [
     {
       "name": "mobile",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "38080356f060032d45cf66b0646030992dd65bcf",
-      "shortSha": "3808035",
-      "message": "Add dramalobi brand option",
-      "repository": "dramalar/downloader-bot",
-      "url": "https://github.com/dramalar/downloader-bot/commit/38080356f060032d45cf66b0646030992dd65bcf",
-      "date": "2026-11-20T10:48:19Z"
-    },
-    {
-      "sha": "e1195694940756df9542d071a5399a33dea41b0e",
-      "shortSha": "e119569",
-      "message": "fix(home): fade hero poster via CSS masks to re",
+      "sha": "4eed3d8b37dc7d3992b0f1996b6cd6aa03b85932",
+      "shortSha": "4eed3d8",
+      "message": "fix(watch): center video error card and auto-op",
       "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/e1195694940756df9542d071a5399a33dea41b0e",
-      "date": "2026-11-20T10:45:47Z"
+      "url": "https://github.com/dramalar/web/commit/4eed3d8b37dc7d3992b0f1996b6cd6aa03b85932",
+      "date": "2026-11-20T16:48:56Z"
     },
     {
-      "sha": "bef238592a487802ab87913eeeb3ebbb01665517",
-      "shortSha": "bef2385",
-      "message": "dramalobi.com added!",
+      "sha": "dd605d353a35f466ba1e3881198176bae1aefdb3",
+      "shortSha": "dd605d3",
+      "message": "feat(admin-sync): add HTTPS r2-migrator candida",
       "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/bef238592a487802ab87913eeeb3ebbb01665517",
-      "date": "2026-11-20T10:33:05Z"
+      "url": "https://github.com/dramalar/backend/commit/dd605d353a35f466ba1e3881198176bae1aefdb3",
+      "date": "2026-11-20T16:26:38Z"
     },
     {
-      "sha": "20a1db0756c12d90cdd31acb9df40bec09c2fc01",
-      "shortSha": "20a1db0",
-      "message": "dramalobi.com added!",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/20a1db0756c12d90cdd31acb9df40bec09c2fc01",
-      "date": "2026-11-20T10:32:50Z"
-    },
-    {
-      "sha": "4f8c3e2193ea3be59d711a1a4b255e59429f7d7c",
-      "shortSha": "4f8c3e2",
-      "message": "added dramalobi.com",
+      "sha": "93a32634c2b71178c7e4377f8ae730057e7ee8cd",
+      "shortSha": "93a3263",
+      "message": "feat(r2): use sequential folders for 1..15 and",
       "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/4f8c3e2193ea3be59d711a1a4b255e59429f7d7c",
-      "date": "2026-11-20T10:32:37Z"
+      "url": "https://github.com/dramalar/scraper-bot/commit/93a32634c2b71178c7e4377f8ae730057e7ee8cd",
+      "date": "2026-11-20T16:07:04Z"
+    },
+    {
+      "sha": "984260152f6210db8b98cf274ac2aab5b9b3515a",
+      "shortSha": "9842601",
+      "message": "feat(providers): add dramawave, freereels, and",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/984260152f6210db8b98cf274ac2aab5b9b3515a",
+      "date": "2026-11-20T16:07:04Z"
+    },
+    {
+      "sha": "fb9f999ff61c1f33324c029706814ff6ef3fc76b",
+      "shortSha": "fb9f999",
+      "message": "feat(security,pruning): implement hybrid opaque",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/fb9f999ff61c1f33324c029706814ff6ef3fc76b",
+      "date": "2026-11-20T16:06:55Z"
     }
   ]
 }
