@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1478,
-  "publicCommitCount": 320,
-  "privateCommitCount": 1158,
-  "refreshedAt": "2026-11-20T07:22:09.460Z",
+  "commitCount": 1484,
+  "publicCommitCount": 321,
+  "privateCommitCount": 1163,
+  "refreshedAt": "2026-11-20T11:05:16.599Z",
   "repositories": [
     {
       "name": "mobile",
@@ -123,44 +123,44 @@
   ],
   "commits": [
     {
-      "sha": "058b7758feb0ce29928d7721bb1b74f5b2ac83a3",
-      "shortSha": "058b775",
-      "message": "fix(ux,auth): stabilize chat expandable text, s",
-      "repository": "velity-app/mobile",
-      "url": "https://github.com/velity-app/mobile/commit/058b7758feb0ce29928d7721bb1b74f5b2ac83a3",
-      "date": "2026-11-16T22:56:22Z"
+      "sha": "38080356f060032d45cf66b0646030992dd65bcf",
+      "shortSha": "3808035",
+      "message": "Add dramalobi brand option",
+      "repository": "dramalar/downloader-bot",
+      "url": "https://github.com/dramalar/downloader-bot/commit/38080356f060032d45cf66b0646030992dd65bcf",
+      "date": "2026-11-20T10:48:19Z"
     },
     {
-      "sha": "f0a1ad9f63475936b97041ea041e477d7e715f46",
-      "shortSha": "f0a1ad9",
-      "message": "fix(auth,push): extend sliding session lifetime",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/f0a1ad9f63475936b97041ea041e477d7e715f46",
-      "date": "2026-11-16T22:36:56Z"
+      "sha": "e1195694940756df9542d071a5399a33dea41b0e",
+      "shortSha": "e119569",
+      "message": "fix(home): fade hero poster via CSS masks to re",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/e1195694940756df9542d071a5399a33dea41b0e",
+      "date": "2026-11-20T10:45:47Z"
     },
     {
-      "sha": "6815f2bca58bb9dc2dc1aff613bdf09af5769c2d",
-      "shortSha": "6815f2b",
-      "message": "feat: improve realtime chat, push cleanup, call",
-      "repository": "velity-app/mobile",
-      "url": "https://github.com/velity-app/mobile/commit/6815f2bca58bb9dc2dc1aff613bdf09af5769c2d",
-      "date": "2026-11-15T21:12:49Z"
+      "sha": "bef238592a487802ab87913eeeb3ebbb01665517",
+      "shortSha": "bef2385",
+      "message": "dramalobi.com added!",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/bef238592a487802ab87913eeeb3ebbb01665517",
+      "date": "2026-11-20T10:33:05Z"
     },
     {
-      "sha": "46e2d28ae2966b7d67de35cc7f147240b4425ec0",
-      "shortSha": "46e2d28",
-      "message": "feat: add v2.1 comment ranking, realtime WS pus",
-      "repository": "velity-app/backend",
-      "url": "https://github.com/velity-app/backend/commit/46e2d28ae2966b7d67de35cc7f147240b4425ec0",
-      "date": "2026-11-15T21:12:42Z"
+      "sha": "20a1db0756c12d90cdd31acb9df40bec09c2fc01",
+      "shortSha": "20a1db0",
+      "message": "dramalobi.com added!",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/20a1db0756c12d90cdd31acb9df40bec09c2fc01",
+      "date": "2026-11-20T10:32:50Z"
     },
     {
-      "sha": "ec62738d5f78d08f64c3f39ee46340eb8e0a9b6b",
-      "shortSha": "ec62738",
-      "message": "Rebuild web storefront for Dijital Marketin SMM",
-      "repository": "Dijital-Marketin/web",
-      "url": "https://github.com/Dijital-Marketin/web/commit/ec62738d5f78d08f64c3f39ee46340eb8e0a9b6b",
-      "date": "2026-11-15T20:09:26Z"
+      "sha": "4f8c3e2193ea3be59d711a1a4b255e59429f7d7c",
+      "shortSha": "4f8c3e2",
+      "message": "added dramalobi.com",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/4f8c3e2193ea3be59d711a1a4b255e59429f7d7c",
+      "date": "2026-11-20T10:32:37Z"
     }
   ]
 }
