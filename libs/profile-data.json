@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1507,
-  "publicCommitCount": 322,
-  "privateCommitCount": 1185,
-  "refreshedAt": "2026-11-20T16:59:40.669Z",
+  "commitCount": 1510,
+  "publicCommitCount": 323,
+  "privateCommitCount": 1187,
+  "refreshedAt": "2026-11-21T01:33:44.475Z",
   "repositories": [
     {
       "name": "mobile",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "2d091bd0eb547e2b356d43eda1afb87ee0727f80",
+      "shortSha": "2d091bd",
+      "message": "feat(anti-scraping): add slow-scraper multi-win",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/2d091bd0eb547e2b356d43eda1afb87ee0727f80",
+      "date": "2026-11-20T18:10:03Z"
+    },
+    {
+      "sha": "84e921f7565fe5f6d9a188fca1058d61f0a48f05",
+      "shortSha": "84e921f",
+      "message": "fix(resilience): eliminate download/API/R2/ffmp",
+      "repository": "dramalar/scraper-bot",
+      "url": "https://github.com/dramalar/scraper-bot/commit/84e921f7565fe5f6d9a188fca1058d61f0a48f05",
+      "date": "2026-11-20T17:03:24Z"
+    },
+    {
       "sha": "4eed3d8b37dc7d3992b0f1996b6cd6aa03b85932",
       "shortSha": "4eed3d8",
       "message": "fix(watch): center video error card and auto-op",
@@ -145,22 +161,6 @@
       "repository": "dramalar/scraper-bot",
       "url": "https://github.com/dramalar/scraper-bot/commit/93a32634c2b71178c7e4377f8ae730057e7ee8cd",
       "date": "2026-11-20T16:07:04Z"
-    },
-    {
-      "sha": "984260152f6210db8b98cf274ac2aab5b9b3515a",
-      "shortSha": "9842601",
-      "message": "feat(providers): add dramawave, freereels, and",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/984260152f6210db8b98cf274ac2aab5b9b3515a",
-      "date": "2026-11-20T16:07:04Z"
-    },
-    {
-      "sha": "fb9f999ff61c1f33324c029706814ff6ef3fc76b",
-      "shortSha": "fb9f999",
-      "message": "feat(security,pruning): implement hybrid opaque",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/fb9f999ff61c1f33324c029706814ff6ef3fc76b",
-      "date": "2026-11-20T16:06:55Z"
     }
   ]
 }
