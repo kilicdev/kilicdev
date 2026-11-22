@@ -8,10 +8,10 @@
   "publicRepos": 33,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1527,
-  "publicCommitCount": 326,
-  "privateCommitCount": 1201,
-  "refreshedAt": "2026-11-21T21:41:00.230Z",
+  "commitCount": 1530,
+  "publicCommitCount": 327,
+  "privateCommitCount": 1203,
+  "refreshedAt": "2026-11-22T06:55:26.478Z",
   "repositories": [
     {
       "name": "mobile",
@@ -123,6 +123,22 @@
   ],
   "commits": [
     {
+      "sha": "6f70e45117a3eb02e9a80abdafdfc76f5ac10e69",
+      "shortSha": "6f70e45",
+      "message": "fix(watch): show dedicated 429 rate-limit and 4",
+      "repository": "dramalar/web",
+      "url": "https://github.com/dramalar/web/commit/6f70e45117a3eb02e9a80abdafdfc76f5ac10e69",
+      "date": "2026-11-21T21:50:04Z"
+    },
+    {
+      "sha": "0366550b52af07f822f14190acd9808282e7edd7",
+      "shortSha": "0366550",
+      "message": "fix(anti-scraping): never ban single-series use",
+      "repository": "dramalar/backend",
+      "url": "https://github.com/dramalar/backend/commit/0366550b52af07f822f14190acd9808282e7edd7",
+      "date": "2026-11-21T21:44:46Z"
+    },
+    {
       "sha": "2021d2cec7b25743057178d20eb57c989d9d2042",
       "shortSha": "2021d2c",
       "message": "feat: add exclude.txt support for orgs (+) and",
@@ -145,22 +161,6 @@
       "repository": "dramalar/scraper-bot",
       "url": "https://github.com/dramalar/scraper-bot/commit/84e921f7565fe5f6d9a188fca1058d61f0a48f05",
       "date": "2026-11-20T17:03:24Z"
-    },
-    {
-      "sha": "4eed3d8b37dc7d3992b0f1996b6cd6aa03b85932",
-      "shortSha": "4eed3d8",
-      "message": "fix(watch): center video error card and auto-op",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/4eed3d8b37dc7d3992b0f1996b6cd6aa03b85932",
-      "date": "2026-11-20T16:48:56Z"
-    },
-    {
-      "sha": "dd605d353a35f466ba1e3881198176bae1aefdb3",
-      "shortSha": "dd605d3",
-      "message": "feat(admin-sync): add HTTPS r2-migrator candida",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/dd605d353a35f466ba1e3881198176bae1aefdb3",
-      "date": "2026-11-20T16:26:38Z"
     }
   ]
 }
