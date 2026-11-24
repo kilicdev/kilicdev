@@ -2,17 +2,30 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 979,
+  "followers": 981,
   "following": 179,
   "totalRepos": 75,
-  "publicRepos": 33,
+  "publicRepos": 34,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1532,
-  "publicCommitCount": 330,
+  "commitCount": 1535,
+  "publicCommitCount": 333,
   "privateCommitCount": 1202,
-  "refreshedAt": "2026-11-23T14:44:17.292Z",
+  "refreshedAt": "2026-11-24T02:56:00.783Z",
   "repositories": [
+    {
+      "name": "wa-guard",
+      "fullName": "kilicdev/wa-guard",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-23T18:22:33Z",
+      "pushedAt": "2026-11-13T14:00:59Z",
+      "url": "https://github.com/kilicdev/wa-guard"
+    },
     {
       "name": "mobile",
       "fullName": "velity-app/mobile",
@@ -23,7 +36,7 @@
       "openIssues": 0,
       "private": true,
       "updatedAt": "2026-11-17T14:02:55Z",
-      "pushedAt": "2026-11-16T23:13:52Z",
+      "pushedAt": "2026-11-23T20:53:53Z",
       "url": "https://github.com/velity-app/mobile"
     },
     {
@@ -64,19 +77,6 @@
       "updatedAt": "2026-11-14T18:33:18Z",
       "pushedAt": "2026-07-05T03:24:30Z",
       "url": "https://github.com/inelity/web"
-    },
-    {
-      "name": "backend",
-      "fullName": "inelity/backend",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-14T18:33:14Z",
-      "pushedAt": "2026-09-01T04:33:29Z",
-      "url": "https://github.com/inelity/backend"
     }
   ],
   "organizations": [
@@ -123,6 +123,30 @@
   ],
   "commits": [
     {
+      "sha": "2714e622f452836379d6f39b6fca7d0d9afdbf9b",
+      "shortSha": "2714e62",
+      "message": "fix(ci): update Play publisher backend endpoint",
+      "repository": "velity-app/mobile",
+      "url": "https://github.com/velity-app/mobile/commit/2714e622f452836379d6f39b6fca7d0d9afdbf9b",
+      "date": "2026-11-23T19:54:49Z"
+    },
+    {
+      "sha": "fe34e5986b0740b15e0a8486a0a78de763d74bdf",
+      "shortSha": "fe34e59",
+      "message": "fix(ci): update Play publisher repository name",
+      "repository": "velity-app/mobile",
+      "url": "https://github.com/velity-app/mobile/commit/fe34e5986b0740b15e0a8486a0a78de763d74bdf",
+      "date": "2026-11-23T19:37:35Z"
+    },
+    {
+      "sha": "332282073fb5e50194f831a74ef553884d8429b0",
+      "shortSha": "3322820",
+      "message": "fix(android,push): eliminate POST_NOTIFICATIONS",
+      "repository": "velity-app/mobile",
+      "url": "https://github.com/velity-app/mobile/commit/332282073fb5e50194f831a74ef553884d8429b0",
+      "date": "2026-11-23T18:51:07Z"
+    },
+    {
       "sha": "6f70e45117a3eb02e9a80abdafdfc76f5ac10e69",
       "shortSha": "6f70e45",
       "message": "fix(watch): show dedicated 429 rate-limit and 4",
@@ -137,30 +161,6 @@
       "repository": "dramalar/backend",
       "url": "https://github.com/dramalar/backend/commit/0366550b52af07f822f14190acd9808282e7edd7",
       "date": "2026-11-21T21:44:46Z"
-    },
-    {
-      "sha": "2021d2cec7b25743057178d20eb57c989d9d2042",
-      "shortSha": "2021d2c",
-      "message": "feat: add exclude.txt support for orgs (+) and",
-      "repository": "kilicdev/kilicdev-private",
-      "url": "https://github.com/kilicdev/kilicdev-private/commit/2021d2cec7b25743057178d20eb57c989d9d2042",
-      "date": "2026-11-21T13:06:11Z"
-    },
-    {
-      "sha": "2d091bd0eb547e2b356d43eda1afb87ee0727f80",
-      "shortSha": "2d091bd",
-      "message": "feat(anti-scraping): add slow-scraper multi-win",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/2d091bd0eb547e2b356d43eda1afb87ee0727f80",
-      "date": "2026-11-20T18:10:03Z"
-    },
-    {
-      "sha": "84e921f7565fe5f6d9a188fca1058d61f0a48f05",
-      "shortSha": "84e921f",
-      "message": "fix(resilience): eliminate download/API/R2/ffmp",
-      "repository": "dramalar/scraper-bot",
-      "url": "https://github.com/dramalar/scraper-bot/commit/84e921f7565fe5f6d9a188fca1058d61f0a48f05",
-      "date": "2026-11-20T17:03:24Z"
     }
   ]
 }
