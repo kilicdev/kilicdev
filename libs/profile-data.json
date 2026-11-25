@@ -2,16 +2,16 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 981,
-  "following": 179,
+  "followers": 982,
+  "following": 180,
   "totalRepos": 75,
   "publicRepos": 34,
   "totalStars": 264,
   "organizationCount": 11,
-  "commitCount": 1538,
-  "publicCommitCount": 335,
-  "privateCommitCount": 1203,
-  "refreshedAt": "2026-11-25T00:48:11.988Z",
+  "commitCount": 1540,
+  "publicCommitCount": 336,
+  "privateCommitCount": 1204,
+  "refreshedAt": "2026-11-25T14:28:35.300Z",
   "repositories": [
     {
       "name": "wa-guard",
@@ -123,6 +123,14 @@
   ],
   "commits": [
     {
+      "sha": "8a4804852c49d17e4bd9478c6b12857a60525236",
+      "shortSha": "8a48048",
+      "message": "feat(deploy): add Express HTTP server, Docker d",
+      "repository": "velity-app/ai",
+      "url": "https://github.com/velity-app/ai/commit/8a4804852c49d17e4bd9478c6b12857a60525236",
+      "date": "2026-11-25T14:07:48Z"
+    },
+    {
       "sha": "2714e622f452836379d6f39b6fca7d0d9afdbf9b",
       "shortSha": "2714e62",
       "message": "fix(ci): update Play publisher backend endpoint",
@@ -153,14 +161,6 @@
       "repository": "dramalar/web",
       "url": "https://github.com/dramalar/web/commit/6f70e45117a3eb02e9a80abdafdfc76f5ac10e69",
       "date": "2026-11-21T21:50:04Z"
-    },
-    {
-      "sha": "0366550b52af07f822f14190acd9808282e7edd7",
-      "shortSha": "0366550",
-      "message": "fix(anti-scraping): never ban single-series use",
-      "repository": "dramalar/backend",
-      "url": "https://github.com/dramalar/backend/commit/0366550b52af07f822f14190acd9808282e7edd7",
-      "date": "2026-11-21T21:44:46Z"
     }
   ]
 }
