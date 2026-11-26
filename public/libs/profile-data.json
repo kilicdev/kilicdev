@@ -2,17 +2,43 @@
   "username": "kilicdev",
   "name": "Kılıç Sarsılmaz",
   "bio": "Software Architect & Senior Full Stack Engineer",
-  "followers": 982,
+  "followers": 983,
   "following": 180,
   "totalRepos": 75,
   "publicRepos": 34,
-  "totalStars": 264,
+  "totalStars": 266,
   "organizationCount": 11,
-  "commitCount": 1540,
-  "publicCommitCount": 336,
-  "privateCommitCount": 1204,
-  "refreshedAt": "2026-11-25T14:28:35.300Z",
+  "commitCount": 1544,
+  "publicCommitCount": 337,
+  "privateCommitCount": 1207,
+  "refreshedAt": "2026-11-26T00:25:13.763Z",
   "repositories": [
+    {
+      "name": ".github",
+      "fullName": "dramalar/.github",
+      "language": "",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-25T23:31:03Z",
+      "pushedAt": "2026-06-16T18:12:35Z",
+      "url": "https://github.com/dramalar/.github"
+    },
+    {
+      "name": "eokul-tahta",
+      "fullName": "kilicdev/eokul-tahta",
+      "language": "JavaScript",
+      "stars": 9,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-25T23:30:51Z",
+      "pushedAt": "2026-06-02T21:53:18Z",
+      "url": "https://github.com/kilicdev/eokul-tahta"
+    },
     {
       "name": "wa-guard",
       "fullName": "kilicdev/wa-guard",
@@ -36,7 +62,7 @@
       "openIssues": 0,
       "private": true,
       "updatedAt": "2026-11-17T14:02:55Z",
-      "pushedAt": "2026-11-23T20:53:53Z",
+      "pushedAt": "2026-11-25T22:12:41Z",
       "url": "https://github.com/velity-app/mobile"
     },
     {
@@ -51,35 +77,17 @@
       "updatedAt": "2026-11-17T12:24:39Z",
       "pushedAt": "2026-06-04T18:41:11Z",
       "url": "https://github.com/kilicdev/kilic.db"
-    },
-    {
-      "name": ".github",
-      "fullName": "inelity/.github",
-      "language": "",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-11-14T18:33:25Z",
-      "pushedAt": "2026-04-06T21:37:44Z",
-      "url": "https://github.com/inelity/.github"
-    },
-    {
-      "name": "web",
-      "fullName": "inelity/web",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": true,
-      "updatedAt": "2026-11-14T18:33:18Z",
-      "pushedAt": "2026-07-05T03:24:30Z",
-      "url": "https://github.com/inelity/web"
     }
   ],
   "organizations": [
+    {
+      "login": "dramalar",
+      "name": "dramalar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
+      "url": "https://api.github.com/orgs/dramalar",
+      "lastUpdatedAt": "2026-11-25T23:31:03Z",
+      "latestRepository": ".github"
+    },
     {
       "login": "velity-app",
       "name": "velity-app",
@@ -111,17 +119,33 @@
       "url": "https://api.github.com/orgs/duct-tr",
       "lastUpdatedAt": "2026-11-14T18:32:02Z",
       "latestRepository": ".github"
-    },
-    {
-      "login": "dramalar",
-      "name": "dramalar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/292227936?v=4",
-      "url": "https://api.github.com/orgs/dramalar",
-      "lastUpdatedAt": "2026-11-14T18:31:44Z",
-      "latestRepository": ".github"
     }
   ],
   "commits": [
+    {
+      "sha": "f7a27a1bb7c693b002cbdf6c645e0e0c291eb837",
+      "shortSha": "f7a27a1",
+      "message": "feat(contracts): bump story media limit to 50 M",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/f7a27a1bb7c693b002cbdf6c645e0e0c291eb837",
+      "date": "2026-11-25T22:03:55Z"
+    },
+    {
+      "sha": "3ec0883294bc0f5fca07b5efc58dac11d16a17fd",
+      "shortSha": "3ec0883",
+      "message": "Add aiUnavailable code and remove legacy helpTo",
+      "repository": "velity-app/contracts",
+      "url": "https://github.com/velity-app/contracts/commit/3ec0883294bc0f5fca07b5efc58dac11d16a17fd",
+      "date": "2026-11-25T15:18:42Z"
+    },
+    {
+      "sha": "fb85ccbd86cfd5aa86601e5ad1f372d627ce5226",
+      "shortSha": "fb85ccb",
+      "message": "Improve Groq key rotation on rate limits and re",
+      "repository": "velity-app/ai",
+      "url": "https://github.com/velity-app/ai/commit/fb85ccbd86cfd5aa86601e5ad1f372d627ce5226",
+      "date": "2026-11-25T14:54:15Z"
+    },
     {
       "sha": "8a4804852c49d17e4bd9478c6b12857a60525236",
       "shortSha": "8a48048",
@@ -137,30 +161,6 @@
       "repository": "velity-app/mobile",
       "url": "https://github.com/velity-app/mobile/commit/2714e622f452836379d6f39b6fca7d0d9afdbf9b",
       "date": "2026-11-23T19:54:49Z"
-    },
-    {
-      "sha": "fe34e5986b0740b15e0a8486a0a78de763d74bdf",
-      "shortSha": "fe34e59",
-      "message": "fix(ci): update Play publisher repository name",
-      "repository": "velity-app/mobile",
-      "url": "https://github.com/velity-app/mobile/commit/fe34e5986b0740b15e0a8486a0a78de763d74bdf",
-      "date": "2026-11-23T19:37:35Z"
-    },
-    {
-      "sha": "332282073fb5e50194f831a74ef553884d8429b0",
-      "shortSha": "3322820",
-      "message": "fix(android,push): eliminate POST_NOTIFICATIONS",
-      "repository": "velity-app/mobile",
-      "url": "https://github.com/velity-app/mobile/commit/332282073fb5e50194f831a74ef553884d8429b0",
-      "date": "2026-11-23T18:51:07Z"
-    },
-    {
-      "sha": "6f70e45117a3eb02e9a80abdafdfc76f5ac10e69",
-      "shortSha": "6f70e45",
-      "message": "fix(watch): show dedicated 429 rate-limit and 4",
-      "repository": "dramalar/web",
-      "url": "https://github.com/dramalar/web/commit/6f70e45117a3eb02e9a80abdafdfc76f5ac10e69",
-      "date": "2026-11-21T21:50:04Z"
     }
   ]
 }
