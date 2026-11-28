@@ -6,13 +6,26 @@
   "following": 180,
   "totalRepos": 75,
   "publicRepos": 34,
-  "totalStars": 266,
+  "totalStars": 267,
   "organizationCount": 11,
-  "commitCount": 1569,
-  "publicCommitCount": 341,
+  "commitCount": 1570,
+  "publicCommitCount": 342,
   "privateCommitCount": 1228,
-  "refreshedAt": "2026-11-28T00:04:30.508Z",
+  "refreshedAt": "2026-11-28T07:55:11.713Z",
   "repositories": [
+    {
+      "name": "kilic.db",
+      "fullName": "kilicdev/kilic.db",
+      "language": "TypeScript",
+      "stars": 35,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "private": false,
+      "updatedAt": "2026-11-28T06:28:41Z",
+      "pushedAt": "2026-06-04T18:41:11Z",
+      "url": "https://github.com/kilicdev/kilic.db"
+    },
     {
       "name": ".github",
       "fullName": "dramalar/.github",
@@ -64,19 +77,6 @@
       "updatedAt": "2026-11-17T14:02:55Z",
       "pushedAt": "2026-11-27T22:28:03Z",
       "url": "https://github.com/velity-app/mobile"
-    },
-    {
-      "name": "kilic.db",
-      "fullName": "kilicdev/kilic.db",
-      "language": "TypeScript",
-      "stars": 34,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "private": false,
-      "updatedAt": "2026-11-17T12:24:39Z",
-      "pushedAt": "2026-06-04T18:41:11Z",
-      "url": "https://github.com/kilicdev/kilic.db"
     }
   ],
   "organizations": [
